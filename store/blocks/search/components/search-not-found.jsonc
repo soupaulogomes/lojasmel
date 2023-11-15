@@ -1,0 +1,97 @@
+{
+  "search-not-found-layout": {
+    "children": [
+      "breadcrumb.search#not-found",
+      "flex-layout.row#search-not-found"
+    ],
+    "props": {
+      "blockClass": "search-not-found"
+    }
+  },
+  "breadcrumb.search#not-found": {
+    "props": {
+      "showOnMobile": false,
+      "blockClass": ["search", "not-found"]
+    }
+  },
+  "flex-layout.row#search-not-found": {
+    "children": ["flex-layout.col#search-not-found"],
+    "props": {
+      "blockClass": ["search-not-found", "container"]
+    }
+  },
+  "flex-layout.col#search-not-found": {
+    "children": [
+      "image#icon-not-found",
+      "not-found",
+      "flex-layout.row#search-shelf-offers"
+    ],
+    "props": {
+      "blockClass": "search-not-found--text"
+    }
+  },
+  "flex-layout.row#search-not-found-searchtitle": {
+    "children": [
+      "rich-text#search-not-found-title",
+      "search-title.v2#not-found"
+    ],
+    "props": {
+      "blockClass": "search-not-found-line",
+      "preventHorizontalStretch": true
+    }
+  },
+  "search-title.v2#not-found": {
+    "props": {
+      "blockClass": "search-not-found"
+    }
+  },
+  "rich-text#search-not-found-title": {
+    "props": {
+      "blockClass": "search-not-found-line",
+      "text": "Não foram encontrados para sua pesquisa por:"
+    }
+  },
+  "image#icon-not-found": {
+    "title": "Icone",
+    "props": {
+      "src": "/arquivos/icon-search-not-found.png",
+      "blockClass": "icon-not-found"
+    }
+  },
+  "flex-layout.row#search-shelf-offers": {
+    "title": "Prateleira - Ofertas",
+    "children": ["flex-layout.col#search-shelf-offers"],
+    "props": {
+      "blockClass": ["home-shelf-wrapper", "search-shelf"]
+    }
+  },
+  "flex-layout.col#search-shelf-offers": {
+    "children": [
+      "flex-layout.row#search-shelf-offers-title",
+      "list-context.product-list#search-empty-shelf"
+    ]
+  },
+  "flex-layout.row#search-shelf-offers-title": {
+    "children": ["rich-text#search-shelf-offers"],
+    "props": {
+      "blockClass": "shelf-title"
+    }
+  },
+  "rich-text#search-shelf-offers": {
+    "title": "Título da Prateleira",
+    "props": {
+      "blockClass": "section-common-title",
+      "text": "## OS MAIS VENDIDOS"
+    }
+  },
+  "list-context.product-list#search-empty-shelf": {
+    "title": "Configurar prateleira",
+    "children": ["slider-layout#home-shelves"],
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass": "home--shelf",
+      "orderBy": "OrderByBestDiscountDESC",
+      "preferredSKU": "PRICE_ASC"
+    }
+  }
+}

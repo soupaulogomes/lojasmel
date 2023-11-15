@@ -1,0 +1,220 @@
+{
+  "flex-layout.row#ajuda--info": {
+    "title": "Entregas - Informações",
+    "children": ["flex-layout.col#ajuda--info.4"],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  "flex-layout.col#ajuda--info.4": {
+    "title": "Entregas - Informações",
+    "children": [
+      "disclosure-layout#ajuda--question-1.4",
+      "disclosure-layout#ajuda--question-2.4",
+      "disclosure-layout#ajuda--question-3.4",
+      "disclosure-layout#ajuda--question-4.4",
+      "disclosure-layout#ajuda--question-5.4",
+      "disclosure-layout#ajuda--question-7.4",
+      "disclosure-layout#ajuda--question-6.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  // QUESTION 1
+  "disclosure-layout#ajuda--question-1.4": {
+    "title": "Entregas - Pergunta 1",
+    "children": [
+      "disclosure-trigger#ajuda--question-1.4",
+      "disclosure-content#ajuda--answer-1.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-1.4": {
+    "title": "Entregas - Pergunta 1",
+    "children": [
+      "rich-text#ajuda--question-1.4",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-1.4": {
+    "title": "Entregas - Resposta 1",
+    "children": ["rich-text#ajuda--answer-1.4"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 2
+  "disclosure-layout#ajuda--question-2.4": {
+    "title": "Entregas - Pergunta 2.4",
+    "children": [
+      "disclosure-trigger#ajuda--question-2.4",
+      "disclosure-content#ajuda--answer-2.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-2.4": {
+    "title": "Entregas - Pergunta 2.4",
+    "children": [
+      "rich-text#ajuda--question-2.4",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-2.4": {
+    "title": "Entregas - Resposta 2.4",
+    "children": ["rich-text#ajuda--answer-2.4"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 3
+  "disclosure-layout#ajuda--question-3.4": {
+    "title": "Entregas - Pergunta 3.4",
+    "children": [
+      "disclosure-trigger#ajuda--question-3.4",
+      "disclosure-content#ajuda--answer-3.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-3.4": {
+    "title": "Entregas - Pergunta 3.4",
+    "children": [
+      "rich-text#ajuda--question-3.4",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-3.4": {
+    "title": "Entregas - Resposta 3.4",
+    "children": ["rich-text#ajuda--answer-3.4"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 4
+  "disclosure-layout#ajuda--question-4.4": {
+    "title": "Entregas - Pergunta 4.4",
+    "children": [
+      "disclosure-trigger#ajuda--question-4.4",
+      "disclosure-content#ajuda--answer-4.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-4.4": {
+    "title": "Entregas - Pergunta 4.4",
+    "children": [
+      "rich-text#ajuda--question-4.4",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-4.4": {
+    "title": "Entregas - Resposta 4.4",
+    "children": ["rich-text#ajuda--answer-4.4"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 5
+  "disclosure-layout#ajuda--question-5.4": {
+    "title": "Entregas - Pergunta 5.4",
+    "children": [
+      "disclosure-trigger#ajuda--question-5.4",
+      "disclosure-content#ajuda--answer-5.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-5.4": {
+    "title": "Entregas - Pergunta 5.4",
+    "children": [
+      "rich-text#ajuda--question-5.4",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-5.4": {
+    "title": "Entregas - Resposta 5.4",
+    "children": ["rich-text#ajuda--answer-5.4"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 6
+  "disclosure-layout#ajuda--question-6.4": {
+    "title": "Entregas - Pergunta 6.4",
+    "children": [
+      "disclosure-trigger#ajuda--question-6.4",
+      "disclosure-content#ajuda--answer-6.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-6.4": {
+    "title": "Entregas - Pergunta 6.4",
+    "children": [
+      "rich-text#ajuda--question-6.4",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-6.4": {
+    "title": "Entregas - Resposta 6.4",
+    "children": ["rich-text#ajuda--answer-6.4"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 7
+  "disclosure-layout#ajuda--question-7.4": {
+    "title": "Entregas - Pergunta 7.4",
+    "children": [
+      "disclosure-trigger#ajuda--question-7.4",
+      "disclosure-content#ajuda--answer-7.4"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-7.4": {
+    "title": "Entregas - Pergunta 7.4",
+    "children": [
+      "rich-text#ajuda--question-7.4",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-7.4": {
+    "title": "Entregas - Resposta 7.4",
+    "children": ["rich-text#ajuda--answer-7.4"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  }
+}

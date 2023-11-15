@@ -1,0 +1,65 @@
+{
+  "store.custom#nossas-lojas": {
+    "title": "Nossas Lojas",
+    "blocks": [
+      "responsive-layout.desktop#nossas-lojas",
+      "responsive-layout.mobile#nossas-lojas"
+    ],
+    "props": {
+      "blockClass": "nossasLojas"
+    }
+  },
+  "responsive-layout.desktop#nossas-lojas": {
+    "title": "Nossas Lojas - Desktop",
+    "children": [
+      "flex-layout.row#nossas-lojas--desktop"
+    ]
+  },
+  "flex-layout.row#nossas-lojas--desktop": {
+    "title": "Nossas Lojas - Desktop",
+    "children": ["flex-layout.col#nossas-lojas--desktop"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": ["nossasLojasDesktop", "container"]
+    }
+  },
+  "flex-layout.col#nossas-lojas--desktop": {
+    "title": "Nossas Lojas - Desktop",
+    "children": ["flex-layout.row#nossas-lojas--content", "our-stores"],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": ["nossasLojasDesktop", "container"]
+    }
+  },
+  "flex-layout.row#nossas-lojas--content": {
+    "title": "Nossas Lojas - Conteúdo Desktop",
+    "children": ["flex-layout.col#nossas-lojas--info-content--desktop"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": ["nossasLojasContentDesktop"]
+    }
+  },
+  "flex-layout.col#nossas-lojas--info-content--desktop": {
+    "title": "Nossas Lojas - Introdução Desktop",
+    "children": ["flex-layout.col#nossas-lojas--intro--desktop"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": ["nossasLojasInfoDesktop"]
+    }
+  },
+  "responsive-layout.mobile#nossas-lojas": {
+    "title": "Nossas Lojas - Mobile",
+    "children": ["flex-layout.row#nossas-lojas--mobile"],
+    "props": {
+      "blockClass": "nossasLojasMobile"
+    }
+  },
+  "flex-layout.row#nossas-lojas--mobile": {
+    "title": "Nossas Lojas - Mobile",
+    "children": ["flex-layout.row#nossas-lojas--intro", "our-stores"],
+    "props": {
+      "blockClass": ["nossasLojasMobile", "container"]
+    }
+  }
+}

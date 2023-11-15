@@ -1,0 +1,35 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": [
+      "flex-layout.row#login-page"
+    ]
+  },
+  "flex-layout.row#login-page": {
+    "title": "LOGIN",
+    "children": [
+      "login-content#default"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["login__page"]
+    }
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  }
+}

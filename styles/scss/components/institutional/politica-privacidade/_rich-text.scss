@@ -1,0 +1,39 @@
+.container--institucionalInfoQuestion {
+    max-width: 280px;
+    margin: 0;
+
+    .paragraph--institucionalInfoQuestion {
+        margin: 0;
+    
+        color: $cinza;
+        font-family: $main-font;
+        font-size: $font-size-md;
+        line-height: $font-size-xl;
+        font-weight: $bold;
+    
+        text-transform: lowercase;
+    }
+}
+
+.paragraph--institucionalInfoAnswer {
+    margin: 0;
+    margin: 8px 0 16px;
+
+    font-family: $main-font;
+    color: $cinza;
+    font-size: $font-size-sm;
+    font-weight: $regular;
+    line-height: $font-size-lg;
+}
+
+@media screen and (min-width: 640px) and (max-width: $d) {
+    .container--institucionalInfoQuestion {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: $d){
+    .container--institucionalInfoQuestion {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,43 @@
+.gallery--default {
+  margin-bottom: 24px;
+}
+
+.galleryLayoutSwitcher {
+  display: none;
+}
+
+.galleryTitle--layout {
+  font-size: $font-size-lg;
+  font-weight: $regular;
+  color: $cor-2;
+  margin-left: 64px;
+  &::before {
+    content: "Você buscou por: ";
+    color: $cinza;
+  }
+  @media (max-width: $t) {
+    margin-left: 0;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.gallery {
+  &--galleryContainer {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: $t) {
+  .galleryItem--normal {
+    padding: 20px 4px 5px;
+
+    :global(.vtex-store-components-3-x-container) {
+      padding: 0;
+    }
+  }
+
+  .searchResultContainer {
+    padding: 0;
+  }
+}

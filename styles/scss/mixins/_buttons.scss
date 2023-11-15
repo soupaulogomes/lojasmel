@@ -1,0 +1,59 @@
+@mixin primary-button(
+  $size: $font-size-md,
+  $icon: "none",
+  $iconLocation: "left",
+  $height: 40px
+) {
+    @extend %primary-button;
+
+    font-size: $size;
+    height: $height;
+
+  @if $icon != "none" {
+    @if $iconLocation == "left" {
+      &::before {
+        content: "";
+        background: url("/assets/svg/#{$icon}.svg") center no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+      }
+    } @else if $iconLocation == "right" {
+      &::after {
+        content: "";
+        background: url("/assets/svg/#{$icon}.svg") center no-repeat;
+        background-size: contain;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@mixin secondary-button(
+  $size: $font-size-md,
+  $icon: "none",
+  $iconLocation: "left",
+  $height: 40px
+) {
+  @extend %secondary-button;
+
+  font-size: $size;
+  height: $height;
+
+  @if $icon != "none" {
+    @if $iconLocation == "left" {
+      &::before {
+        content: "";
+        background: url("/assets/svg/#{$icon}.svg") center no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+      }
+    } @else if $iconLocation == "right" {
+      &::after {
+        content: "";
+        background: url("/assets/svg/#{$icon}.svg") center no-repeat;
+        background-size: contain;
+        margin-left: 10px;
+      }
+    }
+  }
+}

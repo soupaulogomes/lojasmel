@@ -1,0 +1,48 @@
+{
+  "list-context.image-list#storecard-top-banner": {
+    "title": "Banner do topo da pagina",
+    "children": ["slider-layout#storecard-page-full-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/storecard-top-banner-mob.png",
+          "image": "assets/images/storecard-top-banner-desk.png",
+          "description": "Banner do topo da pagina",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#storecard-middle-banner": {
+    "title": "Banner do meio da pagina",
+    "children": ["slider-layout#storecard-page-full-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/storecard-middle-banner-mob.png",
+          "image": "assets/images/storecard-middle-banner-desk.png",
+          "description": "Banner do meio da pagina",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#storecard-page-full-banner": {
+    "title": "Slider ",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": false,
+      "usePagination": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": ["tabloid__full-banner"]
+    }
+  }
+}

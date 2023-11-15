@@ -1,0 +1,113 @@
+{
+  "flex-layout.row#newsletter": {
+    "title": "Linha - Newsletter",
+    "children": [
+      "flex-layout.row#newsletter--container"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": [
+        "newsletter"
+      ]
+    }
+  },
+  "flex-layout.row#newsletter--container": {
+    "title": "Linha - Newsletter",
+    "children": [
+      "flex-layout.row#newsletter--text-container",
+      "flex-layout.row#newsletter--form-container"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": [
+        "newsletterContainer","container"
+      ]
+    }
+  },
+  "flex-layout.row#newsletter--text-container": {
+    "title": "Linha - Newsletter",
+    "children": [
+      "rich-text#newsletter-title",
+      "rich-text#newsletter-text"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": [
+        "newsletterTextContainer"
+      ]
+    }
+  },
+  "rich-text#newsletter-title": {
+    "title": "Newsletter - Título",
+    "props": {
+      "textPosition": "LEFT",
+      "text": "###### ganhe **R$15,00** de desconto",
+      "blockClass": "newsletterTitle"
+    }
+  },
+  "rich-text#newsletter-text": {
+    "title": "Newsletter - Texto",
+    "props": {
+      "textPosition": "LEFT",
+      "text": "na sua primeira compra acima de **R$ 199,99** \n *apenas para compras online",
+      "blockClass": "newsletterText"
+    }
+  },
+  "flex-layout.row#newsletter--form-container": {
+    "title": "Linha - Newsletter",
+    "children": [
+      "newsletter-form#newsletter",
+      "rich-text#newsletter-form-text"
+    ],
+    "props": {
+      "blockClass": [
+        "newsletterFormContainer"
+      ]
+    }
+  },
+  "newsletter-form#newsletter": {
+    "title": "Newsletter - Formulario",
+    "children": [
+      "newsletter-input-name#newsletter-name",
+      "newsletter-input-email#newsletter-email",
+      "newsletter-input-phone#newsletter-phone",
+      "newsletter-submit#newsletter-submit"
+    ]
+  },
+  "newsletter-input-name#newsletter-name": {
+    "title": "Newsletter - Campo Nome",
+    "props": {
+      "placeholderText": "Digite seu nome",
+      "errorMessage": "Insira um nome válido"
+    }
+  },
+  "newsletter-input-email#newsletter-email": {
+    "title": "Newsletter - Campo Email",
+    "props": {
+      "placeholderText": "Digite seu e-mail",
+      "errorMessage": "Insira um e-mail válido"
+    }
+  },
+  "newsletter-input-phone#newsletter-phone": {
+    "title": "Newsletter - Campo Celular",
+    "props": {
+      "placeholderText": "Digite seu celular com DDD",
+      "errorMessage": "Insira um celular válido"
+    }
+  },
+  "newsletter-submit#newsletter-submit": {
+    "title": "Newsletter - Botão",
+    "props": {
+      "submitButtonLabel": "Gerar cupom"
+    }
+  },
+  "rich-text#newsletter-form-text": {
+    "title": "Newsletter - Texto Rodapé",
+    "props": {
+      "textPosition": "RIGHT",
+      "textAlignment": "RIGHT",
+      "text": "Ao clicar em “Gerar cupom” você aceita os [termos de uso da Lojasmel](#)",
+      "blockClass": "newsletterFormText"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.flexRow {
+  &--kit__breadcrumb {
+    margin-top: 24px;
+    display: none;
+
+    @media (min-width: $t) {
+      display: flex;
+    }
+  }
+
+  &--kit__top-info {
+    max-width: 884px;
+    margin: 40px auto 32px;
+
+    @media (min-width: $d) {
+      margin: 40px auto 24px;
+    }
+
+    :global(.vtex-rich-text-0-x-container) {
+      margin: 0 auto !important;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph) {
+      text-align: center;
+    }
+  }
+
+  &--kit__bottom-info {
+    margin: 32px auto 56px;
+
+    @media (min-width: $d) {
+      margin: 32px auto 80px;
+    }
+  }
+}
+
+.flexRowContent {
+  &--kit__breadcrumb {
+    :global(.vtex-breadcrumb-1-x-homeLink)::before {
+      content: "Home";
+    }
+  }
+
+  &--kit__product-wrapper {
+    gap: 16px;
+    margin-top: 32px;
+
+    @media (min-width: $d) {
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    :global(.vtex-store-components-3-x-productImagesGallerySlide) {
+      width: 100% !important;
+    }
+    :global(.vtex-store-components-3-x-productImagesContainer--carousel) {
+      padding: 0 !important;
+    }
+
+    :global(.vtex-store-components-3-x-carouselGaleryCursor)::before {
+      display: none !important;
+    }
+    :global(.vtex-store-components-3-x-productImageTag--main) {
+      object-fit: initial !important;
+      cursor: initial;
+    }
+
+    :global(.vtex-store-components-3-x-productDescriptionTitle) {
+      display: block !important;
+      font-size: 0;
+      margin-top: 24px;
+
+      @media (min-width: $d) {
+        margin-top: 32px;
+      }
+
+      &::before {
+        content: "Descrição";
+        text-transform: lowercase;
+        font-size: $font-size-xl;
+
+        @media (min-width: $d) {
+          font-size: $font-size-xxl;
+        }
+      }
+      &--price-list {
+      }
+    }
+
+    :global(.vtex-store-components-3-x-productDescriptionText) {
+      @media (min-width: $d) {
+        font-size: $font-size-md;
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  &--kit__product-name {
+    margin-bottom: 16px;
+    justify-content: space-between;
+
+    .stretchChildrenWidth {
+      width: fit-content !important;
+    }
+
+    :global(.vtex-store-components-3-x-shareContainer) {
+      padding: 0 10px;
+    }
+
+    :global(.vtex-overlay-layout-0-x-trigger) {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      &::after {
+        content: "Compartilhe";
+        font-family: $main-font;
+        font-size: $font-size-sm;
+        color: $cinza;
+        margin-left: 8px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &--kit__shelf {
+    margin-bottom: 48px;
+
+    @media (min-width: $d) {
+      margin-bottom: 64px;
+    }
+  }
+}
+.flexCol {
+  &--kit__kitlook {
+    border: 1px solid $cinza-claro;
+    border-radius: $border-radius;
+    padding: 16px;
+    height: fit-content !important;
+
+    @media (max-width: $d) {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "disclosure-content#seguranca-line": {
+    "title": "Linha - Segurança",
+    "props": {
+      "blockClass": ["seguranca", "container"],
+      "preventHorizontalStretch": true
+    },
+    "children": ["disposition-layout#seguranca-line"]
+  },
+  "disposition-layout#seguranca-line": {
+    "title": "Controle Certificados",
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        }
+      ],
+      "blockClass": "footerSeguranca"
+    },
+    "children": [
+      "image#sealPci",
+      "sandbox#ebitSeal",
+      "image#sealReclameAqui",
+      "image#seal3",
+      "image#seal4"
+    ]
+  },
+
+  "sandbox#ebitSeal": {
+    "props": {
+      "width": "70px",
+      "height": "95px",
+      "initialContent": "<a id='seloEbit' href='http://www.ebit.com.br/53524' target='_blank' data-noop='redir(this.href);'> </a><script type='text/javascript' id='getSelo' src='https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?53524'> </script>",
+      "allowCookies": true
+    }
+  },
+  "rich-text#sealEbit": {
+    "props": {
+      "text": "",
+      "blockClass": "footer__sealEbit"
+    }
+  },
+  "image#sealEbit": {
+    "title": "Ebit",
+    "props": {
+      "src": "/arquivos/ebit.png",
+      "blockClass": ["footerSegurancaImage", "footerSegurancaImageEbit"],
+      "maxHeight": 95,
+      "link": {
+        "url": "https://www.ebit.com.br/LOJASMEL"
+      }
+    }
+  },
+  "image#sealReclameAqui": {
+    "title": "Certificado 2",
+    "props": {
+      "src": "/arquivos/reclame-aqui.png",
+      "blockClass": ["footerSegurancaImage", "footerSegurancaImageReclameAqui"],
+      "maxHeight": 95,
+      "link": {
+        "url": "https://www.reclameaqui.com.br/empresa/lojas-mel/?utm_source=referral&utm_medium=embbed&utm_campaign=reputacao&utm_term=vertical"
+      }
+    }
+  },
+  "image#seal3": {
+    "title": "Certificado 3",
+    "props": {
+      "src": "/arquivos/norton.png",
+      "blockClass": ["footerSegurancaImage", "footerSegurancaImage3"],
+      "maxHeight": 36
+    }
+  },
+  "image#seal4": {
+    "title": "Certificado 4",
+    "props": {
+      "src": "/arquivos/google.png",
+      "blockClass": ["footerSegurancaImage", "footerSegurancaImage4"],
+      "maxHeight": 36
+    }
+  },
+  "image#sealPci": {
+    "title": "Certificado 5",
+    "props": {
+      "src": "https://secure.convertize.com.br/static/media/pci-shield.svg",
+      "blockClass": ["footerSegurancaImage", "footerSegurancaImagePci"],
+      "link": {
+        "url": "https://secure.convertize.com.br/?s=lojasmel"
+      }
+    }
+  }
+}

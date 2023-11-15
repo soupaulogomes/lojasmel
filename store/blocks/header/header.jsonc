@@ -1,0 +1,52 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "title": "HEADER | Desktop",
+    "children": [
+      "mega-menu-close-button",
+      "custom-helmet",
+      "searchbar-observer",
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#header-line-top--desktop",
+      "flex-layout.row#desktop-line-1",
+      "flex-layout.row#desktop-line-2",
+      "link.product#whatsapp-float-button",
+      // IMPORTANDO SCRIPTS DE RATINGS DO TRUSTVOX NUM COMPONENTE COMMON POR CONTA DAS VITRINES EM TODAS PAGINAS
+      "trustvox-ratings-imports"
+    ]
+  },
+
+  "header-layout.mobile": {
+    "title": "HEADER | Mobile",
+    "children": [
+      "custom-helmet",
+      "searchbar-observer",
+      "flex-layout.row#header-line-top--mobile",
+      "flex-layout.row#header-line-bottom--mobile",
+      "link.product#whatsapp-float-button",
+      // IMPORTANDO SCRIPTS DE RATINGS DO TRUSTVOX NUM COMPONENTE COMMON POR CONTA DAS VITRINES EM TODAS PAGINAS
+      "trustvox-ratings-imports",
+      "flex-layout.row#1-desktop"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "link.product#whatsapp-float-button": {
+    "title": "Link do Whatsapp da loja",
+    "props": {
+      "href": "https://linktr.ee/e_lojasmel",
+      "label": "Whatsapp",
+      "target": "blank",
+      "blockClass": "whatsapp-float-button"
+    }
+  }
+}

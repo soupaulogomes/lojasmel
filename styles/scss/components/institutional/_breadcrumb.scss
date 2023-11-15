@@ -1,0 +1,46 @@
+.container--institucionalBreadcrumb {
+
+    padding: 0;
+    margin-top: 32px;
+
+    .homeLink--institucionalBreadcrumb {
+        padding: 0;
+      
+        &::before {
+          content: "Home";
+          color: $cinza;
+          font-family: $main-font;
+          font-size: $font-size-sm;
+          line-height: $font-size-lg;
+          font-weight: $regular;
+        }
+      
+        .homeIcon--institucionalBreadcrumb {
+          display: none;
+        }
+      }
+      
+      .arrow--institucionalBreadcrumb {
+      
+        &::before {
+          content: "•";
+          color: $cinza;
+          font-family: $main-font;
+          font-size: $font-size-sm;
+          line-height: $font-size-lg;
+          font-weight: $regular;
+        }
+      
+        .caretIcon--institucionalBreadcrumb {
+          display: none;
+        }
+      }
+      
+      .link--institucionalBreadcrumb {
+          color: $cor-2;
+          font-family: $main-font;
+          font-size: $font-size-sm;
+          line-height: $font-size-lg;
+          font-weight: $regular;
+      }
+}

@@ -1,0 +1,17 @@
+%input {
+  background-color: $branco;
+  border: 1px solid $cinza-claro;
+  border-radius: $border-radius;
+  padding: 16px 12px;
+
+  display: flex;
+  align-items: center;
+  font-size: $font-size-xs;
+  color: $cinza;
+  height: 40px;
+
+  @media (min-width: $d) {
+    height: 48px;
+    font-size: $font-size-sm;
+  }
+}

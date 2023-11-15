@@ -1,0 +1,28 @@
+{
+  "store.product.kitlook": {
+    "allowed": ["kitlook-layout", "kitlook"]
+  },
+
+  "custom-verMais": {
+    "component": "VerMais",
+    "composition": "children"
+  },
+
+  "custom-title": {
+    "component": "PageTitle"
+  },
+
+  "custom-helmet": {
+    "component": "CustomHelmet"
+  },
+
+  "searchbar-observer": {
+    "component": "SearchBarObserver"
+  },
+  "order-placed-handler": {
+    "component": "OrderPlacedHandler"
+  },
+  "mega-menu-close-button": {
+    "component": "MegaMenuCloseButton"
+  }
+}

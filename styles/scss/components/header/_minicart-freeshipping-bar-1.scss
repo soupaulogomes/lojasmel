@@ -1,0 +1,76 @@
+.freigthScaleContainer {
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px;
+
+  border: 1px solid $cinza-claro;
+  border-radius: $border-radius;
+
+  .text1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    display:none;
+
+    .text2 {
+      display: none;
+    }
+  }
+
+  .sliderContainer {
+    background-color: $cinza-claro;
+    border: none;
+    border-radius: $border-radius;
+    margin: 8px 0 0 0;
+    height: 8px;
+
+    .barContainer {
+      background-color: $cor-2;
+      height: 8px;
+      border-radius: $border-radius;
+    }
+  }
+  .sliderText {
+    order: -1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    .text3 {
+      display: none;
+    }
+
+    .currencyText {
+      color: $cor-2;
+      font-family: $main-font;
+      font-size: 0;
+      line-height: $font-size-lg;
+      font-weight: $bold;
+      display: flex;
+
+      &::before {
+        content: "Faltam";
+        margin-right: 4px;
+        display: block;
+        color: $cinza;
+        font-family: $main-font;
+        font-size: $font-size-sm;
+        line-height: $font-size-lg;
+        font-weight: $regular;
+      }
+
+      &::after {
+        content: " para ganhar frete grátis";
+        display: block;
+        margin-left: 4px;
+        color: $cinza;
+        font-family: $main-font;
+        font-size: $font-size-sm;
+        line-height: $font-size-lg;
+        font-weight: $regular;
+      }
+    }
+  }
+}

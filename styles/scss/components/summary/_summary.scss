@@ -1,0 +1,84 @@
+.container {
+  max-width: initial !important;
+  position: relative;
+  overflow: unset;
+}
+
+.element {
+  padding: 0px;
+  padding: 8px 10px 16px;
+  border: 1px solid $cinza-claro;
+  border-radius: 8px;
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200px 40px 46px 140px;
+  gap: 8px 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+
+    .image {
+      transform: scale(1.05);
+    }
+  }
+
+  .image {
+    transition: all 0.2s;
+    min-height: 130px;
+  }
+
+  :global(.vtex-reviews-and-ratings-3-x-summaryButtonContainer) {
+    display: none !important;
+  }
+  :global(.vtex-reviews-and-ratings-3-x-summaryContainer) {
+    margin: 4px 6px;
+    text-align: left;
+  }
+  :global(.vtex-reviews-and-ratings-3-x-summaryTotalReviews) {
+    font-size: $font-size-sm;
+    color: $cinza;
+    font-family: $main-font;
+    margin-left: 6px;
+  }
+}
+
+.nameContainer {
+  height: 40px;
+  line-height: 20px;
+  padding: 0 6px;
+  overflow-y: hidden;
+  justify-content: flex-start;
+}
+
+.productBrand {
+  font-size: $font-size-sm;
+  font-family: $main-font;
+  color: $preto;
+  width: 100%;
+  display: block;
+  text-align: left;
+
+  @media (min-width: $d) {
+    font-size: $font-size-md;
+  }
+}
+
+.imageContainer {
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  :global(.vtex-store-components-3-x-discountContainer),
+  :global(.vtex-store-components-3-x-imageStackContainer) {
+    width: 100%;
+  }
+
+  :global(.vtex-store-components-3-x-discountInsideContainer) {
+    @extend %flag-discount;
+
+    position: absolute;
+    right: 2px;
+    top: 0;
+  }
+}

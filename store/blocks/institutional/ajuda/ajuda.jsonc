@@ -1,0 +1,116 @@
+{
+    "store.custom#ajuda": {
+        "title": "Ajuda",
+        "blocks": [
+            "responsive-layout.desktop#ajuda",
+            "responsive-layout.mobile#ajuda"
+        ],
+        "props": {
+            "blockClass": "ajuda"
+        }
+    },
+    "responsive-layout.desktop#ajuda": {
+        "title": "Ajuda - Desktop",
+        "children": [
+            "flex-layout.row#ajuda--desktop"
+        ]
+    },
+    "flex-layout.row#ajuda--desktop": {
+        "title": "Ajuda - Desktop",
+        "children": [
+            "flex-layout.col#ajuda--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "quemSomosDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.col#ajuda--desktop": {
+        "title": "Ajuda - Desktop",
+        "children": [
+            "flex-layout.col#ajuda--breadcrumb",
+            "flex-layout.row#ajuda--content"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "ajudaDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.col#ajuda--breadcrumb": {
+        "title": "Ajuda - Breadcrumb Desktop",
+        "children": [
+            "breadcrumb#ajuda"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "fullWidth": true,
+            "blockClass": "institucionalBreadcrumb"
+        }
+    },
+    "breadcrumb#ajuda": {
+        "props": {
+            "breadcrumb": [
+                {
+                    "name": "Ajuda",
+                    "href": "/ajuda"
+                }
+            ],
+            "blockClass": "institucionalBreadcrumb"
+        }
+    },
+    "flex-layout.row#ajuda--content": {
+        "title": "Ajuda - Conteúdo Desktop",
+        "children": [
+            "flex-layout.col#ajuda--info-content--desktop"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "ajudaInfoContentDesktop"
+            ]
+        }
+    },
+    "flex-layout.col#ajuda--info-content--desktop": {
+        "title": "Ajuda - Introdução Desktop",
+        "children": [
+            "flex-layout.row#ajuda--title",
+            "flex-layout.row#ajuda--tab-layout"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "ajudaInfoDesktop"
+            ]
+        }
+    },
+    "responsive-layout.mobile#ajuda": {
+        "title": "Ajuda - Mobile",
+        "children": [
+            "flex-layout.row#ajuda--mobile"
+        ],
+        "props": {
+            "blockClass": "ajudaMobile"
+        }
+    },
+    "flex-layout.row#ajuda--mobile": {
+        "title": "Ajuda - Mobile",
+        "children": [
+            "flex-layout.row#ajuda--title",
+            "flex-layout.row#ajuda--tab-layout"
+        ],
+        "props": {
+            "blockClass": [
+                "ajudaMobile",
+                "container"
+            ]
+        }
+    }
+}

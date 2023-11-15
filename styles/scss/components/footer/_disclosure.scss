@@ -1,0 +1,42 @@
+.trigger {
+  &--hidden,
+  &--visible {
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: none;
+  }
+
+  &--footerMenuTitle--hidden,
+  &--footerMenuTitle--visible {
+    padding: 18px 0 9px;
+
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $cinza-claro;
+  }
+
+  &--footerMenuTitle--hidden {
+    margin-bottom: 8px;
+  }
+}
+
+.content {
+  &--footerSubmenu--visible {
+    display: grid;
+    padding: 16px 0 8px;
+  }
+
+  &--social-network--visible {
+    padding: 12px 0 8px;
+  }
+
+  &--seguranca--visible {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid $cinza-claro;
+  }
+}

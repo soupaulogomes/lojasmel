@@ -1,0 +1,16 @@
+.flexRow {
+  &--kit__shelf,
+  &--shelf:not(.flexRow--countdown-shelf),
+  &--search-shelf,
+  &--product__shelf {
+    @include shelf-overflowX-on-mobile($size: 262px);
+  }
+
+  &--summary__stars {
+    margin-top: 25px;
+  }
+}
+.flexRowContent {
+}
+.flexRow {
+}

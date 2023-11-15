@@ -1,0 +1,67 @@
+{
+    "disclosure-content#social-network": {
+        "title": "Linha - Siga-nos",
+        "props": {
+            "blockClass": [
+                "social-network"
+            ],
+            "preventHorizontalStretch": true
+        },
+        "children":[
+            "disposition-layout#social-network"
+        ]
+    },
+    "disposition-layout#social-network":{
+        "title": 
+        "Redes Sociais",
+        "props":{
+            "disposition":[
+                {
+                    "order":1
+                },
+                {
+                    "order":2
+                },
+                {
+                    "order":3
+                }
+            ]
+            
+        },
+        "children":[
+            "image#social-network-1",
+            "image#social-network-2",
+            "image#social-network-3"
+        ]
+    },
+    "image#social-network-1":{
+        "title":"Rede Social 1",
+        "props":{
+            "src":"/arquivos/footer-facebook.png",
+            "blockClass":"socialnetworkImage",
+            "link":{
+                "url": "https://www.facebook.com/lojasmel/"
+            }
+        }
+    },
+    "image#social-network-2":{
+        "title":"Rede Social 2",
+        "props":{
+            "src":"/arquivos/footer-youtube.png",
+            "blockClass":"socialnetworkImage",
+            "link":{
+                "url": "https://www.youtube.com/channel/UCwFHsWrlfLLqO63rdzoMpUA"
+            }
+        }
+    },
+    "image#social-network-3":{
+        "title":"Rede Social 3",
+        "props":{
+            "src":"/arquivos/footer-instagram.png",
+            "blockClass":"socialnetworkImage",
+            "link":{
+                "url": "https://www.instagram.com/lojasmeloficial/"
+            }
+        }
+    }
+}

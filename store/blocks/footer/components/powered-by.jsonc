@@ -1,0 +1,48 @@
+{
+    "flex-layout.row#powered-by": {
+        "title": "Linha - Powered by",
+        "props": {
+            "blockClass": [
+                "powered-by"
+            ],
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "fullWidth": true
+        },
+        "children":[
+            "disposition-layout#powered-by"
+        ]
+    },
+    "disposition-layout#powered-by": {
+        "title": "Powered by",
+        "props": {
+            "disposition": [
+                {
+                    "order": 1
+                },
+                {
+                    "order": 2
+                }
+            ]
+        },
+        "children": [
+            "image#powered-by-1",
+            "image#powered-by-2"
+        ]
+    },
+    "image#powered-by-1": {
+        "title": "Certificado 1",
+        "props": {
+            "src": "/arquivos/footer-logo-vtex.png",
+            "blockClass":"poweredbyImage"
+        }
+    },
+    "image#powered-by-2": {
+        "title": "Certificado 2",
+        "props": {
+            "src": "/arquivos/footer-logo-trinto.png",
+            "blockClass":"poweredbyImage",
+            "maxHeight": 20
+        }
+    }
+}

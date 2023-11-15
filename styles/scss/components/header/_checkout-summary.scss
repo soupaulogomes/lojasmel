@@ -1,0 +1,29 @@
+.summaryItemContainer--MinicartSummary {
+    margin-top: 0px;
+    padding: 0;
+
+    &:first-child {
+        font-family: $main-font;
+        color: $cinza;
+        font-size:$font-size-sm;
+        line-height: $font-size-lg;
+        font-weight: $regular;
+        margin-bottom: 16px;
+
+        .summaryItemLabel--MinicartSummary {
+            font-weight: $regular;
+        }
+    }
+
+    &:last-child {
+        font-family: $main-font;
+        color: $preto;
+        font-size: $font-size-md;
+        line-height: $font-size-xl;
+        text-transform: uppercase;
+
+        .summaryItemLabel--MinicartSummary, .price--MinicartSummary{
+            font-weight: $bold;
+        }
+    }
+}

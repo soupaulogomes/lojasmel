@@ -1,0 +1,61 @@
+.imageElement{
+
+  &--socialnetworkImage {
+    margin-right: 24px;
+  }
+  
+  &--footerSegurancaImageEbit {
+    width: 56px;
+    height: 76px;    
+  }
+  
+  &--footerSegurancaImageReclameAqui {
+    width: 77px;
+    height: 76px;
+  }
+  
+  &--footerSegurancaImage3 {
+    width: 72px;
+    height: 29px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  &--footerSegurancaImage4 {
+    width: 77px;
+    height: 29px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  &--poweredbyImage {
+    margin-right: 18px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+@media screen and (min-width: $d) {
+  .imageElement--footerSegurancaImageEbit {
+    width: 70px;
+    height: 95px;
+  }
+
+  .imageElement--footerSegurancaImageReclameAqui {
+    width: 96px;
+    height: 95px;
+  }
+
+  .imageElement--footerSegurancaImage3 {
+    width: 90px;
+    height: 36px;
+  }
+
+  .imageElement--footerSegurancaImage4 {
+    width: 96px;
+    height: 36px;
+  }
+}

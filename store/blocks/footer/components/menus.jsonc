@@ -1,0 +1,331 @@
+{
+    "flex-layout.row#footer-menu": {
+        "title": "Linha - Menus",
+        "props": {
+            "blockClass": [
+                "footerMenu", "container"
+            ]
+        },
+        "children": [
+            "flex-layout.row#footer-atendimento",
+            "flex-layout.row#footer-institucional",
+            "flex-layout.row#footer-duvidas",
+            "flex-layout.row#footer-siga-nos",
+            "flex-layout.row#footer-pagamentos",
+            "flex-layout.row#footer-seguranca"
+        ]
+    },
+    "flex-layout.row#footer-atendimento": {
+        "title": "Linha - Atendimento",
+        "props": {
+            "blockClass": [
+                "footerMenuContainer"
+            ]
+        },
+        "children": [
+            "disclosure-layout#footer-atendimento"
+        ]
+    },
+    "disclosure-layout#footer-atendimento": {
+        "title": "Coluna - Atendimento",
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disclosure-trigger#footer-atendimento",
+            "disclosure-content#footer-atendimento"
+        ]
+    },
+    "flex-layout.row#footer-institucional": {
+        "title": "Linha - Institucional",
+        "props": {
+            "blockClass": [
+                "footerMenuContainer"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disclosure-layout#footer-institucional"
+        ]
+    },
+    "disclosure-layout#footer-institucional": {
+        "title": "Coluna - Institucional",
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "footerMenu"
+        },
+        "children": [
+            "disclosure-trigger#institucional-title",
+            "disclosure-content#institutional-list"
+        ]
+    },
+    "flex-layout.row#footer-duvidas": {
+        "title": "Linha - Dúvidas",
+        "props": {
+            "blockClass": [
+                "footerMenuContainer"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disclosure-layout#footer-duvidas"
+        ]
+    },
+    "disclosure-layout#footer-duvidas": {
+        "title": "Coluna - Dúvidas",
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "footerMenu"
+        },
+        "children": [
+            "disclosure-trigger#duvidas-title",
+            "disclosure-content#duvidas-list"
+        ]
+    },
+    "flex-layout.row#footer-siga-nos": {
+        "title": "Linha - Siga-nos",
+        "props": {
+            "blockClass": [
+                "footerMenuContainer"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disclosure-layout#footer-siga-nos"
+        ]
+    },
+    "disclosure-layout#footer-siga-nos": {
+        "title": "Coluna - Siga-nos",
+        "children": [
+            "disclosure-trigger#footer-siga-nos",
+            "disclosure-content#social-network"
+        ],
+        "props": {
+            "blockClass": "footerMenu"
+        }
+    },
+    "flex-layout.row#footer-pagamentos": {
+        "title": "Linha - Dúvidas",
+        "props": {
+            "blockClass": [
+                "footerMenuContainer"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disclosure-layout#footer-pagamentos"
+        ]
+    },
+    "disclosure-layout#footer-pagamentos": {
+        "title": "Coluna - Pagamentos",
+        "props": {
+            "blockClass": "paymentFlags",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disclosure-trigger#pagamentos-title",
+            "disclosure-content#footer-pagamentos"
+        ]
+    },
+    "flex-layout.row#footer-seguranca": {
+        "title": "Linha - Segurança",
+        "props": {
+            "blockClass": [
+                "footerMenuContainer"
+            ]
+        },
+        "children": [
+            "disclosure-layout#footer-seguranca"
+        ]
+    },
+    "disclosure-layout#footer-seguranca": {
+        "title": "Coluna - Segurança",
+        "props": {
+            "blockClass": ["footerSeals"],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disclosure-trigger#seguranca-title",
+            "disclosure-content#seguranca-line"
+        ]
+    },
+    "flex-layout.row#footer-menu--desktop": {
+        "title": "Linha - Menus",
+        "props": {
+            "blockClass": [
+                "menus"
+            ]
+        },
+        "children": [
+            "flex-layout.col#footer-menu--desktop"
+        ]
+    },
+    "flex-layout.col#footer-menu--desktop": {
+        "title": "Coluna - Menus",
+        "props": {
+            "blockClass": [
+                "menus"
+            ]
+        },
+        "children": [
+            "flex-layout.row#footer-menu-line1--desktop",
+            "flex-layout.row#footer-menu-line2--desktop"
+        ]
+    },
+    "flex-layout.row#footer-menu-line1--desktop": {
+        "title": "Linha 1 - Menus",
+        "props": {
+            "blockClass": ["container","footerLine1"],
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#footer-atendimento--desktop",
+            "flex-layout.col#footer-institucional--desktop",
+            "flex-layout.col#footer-duvidas--desktop",
+            "flex-layout.col#footer-siga-nos--desktop"
+        ]
+    },
+    "flex-layout.col#footer-atendimento--desktop": {
+        "title": "Linha - Atendimento",
+        "props": {
+            "blockClass": [
+                "footerMenu"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#atendimento-title",
+            "info-card#atendimento-text"
+        ]
+    },
+    "flex-layout.col#footer-institucional--desktop": {
+        "title": "Linha - Institucional",
+        "props": {
+            "blockClass": [
+                "footerMenu"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#institucional-title",
+            "flex-layout.col#institucional-list"
+        ]
+    },
+    "flex-layout.col#institucional-list": {
+        "title": "Coluna - Institutional",
+        "children": [
+            "link#quem-somos",
+            "link#nossas-lojas",
+            "link#trabalhe-conosco",
+            "link#politica-privacidade"
+        ],
+        "props": {
+            "blockClass": "footerSubmenu"
+        }
+    },
+    "flex-layout.col#footer-duvidas--desktop": {
+        "title": "Linha - Dúvidas",
+        "props": {
+            "blockClass": [
+                "footerMenu"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#duvidas-title",
+            "flex-layout.col#duvidas-list"
+        ]
+    },
+    "flex-layout.col#duvidas-list": {
+        "title": "Coluna - Dúvidas",
+        "children": [
+            "link#perguntas-frequentes",
+            "link#retirada-e-troca",
+            "link#lista-de-presentes",
+            "link#garanta-seu-cupom"
+        ],
+        "props": {
+            "blockClass": "footerSubmenu"
+        }
+    },
+    "flex-layout.col#footer-siga-nos--desktop": {
+        "title": "Linha - Siga-nos",
+        "children": [
+            "rich-text#siga-nos-title",
+            "flex-layout.row#social-network"
+        ],
+        "props": {
+            "blockClass": "footerMenu",
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "flex-layout.row#social-network": {
+        "title": "Linha - Siga-nos",
+        "props": {
+            "blockClass": [
+                "social-network"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "disposition-layout#social-network"
+        ]
+    },
+    "flex-layout.row#footer-menu-line2--desktop": {
+        "title": "Linha 2 - Menus",
+        "props": {
+            "blockClass": ["container","footerLine2"],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.col#footer-pagamentos--desktop",
+            "flex-layout.col#footer-seguranca--desktop"
+        ]
+    },
+    "flex-layout.col#footer-pagamentos--desktop": {
+        "title": "Linha - Pagamentos",
+        "children": [
+            "rich-text#pagamentos-title",
+            "flex-layout.row#payment-line"
+        ],
+        "props": {
+            "blockClass": "footerPayment",
+            "preventVerticalStretch": true,
+            "width": "30%"
+        }
+    },
+    "flex-layout.col#footer-seguranca--desktop": {
+        "title": "Linha - Segurança",
+        "children": [
+            "rich-text#seguranca-title",
+            "flex-layout.row#seguranca-line--desktop"
+        ],
+        "props": {
+            "blockClass": "footerMenu",
+            "width": "70%"
+        }
+    },
+    "flex-layout.row#seguranca-line--desktop": {
+        "title": "Linha - Segurança",
+        "props": {
+            "blockClass": "seguranca"
+        },
+        "children": [
+            "disposition-layout#seguranca-line"
+        ]
+    },
+    "flex-layout.row#footer-bottom--desktop": {
+        "title": "Linha - Legal e Powered by",
+        "props": {
+            "blockClass": ["container", "footerBottom"],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.row#legal",
+            "flex-layout.row#powered-by"
+        ]
+    }
+}

@@ -1,0 +1,204 @@
+{
+  "flex-layout.row#ajuda--tab-layout": {
+    "title": "Ajuda - Menu",
+    "children": ["tab-layout#ajuda"],
+    "props": {
+      "blockClass": "ajudaTabLayout"
+    }
+  },
+  "tab-layout#ajuda": {
+    "children": ["tab-list#ajuda", "tab-content#ajuda"],
+    "props": {
+      "blockClass": "ajudaTabLayout",
+      "defaultActiveTabId": "ajuda--trocas-e-devolucoes"
+    }
+  },
+  "tab-list#ajuda": {
+    "children": [
+      "tab-list.item#ajuda--como-comprar",
+      "tab-list.item#ajuda--trocas-e-devolucoes",
+      "tab-list.item#ajuda--garantias",
+      "tab-list.item#ajuda--entregas",
+      "tab-list.item#ajuda--retirada-em-loja",
+      "tab-list.item#ajuda--perguntas-frequentes"
+    ],
+    "props": {
+      "blockClass": "ajudaTabLayoutList"
+    }
+  },
+  "tab-list.item#ajuda--como-comprar": {
+    "title": "como-comprar",
+    "props": {
+      "tabId": "ajuda--como-comprar",
+      "label": "Como comprar",
+      "blockClass": "ajudaTabLayoutListItem"
+    }
+  },
+  "tab-list.item#ajuda--trocas-e-devolucoes": {
+    "title": "trocas-e-devolucoes",
+    "props": {
+      "tabId": "ajuda--trocas-e-devolucoes",
+      "label": "Trocas e Devoluções",
+      "blockClass": "ajudaTabLayoutListItem"
+    }
+  },
+  "tab-list.item#ajuda--garantias": {
+    "props": {
+      "tabId": "ajuda--garantias",
+      "label": "Garantias",
+      "blockClass": "ajudaTabLayoutListItem"
+    }
+  },
+  "tab-list.item#ajuda--entregas": {
+    "props": {
+      "tabId": "ajuda--entregas",
+      "label": "Entregas",
+      "defaultActiveTab": true,
+      "blockClass": "ajudaTabLayoutListItem"
+    }
+  },
+  "tab-list.item#ajuda--retirada-em-loja": {
+    "props": {
+      "tabId": "ajuda--retirada-em-loja",
+      "label": "Retirada em Loja",
+      "blockClass": "ajudaTabLayoutListItem"
+    }
+  },
+  "tab-list.item#ajuda--perguntas-frequentes": {
+    "props": {
+      "tabId": "ajuda--perguntas-frequentes",
+      "label": "Perguntas Frequentes",
+      "blockClass": "ajudaTabLayoutListItem"
+    }
+  },
+  // ITEM 1
+  "tab-content#ajuda": {
+    "children": [
+      "tab-content.item#ajuda--como-comprar", //meus pedidos
+      "tab-content.item#ajuda--trocas-e-devolucoes", //trocas e devoluções
+      "tab-content.item#ajuda--garantias",
+      "tab-content.item#ajuda--entregas",
+      "tab-content.item#ajuda--retirada-em-loja",
+      "tab-content.item#ajuda--perguntas-frequentes"
+    ],
+    "props": {
+      "blockClass": "ajudaTabLayoutContent"
+    }
+  },
+  "tab-content.item#ajuda--como-comprar": {
+    //meus pedidos
+    "children": [
+      "rich-text#ajuda--como-comprar-title",
+      "flex-layout.col#ajuda--info" //meus pedidos conteudo
+    ],
+    "props": {
+      "tabId": "ajuda--como-comprar",
+      "blockClass": "ajudaTabLayoutContentItem"
+    }
+  },
+  "rich-text#ajuda--como-comprar-title": {
+    //meus pedidos
+    "title": "Ajuda - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Como comprar",
+      "blockClass": "ajudaIntroTitle"
+    }
+  },
+  "tab-content.item#ajuda--trocas-e-devolucoes": {
+    "children": [
+      "rich-text#ajuda--trocas-e-devolucoes-title",
+      "flex-layout.col#ajuda--info.2"
+    ],
+    "props": {
+      "tabId": "ajuda--trocas-e-devolucoes",
+      "blockClass": "ajudaTabLayoutContentItem"
+    }
+  },
+  "rich-text#ajuda--trocas-e-devolucoes-title": {
+    "title": "Ajuda - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Trocas e Devoluções",
+      "blockClass": "ajudaIntroTitle"
+    }
+  },
+  "tab-content.item#ajuda--garantias": {
+    "children": [
+      "rich-text#ajuda--garantias-title",
+      "flex-layout.col#ajuda--info.3"
+    ],
+    "props": {
+      "tabId": "ajuda--garantias",
+      "blockClass": "ajudaTabLayoutContentItem"
+    }
+  },
+  "rich-text#ajuda--garantias-title": {
+    "title": "Ajuda - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Garantias",
+      "blockClass": "ajudaIntroTitle"
+    }
+  },
+  "tab-content.item#ajuda--entregas": {
+    "children": [
+      "rich-text#ajuda--entregas-title",
+      "flex-layout.col#ajuda--info.4"
+    ],
+    "props": {
+      "tabId": "ajuda--entregas",
+      "blockClass": "ajudaTabLayoutContentItem"
+    }
+  },
+  "rich-text#ajuda--entregas-title": {
+    "title": "Ajuda - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Entregas",
+      "blockClass": "ajudaIntroTitle"
+    }
+  },
+  "tab-content.item#ajuda--retirada-em-loja": {
+    "children": [
+      "rich-text#ajuda--retirada-em-lojas-title",
+      "flex-layout.col#ajuda--info.5"
+    ],
+    "props": {
+      "tabId": "ajuda--retirada-em-loja",
+      "blockClass": "ajudaTabLayoutContentItem"
+    }
+  },
+  "rich-text#ajuda--retirada-em-lojas-title": {
+    "title": "Ajuda - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Retirada em lojas",
+      "blockClass": "ajudaIntroTitle"
+    }
+  },
+  "tab-content.item#ajuda--perguntas-frequentes": {
+    "children": [
+      "rich-text#ajuda--perguntas-frequentes-title",
+      "flex-layout.col#ajuda--info.6"
+    ],
+    "props": {
+      "tabId": "ajuda--perguntas-frequentes",
+      "blockClass": "ajudaTabLayoutContentItem"
+    }
+  },
+  "rich-text#ajuda--perguntas-frequentes-title": {
+    "title": "Ajuda - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Perguntas Frequentes",
+      "blockClass": "ajudaIntroTitle"
+    }
+  }
+}

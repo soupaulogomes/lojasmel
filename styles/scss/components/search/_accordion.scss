@@ -1,0 +1,146 @@
+.accordionFilter {
+  .accordionFilterItemIcon {
+    &::before {
+      content: url(assets/svg/icon-angle-down.svg);
+      width: 12px;
+      height: 6px;
+    }
+    .caretIcon {
+      display: none;
+    }
+  }
+
+  .accordionFilterContainer {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .accordionFilterItemTitle {
+      font-size: $font-size-md;
+      font-weight: $semi-bold;
+      color: $cinza;
+      text-transform: lowercase;
+    }
+  }
+
+  .accordionFilterItem {
+    border-bottom: 1px solid $cinza-claro;
+    padding: 0;
+    padding-top: 6px !important;
+    min-height: initial !important;
+  }
+
+  .accordionFilterItemOptions {
+    overflow-x: hidden;
+  }
+
+  .accordionFilterItemTag {
+    display: none;
+  }
+
+  .accordionFilterOpen {
+    margin-left: -3rem;
+    .filterAccordionItemBox {
+      border: 0;
+      min-height: 20px;
+    }
+    :global(.vtex-checkbox__line-container) {
+      align-items: center;
+      padding-bottom: 16px;
+      gap: 5px;
+
+      :global(.vtex-checkbox__container) {
+        border: 1px solid $cinza-claro;
+        display: flex;
+        width: 20px !important;
+        height: 16px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      :global(.vtex-checkbox__inner-container) {
+        border: none;
+        height: 10px;
+        width: 10px;
+        border-radius: 0;
+        margin: 0;
+
+        &::global(.bg-action-primary) {
+          background-color: $cinza !important;
+        }
+      }
+      :global(.vtex-checkbox__label) {
+        font-size: $font-size-sm;
+      }
+    }
+    :global(.vtex__icon-check) {
+      display: none;
+    }
+    @media (max-width:999px) {
+      margin-left: 3px;
+
+    }
+  }
+
+  .filterAccordionBreadcrumbs {
+    border-bottom: 1px solid $cinza-claro;
+    height: 64px;
+    padding: 0 24px;
+
+    .filterBreadcrumbsText {
+      font-size: $font-size-lg;
+      font-weight: $semi-bold;
+      color: $cinza;
+      display: flex;
+      align-items: center;
+      text-transform: lowercase;
+      gap: 20px;
+
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M17 1L1 17M1 1L17 17' stroke='%235E0000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        height: 18px;
+      }
+    }
+  }
+  .ReactCollapse--content {
+    background-color: blue;
+  }
+}
+
+.filterButtonsBox {
+  flex-direction: row-reverse;
+
+  .filterClearButtonWrapper {
+    padding: 0 16px 0 8px;
+
+    :global(.vtex-button) {
+      background-color: $branco;
+      border: 1px solid $cinza;
+      color: $cinza;
+      font-weight: $semi-bold;
+
+      font-size: $font-size-xs - 1 !important;
+      @media (max-width: $t) {
+        font-size: $font-size-md;
+      }
+    }
+  }
+  .filterApplyButtonWrapper {
+    padding: 0 8px 0 16px;
+
+    :global(.vtex-button) {
+      background-color: $cor-2;
+      border: 1px solid $cor-2;
+      color: $branco;
+      font-weight: $semi-bold;
+      font-size: $font-size-xs - 1 !important;
+
+      @media (max-width: $t) {
+        font-size: $font-size-md;
+      }
+    }
+  }
+}
+.filter__container--priceRange {
+  .filter {
+  }
+}

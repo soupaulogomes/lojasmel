@@ -1,0 +1,37 @@
+{
+    "flex-layout.row#politica-de-privacidade--menu": {
+        "title": "Política de Privacidade - Menu",
+        "children": [
+            "vtex.menu@2.x:menu#politica-de-privacidade--menu"
+        ],
+        "props": {
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "vtex.menu@2.x:menu#politica-de-privacidade--menu": {
+        "children": [
+            "menu-item#quem-somos",
+            "menu-item#nossas-lojas",
+            "menu-item#trabalhe-conosco",
+            "menu-item#politica-de-privacidade--highlight"
+        ],
+        "props": {
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "menu-item#politica-de-privacidade--highlight": {
+        "props": {
+            "id": "institutional-menu-item",
+            "type": "custom",
+            "highlight": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/politica-de-privacidade",
+                "noFollow": false,
+                "tagTitle": "Política de Privacidade",
+                "text": "Política de Privacidade"
+            },
+            "blockClass":"institucionalMenu"
+        }
+    }
+}

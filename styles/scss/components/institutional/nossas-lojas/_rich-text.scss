@@ -1,0 +1,32 @@
+.container--nossasLojasIntroTitle {
+  margin: 0 auto !important;
+
+  .paragraph--nossasLojasIntroTitle {
+    margin: 0 0 24px;
+    font-family: $main-font;
+    font-size: $font-size-xl;
+    font-weight: $bold;
+    color: $cor-2;
+    text-transform: lowercase;
+
+    @media (min-width: $d) {
+      font-size: $font-size-xxl;
+    }
+  }
+}
+
+.paragraph--nossasLojasIntroText {
+  margin: 0 0 16px;
+  color: $cinza;
+  font-family: $main-font;
+  font-size: $font-size-sm;
+  max-width: 745px;
+
+  @media (min-width: $d) {
+    font-size: $font-size-md;
+  }
+
+  .strong--nossasLojasIntroText {
+    text-transform: uppercase;
+  }
+}

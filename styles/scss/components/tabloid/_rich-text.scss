@@ -1,0 +1,46 @@
+.container {
+  &--tabloid__title {
+    .heading,
+    .paragraph {
+      margin: 0;
+      margin-bottom: 8px;
+
+      @media (min-width: $t) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &--tabloid__text {
+    .heading,
+    .paragraph {
+      margin: 0;
+      color: $cinza;
+      font-size: $font-size-sm;
+
+      @media (min-width: $t) {
+        font-size: $font-size-md;
+      }
+
+      .link {
+        @media (min-width: $t) {
+          display:none;
+        }
+      }
+    }
+
+    .link {
+      font-weight: $bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s;
+      color: $cinza;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $cor-2;
+      }
+    }
+  }
+}

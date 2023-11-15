@@ -1,0 +1,106 @@
+{
+    //ITEMS DOS SUBDRAWERS
+    "menu#drawer": {
+        "children": [
+            "menu-item#headerMenuMobileItem1",
+            "menu-item#headerMenuMobileItem2",
+            "menu-item#headerMenuMobileItem3",
+            "menu-item#headerMenuMobileItem4",
+            "menu-item#headerMenuMobileItem5",
+            "menu-item#headerMenuMobileItem6"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#headerMenuMobileItem1": {
+        "props": {
+            "id": "headerMenuMobileItem1",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": false,
+                "tagTitle": "Alimentos em geral",
+                "text": "Alimentos em geral"
+            },
+            "blockClass": "headerMenuMobileItem"
+        }
+    },
+    "menu-item#headerMenuMobileItem2": {
+        "props": {
+            "id": "headerMenuMobileItem2",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": false,
+                "tagTitle": "Balas e confeitos",
+                "text": "Balas e confeitos"
+            },
+            "blockClass": "headerMenuMobileItem"
+        }
+    },
+    "menu-item#headerMenuMobileItem3": {
+        "props": {
+            "id": "headerMenuMobileItem3",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": false,
+                "tagTitle": "Bebidas",
+                "text": "Bebidas"
+            },
+            "blockClass": "headerMenuMobileItem"
+        }
+    },
+    "menu-item#headerMenuMobileItem4": {
+        "props": {
+            "id": "headerMenuMobileItem4",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": false,
+                "tagTitle": "Biscoitos",
+                "text": "Biscoitos"
+            },
+            "blockClass": "headerMenuMobileItem"
+        }
+    },
+    "menu-item#headerMenuMobileItem5": {
+        "props": {
+            "id": "headerMenuMobileItem5",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": false,
+                "tagTitle": "Doces e Sobremesas",
+                "text": "Doces e Sobremesas"
+            },
+            "blockClass": "headerMenuMobileItem"
+        }
+    },
+    "menu-item#headerMenuMobileItem6": {
+        "props": {
+            "id": "headerMenuMobileItem6",
+            "type": "custom",
+            "highlight": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": false,
+                "tagTitle": "Salgadinhos e snacks",
+                "text": "Salgadinhos e snacks"
+            },
+            "blockClass": "headerMenuMobileItem"
+        }
+    }
+}

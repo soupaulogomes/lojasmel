@@ -1,0 +1,155 @@
+.flexRow {
+  &--mobileHeaderLineTop,
+  &--HeaderLineTopPromotion {
+    background-color: #9a67ac;
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--mobileHeaderLineTop {
+    height: 48px;
+  }
+
+  &--search-bar-row {
+    width: 100%;
+  }
+}
+.flexRowContent {
+  &--HeaderLineTopPromotion {
+    padding: 0;
+  }
+  &--drawer-megamenu {
+    flex-direction: column-reverse;
+  }
+}
+
+.flexRow--HeaderLineTopSocialNetwork {
+  background-color: $cor-1;
+
+  .flexRowContent--HeaderLineTopSocialNetwork {
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+.flexRow--mobileHeaderLineBottom {
+  background-color: $cor-2;
+
+  .flexRowContent--mobileHeaderLine {
+    align-items: center;
+    padding: 16px 0;
+
+    .flexRowContent--mobileHeaderLineLeft {
+      align-items: center;
+    }
+
+    .flexRow--mobileHeaderLineRight {
+      .flexRowContent--mobileHeaderLineRight {
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+.flexRowContent--mainMenuLinksHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexRow--mainMenuHeader {
+  min-width: 100%;
+
+  .flexRowContent--mainMenuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.flexRow--headerLine1 {
+  background-color: $cor-2;
+  padding: 16px 0 12px;
+
+  .flexRowContent--headerLine1 {
+    align-items: center;
+    justify-content: center;
+    @extend %container;
+  }
+}
+
+.flexRow--headerLine2 {
+  background-color: $cor-2;
+
+  .flexRowContent--headerLine2 {
+    align-items: center;
+    padding-bottom: 8px;
+  }
+}
+
+.flexRowContent--headerMenuDesktopItem1
+  :global(.vtex-mega-menu-2-x-triggerContainer) {
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "TODOS DEPARTAMENTOS";
+    display: block;
+    margin-left: 8px;
+    color: $branco;
+    font-family: $main-font;
+    font-size: $font-size-xs;
+    line-height: $font-size-sm;
+    font-weight: $bold;
+  }
+}
+.flexColChild--botao-fechar-col {
+  &::before {
+    content: "X";
+    font-size: 19px;
+    margin-left: 23px;
+    margin-right: 8px;
+    font-weight: 600;
+  }
+}
+
+.flexRow--rowProductList {
+  border-bottom: 1px solid $cinza-claro;
+
+  .flexCol--ProductListImage {
+    margin-right: 0;
+    padding: 16px;
+  }
+
+  .flexRowContent--rowProductList {
+    align-items: center;
+
+    .flexCol--ProductListMainContainer {
+      padding-right: 16px;
+
+      .flexCol--ProductListPriceWrapper {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .flexRowContent--ProductListQuantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.flexRow--minicart-footer {
+  box-shadow: none;
+  border-top: 1px solid $cinza-claro;
+  margin-bottom: 10px;
+
+  .flexColChild--minicart-footer {
+    padding: 0 16px;
+  }
+}

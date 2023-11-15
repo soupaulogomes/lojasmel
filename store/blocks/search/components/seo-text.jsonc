@@ -1,0 +1,77 @@
+{
+  "rich-text#seo-title": {
+    "title": "Texto SEO - Titulo",
+    "props": {
+      "text": "## Vinhos",
+      "blockClass": "seoTitle"
+    }
+  },
+  "rich-text#seo-text": {
+    "title": "Texto SEO - Texto",
+    "props": {
+      "text": "Texto SEO",
+      "blockClass": ["seoText"]
+    }
+  },
+  "flex-layout.row#seo-text-top": {
+    "title": "Texto SEO Topo",
+    "children": ["flex-layout.col#seo-text-top"],
+    "props": {
+      "blockClass": ["container", "container-seo"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#seo-text-top": {
+    "children": [
+      "search-title.v2",
+      "custom-title",
+      "custom-verMais"
+    ],
+    "props": {
+      "blockClass": ["seo-text-top"]
+    }
+  },
+
+  "rich-text#seo-text-top-title": {
+    "title": "Texto SEO Topo - Titulo",
+    "props": {
+      "text": "eletroportáteis",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  "rich-text#seo-text-top-text": {
+    "title": "Texto SEO Topo - Texto",
+    "props": {
+      "text": "Os eletroportáteis são itens geralmente pequenos, mas que fazem muita diferença no dia a dia, não é verdade? \nPreparar bolos e pães, fazer um cafezinho ou uma pipoca para as visitas ou chamar os amigos para um churrasco não seria tão simples sem esses itens... ",
+      "blockClass": ["seoText", "seoCount"]
+    }
+  },
+  "flex-layout.row#seo-text-bottom": {
+    "title": "Texto SEO Final",
+    "children": ["flex-layout.col#seo-text-bottom"],
+    "props": {
+      "blockClass": ["shelf", "container", "seo-text-bottom"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#seo-text-bottom": {
+    "children": [
+      "rich-text#seo-text-bottom-title",
+      "rich-text#seo-text-bottom-text"
+    ]
+  },
+  "rich-text#seo-text-bottom-title": {
+    "title": "Texto SEO Topo - Titulo",
+    "props": {
+      "text": "lorem ipsum",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  "rich-text#seo-text-bottom-text": {
+    "title": "Texto SEO Topo - Texto",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum feugiat placerat. Maecenas cursus dolor non nunc pharetra varius. Aenean sit amet lacus varius, porttitor ipsum a, tempor ante. Donec imperdiet, diam et aliquet blandit, quam odio commodo odio, id lacinia nunc purus ut nulla. Sed enim sapien, mollis vitae mattis at, hendrerit non libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum feugiat placerat. Maecenas cursus dolor non nunc pharetra varius. Aenean sit amet lacus varius, porttitor ipsum a, tempor ante. Donec imperdiet, diam et aliquet blandit, quam odio commodo odio, id lacinia nunc purus ut nulla. Sed enim sapien, mollis vitae mattis at, hendrerit non libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum feugiat placerat. Maecenas cursus dolor non nunc pharetra varius. Aenean sit amet lacus varius, porttitor ipsum a, tempor ante. Donec imperdiet, diam et aliquet blandit, quam odio commodo odio, id lacinia nunc purus ut nulla. Sed enim sapien, mollis vitae mattis at, hendrerit non libero.. ",
+      "blockClass": ["seoText"]
+    }
+  }
+}

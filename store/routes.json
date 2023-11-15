@@ -1,0 +1,74 @@
+{
+  "store.custom#politica-de-privacidade": {
+    "title": "Política de Privacidade - Lojas Mel",
+    "path": "politica-de-privacidade"
+  },
+  "store.custom#trabalhe-conosco": {
+    "title": "Trabalhe Conosco - Lojas Mel",
+    "path": "/trabalhe-conosco"
+  },
+  "store.custom#quem-somos": {
+    "title": "Quem somos - Lojas Mel",
+    "path": "/quem-somos"
+  },
+  "store.custom#quem-somos": {
+    "title": "Quem somos - Lojas Mel",
+    "path": "/quem-somos2"
+  },
+  "store.custom#ajuda": {
+    "title": "Ajuda - Lojas Mel",
+    "path": "/ajuda"
+  },
+  "store.custom#ajuda": {
+    "title": "Trocas e Devoluções",
+    "path": "/trocas-e-devolucoes"
+  },
+  "store.custom#central-de-atendimento": {
+    "title": "Central de Atendimento - Lojas Mel",
+    "path": "/central-de-atendimento"
+  },
+  "store.custom#nossas-lojas": {
+    "title": "Nossas Lojas - Lojas Mel",
+    "path": "/nossas-lojas"
+  },
+  "store.custom#tabloid-page": {
+    "title": "Tabloide - Lojas Mel",
+    "path": "/tabloide"
+  },
+  "store.custom#landing-page": {
+    "title": "Landing Page White",
+    "path": "/landing-page-template"
+  },
+  "store.custom#landing-page-black": {
+    "title": "Landing Page Black",
+    "path": "/landing-page-template-black"
+  },
+  "store.custom#clubemel-page": {
+    "title": "Clube Mel",
+    "path": "/faca-parte-do-clube"
+  },
+  "store.custom#storecard-page": {
+    "title": "Pagina de cartão da loja",
+    "path": "/cartao-lojasmel"
+  },
+  "store.custom#pagina-de-cupons": {
+    "title": "PAGINA DE CUPONS",
+    "path": "/garanta-seu-cupom"
+  },
+  "store.custom#kit-page-list": {
+    "title": "PAGINA PRINCIPAL DE KIT",
+    "path": "/ambientes-kit"
+  },
+  "store.custom#template-search": {
+    "title": "template-busca",
+    "path": "/template-busca"
+  },
+  "store.custom#template-department": {
+    "title": "template-departamento",
+    "path": "/template-departamento"
+  },
+  "store.custom#template-subcategory": {
+    "title": "template-subcategory",
+    "path": "/template-subcategory"
+  }
+}

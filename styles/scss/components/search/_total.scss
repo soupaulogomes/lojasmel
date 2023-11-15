@@ -1,0 +1,22 @@
+.totalProducts--layout{
+    color: $cinza;
+    font-size: $font-size-md;
+    font-weight: $semi-bold;
+    padding: 10px 16px;
+    border: 0;
+    .totalProductsMessage{
+        font-size: 0;
+        color: $cinza;
+        font-weight: $regular;
+        text-transform: lowercase;
+        &::after{
+            content: "resultados";
+            font-size: $font-size-md;
+        }
+    }
+    @media screen and (max-width: $t) {
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 16px;
+    }
+}

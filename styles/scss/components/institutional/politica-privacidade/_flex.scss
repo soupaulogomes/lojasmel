@@ -1,0 +1,31 @@
+.flexRow--politicaPrivacidadeDesktop {
+  .flexRow--politicaPrivacidadeInfoContentDesktop {
+    margin-top: 8px;
+
+    .flexColChild--politicaPrivacidadeMenuDesktop {
+      width: 232px;
+      margin-right: 88px;
+    }
+
+    .flexCol--politicaPrivacidadeInfoDesktop {
+      margin-top: 32px;
+      max-width: 640px;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: $d) {
+  .flexRowContent--politicaPrivacidadeMobile {
+    display: flex;
+    flex-direction: column;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+
+      .flexRowContent--institucionalIntro {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

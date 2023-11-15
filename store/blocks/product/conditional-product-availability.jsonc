@@ -1,0 +1,108 @@
+{
+  "condition-layout.product#availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-available",
+      "Else": "flex-layout.row#product-not-available"
+    }
+  },
+
+  "flex-layout.row#product-available": {
+    "children": ["flex-layout.col#product-available"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#product-available": {
+    "children": [
+      "flex-layout.row#product-price",
+      "flex-layout.row#product-installments",
+      "flex-layout.row#product-installments-melcard",
+      "product-payment-options",
+      "flex-layout.col#highlight-pdp",
+      "condition-layout.product#warnMix",
+      "sku-selector",
+      "similar-products-variants",
+      "responsive-layout.desktop#product-cta"
+    ]
+  },
+  "flex-layout.col#highlight-pdp": {
+    "children": ["vtex.product-highlights@2.x:product-highlights"],
+    "props": {
+      "blockClass": "product-highlights-pdp"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights": {
+    "props": {
+      "blockClass": "product-highlights",
+      "type": "teaser",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Frete Grátis SP Capital"]
+      }
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+
+  "rich-text#teste-highlight": {
+    "props": {
+      "text": "teste",
+      "blockClass": "highlight-tip"
+    }
+  },
+
+  "similar-products-variants": {
+    "props": {
+      "imageLabel": "swatch"
+    }
+  },
+  "condition-layout.product#warnMix": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "147"
+          }
+        }
+      ],
+
+      "Then": "flex-layout.row#warnMix"
+    }
+  },
+  "flex-layout.row#warnMix": {
+    "children": ["rich-text#warnMix"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "warnMix"
+    }
+  },
+  "rich-text#warnMix": {
+    "title": "Aviso Sortido",
+    "props": {
+      "blockClass": "warnMix",
+      "text": "**Atenção:** este produto é sortido. Não será possivel escolher o modelo, cor ou outro tipo de variação"
+    }
+  },
+
+  "flex-layout.row#product-not-available": {
+    "children": ["flex-layout.col#product-not-available"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "productavailability-notify"
+    }
+  },
+  "flex-layout.col#product-not-available": {
+    "children": [
+      "product-payment-options",
+      "sku-selector",
+      "responsive-layout.desktop#product-cta",
+      "availability-notify",
+      "similar-products-variants"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+    "flex-layout.row#header-line-top--mobile": {
+        "title": "Linha - Cupom",
+        "children": [
+            "flex-layout.col#header-line-top--mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "container","mobileHeaderLineTop"
+            ],
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#header-line-top--mobile":{
+        "title": "Coluna - Cupom",
+        "children": [
+            "rich-text#coupon-text",
+            "rich-text#coupon-name"
+        ],
+        "props": {
+            "blockClass": [
+                "mobileHeaderLineTop"
+            ],
+            "horizontalAlign": "center",
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+
+    "rich-text#coupon-text": {
+        "title": "Linha - Cupom Texto",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Ganhe **R$15 OFF** em sua primeira compra. Use o cupom",
+            "blockClass": "headerCouponText"
+        }
+    },
+    "rich-text#coupon-name": {
+        "title": "Linha - Cupom Nome",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "BEMVINDO",
+            "blockClass": "headerCouponName"
+        }
+    }
+}

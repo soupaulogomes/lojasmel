@@ -1,0 +1,180 @@
+.triggerContainer {
+  color: $cinza !important;
+  font-family: $main-font;
+  display: block;
+  margin-top: 16px;
+
+  font-size: 0 !important;
+  &::before {
+    content: "Ver mais formas de pagamento";
+    font-size: $font-size-xs !important;
+
+    @media (min-width: $d) {
+      font-size: $font-size-sm !important;
+    }
+  }
+}
+
+.modal {
+  z-index: 9999 !important;
+}
+
+.paper {
+  border-radius: 8px !important;
+  max-width: 444px !important;
+}
+
+.backdropContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: grayscale(1);
+}
+
+.productPaymentOptionsModalTitle {
+  font-weight: $bold;
+  font-family: $main-font;
+  color: $preto;
+  padding: 16px !important;
+}
+
+.productPaymentOptionsContent3p:not(.productPaymentOptionsCreditTabs) {
+  padding: 0 0 20px !important;
+
+  :global(.vtex-tabs__nav) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    height: 80px;
+    border: none;
+    line-height: 1 !important;
+    padding: 0px;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: $cinza-claro;
+
+      position: absolute;
+      top: 64px;
+      left: 16px;
+      z-index: 5;
+      @media (min-width: $d) {
+        left: 0;
+      }
+    }
+
+    @media (min-width: $m) {
+      justify-content: space-between;
+    }
+
+    &::-webkit-scrollbar {
+      opacity: 0;
+    }
+
+    :global(.vtex-tab__button) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      color: $cinza;
+      font-family: $main-font;
+      font-size: $font-size-sm;
+      padding: 0 0 10px 0;
+      white-space: nowrap;
+      height: 65px;
+      margin-right: 2px !important;
+
+      &:first-child {
+        &::before {
+          content: url(assets/svg/icon-card-mel.svg);
+        }
+      }
+      &:nth-child(2n) {
+        &::before {
+          content: url(assets/svg/icon-card.svg);
+        }
+      }
+      &:nth-child(3n) {
+        &::before {
+          content: url(assets/svg/icon-boleto.svg);
+        }
+      }
+
+      &:last-child {
+        &::before {
+          content: url(assets/svg/icon-pix.svg);
+        }
+      }
+    }
+    :global(.vtex-tab__button--active) {
+      color: $cinza !important;
+      border-color: $cor-2 !important;
+      font-weight: $bold;
+    }
+  }
+}
+.productPaymentOptionsCreditTabs {
+  :global(.vtex-tabs__nav) {
+    :global(.vtex-tab__button) {
+      padding: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 5px !important;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      max-height: 32px !important;
+
+      &::before {
+        display: none !important;
+        content: "";
+      }
+    }
+  }
+  :global(.vtex-tab__button--active) {
+    border: 2px solid $cor-2 !important;
+  }
+}
+
+.productPaymentOptionsInstallmentsPrice,
+.productPaymentOptionsInstallmentsRate,
+.productPaymentOptionsInstallmentsTotal,
+.productPaymentOptionsListItem,
+.productPaymentOptionsList {
+  font-family: $main-font;
+  text-align: center;
+  color: $cinza;
+}
+.productPaymentOptionsInstallmentsPrice {
+  color: $preto;
+}
+.productPaymentOptionsInstallmentsRate {
+  text-transform: lowercase;
+}
+
+.closeButton {
+  width: 30px;
+  height: 30px;
+
+  top: 0px !important;
+  right: 0px !important;
+
+  .closeIcon {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+
+.productPaymentOptionsList {
+  max-height: 180px !important;
+
+  @media (min-width: $t) {
+    max-height: 230px !important;
+  }
+}
+
+.productPaymentOptionsInstallmentsCurrentPayment {
+  padding: 0 16px 16px;
+}

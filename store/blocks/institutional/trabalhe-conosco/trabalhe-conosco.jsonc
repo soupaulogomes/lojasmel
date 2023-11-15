@@ -1,0 +1,111 @@
+{
+    "store.custom#trabalhe-conosco": {
+        "title": "Trabalhe Conosco",
+        "blocks": [
+            "responsive-layout.desktop#trabalhe-conosco",
+            "responsive-layout.mobile#trabalhe-conosco"
+        ],
+        "props": {
+            "blockClass": "trabalheConosco"
+        }
+    },
+    "responsive-layout.desktop#trabalhe-conosco": {
+        "title": "Trabalhe Conosco - Desktop",
+        "children": [
+            "flex-layout.row#trabalhe-conosco--desktop"
+        ],
+        "props": {
+            "blockClass": [
+                "trabalheConoscoDesktop"
+            ]
+        }
+    },
+    "flex-layout.row#trabalhe-conosco--desktop": {
+        "title": "Trabalhe Conosco - Desktop",
+        "children": [
+            "flex-layout.col#trabalhe-conosco--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "trabalheConoscoDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.col#trabalhe-conosco--desktop": {
+        "title": "Trabalhe Conosco - Desktop",
+        "children": [
+            "flex-layout.col#institucional--breadcrumb",
+            "flex-layout.row#trabalhe-conosco--content"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "trabalheConoscoDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.row#trabalhe-conosco--content": {
+        "title": "Trabalhe Conosco - Conteúdo Desktop",
+        "children": [
+            "flex-layout.col#trabalhe-conosco--menu-desktop",
+            "flex-layout.col#trabalhe-conosco--info-content--desktop"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "trabalheConoscoInfoContentDesktop"
+            ]
+        }
+    },
+    "flex-layout.col#trabalhe-conosco--menu-desktop": {
+        "title": "Trabalhe Conosco - Menu Desktop",
+        "children": [
+            "flex-layout.row#trabalhe-conosco--menu"
+        ],
+        "props": {
+            "blockClass": [
+                "trabalheConoscoMenuDesktop"
+            ]
+        }
+    },
+    "flex-layout.col#trabalhe-conosco--info-content--desktop": {
+        "title": "Trabalhe Conosco - Introdução Desktop",
+        "children": [
+            "flex-layout.row#trabalhe-conosco--banner--desktop",
+            "flex-layout.col#trabalhe-conosco--info--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "trabalheConoscoInfoDesktop"
+            ]
+        }
+    },
+    "responsive-layout.mobile#trabalhe-conosco": {
+        "title": "Trabalhe Conosco - Mobile",
+        "children": [
+            "flex-layout.row#trabalhe-conosco--mobile"
+        ],
+        "props": {
+            "blockClass": "trabalheConoscoMobile"
+        }
+    },
+    "flex-layout.row#trabalhe-conosco--mobile": {
+        "title": "Trabalhe Conosco - Mobile",
+        "children": [
+            "flex-layout.row#trabalhe-conosco--menu",
+            "flex-layout.row#trabalhe-conosco--banner--mobile",
+            "flex-layout.row#trabalhe-conosco--info"
+        ],
+        "props": {
+            "blockClass": [
+                "trabalheConoscoMobile",
+                "container"
+            ]
+        }
+    }
+}

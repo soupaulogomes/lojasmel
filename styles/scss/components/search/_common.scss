@@ -1,0 +1,13 @@
+.container--layout {
+  @extend %container;
+  padding-bottom: 56px;
+  padding: 0 !important;
+
+  @media (max-width: $t) {
+    padding: 0 16px !important;
+  }
+}
+
+.orderByButton {
+  height: 48px;
+}

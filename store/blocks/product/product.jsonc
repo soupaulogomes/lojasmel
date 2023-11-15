@@ -1,0 +1,274 @@
+{
+  // KITLOOK -------------------------------------------------------
+  "store.product.kitlook": {
+    "children": [
+      "kitlook-layout" // <--- Here's our new block
+    ]
+  },
+  "kitlook-layout": {
+    "children": [
+      "disposition-layout#product", // <--- The first child is for regular product
+      "flex-layout.row#kit-or-kitlook" // <--- The second one will show when a product is a kit
+    ]
+  },
+  // KITLOOK -------------------------------------------------------
+
+  "disposition-layout#product": {
+    "title": "PRODUTO | Disposição do Conteudo",
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "responsive-layout.mobile#float-buy-button",
+      "flex-layout.row#product-main",
+      "responsive-layout.mobile#product-description-and-specification",
+      "responsive-layout.desktop#product-description-and-specification",
+      "flex-layout.row#product-buy-together",
+      "responsive-layout.mobile#mid-add-to-cart-button",
+      "flex-layout.row#product-shelf-1",
+      "flex-layout.row#product-shelf-2",
+      "flex-layout.row#product-reviews"
+    ],
+    "props": {
+      "blockClass": ["layout-product", "disposition"],
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        }
+      ]
+    }
+  },
+  "responsive-layout.mobile#product-description-and-specification": {
+    "children": [
+      "disclosure-layout#description-mobile",
+      "disclosure-layout#specification-mobile"
+    ]
+  },
+  "responsive-layout.desktop#product-description-and-specification": {
+    "children": ["flex-layout.row#product-description-and-specification"]
+  },
+
+  // FLOAT BUY BUTTON MOBILE -------------------------------------------
+  "responsive-layout.mobile#float-buy-button": {
+    "children": ["sticky-layout#float-buy-button"]
+  },
+  "sticky-layout#float-buy-button": {
+    "children": [
+      "lojasmel1.product-price:product-selling-price#pdp",
+      "flex-layout.row#product-cta"
+    ],
+    "props": {
+      "position": "bottom",
+      "blockClass": "float-buy-button"
+    }
+  },
+  // FLOAT BUY BUTTON MOBILE -------------------------------------------
+
+  // BREADCRUMB -------------------
+  "flex-layout.row#product-breadcrumb": {
+    "title": "BREADCRUMB",
+    "children": ["breadcrumb"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__breadcrumb", "container"]
+    }
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  // BREADCRUMB -------------------
+
+  // MAIN -------------------------
+  "flex-layout.row#product-main": {
+    "title": "SECAO PRINCIPAL",
+
+    "children": [
+      "flex-layout.row#product-main-image",
+      "flex-layout.row#product-main-info"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__main", "container"]
+    }
+  },
+  // MAIN -------------------------
+
+  // ADD TO CART BUTTON
+  "responsive-layout.mobile#mid-add-to-cart-button": {
+    "children": ["flex-layout.row#mid-add-to-cart-button"]
+  },
+
+  "flex-layout.row#mid-add-to-cart-button": {
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "mid-add-to-cart-button"
+    }
+  },
+
+  // SHELVES -------------------
+  "flex-layout.row#product-shelf-1": {
+    "title": "VITRINE 1",
+
+    "children": ["flex-layout.col#product-shelf-1"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__shelf", "container"]
+    }
+  },
+  //shelf
+  "flex-layout.col#product-shelf-1": {
+    "children": ["shelf.relatedProducts#who-saw"]
+  },
+
+  //quem viu viu tambem
+  "shelf.relatedProducts#who-saw": {
+    "title": "Quem viu",
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      // possiveis valores similars, suggestions, accessories, view, buy, viewandBought
+      "recommendation": "view",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "who-see-who-buy",
+
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "quem viu viu tambem",
+        "summary": {
+          "isOneClickBuy": false,
+          "showBadge": true,
+          "badgeText": "Nuevo",
+          "buyButtonText": "Comprar",
+          "displayBuyButton": "displayButtonHover",
+          "showCollections": false,
+          "showListPrice": true,
+          "showLabels": false,
+          "showInstallments": true,
+          "showSavings": true,
+          "name": {
+            "showBrandName": false,
+            "showSku": false,
+            "showProductReference": true
+          }
+        }
+      }
+    }
+  },
+  //quem comrou comprou tb
+  "shelf.relatedProducts#who-buy": {
+    "title": "Quem viu",
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "buy",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "who-see-who-buy",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "quem comprou comprou também",
+        "summary": {
+          "isOneClickBuy": false,
+          "showBadge": true,
+          "badgeText": "Nuevo",
+          "buyButtonText": "Comprar",
+          "displayBuyButton": "displayButtonHover",
+          "showCollections": false,
+          "showListPrice": true,
+          "showLabels": false,
+          "showInstallments": true,
+          "showSavings": true,
+          "name": {
+            "showBrandName": false,
+            "showSku": false,
+            "showProductReference": true
+          }
+        }
+      }
+    }
+  },
+
+  "rich-text#product-shelf-1": {
+    "title": "Titulo",
+    "props": {
+      "text": "quem viu viu tambem",
+      "blockClass": "section-common-title"
+    }
+  },
+
+  "flex-layout.row#product-shelf-2": {
+    "title": "VITRINE 2",
+
+    "children": ["flex-layout.col#product-shelf-2"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__shelf", "container"]
+    }
+  },
+  "flex-layout.col#product-shelf-2": {
+    "children": [
+      //vitrine antiga a vitrine shef.related está em testes
+      //"list-context.product-list#product-shelf-2"
+      "shelf.relatedProducts#who-buy"
+    ]
+  },
+  "rich-text#product-shelf-2": {
+    "title": "Titulo",
+    "props": {
+      "text": "mais vendidos",
+      "blockClass": "section-common-title"
+    }
+  },
+  // SHELVES -------------------
+
+  "flex-layout.row#product-reviews": {
+    "title": "Revies e perguntas",
+    "children": ["flex-layout.col#product-reviews"],
+    "props": {
+      "blockClass": ["product__reviews", "container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#product-reviews": {
+    "children": ["rich-text#product-reviews", "trustvox-guide-pdp"]
+  },
+  "rich-text#product-reviews": {
+    "title": "Titulo",
+
+    "props": {
+      "text": "## duvidas? Pergunte aqui",
+      "blockClass": ["section-common-title", "product-reviews"],
+      "htmlId": "trustvox-reviews"
+    }
+  }
+}

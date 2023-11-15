@@ -1,0 +1,200 @@
+{
+  "list-context.product-list#landing-page-shelf-1": {
+    "title": "Lista da Vitrine 1",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#landingpage-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "list-context.product-list#landing-page-shelf-2": {
+    "title": "Lista da Vitrine 2",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#landingpage-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "slider-layout#landingpage-shelves": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 32,
+        "phone": 32
+      },
+      "usePagination": true,
+      "infinite": false,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": ["shelf","landingpage__shelf"]
+    }
+  },
+
+  "list-context.image-list#landing-page-category-banners": {
+    "title": "Banners de Categorias",
+    "children": ["slider-layout#home-category-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/d_banner-vertical.png",
+          "image": "assets/images/d_banner-vertical.png",
+          "description": "Banner de categoria - 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-1.png",
+          "image": "assets/images/d_banner-vertical-1.png",
+          "description": "Banner de categoria - 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-2.png",
+          "image": "assets/images/d_banner-vertical-2.png",
+          "description": "Banner de categoria - 3",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-3.png",
+          "image": "assets/images/d_banner-vertical-3.png",
+          "description": "Banner de categoria - 4",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-4.png",
+          "image": "assets/images/d_banner-vertical-4.png",
+          "description": "Banner de categoria - 5",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "list-context.image-list#landing-page-brands-carousel": {
+    "title": "Carrossel de marcas",
+    "children": ["slider-layout#landingpage-brands-carousel"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-2.png",
+          "description": "Marca 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-3.png",
+          "description": "Marca 3",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 4",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-2.png",
+          "description": "Marca 5",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-3.png",
+          "description": "Marca 6",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 7",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-2.png",
+          "description": "Marca 8",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-3.png",
+          "description": "Marca 9",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 10",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-2.png",
+          "description": "Marca 11",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 12",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#landingpage-brands-carousel": {
+    "title": "Slider de Marcas",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 32,
+        "phone": 32
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["landingpage__brands-carousel"]
+    }
+  }
+}

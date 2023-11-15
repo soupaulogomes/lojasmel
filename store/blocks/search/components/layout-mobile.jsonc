@@ -1,0 +1,14 @@
+{
+    "flex-layout.row#search-mobile-buttons": { 
+        "children": [
+            "filter-navigator.v3",
+            "order-by.v2"
+          ],
+          "props":{
+              "preserveLayoutOnMobile":true,
+              "colGap":5,
+              "rowGap":5,
+              "blockClass": "search__mobile-buttons"
+          }
+    }
+}

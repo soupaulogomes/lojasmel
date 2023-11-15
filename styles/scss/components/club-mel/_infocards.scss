@@ -1,0 +1,39 @@
+.infoCardContainer {
+  &--clubmel__motivations {
+    background: $white;
+    padding: 48px 30px 32px;
+    border-radius: $border-radius;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .infoCardTextContainer {
+      width: 100%;
+      align-items: center;
+    }
+
+    .infoCardCallActionContainer,
+    .infoCardImageContainer {
+      display: none !important;
+    }
+
+    .infoCardHeadline {
+      font-size: $font-size-md;
+      font-family: $main-font;
+      color: $cor-2;
+      margin-top: 0;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .infoCardSubhead {
+      font-size: $font-size-xs;
+      font-family: $main-font;
+      color: $cinza;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

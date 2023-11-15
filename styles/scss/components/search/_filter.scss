@@ -1,0 +1,195 @@
+.filter__container {
+  border-bottom: 0;
+  .filterMessage {
+    font-size: $font-size-xxl;
+    font-weight: $semi-bold;
+    color: $black;
+    margin-bottom: 12px;
+    text-transform: initial;
+  }
+
+  .filterAvailable {
+    border-bottom: 1px solid $cinza-claro;
+    font-size: $font-size-md;
+    font-weight: $semi-bold;
+    color: $black;
+    padding: 10px 0 0 0;
+    text-transform: lowercase;
+
+    &:first-child {
+      padding: 10px 0;
+    }
+
+    .filterIcon {
+      &::after {
+        display: block;
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M13 7L7 1L1 7' stroke='%235E0000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        transform: rotate(180deg);
+      }
+
+      .caretIcon {
+        display: none;
+      }
+    }
+
+    &.filterIsOpen {
+      .filterIcon {
+        &::after {
+          display: block;
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M13 7L7 1L1 7' stroke='%235E0000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+          transform: rotate(360deg);
+        }
+
+        .caretIcon {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .filterContent {
+    padding: 2px 0 0 0;
+
+    :global(.vtex-checkbox__line-container) {
+      align-items: center;
+      padding-bottom: 16px;
+
+      :global(.vtex-checkbox__inner-container) {
+        border: 1px solid $cinza-claro;
+        height: 16px;
+        width: 16px;
+        border-radius: 0;
+      }
+    }
+
+    .filterItem {
+      font-size: $font-size-sm;
+      font-weight: $regular;
+      color: $cinza;
+
+      &--selected {
+        :global(.vtex-checkbox__inner-container) {
+          background-color: $cor-2;
+          outline: 2px solid white;
+          outline-offset: -3px;
+        }
+
+        :global(.vtex-checkbox__box) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .filterTemplateOverflow {
+    padding: 16px 0;
+
+    :global(.vtex-slider__base-internal) {
+      background-color: $cor-2;
+    }
+
+    :global(.vtex-slider__selector) {
+      background-color: $cor-2;
+    }
+
+    :global(.vtex-slider__base) {
+      background-color: #f0f0f0;
+      height: 2px !important;
+    }
+
+    :global(.vtex-slider__values-container) {
+      justify-content: center;
+
+      :global(.vtex-slider__left-value) {
+        font-size: $font-size-sm;
+        font-weight: $semi-bold;
+        color: $cinza;
+      }
+
+      :global(.vtex-slider__right-value) {
+        font-size: $font-size-sm;
+        font-weight: $semi-bold;
+        color: $cinza;
+      }
+    }
+  }
+
+  &--selectedFilters {
+    .filterSelected {
+      display: none;
+    }
+
+    .filterTemplateOverflow {
+      display: flex;
+      flex-flow: wrap;
+      gap: 8px;
+    }
+
+    .selectedFilterItem {
+      background-color: $gelo;
+      border-radius: 4px;
+      width: fit-content;
+      padding: 6px;
+
+      :global(.vtex-checkbox__container) {
+        display: none;
+      }
+
+      :global(.vtex-checkbox__label) {
+        &::after {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='9' viewBox='0 0 10 9' fill='none'%3E%3Cpath d='M9 0.5L1 8.5M1 0.5L9 8.5' stroke='%23606060' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+          margin-left: 8px;
+        }
+      }
+
+      .productCount {
+        display: none;
+      }
+    }
+  }
+
+  &--category-4 {
+    :global(.vtex-search-result-3-x-filterTitleSpan--buttonFilter) {
+      font-size: 0;
+
+      &::after {
+        content: "Tipo de Produto";
+        font-size: 1rem
+      }
+    }
+  }
+}
+
+.closeIconButton {
+  left: 0;
+  right: auto;
+  opacity: 0;
+}
+
+.filterIcon {
+  padding-right: 6px;
+}
+
+.filterPopupButton {
+  background-color: $cor-2;
+  width: 100%;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0;
+
+  .filterPopupTitle {
+    font-size: $font-size-xs;
+    font-weight: $semi-bold;
+    color: $branco;
+    text-transform: uppercase;
+    margin: auto;
+
+    @media (min-width: $t) {
+      font-size: $font-size-sm;
+    }
+  }
+  
+  .filterPopupArrowIcon {
+    display: none;
+  }
+}

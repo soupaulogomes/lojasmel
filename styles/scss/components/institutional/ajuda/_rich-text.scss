@@ -1,0 +1,13 @@
+.paragraph--ajudaIntroTitle {
+  color: $cor-2;
+  font-family: $main-font;
+  font-size: $font-size-xl;
+  line-height: 22px;
+  font-weight: $bold;
+  text-transform: lowercase;
+  margin: 0 0 16px;
+
+  @media (min-width: $d) {
+    font-size: $font-size-xxl;
+  }
+}

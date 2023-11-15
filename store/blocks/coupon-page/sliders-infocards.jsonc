@@ -1,0 +1,90 @@
+{
+  "list-context.coupon-info-card-list": {
+    "title":"Lista de cupons (Clique aqui para gerenciar os itens da lista)",
+    "children": ["slider-layout#coupon-info-cards"],
+    "props": {
+      "infoCards": [
+        {
+          "imageUrl": "https://lojasmel1.vtexassets.com/arquivos/ids/155396-300-300",
+          "headline": "## Roupão rosa de 50%",
+          "subhead": "50% de desconto",
+          "callToActionText": "",
+          "callToActionMode": "link",
+          "callToActionUrl": "/teste-cupom",
+          "blockClass": "coupon",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "couponName": "cupomdecinquenta"
+        },
+        {
+          "imageUrl": "https://lojasmel1.vtexassets.com/arquivos/ids/155394-300-300",
+          "headline": "## Cafeteira Eletrica Single Colors Vermelha",
+          "subhead": "50% de desconto",
+          "callToActionText": "",
+          "callToActionMode": "link",
+          "callToActionUrl": "/teste-cupom",
+          "blockClass": "coupon",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "couponName": "cupomdecinquenta"
+        },
+        {
+          "imageUrl": "https://lojasmel1.vtexassets.com/arquivos/ids/155396-300-300",
+          "headline": "## Roupão rosa",
+          "subhead": "10% de desconto",
+          "callToActionText": "",
+          "callToActionMode": "link",
+          "callToActionUrl": "/teste-cupom",
+          "blockClass": "coupon",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "couponName": "cupomteste"
+        },
+        {
+          "imageUrl": "https://lojasmel1.vtexassets.com/arquivos/ids/155401-300-300",
+          "headline": "## Roupao azul",
+          "subhead": "15% de desconto",
+          "callToActionText": "",
+          "callToActionMode": "link",
+          "callToActionUrl": "/teste-cupom",
+          "blockClass": "coupon",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "couponName": ""
+        },
+        {
+          "imageUrl": "https://lojasmel1.vtexassets.com/arquivos/ids/155401-300-300",
+          "headline": "## Roupao azul",
+          "subhead": "15% de desconto",
+          "callToActionText": "",
+          "callToActionMode": "link",
+          "callToActionUrl": "/teste-cupom",
+          "blockClass": "coupon",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "couponName": ""
+        }
+      ]
+    }
+  },
+  "slider-layout#coupon-info-cards": {
+    "title": "Slider => (NÃO MEXER NAS PROPRIEDADES DO SLIDER PARA NAO COMPROMETER SEU FUNCIONAMENTO CUSTOMIZADO)",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 32,
+        "phone": 32
+      },
+      "usePagination": true,
+      "infinite": false,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": ["coupon", "shelf"]
+    }
+  }
+}

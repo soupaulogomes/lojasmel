@@ -1,0 +1,73 @@
+.listContainer--ajudaTabLayoutList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 32px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  .listItem--ajudaTabLayoutListItem {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.listItem--ajudaTabLayoutListItem :global(.vtex-button) {
+  border: 1px solid $cinza-claro;
+  border-radius: 150px;
+  background: transparent;
+  width: 100px;
+  height: 40px;
+}
+
+.listItem--ajudaTabLayoutListItem :global(.vtex-button__label) {
+  color: $cinza;
+  font-family: $main-font;
+  font-size: $font-size-xs;
+  font-weight: $bold;
+  padding: 0 !important;
+
+  @media (min-width: $d) {
+    font-size: $font-size-sm;
+  }
+}
+
+.listItemActive--ajudaTabLayoutListItem :global(.vtex-button) {
+  border: 1px solid $cor-2;
+  border-radius: 150px;
+  background: $cor-2;
+  width: 100px;
+  height: 40px;
+}
+
+.listItemActive--ajudaTabLayoutListItem :global(.vtex-button__label) {
+  color: $branco;
+  font-family: $main-font;
+  font-weight: $bold;
+  padding: 0 !important;
+  font-size: $font-size-xs;
+
+  @media (min-width: $d) {
+    font-size: $font-size-sm;
+  }
+}
+
+.contentItem--ajudaTabLayoutContentItem {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 359px) {
+  .listContainer--ajudaTabLayoutList {
+    gap: initial;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .listContainer--ajudaTabLayoutList {
+    gap: 20px;
+  }
+  .listItem--ajudaTabLayoutListItem :global(.vtex-button) {
+    width: 200px;
+  }
+}

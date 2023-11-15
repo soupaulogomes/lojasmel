@@ -1,0 +1,76 @@
+{
+  "list-context.image-list#clubmel-top-banner": {
+    "title": "Banner do topo da pagina",
+    "children": ["slider-layout#home-hero-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/banner-hero-mob-1.png",
+          "image": "assets/images/banner-hero-desk-1.png",
+          "description": "Banner - 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner - 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner - 3",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/banner-hero-mob-1.png",
+          "image": "assets/images/banner-hero-desk-1.png",
+          "description": "Banner - 4",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner - 5",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner - 6",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#clubmel-bottom-banner": {
+    "title": "Banner do final da pagina",
+    "children": ["slider-layout#storecard-page-full-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/clubmel-bottom-banner-mob.png",
+          "image": "assets/images/clubmel-bottom-banner.png",
+          "description": "Banner do final da pagina",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  }
+}

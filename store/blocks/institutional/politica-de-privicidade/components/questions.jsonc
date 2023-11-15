@@ -1,0 +1,268 @@
+{
+    // QUESTION AND ANSWER 1
+    "rich-text#politica-de-privacidade--question-1": {
+        "title": "Política de Privacidade - Pergunta 1",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "1.‎ ‎ introdução",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-1": {
+        "title": "Política de Privacidade - Resposta 1",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "A necessidade de leis que regulam o equilíbrio necessário entre a inovação e a proteção de dados é inquestionável. E o intuito que a Lei Geral de Proteção de Dados traz é justamente neste sentido, visando a redução no vazamento de dados, o abuso no tratamento destes e o mais relevante, a responsabilização nos casos em que haja o vazamento, trata-se de uma nova visão que amplia e assegura a sua base de clientes e os demais titulares de dados. Em apertada síntese a Lei Geral de Proteção de Dados “LGPD” (Lei Federal nº 13.709/2018, dispõe então, sobre o tratamento, assim entendido como toda operação realizada com dados pessoais, como as que se referem desde a sua coleta, tratamento, armazenamento, classificação, até o término propriamente dito, e tem como objetivo proteger direitos fundamentais de liberdade e privacidade e o livre desenvolvimento da personalidade da pessoa natural.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 2
+    "rich-text#politica-de-privacidade--question-2": {
+        "title": "Política de Privacidade - Pergunta 2",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "2.‎ ‎ conceitos importantes",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-2": {
+        "title": "Política de Privacidade - Resposta 2",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 3
+    "rich-text#politica-de-privacidade--question-3": {
+        "title": "Política de Privacidade - Pergunta 3",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "3.‎ ‎ por que a lojasmel solicita os seus dados pessoais?",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-3": {
+        "title": "Política de Privacidade - Resposta 3",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 4
+    "rich-text#politica-de-privacidade--question-4": {
+        "title": "Política de Privacidade - Pergunta 4",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "4.‎ ‎ ETAPAS DE CADASTRAMENTO E DADOS COLETADOS",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-4": {
+        "title": "Política de Privacidade - Resposta 4",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 5
+    "rich-text#politica-de-privacidade--question-5": {
+        "title": "Política de Privacidade - Pergunta 5",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "5.‎ ‎ OUTRAS INFORMAÇÕES QUE PODERÃO SER COLETADAS",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-5": {
+        "title": "Política de Privacidade - Resposta 5",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 6
+    "rich-text#politica-de-privacidade--question-6": {
+        "title": "Política de Privacidade - Pergunta 6",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "6.‎ ‎ O QUE O FORNECIMENTO DE DADOS NOS PERMITE",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-6": {
+        "title": "Política de Privacidade - Resposta 6",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 7
+    "rich-text#politica-de-privacidade--question-7": {
+        "title": "Política de Privacidade - Pergunta 7",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "7.‎ ‎ USO E TRATAMENTO",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-7": {
+        "title": "Política de Privacidade - Resposta 7",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 8
+    "rich-text#politica-de-privacidade--question-8": {
+        "title": "Política de Privacidade - Pergunta 8",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "8.‎ ‎ direitos dos usuários",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-8": {
+        "title": "Política de Privacidade - Resposta 8",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 9
+    "rich-text#politica-de-privacidade--question-9": {
+        "title": "Política de Privacidade - Pergunta 9",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "9.‎ ‎ retenção e exclusão dos seus dados pessoais",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-9": {
+        "title": "Política de Privacidade - Resposta 9",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 10
+    "rich-text#politica-de-privacidade--question-10": {
+        "title": "Política de Privacidade - Pergunta 10",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "10.‎ ‎ ALTERAÇÕES DESTA POLÍTICA DE PRIVACIDADE",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-10": {
+        "title": "Política de Privacidade - Resposta 10",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 11
+    "rich-text#politica-de-privacidade--question-11": {
+        "title": "Política de Privacidade - Pergunta 11",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "11.‎ ‎ responsabilidades",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-11": {
+        "title": "Política de Privacidade - Resposta 11",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 12
+    "rich-text#politica-de-privacidade--question-12": {
+        "title": "Política de Privacidade - Pergunta 12",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "12.‎ ‎ USO POR CRIANÇAS E ADOLESCENTES",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-12": {
+        "title": "Política de Privacidade - Resposta 12",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 13
+    "rich-text#politica-de-privacidade--question-13": {
+        "title": "Política de Privacidade - Pergunta 13",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "13.‎ ‎ NÃO ESQUEÇA DE MANTER AS SUAS INFORMAÇÕES PESSOAIS SEGURAS",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-13": {
+        "title": "Política de Privacidade - Resposta 4",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION AND ANSWER 14
+    "rich-text#politica-de-privacidade--question-14": {
+        "title": "Política de Privacidade - Pergunta 14",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "14.‎ ‎ COMO ENTRAR EM CONTATO COM O SETOR DE PROTEÇÃO DE DADOS DA lojasmel?",
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "rich-text#politica-de-privacidade--answer-14": {
+        "title": "Política de Privacidade - Resposta 14",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio odio, mollis sit amet dolor eu, dictum consectetur turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo rhoncus faucibus. Maecenas placerat, orci quis dignissim ultricies, nulla libero commodo enim, eu faucibus lectus turpis at magna. Fusce ac tincidunt nisi, vel dapibus tortor. Nam enim ex, blandit ac purus sit amet, luctus rhoncus quam. Vivamus posuere ante id elit euismod posuere. Maecenas ullamcorper pulvinar felis, et ullamcorper lacus facilisis eu. Morbi rhoncus libero dolor, eu rhoncus metus finibus ut. Proin egestas metus enim, ut laoreet mauris pulvinar vel. Etiam consequat imperdiet arcu sit amet faucibus. Cras et tempus orci, eu euismod tellus. In id dui blandit, pellentesque nisi sit amet, imperdiet sapien.",
+            "blockClass": "institucionalInfoAnswer"
+        }
+    }
+}

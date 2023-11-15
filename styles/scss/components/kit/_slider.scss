@@ -1,0 +1,102 @@
+.sliderTrackContainer {
+  &--kit__slider {
+    :global(.vtex-info-card-list-0-x-kit__card) {
+      width: 100%;
+    }
+
+    .infoCardContainer {
+      height: 100%;
+    }
+
+    .paragraph {
+      display: none !important;
+    }
+
+    .imageElementLink {
+      width: 100%;
+
+      .imageElement {
+        transition: all 0.2s;
+        border-radius: 8px;
+      }
+
+      &:hover {
+        .imageElement {
+          transform: scale(0.95);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+    .sliderTrack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      @media (min-width: $d){
+        gap: 24px;
+      }
+
+      :global(.vtex-slider-layout-0-x-slide) {
+        flex: 1;
+        width: initial !important;
+        flex-basis: 100%;
+
+        @media (min-width: 648px) {
+          flex-basis: calc(33% - 24px);
+        }
+      }
+    }
+  }
+}
+
+.infoCardImageLinkWrapper {
+  &--kit__slider {
+    transition: all 0.2s;
+
+    &:focus,
+    &:active,
+    &:hover {
+      opacity: 0.7;
+
+      .paragraph,
+      .heading {
+        color: $cor-2;
+      }
+    }
+
+    .infoCardContainer {
+      min-height: 200px;
+      position: relative;
+      border-radius: 8px;
+    }
+
+    .infoCardCallActionContainer {
+      display: none !important;
+    }
+
+    .infoCardTextContainer {
+      width: 100% !important;
+      margin: 0;
+    }
+
+    .infoCardCallActionContainer {
+      :global(.vtex-button) {
+        display: none;
+      }
+    }
+
+    .paragraph,
+    .heading {
+      color: $white;
+      margin: 0;
+      font-size: $font-size-xl;
+      font-weight: $bold;
+      transition: all 0.2s;
+
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+    }
+  }
+}

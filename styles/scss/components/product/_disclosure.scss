@@ -1,0 +1,39 @@
+.trigger {
+  &--description-and-specification {
+    width: 100%;
+    padding: 10px 20px 0px 16px;
+    position: relative;
+
+    &--visible {
+      &::after {
+        transform: rotate(180deg) translateY(3px);
+      }
+    }
+
+    &::after {
+      content: url(assets/svg/icon-angle-down.svg);
+      transition: all 0.2s;
+
+      position: absolute;
+      top: 11px;
+      right: 20px;
+    }
+
+    :global(.vtex-rich-text-0-x-container) {
+      width: 100%;
+      margin-left: 0;
+      border-bottom: 1px solid $cinza-claro;
+      padding-bottom: 10px;
+    }
+
+    :global(.vtex-rich-text-0-x-heading) {
+      margin: 0 !important;
+    }
+  }
+}
+
+.content {
+  &--description-and-specification {
+    padding: 16px;
+  }
+}

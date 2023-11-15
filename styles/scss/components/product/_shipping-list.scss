@@ -1,0 +1,123 @@
+.shippingWrapper {
+  max-width: 362px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+  .changeCepButtonContainer {
+    :global(.vtex-input-prefix__group) {
+      height: 40px;
+      border: none !important;
+      background-color: transparent !important;
+
+      display: flex;
+      align-items: center;
+
+      @media (min-width: $d) {
+        height: 48px;
+      }
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      height: 40px;
+      padding: 0 12px !important;
+      min-width: 186px;
+
+      border-radius: $border-radius !important;
+      border: 1px solid $cinza-claro !important;
+
+      text-align: left;
+      border: none;
+      padding: 0;
+      color: $cinza;
+      font-size: $font-size-xs;
+
+      @media (min-width: $d) {
+        min-width: 220px;
+        height: 48px;
+        font-size: $font-size-sm;
+      }
+
+      &::-webkit-input-placeholder,
+      &::placeholder {
+        color: $cinza;
+      }
+    }
+
+    :global(.vtex-button) {
+      @include secondary-button;
+      background-color: $branco !important;
+      height: 40px;
+      margin-left: 16px;
+      padding: 16px;
+      text-decoration: none;
+      transition: all 0.2s;
+      font-size: $font-size-sm;
+
+      &:hover {
+        filter: brightness(95%);
+      }
+
+      @media (min-width: $d) {
+        font-size: $font-size-md;
+        height: 48px;
+      }
+    }
+    :global(.vtex-button__label) {
+      color: $cinza !important;
+      font-weight: $bold;
+      background-color: $branco;
+    }
+  }
+
+  .changeCEPContainerText {
+    font-size: $font-size-sm;
+    color: $cinza;
+    font-family: $main-font;
+    margin-bottom: 4px;
+
+    @media (min-width: $d) {
+      font-size: $font-size-md;
+    }
+  }
+}
+
+.shippingListTabEmpty {
+  max-width: 200px;
+  margin: 10px auto 0px;
+  line-height: 1.3;
+  color: $cinza;
+}
+
+.shippingList {
+  :global(.vtex-tab__button) {
+    font-family: $main-font !important;
+    font-size: $font-size-sm !important;
+  }
+
+  :global(.vtex-tabs__nav) {
+    position: relative;
+    &::before {
+      content: "";
+      width: 98%;
+      height: 39px;
+      border: 1px solid $cinza-claro;
+      border-radius: 80px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.changeCEPContainerTextLink {
+  color: $cinza;
+  font-size: $font-size-xs;
+  display: block;
+  margin-top: 10px;
+
+  @media (min-width: $d) {
+    font-size: $font-size-sm;
+  }
+}

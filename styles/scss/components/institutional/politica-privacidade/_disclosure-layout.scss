@@ -1,0 +1,13 @@
+.trigger--institucionalInfoQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid $cinza-claro;
+}
+
+.trigger--institucionalInfoQuestion--hidden {
+  margin-bottom: 16px;
+}

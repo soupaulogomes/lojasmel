@@ -1,0 +1,51 @@
+{
+    "flex-layout.row#central-de-atendimento--intro--mobile": {
+        "title": "Quem Somos - Introdução Mobile",
+        "children": [
+            "rich-text#central-de-atendimento--title",
+            "rich-text#central-de-atendimento--text"
+        ],
+        "props": {
+            "blockClass": "centralAtendimentoIntro"
+        }
+    },
+    "rich-text#central-de-atendimento--title": {
+        "title": "Quem Somos - Título",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Central de Atendimento lojasmel",
+            "blockClass": "centralAtendimentoIntroTitle"
+          }
+    },
+    "rich-text#central-de-atendimento--text": {
+        "title": "Quem Somos - Texto",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Olá, seja bem-vindo(a)!\n Envie suas dúvidas, sugestões ou reclamações por meio do formulário abaixo:",
+            "blockClass": "centralAtendimentoIntroText"
+          }
+    },
+    "flex-layout.col#central-de-atendimento--intro--desktop": {
+        "title": "Quem Somos - Introdução Desktop",
+        "children": [
+            "rich-text#central-de-atendimento--title",
+            "rich-text#central-de-atendimento--text"
+        ],
+        "props": {
+            "preventVerticalStretch":true,
+            "blockClass": "centralAtendimentoIntroDesktop"
+        }
+    },
+    "flex-layout.col#central-de-atendimento--intro--mobile": {
+        "title": "Quem Somos - Introdução Mobile",
+        "children": [
+            "rich-text#central-de-atendimento--title",
+            "rich-text#central-de-atendimento--text"
+        ],
+        "props": {
+            "blockClass": "centralAtendimentoIntro"
+        }
+    }
+}

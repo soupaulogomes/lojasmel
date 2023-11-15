@@ -1,0 +1,165 @@
+.triggerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 40px;
+
+  padding: 2px 6px;
+  border: 1px solid $branco !important;
+  border-radius: 4px;
+
+  &::after {
+    content: "Todos os departamentos";
+    text-transform: uppercase;
+    color: $branco;
+    font-size: $font-size-xs;
+    font-family: $main-font;
+    font-weight: $bold;
+    white-space: nowrap;
+  }
+}
+
+.goBackContainer {
+  :global(.vtex-mega-menu-2-x-caretIcon) {
+    height: 40px;
+  }
+}
+.goBackButtonText {
+  font-size: 0;
+  margin-top: 10px;
+  &::after {
+    content: "Voltar";
+    font-size: 15px;
+  }
+}
+
+.menuContainerNav {
+  width: 100%;
+  max-width: 1282px;
+  z-index: 99;
+
+  left: 50% !important;
+  transform: translateX(-50%) translateY(10px) !important;
+
+  padding: 40px 35px;
+  overflow-y: hidden;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  .menuContainer {
+    min-height: 470px;
+    max-width: 280px !important;
+    width: 100% !important;
+
+    &::-webkit-scrollbar {
+      opacity: 0;
+    }
+
+    border-right: 1px solid $cinza-claro;
+  }
+
+  .seeAllLinkContainer,
+  .accordionIconContainer {
+    display: none !important;
+  }
+
+  .submenuContainerTitle {
+    color: $preto;
+    font-family: $main-font;
+    font-size: 25px;
+    font-weight: $bold;
+    margin-bottom: 48px;
+    line-height: 1;
+    margin-top: 16px;
+    text-transform: lowercase;
+  }
+
+  .styledLinkText {
+    font-size: $font-size-lg;
+    font-family: $main-font;
+    font-weight: $regular;
+    color: $cinza;
+    white-space: inherit;
+  }
+
+  .styledLinkIcon {
+    margin-right: 16px !important;
+  }
+
+  .menuItem {
+    background-color: $branco !important;
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &::before {
+      content: "";
+      height: 25px;
+      width: 10px;
+      background-color: $cor-2;
+      border-radius: 3px;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+
+      .styledLinkText {
+        font-weight: 600;
+        color: $cor-2;
+      }
+    }
+  }
+}
+.styledLinkContainer {
+  width: 100%;
+}
+
+.submenuContainer {
+  padding: 0px 52px 16px;
+  max-height: 450px !important;
+
+  .styledLink {
+    position: relative;
+
+    &:hover {
+      &::before {
+        content: "";
+        height: 1px;
+        width: 75%;
+        background-color: $cor-2;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
+
+      .styledLinkText {
+        color: $cor-2;
+      }
+    }
+  }
+}
+.submenuItem {
+  .submenuItem {
+    margin-left: 15px;
+    .styledLinkText {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}
+.submenuList {
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, 1fr);
+}

@@ -1,0 +1,26 @@
+.link--footerSubmenuLink {
+  text-decoration: none;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .label--footerSubmenuLink {
+    text-transform: lowercase;
+
+    color: $cinza;
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    font-weight: $regular;
+    line-height: $font-size-lg;
+
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $cor-2;
+    }
+  }
+}

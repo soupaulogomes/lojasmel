@@ -1,0 +1,28 @@
+@import "components/variables/all";
+
+@import "components/checkout/commun";
+@import "components/checkout/header";
+@import "components/checkout/footer";
+@import "components/checkout/empty-cart";
+@import "components/checkout/checkout-cart";
+@import "components/checkout/summary";
+@import "components/checkout/more-options";
+@import "components/checkout/fretegratis";
+@import "components/checkout/checkout-collection";
+@import "components/checkout/order-template";
+
+* {
+  font-family: $main-font !important;
+}
+
+body {
+  padding-bottom: 0 !important;
+  background: #fff !important;
+}
+
+.flexRowContent--container,
+.checkout-footer .checkout-container,
+.checkout-header .checkout-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}

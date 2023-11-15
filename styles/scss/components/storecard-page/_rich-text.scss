@@ -1,0 +1,181 @@
+.container {
+  &--storecard__button {
+    .link {
+      @include primary-button;
+      text-decoration: none;
+      padding: 0 16px;
+
+      @media (max-width: $m) {
+        font-size: $font-size-sm;
+      }
+    }
+    .paragraph {
+      margin: 0;
+    }
+  }
+
+  &--storecard__advantages-title,
+  &--storecard__advantages-subtitle {
+    margin-left: 0 !important;
+
+    .heading,
+    .paragraph {
+      font-size: $font-size-xl;
+      font-family: $main-font;
+      font-weight: $bold;
+      color: $cor-2;
+      text-transform: lowercase;
+
+      @media (min-width: $d) {
+        margin-top: 0px;
+        font-size: $font-size-xxl;
+        max-width: initial;
+      }
+    }
+  }
+
+  &--storecard__advantages-subtitle {
+    margin-top: 40px;
+    margin-bottom: 16px;
+
+    @media (min-width: $d) {
+      margin-top: 56px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &--storecard__advantages-text-list {
+    margin-left: 10px;
+
+    .paragraph {
+      color: $cinza;
+      font-size: $font-size-md;
+    }
+
+    .strong {
+      color: $cor-2;
+    }
+
+    .list {
+      padding: 0;
+      margin: 0;
+      font-family: $main-font;
+
+      .listItem {
+        display: block;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::marker {
+          display: none !important;
+        }
+
+        &::before {
+          content: "·";
+          font-size: $font-size-xl;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &--storecard__actions-title,
+  &--storecard__doubts-title {
+    margin: 0 auto !important;
+  }
+
+  &--storecard__contact-title {
+    .paragraph,
+    .heading {
+      margin-top: 16px !important;
+      margin-bottom: 0;
+    }
+  }
+
+  &--storecard__contact-text {
+    .paragraph {
+      color: $cinza;
+    }
+  }
+
+  &--storecard__contact-attendance {
+    padding-top: 6px;
+    width: 100%;
+
+    @media (min-width: 640px) {
+      border-top: 1px solid $cinza-claro;
+      padding-top: 24px;
+    }
+
+    .paragraph {
+      margin: 0;
+    }
+  }
+
+  &--storecard__contact-phone {
+    .link {
+      text-decoration: none;
+      color: $cor-2;
+    }
+    .strong {
+      color: $cor-2;
+      font-weight: $bold;
+      font-size: $font-size-xl;
+    }
+
+    .paragraph {
+      margin: 0;
+      color: $cinza;
+    }
+  }
+
+  &--storecard__doubts-button {
+    margin: 24px auto 0;
+
+    @media (max-width: $t) {
+      width: 100%;
+    }
+
+    @media (min-width: $d) {
+      margin: 32px auto 0;
+    }
+  }
+}
+.paragraph--general-condictions-title {
+  margin: 10px 0 0;
+  padding: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d1d1b;
+}
+.paragraph--condictions-content {
+  padding: 20px;
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #606060;
+  text-align: left;
+}
+.container--condictions-button {
+  padding: 20px;
+}
+.link--condictions-button {
+  padding: 10px;
+  font-family: $main-font;
+  cursor: pointer;
+  background-color: #bd1d1d;
+  border: 1px solid #bd1d1d;
+  border-radius: 6px;
+  transition: all 0.2s;
+  color: #fff;
+  text-decoration: none;
+}

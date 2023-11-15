@@ -1,0 +1,217 @@
+{
+  "flex-layout.row#ajuda--info": {
+    "title": "Frequentes - Informações",
+    "children": ["flex-layout.col#ajuda--info.6"],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  "flex-layout.col#ajuda--info.6": {
+    "title": "Frequentes - Informações",
+    "children": [
+      "disclosure-layout#ajuda--question-1.6",
+      "disclosure-layout#ajuda--question-2.6",
+      "disclosure-layout#ajuda--question-3.6",
+      "disclosure-layout#ajuda--question-4.6",
+      "disclosure-layout#ajuda--question-5.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  // QUESTION 1
+  "disclosure-layout#ajuda--question-1.6": {
+    "title": "Frequentes - Pergunta 1",
+    "children": [
+      "disclosure-trigger#ajuda--question-1.6",
+      "disclosure-content#ajuda--answer-1.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-1.6": {
+    "title": "Retirada - Pergunta 1",
+    "children": [
+      "rich-text#ajuda--question-1.6",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-1.6": {
+    "title": "Retirada - Resposta 1",
+    "children": ["rich-text#ajuda--answer-1.5"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  "disclosure-layout#ajuda--question-2.6": {
+    "title": "Frequentes - Pergunta 1",
+    "children": [
+      "disclosure-trigger#ajuda--question-2.6",
+      "disclosure-content#ajuda--answer-2.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-2.6": {
+    "title": "Frequentes - Pergunta 2.6",
+    "children": [
+      "rich-text#ajuda--question-2.6",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-2.6": {
+    "title": "Frequentes - Resposta 2.6",
+    "children": ["rich-text#ajuda--answer-2.6"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 3
+  "disclosure-layout#ajuda--question-3.6": {
+    "title": "Frequentes - Pergunta 3.6",
+    "children": [
+      "disclosure-trigger#ajuda--question-3.6",
+      "disclosure-content#ajuda--answer-3.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-3.6": {
+    "title": "Frequentes - Pergunta 3.6",
+    "children": [
+      "rich-text#ajuda--question-3.6",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-3.6": {
+    "title": "Frequentes - Resposta 3.6",
+    "children": ["rich-text#ajuda--answer-3.6"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 4
+  "disclosure-layout#ajuda--question-4.6": {
+    "title": "Frequentes - Pergunta 4.6",
+    "children": [
+      "disclosure-trigger#ajuda--question-4.6",
+      "disclosure-content#ajuda--answer-4.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-4.6": {
+    "title": "Frequentes - Pergunta 4.6",
+    "children": [
+      "rich-text#ajuda--question-4.6",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-4.6": {
+    "title": "Frequentes - Resposta 4.6",
+    "children": ["rich-text#ajuda--answer-4.6"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 5
+  "disclosure-layout#ajuda--question-5.6": {
+    "title": "Frequentes - Pergunta 5.6",
+    "children": [
+      "disclosure-trigger#ajuda--question-5.6",
+      "disclosure-content#ajuda--answer-5.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-5.6": {
+    "title": "Frequentes - Pergunta 5.6",
+    "children": [
+      "rich-text#ajuda--question-5.6",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-5.6": {
+    "title": "Frequentes - Resposta 5.6",
+    "children": ["rich-text#ajuda--answer-5.6"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 6
+  "disclosure-layout#ajuda--question-6.6": {
+    "title": "Frequentes - Pergunta 6.6",
+    "children": [
+      "disclosure-trigger#ajuda--question-6.6",
+      "disclosure-content#ajuda--answer-6.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-6.6": {
+    "title": "Frequentes - Pergunta 6.6",
+    "children": [
+      "rich-text#ajuda--question-6.6",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-6.6": {
+    "title": "Frequentes - Resposta 6.6",
+    "children": ["rich-text#ajuda--answer-6.6"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 7
+  "disclosure-layout#ajuda--question-7.6": {
+    "title": "Frequentes - Pergunta 7.6",
+    "children": [
+      "disclosure-trigger#ajuda--question-7.6",
+      "disclosure-content#ajuda--answer-7.6"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-7.6": {
+    "title": "Frequentes - Pergunta 7.6",
+    "children": [
+      "rich-text#ajuda--question-7.6",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-7.6": {
+    "title": "Frequentes - Resposta 7.6",
+    "children": ["rich-text#ajuda--answer-7.6"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  }
+}

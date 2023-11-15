@@ -1,0 +1,77 @@
+{
+  "flex-layout.row#header-line-top--desktop": {
+    "title": "Linha - Linha Superior header",
+    "children": ["flex-layout.col#header-line-top--desktop"],
+    "props": {
+      "blockClass": ["HeaderLineTop"],
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#header-line-top--desktop": {
+    "title": "Linha - Linha Superior header",
+    "children": [
+      "flex-layout.row#header-line-top--promotion",
+      "flex-layout.row#header-line-top--social-network"
+    ],
+    "props": {
+      "blockClass": ["container", "HeaderLineTop"],
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#header-line-top--promotion": {
+    "title": "Coluna - Cupom",
+    "children": ["rich-text#coupon-text", "rich-text#coupon-name"],
+    "props": {
+      "blockClass": ["HeaderLineTopPromotion"],
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "colGap": "2"
+    }
+  },
+  "flex-layout.row#header-line-top--social-network": {
+    "title": "Coluna - Cupom",
+    "children": [
+      "rich-text#card-text",
+      "link#header-facebook",
+      "link#header-youtube",
+      "link#header-instagram"
+    ],
+    "props": {
+      "blockClass": ["HeaderLineTopSocialNetwork"],
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#card-text": {
+    "title": "Linha - Cupom Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Cartão lojasmel",
+      "blockClass": "headerCardText"
+    }
+  },
+  "link#header-facebook": {
+    "props": {
+      "href": "https://www.facebook.com/lojasmel/",
+      "blockClass": "HeaderLineTopFacebook"
+    }
+  },
+  "link#header-youtube": {
+    "props": {
+      "href": "https://www.youtube.com/channel/UCwFHsWrlfLLqO63rdzoMpUA",
+      "blockClass": "HeaderLineTopYoutube"
+    }
+  },
+  "link#header-instagram": {
+    "props": {
+      "href": "https://www.instagram.com/lojasmeloficial/",
+      "blockClass": "HeaderLineTopInstagram"
+    }
+  }
+}

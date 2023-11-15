@@ -1,0 +1,1023 @@
+{
+  "flex-layout.row#desktop-line-2": {
+    "title": "Header Desktop Linha 2",
+    "children": ["flex-layout.col#desktop-line-2"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["headerLine2"]
+    }
+  },
+  "flex-layout.col#desktop-line-2": {
+    "children": [
+      "vtex.menu@2.x:menu#headerMenuDesktop",
+      "mega-menu#todos-os-departamentos"
+    ]
+  },
+
+  "disposition-layout#menu": {
+    "title": "Disposição do menu",
+    "children": [
+      "mega-menu-trigger-btn",
+      // "drawer#menu",
+      "menu-item#headerMenuDesktopItem2",
+      "menu-item#headerMenuDesktopItem3",
+      "menu-item#headerMenuDesktopItem4",
+      "menu-item#headerMenuDesktopItem5",
+      "menu-item#headerMenuDesktopItem6",
+      "menu-item#headerMenuDesktopItem7",
+      "menu-item#headerMenuDesktopItem8",
+      "menu-item#headerMenuDesktopItem9"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        }
+      ]
+    }
+  },
+
+  //MENU PRINCIPAL
+  "vtex.menu@2.x:menu#headerMenuDesktop": {
+    "title": "Menu",
+    "children": ["disposition-layout#menu"],
+    "props": {
+      "blockClass": "headerMenuDesktop"
+    }
+  },
+
+  //ITEM 2
+  "menu-item#headerMenuDesktopItem2": {
+    "title": "Item 2",
+    "props": {
+      "id": "headerMenuDesktopItem2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "OFERTAS",
+        "text": "OFERTAS"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem2"]
+  },
+  //ITEM 2 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem2": {
+    "title": "Submenu",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem2"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem2": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-2": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-2": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-2": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-2": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-2": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-2": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-2",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  //ITEM 3
+  "menu-item#headerMenuDesktopItem3": {
+    "title": "Item 3",
+    "props": {
+      "id": "headerMenuDesktopItem3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "CARTÃO LOJAS MEL",
+        "text": "CARTÃO LOJAS MEL"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem3"]
+  },
+  //ITEM 3 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem3": {
+    "title": "Submenu",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem3"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem3": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-3": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-3": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-3": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-3": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-3": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-3": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  //ITEM 4
+  "menu-item#headerMenuDesktopItem4": {
+    "title": "Item 4",
+    "props": {
+      "id": "headerMenuDesktopItem4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "AR E VENTILAÇÃO",
+        "text": "AR E VENTILAÇÃO"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem4"]
+  },
+  //ITEM 4 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem4": {
+    "title": "Submenu",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem4"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem4": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-4": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-4": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-4": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-4": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-4": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-4": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-4",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  //ITEM 5
+  "menu-item#headerMenuDesktopItem5": {
+    "title": "Item 5",
+    "props": {
+      "id": "headerMenuDesktopItem5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "ORGANIZADORES",
+        "text": "ORGANIZADORES"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem5"]
+  },
+  //ITEM 5 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem5": {
+    "title": "Submenu",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem5"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem5": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-5": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-5": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-5": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-5": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-5": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-5": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-5",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  //ITEM 6
+  "menu-item#headerMenuDesktopItem6": {
+    "title": "Item 6",
+    "props": {
+      "id": "headerMenuDesktopItem6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "CAMA, MESA E BANHO",
+        "text": "CAMA, MESA E BANHO"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem6"]
+  },
+  //ITEM 6 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem6": {
+    "title": "Submenu",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem6"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem6": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-6": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-6": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-6": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-6": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-6": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-6": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-6",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  //ITEM 7
+  "menu-item#headerMenuDesktopItem7": {
+    "title": "Item 7",
+    "props": {
+      "id": "headerMenuDesktopItem7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "BRINQUEDOS",
+        "text": "BRINQUEDOS"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem7"]
+  },
+  //ITEM 7 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem7": {
+    "title": "Submenu",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem7"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem7": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-7": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-7": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-7": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-7": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-7": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-7": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-7",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  //ITEM 8
+  "menu-item#headerMenuDesktopItem8": {
+    "title": "Item 8",
+    "props": {
+      "id": "headerMenuDesktopItem8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "BELEZA, MODA E SAÚDE",
+        "text": "BELEZA, MODA E SAÚDE"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem8"]
+  },
+  //ITEM 8 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem8": {
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem8"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem8": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-8": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-8": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-8": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-8": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-8": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-8": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-8",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  //ITEM 9
+  "menu-item#headerMenuDesktopItem9": {
+    "title": "Item 9",
+    "props": {
+      "id": "headerMenuDesktopItem9",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "PAPELARIA",
+        "text": "PAPELARIA"
+      },
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem9"]
+  },
+  //ITEM 9 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem9": {
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem9"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem9": {
+    "children": [],
+    "props": {
+      "blockClass": "headerSubMenuDesktop"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem1-9": {
+    "props": {
+      "id": "headerSubMenuDesktopItem1-9",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem2-9": {
+    "props": {
+      "id": "headerSubMenuDesktopItem2-9",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem3-9": {
+    "props": {
+      "id": "headerSubMenuDesktopItem3-9",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem4-9": {
+    "props": {
+      "id": "headerSubMenuDesktopItem4-9",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem5-9": {
+    "props": {
+      "id": "headerSubMenuDesktopItem5-9",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  },
+  "menu-item#headerSubMenuDesktopItem6-9": {
+    "props": {
+      "id": "headerSubMenuDesktopItem6-9",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "VINHO TINTO",
+        "text": "VINHO TINTO"
+      },
+      "blockClass": "headerSubMenuDesktopItem"
+    }
+  }
+}

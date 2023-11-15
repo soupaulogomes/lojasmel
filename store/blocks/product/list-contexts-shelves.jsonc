@@ -1,0 +1,26 @@
+{
+  "list-context.product-list#product-shelf-1": {
+    "title": "Vitrine 1",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "list-context.product-list#product-shelf-2": {
+    "title": "Vitrine 2",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.container--quemSomosManifestoText {
+  margin: 0 0 40px;
+
+  .paragraph--quemSomosManifestoText {
+    margin: 0 0 16px;
+    color: $cinza;
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    line-height: $font-size-lg;
+    font-weight: $regular;
+
+    .strong--quemSomosManifestoText {
+      font-size: $font-size-md;
+      line-height: $font-size-xl;
+    }
+  }
+}

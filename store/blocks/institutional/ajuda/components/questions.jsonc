@@ -1,0 +1,588 @@
+{
+  //QUESTIONS 1
+  // QUESTION AND ANSWER 1
+  "rich-text#ajuda--question-1": {
+    "title": "Meus pedidos - Pergunta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "A entrega ocorre também aos finais de semana e feriados?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-1": {
+    "title": "Meus pedidos - Resposta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Nossas entregas são realizadas de segunda a sexta-feira, das 08 às 20h. Não realizamos entregas aos sábados, domingos e feriados.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 2
+  "rich-text#ajuda--question-2": {
+    "title": "Meus pedidos - Pergunta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "quais são as formas de pagamento aceitas na loja virtual?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-2": {
+    "title": "Meus pedidos - Resposta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "as formas de pagamento são via boleto bancário e cartão de crédito.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 3
+  "rich-text#ajuda--question-3": {
+    "title": "Meus pedidos - Pergunta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "quero trocar/devolver meu produto, como devo proceder?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-3": {
+    "title": "Meus pedidos - Resposta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "A troca pode ser realizada tanto em casos de insatisfação, quanto por defeitos de fábrica. Basta entrar em contato com nossa Central de Relacionamento, de Segunda a Sexta-Feira das 8h às 19h e das 08h às 16h aos Sábados. Os prazos são: 30 dias corridos por desistência (desde que o produto não tenha sido usado, que esteja em perfeito estado, embalagem intacta e com todas as peças contidas), e 07 dias por defeitos de fábrica, após isso o conserto deverá ser realizado na assistência técnica. Os prazos são contabilizados a partir da data de recebimento.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 4
+  "rich-text#ajuda--question-4": {
+    "title": "Meus pedidos - Pergunta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "meu pagamento foi aprovado, passaram-se 4 dias úteis e não recebi nenhum e-mail, o que fazer?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-4": {
+    "title": "Meus pedidos - Resposta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Nesse caso, é necessário verificar se o e-mail cadastrado está correto, ou se sua caixa de entrada possui algum filtro que bloqueie a mensagem automática ou se caiu na caixa de Spam. Caso tenha verificado e não tenha recebido o e-mail, favor entrar em contato com nossa Central de Atendimento através do nosso chat ou via telefone pelo número (11) 5060-5060 de Segunda a Sexta-Feira das 08h às 19h e das 08h às 16h aos Sábados.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 5
+  "rich-text#ajuda--question-5": {
+    "title": "Meus pedidos - Pergunta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "como fico sabendo sobre o andamento do meu pedido?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-5": {
+    "title": "Meus pedidos - Resposta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Todas as informações do seu pedido serão enviadas para o e-mail cadastrado no ato da compra.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+
+  //  //QUESTIONS 1.2 // //
+
+  // QUESTION AND ANSWER 1
+  "rich-text#ajuda--question-1.2": {
+    "title": "Trocas - Pergunta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "como procedo no caso de desistência de compra?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-1.2": {
+    "title": "Trocas - Resposta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Caso a forma de pagamento for boleto bancário, basta desconsiderar, pois o pedido será cancelado automaticamente após 2 dias úteis. Em casos de pagamento já aprovado (tanto em boleto, quanto cartão de crédito), basta entrar em contato com nossa Central através do telefone (11) 5060-5060 de Segunda a Sexta das 08:00 às 18:30 e aos sábados das 08:00 às 16:00.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 2
+  "rich-text#ajuda--question-2.2": {
+    "title": "Trocas - Pergunta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "posso comprar no site e trocar na loja física?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-2.2": {
+    "title": "Trocas - Resposta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Sim, é possível realizar a troca de produtos comprados pelo site em loja física. Leve o produto na embalagem original com a nota fiscal até qualquer uma de nossas lojas mais próximas. Lembrando que os prazos: 30 dias corridos por desistência (desde que o produto não tenha sido usado, que esteja em perfeito estado, embalagem intacta e com todas as peças contidas), e 07 dias por defeitos de fábrica, após isso o conserto deverá ser realizado na assistência técnica.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 3
+  "rich-text#ajuda--question-3.2": {
+    "title": "Trocas - Pergunta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "posso trocar um produto em qualquer uma das lojas mel, mesmo não sendo a loja na qual efetuei a compra?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-3.2": {
+    "title": "Trocas - Resposta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Sim. É possível realizar a troca em qualquer uma de nossas lojas. Basta possuir em mãos a Nota Fiscal, o produto e seus acessórios na embalagem original.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 4
+  "rich-text#ajuda--question-4.2": {
+    "title": "Trocas - Pergunta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "quero trocar/devolver meu produto, como devo proceder?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-4.2": {
+    "title": "Trocas - Resposta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "A troca pode ser realizada tanto em casos de insatisfação, quanto por defeitos de fábrica. Basta entrar em contato com nossa Central de Relacionamento, de Segunda a Sexta das 08:00 às 18:30 e aos sábados das 08:00 às 16:00. Os prazos são: 30 dias corridos por desistência (desde que o produto não tenha sido usado, que esteja em perfeito estado, embalagem intacta e com todas as peças contidas), e 07 dias por defeitos de fábrica, após isso o conserto deverá ser realizado na assistência técnica. Os prazos são contabilizados a partir da data de recebimento. \n \nNão trabalhamos com a opção de coleta ou troca domiciliar. Para mais informações, basta entrar em contato com o Sac através dos telefones (11) 5060-5060 e Whatsapp (11) 94778-2868.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+
+  //  //QUESTIONS 1.3 // formas de pagamento //
+
+  // QUESTION AND ANSWER 1
+  "rich-text#ajuda--question-1.3": {
+    "title": "Formas - Pergunta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "posso parcelar em quantas vezes?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-1.3": {
+    "title": "Formas - Resposta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Suas compras podem ser parceladas em até 10 vezes sem juros, sendo o valor mínimo de parcelas para cartão lojasmel R$ 19,99 e demais bandeira valor mínimo de parcela R$ 30,00.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 2
+  "rich-text#ajuda--question-2.3": {
+    "title": "Formas - Pergunta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "quais são as formas de pagamento aceitas na loja virtual?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-2.3": {
+    "title": "Formas - Resposta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Você pode efetuar o pagamento de suas compras via Pix, boleto bancário ou cartão de crédito.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+
+  //  //QUESTIONS 1.4 // entregas //
+
+  // QUESTION AND ANSWER 1
+  "rich-text#ajuda--question-1.4": {
+    "title": "Entregas - Pergunta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "a entrega ocorre também aos finais de semana e feriados?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-1.4": {
+    "title": "Entregas - Resposta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Nossas entregas são realizadas de segunda a sexta-feira, das 08 às 20h. Não realizamos entregas aos sábados, domingos e feriados.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 2
+  "rich-text#ajuda--question-2.4": {
+    "title": "Entregas - Pergunta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "e se não tiver ninguém no local para receber meu pedido, o que acontece?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-2.4": {
+    "title": "Entregas - Resposta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Para evitar atrasos na entrega, é fundamental que haja alguém no endereço determinado para receber o pedido. Caso a entrega não possa ser realizada por ausência de pessoa autorizada no local, faremos até três novas tentativas em dias e horários alternados. Caso não haja sucesso, o pedido retornará ao nosso Centro de Distribuição, informaremos através de nossa Central de Relacionamento e será cobrado um novo frete ou realizado o estorno.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 3
+  "rich-text#ajuda--question-3.4": {
+    "title": "Entregas - Pergunta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "entrega em todo o brasil?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-3.4": {
+    "title": "Entregas - Resposta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Realizamos entregas em todo o território nacional, através das melhores transportadoras e Correios.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 4
+  "rich-text#ajuda--question-4.4": {
+    "title": "Entregas - Pergunta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "posso agendar a minha entrega?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-4.4": {
+    "title": "Entregas - Resposta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Não realizamos entregas agendadas.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 5
+  "rich-text#ajuda--question-5.4": {
+    "title": "Entregas - Pergunta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "posso comprar o produto na loja física e pedir para entregar na minha residência?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-5.4": {
+    "title": "Entregas - Resposta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Quem compra o produto em loja física deve retirá-lo no mesmo local no ato da compra.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 6
+  "rich-text#ajuda--question-6.4": {
+    "title": "Entregas - Pergunta 6",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "qual o prazo de entrega para pedido entrega domiciliar?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-6.4": {
+    "title": "Entregas - Resposta 6",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Para entrega domiciliar, o prazo pode variar de acordo com o CEP e produtos desejados.O prazo de entrega passa a contar a partir da emissão da nota fiscal.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 7
+  "rich-text#ajuda--question-7.4": {
+    "title": "Entregas - Pergunta 7",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "qual o valor do frete?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-7.4": {
+    "title": "Entregas - Resposta 7",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "O valor do frete varia de acordo com o CEP de entrega, tamanho e peso do produto. Para fazer uma simulação de valores, basta incluir produtos no carrinho, adicionar o CEP de destino e calcular.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+
+  //  //QUESTIONS 1.5 // retira //
+
+  // QUESTION AND ANSWER 1
+  "rich-text#ajuda--question-1.5": {
+    "title": "Retirada - Pergunta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "qual o prazo de entrega?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-1.5": {
+    "title": "Retirada - Resposta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Para pedidos com a opção de retirada em loja, o prazo é de até 6 dias úteis. Pode variar de acordo com o CEP e produtos desejados. O prazo de entrega passa a contar a partir da emissão da nota fiscal.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 2
+  "rich-text#ajuda--question-2.5": {
+    "title": "Retirada - Pergunta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "quanto tempo o produto demora para chegar na loja?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-2.5": {
+    "title": "Retirada - Resposta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "O produto pode demorar até 6 dias úteis para chegar na loja física escolhida.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 3
+  "rich-text#ajuda--question-3.5": {
+    "title": "Retirada - Pergunta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "recebi a mensagem de pagamento aprovado, posso retirar meu produto?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-3.5": {
+    "title": "Retirada - Resposta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Não, a aprovação do pagamento significa que o processo logístico do pedido será iniciado. Ou seja, o embalaremos com carinho e enviaremos o quanto antes para a loja física que você escolheu. E assim que chegar, te avisaremos por e-mail!",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 4
+  "rich-text#ajuda--question-4.5": {
+    "title": "Retirada - Pergunta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "uma outra pessoa pode retirar meu pedido? como autorizo?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-4.5": {
+    "title": "Retirada - Resposta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Sim, é necessário apenas que a pessoa leve os documentos (originais ou cópia) com foto do titular da compra e de quem irá retirá-lo.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 5
+  "rich-text#ajuda--question-5.5": {
+    "title": "Retirada - Pergunta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "qual é o prazo para retirar o produto na loja?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-5.5": {
+    "title": "Retirada - Resposta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "O pedido fica disponível para retirada na loja por 30 dias corridos.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+
+  //  //QUESTIONS 1.6 // frequentes //
+
+  // QUESTION AND ANSWER 1
+  "rich-text#ajuda--question-1.6": {
+    "title": "Frequentes - Pergunta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "a entrega ocorre também aos finais de semana e feriados?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-1.6": {
+    "title": "Frequentes - Resposta 1",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Nossas entregas são realizadas de segunda a sexta-feira, das 08 às 20h. Não realizamos entregas aos sábados, domingos e feriados.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 2
+  "rich-text#ajuda--question-2.6": {
+    "title": "Frequentes - Pergunta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "quanto tempo o produto demora para chegar na loja?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-2.6": {
+    "title": "Frequentes - Resposta 2",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "O produto pode demorar até 6 dias úteis para chegar na loja física escolhida.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 3
+  "rich-text#ajuda--question-3.6": {
+    "title": "Frequentes - Pergunta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "recebi a mensagem de pagamento aprovado, posso retirar meu produto?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-3.6": {
+    "title": "Frequentes - Resposta 3",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Não, a aprovação do pagamento significa que o processo logístico do pedido será iniciado. Ou seja, o embalaremos com carinho e enviaremos o quanto antes para a loja física que você escolheu. E assim que chegar, te avisaremos por e-mail!",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 4
+  "rich-text#ajuda--question-4.6": {
+    "title": "Frequentes - Pergunta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "uma outra pessoa pode retirar meu pedido? como autorizo?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-4.6": {
+    "title": "Frequentes - Resposta 4",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Sim, é necessário apenas que a pessoa leve os documentos (originais ou cópia) com foto do titular da compra e de quem irá retirá-lo.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 5
+  "rich-text#ajuda--question-5.6": {
+    "title": "Frequentes - Pergunta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "qual é o prazo para retirar o produto na loja?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-5.6": {
+    "title": "Frequentes - Resposta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "O pedido fica disponível para retirada na loja por 30 dias corridos.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 6
+  "rich-text#ajuda--question-6.6": {
+    "title": "Frequentes - Pergunta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "qual é o prazo para retirar o produto na loja?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-6.6": {
+    "title": "Frequentes - Resposta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "O pedido fica disponível para retirada na loja por 30 dias corridos.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION AND ANSWER 7
+  "rich-text#ajuda--question-7.6": {
+    "title": "Frequentes - Pergunta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "qual é o prazo para retirar o produto na loja?",
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "rich-text#ajuda--answer-7.6": {
+    "title": "Frequentes - Resposta 5",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "O pedido fica disponível para retirada na loja por 30 dias corridos.",
+      "blockClass": "institucionalInfoAnswer"
+    }
+  }
+}

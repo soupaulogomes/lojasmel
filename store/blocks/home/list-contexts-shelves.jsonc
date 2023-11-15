@@ -1,0 +1,83 @@
+{
+  "list-context.product-list#home-shelf-1": {
+    "title": "List Vitrine 1",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-shelf-countdown"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "list-context.product-list#home-shelf-2": {
+    "title": "List Vitrine 2",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "list-context.product-list#home-shelf-3": {
+    "title": "List Vitrine 3",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+  "list-context.product-list#home-shelf-4": {
+    "title": "List Vitrine 4",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  },
+
+  "slider-layout#home-shelf-countdown": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "usePagination": true,
+      "infinite": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": ["shelf-countdown"]
+    }
+  },
+  "slider-layout#home-shelves": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 32,
+        "phone": 32
+      },
+      "usePagination": true,
+      "infinite": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": ["shelf"]
+    }
+  }
+}

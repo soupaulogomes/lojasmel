@@ -1,0 +1,77 @@
+{
+  // NOT FOUND
+  "store.not-found#product": {
+    "blocks": ["flex-layout.row#not-found"]
+  },
+  "flex-layout.row#not-found": {
+    "title": "PAGINA 404",
+    "props": {
+      "blockClass": ["not-found-page", "container"],
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#not-found"]
+  },
+  "flex-layout.col#not-found": {
+    "props": {
+      "blockClass": "not-found-page"
+    },
+    "children": [
+      "flex-layout.row#not-found-line-1",
+      "flex-layout.row#search-shelf-offers"
+    ]
+  },
+
+  "flex-layout.row#not-found-line-1": {
+    "children": ["flex-layout.col#not-found-line-1"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["not-found-page-line-1"]
+    }
+  },
+  "flex-layout.col#not-found-line-1": {
+    "children": [
+      "image#not-found-image",
+      "rich-text#not-found-title",
+      "rich-text#not-found-subtitle",
+      "rich-text#not-found-button"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "image#not-found-image": {
+    "title": "PAGINA 404 - IMAGEM",
+    "props": {
+      "src": "assets/svg/icon-404.svg"
+    }
+  },
+  "rich-text#not-found-title": {
+    "title": "PAGINA 404 - TITULO",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Página não encontrada",
+      "blockClass": "not-found-page__title"
+    }
+  },
+  "rich-text#not-found-subtitle": {
+    "title": "PAGINA 404 - SUBTITULO",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Parece que a página não existe ou não está mais disponível. (Erro 404)",
+      "blockClass": "not-found-page__subtitle"
+    }
+  },
+  "rich-text#not-found-button": {
+    "title": "PAGINA 404 - BOTÃO",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[VOLTAR](/)",
+
+      "blockClass": "not-found-page__button"
+    }
+  }
+}

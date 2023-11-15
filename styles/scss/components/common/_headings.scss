@@ -1,0 +1,22 @@
+// SETAGEM COMMON DOS HEADINGS DA LOJA
+
+.heading-level-1 {
+  @include heading-1;
+  font-family: $main-font;
+}
+.heading-level-2 {
+  @include heading-2;
+  font-family: $main-font;
+}
+.heading-level-3 {
+  @include heading-3;
+  font-family: $main-font;
+}
+.heading-level-4 {
+  @include heading-4;
+  font-family: $main-font;
+}
+.heading-level-5 {
+  @include heading-5;
+  font-family: $main-font;
+}

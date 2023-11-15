@@ -1,0 +1,50 @@
+.flexRow {
+  &--tabloid__wrapper {
+    padding-top: 24px;
+
+    @media (min-width: $d) {
+      padding-top: 24px;      
+    }
+
+    :global(.vtex-breadcrumb-1-x-container--tabloid__breadcrumb) {
+      @extend %container;
+      
+      @media (max-width: $d) {
+        display: none;
+      }
+    }
+
+    :global(.vtex-breadcrumb-1-x-arrow)
+      :global(.vtex-breadcrumb-1-x-link--tabloid__breadcrumb) {
+      color: $cor-2;
+    }
+  }
+
+  &--tabloid__bottom-info {
+    margin-top: 40px;
+  }
+
+  &--tabloid__bottom-banner {
+    margin-top: 10px;
+    margin-bottom: 56px;
+    padding: 0;
+    
+    @media (min-width: $d) {
+      padding: 0 16px;
+      margin-bottom: 100px;
+    }
+  }
+}
+.flexCol {
+  &--tabloid__wrapper {
+    row-gap: 40px;
+  }
+}
+
+.flexColChild {
+  &--tabloid__wrapper {
+    &:empty {
+      display: none;
+    }
+  }
+}

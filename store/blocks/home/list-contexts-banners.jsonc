@@ -1,0 +1,403 @@
+{
+  "list-context.image-list#home-hero-banner": {
+    "title": "HOME - Banner Hero Full",
+    "children": ["slider-layout#home-hero-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/banner-hero-mob-1.png",
+          "image": "assets/images/banner-hero-desk-1.png",
+          "description": "Banner Hero - 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner Hero - 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner Hero - 3",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#home-category-banners": {
+    "title": "Banners de Categorias",
+    "children": ["slider-layout#home-category-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/d_banner-vertical.png",
+          "image": "assets/images/d_banner-vertical.png",
+          "description": "Banner de categoria - 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-1.png",
+          "image": "assets/images/d_banner-vertical-1.png",
+          "description": "Banner de categoria - 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-2.png",
+          "image": "assets/images/d_banner-vertical-2.png",
+          "description": "Banner de categoria - 3",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-3.png",
+          "image": "assets/images/d_banner-vertical-3.png",
+          "description": "Banner de categoria - 4",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/d_banner-vertical-4.png",
+          "image": "assets/images/d_banner-vertical-4.png",
+          "description": "Banner de categoria - 5",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#home-highlight-banners": {
+    "title": "HOME - Banners de Destaque",
+    "children": ["slider-layout#home-highlight-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/banner-highlight-1.png",
+          "image": "assets/images/banner-highlight-1.png",
+          "description": "Banner de destaque - 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/banner-highlight-2.png",
+          "image": "assets/images/banner-highlight-2.png",
+          "description": "Banner de destaque - 2",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#home-brands-carousel": {
+    "title": "HOME - Carrossel de marcas",
+    "children": ["slider-layout#home-brands-carousel"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-2.png",
+          "description": "Marca 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-3.png",
+          "description": "Marca 3",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 4",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-2.png",
+          "description": "Marca 5",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-3.png",
+          "description": "Marca 6",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 7",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-2.png",
+          "description": "Marca 8",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-3.png",
+          "description": "Marca 9",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/marcas-1.png",
+          "description": "Marca 10",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#home-highlight-banners-2": {
+    "title": "HOME - Banners de Destaque 2",
+    "children": ["slider-layout#home-highlight-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/banner-highlight-3.png",
+          "image": "assets/images/banner-highlight-3.png",
+          "description": "Banner 1 de destaque 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "assets/images/banner-highlight-4.png",
+          "image": "assets/images/banner-highlight-4.png",
+          "description": "Banner 2 de destaque 2",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "list-context.info-card-list#home-tipbar": {
+    "children": ["slider-layout#home-tipbar"],
+    "props": {
+      "infoCards": [
+        {
+          "textPosition": "right",
+          "imageUrl": "assets/images/icon-tipbar.png",
+          "headline": "5% de desconto",
+          "subhead": "Boletos acima de R$ 129,00",
+          "blockClass": "home-tipbar",
+          "callToActionMode": "none",
+          "textAlignment": "center"
+        },
+        {
+          "textPosition": "right",
+          "imageUrl": "assets/images/icon-tipbar.png",
+          "headline": "Sem aperto",
+          "subhead": "em até 10x no cartão",
+          "blockClass": "home-tipbar",
+          "callToActionMode": "none",
+          "textAlignment": "center"
+        },
+        {
+          "textPosition": "right",
+          "imageUrl": "assets/images/icon-tipbar.png",
+          "headline": "Visite-nos",
+          "subhead": "55 lojas físicas",
+          "blockClass": "home-tipbar",
+          "callToActionMode": "none",
+          "textAlignment": "center"
+        },
+        {
+          "textPosition": "right",
+          "imageUrl": "assets/images/icon-tipbar.png",
+          "headline": "Juntos",
+          "subhead": "44 anos com você",
+          "blockClass": "home-tipbar",
+          "callToActionMode": "none",
+          "textAlignment": "center"
+        }
+      ]
+    }
+  },
+  //new selecao
+  "list-context.info-card-list#home-selections-images": {
+    "children": ["slider-layout#selections-images"],
+    "props": {
+      "infoCards": [
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "UTENSÍLIOS",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "DECORAÇÃO",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "FERRAMENTAS",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "BRINQUEDOS",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "CAMA, MESA E BANHO",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "ELETRÔNICOS",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "BELEZA",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "PAPELARIA",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "PET SHOP",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+
+        //
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "PET SHOP",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "PET SHOP",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.co/78x78/png",
+          "callToActionMode": "link",
+          "callToActionText": "PET SHOP",
+          "callToActionUrl": "#",
+          "imageActionUrl": "#",
+          "textAlignment": "center",
+          "blockClass": "home__selection-infocard"
+        }
+      ],
+      "blockClass": "home__selections-images"
+    }
+  }
+
+
+}

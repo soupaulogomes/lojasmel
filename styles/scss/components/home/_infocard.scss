@@ -1,0 +1,59 @@
+.infoCardContainer {
+  &--home__selection {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: min-content;
+    background-color: transparent;
+
+    &:hover,
+    &:active,
+    &:focus {
+      .infoCardCallActionText {
+        color: $cor-2;
+      }
+    }
+
+    .infoCardTextContainer,
+    .infoCardImageContainer {
+      width: 100% !important;
+      transition: all 0.2s;
+    }
+
+    .infoCardCallActionContainer,
+    .infoCardCallActionText {
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      margin: 0;
+      margin-top: 3px;
+      font-size: $font-size-xs;
+      font-family: $main-font;
+      letter-spacing: 0.5px;
+      color: $preto;
+
+      @media (min-width: $d) {
+        font-size: $font-size-sm;
+      }
+    }
+
+    .infoCardImageContainer {
+      text-align: center;
+
+      .infoCardImage {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border-radius: 1800px;
+
+        @media (max-width: $m) {
+          max-width: 64px;
+          height: auto;
+        }
+      }
+    }
+
+    .infoCardCallActionContainer {
+      margin: 0;
+    }
+  }
+}

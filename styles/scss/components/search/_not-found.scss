@@ -1,0 +1,60 @@
+.searchNotFoundOops {
+  font-size: 0;
+
+  &::before {
+    content: url(assets/images/product-not-found.png);
+  }
+}
+.searchNotFound {
+}
+.searchNotFoundInfo {
+  color: $cor-2;
+  font-weight: $bold;
+  font-size: 0;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 32px;
+
+  &::before {
+    content: "Ops, nenhum produto foi encontrado.";
+    font-size: $font-size-xxl;
+    text-transform: lowercase;
+    font-weight: $bold;
+    text-align: left;
+
+    @media (min-width: $d){
+        text-align: centerF;
+    }
+  }
+
+  .searchNotFoundWhatDoIDo {
+    font-size: $font-size-md;
+    color: $cinza;
+    font-weight: $regular;
+    text-align: center;
+    padding: 0;
+    text-align: left;
+  }
+
+  .searchNotFoundWhatToDoDotsContainer {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+
+    .searchNotFoundWhatToDoDots {
+      font-size: $font-size-sm;
+      color: $cinza;
+      font-weight: $regular;
+      text-align: left;
+
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "●";
+        font-size: $font-size-xxs - 2;
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "flex-layout.row#quem-somos--banner--desktop": {
+        "title": "Quem Somos - Banner Desktop",
+        "children": [
+            "image#quem-somos--banner--desktop"
+        ],
+        "props": {
+            "blockClass": "quemSomosBanner"
+        }
+    },
+    "image#quem-somos--banner--desktop": {
+        "title": "Quem Somos - Image Desktop",
+        "props": {
+            "src": "/arquivos/trabalhe-conosco-banner-desktop.png",
+            "blockClass": "quemSomosBannerDesktop"
+        }
+    },
+    "flex-layout.row#quem-somos--banner--mobile": {
+        "title": "Quem Somos - Image Desktop",
+        "children": [
+            "image#quem-somos--banner--mobile"
+        ],
+        "props": {
+            "blockClass": "quemSomosBanner"
+        }
+    },
+    "image#quem-somos--banner--mobile": {
+        "props": {
+            "src": "/arquivos/trabalhe-conosco-banner-mobile.png",
+            "blockClass": "quemSomosBannerMobile"
+        }
+    }
+}

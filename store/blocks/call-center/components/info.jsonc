@@ -1,0 +1,58 @@
+{
+    "flex-layout.row#central-de-atendimento--info--mobile": {
+        "title": "Central de Atendimento - Informações Mobile",
+        "children": [
+            "rich-text#central-de-atendimento--razao-social",
+            "rich-text#central-de-atendimento--cnpj",
+            "rich-text#central-de-atendimento--telefone",
+            "rich-text#central-de-atendimento--email"
+        ],
+        "props": {
+            "blockClass": "centralAtendimentoInfo"
+        }
+    },
+    "rich-text#central-de-atendimento--razao-social": {
+        "title": "Central de Atendimento - Razão Social",
+        "props": {
+            "textAlignment": "LEFT",
+            "text": "**Razão Social:** BMP Utilidades Domésticas S.A.",
+            "blockClass": "centralAtendimentoInfo"
+          }
+    },
+    "rich-text#central-de-atendimento--cnpj": {
+        "title": "Central de Atendimento - Razão Social",
+        "props": {
+            "textAlignment": "LEFT",
+            "text": "**CNPJ:** 12 356 100/0001-34",
+            "blockClass": "centralAtendimentoInfo"
+          }
+    },
+    "rich-text#central-de-atendimento--telefone": {
+        "title": "Central de Atendimento - Razão Social",
+        "props": {
+            "textAlignment": "LEFT",
+            "text": "**Telefone:** 11 5060-5060",
+            "blockClass": "centralAtendimentoInfo"
+          }
+    },
+    "rich-text#central-de-atendimento--email": {
+        "title": "Central de Atendimento - Razão Social",
+        "props": {
+            "textAlignment": "LEFT",
+            "text": "**E-mail:** relacionamento@lojasmel.com",
+            "blockClass": "centralAtendimentoInfo"
+          }
+    },
+    "flex-layout.col#central-de-atendimento--info--desktop": {
+        "title": "Central de Atendimento - Informações Mobile",
+        "children": [
+            "rich-text#central-de-atendimento--razao-social",
+            "rich-text#central-de-atendimento--cnpj",
+            "rich-text#central-de-atendimento--telefone",
+            "rich-text#central-de-atendimento--email"
+        ],
+        "props": {
+            "blockClass": "centralAtendimentoInfo"
+        }
+    }
+}

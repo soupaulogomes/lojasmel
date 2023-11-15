@@ -1,0 +1,245 @@
+{
+  //kitlook pagina produto
+
+  "disposition-layout#kit-page-product": {
+    "title": "KIT | Disposição do Conteudo",
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#kit-product",
+      "responsive-layout.mobile#kit-description",
+      "flex-layout.row#kit-product-shelf"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        }
+      ]
+    }
+  },
+  "disposition-layout#kit-page-product2": {
+    "title": "KIT | Disposição do Conteudo",
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#kit-product",
+      "responsive-layout.mobile#kit-description",
+      "flex-layout.row#kit-product-shelf"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        }
+      ]
+    }
+  },
+
+  //ve se é um kit ou um kitlook pela categoria, se for kit mostra um layout de produto a pedido do cliente
+  "flex-layout.row#kit-or-kitlook": {
+    "children": ["flex-layout.col#kit-or-kitlook"],
+    "props": {}
+  },
+  "flex-layout.col#kit-or-kitlook": {
+    "children": ["condition-layout.product#kit-or-kitlook"],
+    "props": {}
+  },
+  "condition-layout.product#kit-or-kitlook": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "172"
+          }
+        }
+      ],
+      "Then": "disposition-layout#product",
+      "Else": "disposition-layout#kit-page-product"
+    }
+  },
+
+  "flex-layout.row#kit-product": {
+    "title": "",
+    "children": [
+      "flex-layout.col#kit-product-main",
+      // "flex-layout.col#kit-product-list"
+      "flex-layout.col#kitlook"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "kit__product-wrapper"]
+    }
+  },
+  "flex-layout.col#kit-product-main": {
+    "children": [
+      "flex-layout.row#kit-product-name",
+      "product-images#kit-product-image",
+      "responsive-layout.desktop#kit-description"
+    ],
+    "props": {
+      "width": "70%",
+      "preventVerticalStretch": true
+    }
+  },
+
+  // RESPONSIVES DESCRIPTIONS --------------------------------------
+  "responsive-layout.mobile#kit-description": {
+    "title": "Descrição mobile",
+    "children": ["flex-layout.row#kit-product-description"]
+  },
+  "responsive-layout.desktop#kit-description": {
+    "title": "Descrição desktop",
+    "children": ["product-description"]
+  },
+  // RESPONSIVES DESCRIPTIONS --------------------------------------
+
+  "flex-layout.row#kit-product-name": {
+    "title": "Linha 1 - Nome e botao de compartilhar",
+    "children": ["vtex.store-components:product-name", "overlay-trigger#share"],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "blockClass": ["kit__product-name"]
+    }
+  },
+
+  "product-images#kit-product-image": {
+    "props": {
+      "aspectRatio": "auto",
+      "contentOrder": "images-first",
+      "zoomMode": "disabled"
+    }
+  },
+
+
+  "flex-layout.col#kitlook": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": ["kitlook-block"]
+    },
+    "children": [
+      "rich-text#kit-product-list-title",
+      "kitlook"
+    ]
+  },
+
+  //! ERRO
+  // "flex-layout.col#kit-product-list": {
+  //   "children": [
+  //     "rich-text#kit-product-list-title",
+  //     "kitlook",
+  //     "flex-layout.row#price-list",
+  //     "add-to-cart-button#gift-list" //adiciona o kit
+  //   ],
+  //   "props": {
+  //     "blockClass": "kit__kitlook",
+  //     "preventVerticalStretch": true
+  //   }
+  // },
+
+  // "flex-layout.row#price-list": {
+  //   "children": [
+  //     "rich-text#totalPrice",
+  //     "lojasmel1.product-price:product-selling-price#pdp"
+  //   ],
+  //   "props": {
+  //     "blockClass": ["price-list", "price-kitlook"]
+  //   }
+  // },
+  // "rich-text#totalPrice": {
+  //   "props": {
+  //     "text": "Subtotal",
+  //     "blockClass": "totalPrice"
+  //   }
+  // },
+
+  // "add-to-cart-button#gift-list": {
+  //   "title": "SUMMARY - Botao de ação",
+  //   "props": {
+  //     "customPixelEventId": "add-to-cart-button",
+  //     "text": "COMPRAR SELECIONADOS",
+  //     "onClickBehavior": "add-to-cart",
+  //     "addToCartFeedback": "customEvent",
+  //     "blockClass": ["summary", "kitlook-add-cart"]
+  //   }
+  // },
+
+  "rich-text#kit-product-list-title": {
+    "title": "Titulo da seção",
+    "props": {
+      "text": "## produtos disponíveis",
+      "blockClass": ["section-common-title", "kit__kitlook-title"]
+    }
+  },
+
+  "flex-layout.row#kit-product-description": {
+    "title": "Descrição",
+    "children": ["product-description"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "kit__description"]
+    }
+  },
+
+  "flex-layout.row#kit-product-shelf": {
+    "title": "Vitrine",
+    "children": ["flex-layout.col#kit-product-shelf"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "kit__shelf"]
+    }
+  },
+  "flex-layout.col#kit-product-shelf": {
+    "children": [
+      "rich-text#kit-product-shelf-title",
+      "list-context.product-list#kit-product-shelf"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#kit-product-shelf-title": {
+    "title": "Titulo Vitrine",
+    "props": {
+      "text": "## os mais vendidos",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  "list-context.product-list#kit-product-shelf": {
+    "title": "Vitrine",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-shelves"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "installmentCriteria": "MAX_WITH_INTEREST",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    }
+  }
+}

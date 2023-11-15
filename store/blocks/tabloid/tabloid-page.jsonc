@@ -1,0 +1,120 @@
+{
+  "store.custom#tabloid-page": {
+    "title": "Landing Page",
+    "blocks": ["flex-layout.row#tabloid-page"]
+  },
+
+  "flex-layout.row#tabloid-page": {
+    "children": ["flex-layout.col#tabloid-page"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tabloid__wrapper"],
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#tabloid-page": {
+    "children": [
+      "breadcrumb#tabloid-page",
+      "flex-layout.row#tabloid-page-top-info",
+      "flex-layout.row#tabloid-page-top-banner",
+      "flex-layout.row#tabloid-page-banner-collections",
+      "flex-layout.row#tabloid-page-bottom-info",
+      "flex-layout.row#tabloid-page-bottom-banner"
+    ],
+    "props": {
+      "blockClass": ["tabloid__wrapper"]
+    }
+  },
+
+  "breadcrumb#tabloid-page": {
+    "title": "BreadCrumb",
+    "props": {
+      "breadcrumb": [
+        {
+          "name": "Página tabloide",
+          "href": "/tabloide"
+        }
+      ],
+      "blockClass": ["tabloid__breadcrumb"]
+    }
+  },
+
+  "flex-layout.row#tabloid-page-top-info": {
+    "title": "Informações do topo da pagina",
+    "children": ["flex-layout.col#tabloid-page-top-info"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tabloid__top-info","container"]
+    }
+  },
+  "flex-layout.col#tabloid-page-top-info": {
+    "children": [
+      "rich-text#tabloid-page-top-title",
+      "rich-text#tabloid-page-top-text"
+    ]
+  },
+  "flex-layout.row#tabloid-page-bottom-info": {
+    "title": "Informações do final da pagina",
+    "children": ["flex-layout.col#tabloid-page-bottom-info"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tabloid__bottom-info","container"]
+    }
+  },
+  "flex-layout.col#tabloid-page-bottom-info": {
+    "children": [
+      "rich-text#tabloid-page-bottom-title",
+      "rich-text#tabloid-page-bottom-text"
+    ]
+  },
+
+  "rich-text#tabloid-page-top-title": {
+    "props": {
+      "text": "tabloide digital lojas mel",
+      "blockClass": ["section-common-title", "tabloid__title"]
+    }
+  },
+  "rich-text#tabloid-page-top-text": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias molestias nisi cumque repellendus recusandae, voluptatibus laborum soluta beatae quis minus voluptates obcaecati. Id quidem dolor suscipit. Excepturi, dolores ea? [ver mais](/vermais)",
+      "blockClass": ["tabloid__text"]
+    }
+  },
+  "rich-text#tabloid-page-bottom-title": {
+    "props": {
+      "text": "lorem ipsum",
+      "blockClass": ["section-common-title", "tabloid__title"]
+    }
+  },
+  "rich-text#tabloid-page-bottom-text": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias molestias nisi cumque repellendus recusandae, voluptatibus laborum soluta beatae quis minus voluptates obcaecati. Id quidem dolor suscipit. Excepturi, dolores ea?",
+      "blockClass": ["tabloid__text"]
+    }
+  },
+
+  "flex-layout.row#tabloid-page-top-banner": {
+    "children": ["list-context.image-list#tabloid-page-top-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tabloid__top-banner","container"]
+    }
+  },
+  "flex-layout.row#tabloid-page-bottom-banner": {
+    "children": ["list-context.image-list#tabloid-page-bottom-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tabloid__bottom-banner","container"]
+    }
+  },
+
+  "flex-layout.row#tabloid-page-banner-collections": {
+    "children": [
+      "list-context.image-list#tabloid-page-banner-collections"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tabloid__banner-collections","container"]
+    }
+  }
+}

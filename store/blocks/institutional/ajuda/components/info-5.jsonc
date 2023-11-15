@@ -1,0 +1,162 @@
+{
+  "flex-layout.row#ajuda--info": {
+    "title": "Retirada - Informações",
+    "children": ["flex-layout.col#ajuda--info.5"],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  "flex-layout.col#ajuda--info.5": {
+    "title": "Retirada - Informações",
+    "children": [
+      "disclosure-layout#ajuda--question-1.5",
+      "disclosure-layout#ajuda--question-2.5",
+      "disclosure-layout#ajuda--question-3.5",
+      "disclosure-layout#ajuda--question-4.5",
+      "disclosure-layout#ajuda--question-5.5"
+    ],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  // QUESTION 1
+  "disclosure-layout#ajuda--question-1.5": {
+    "title": "Retirada - Pergunta 1",
+    "children": [
+      "disclosure-trigger#ajuda--question-1.5",
+      "disclosure-content#ajuda--answer-1.5"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-1.5": {
+    "title": "Retirada - Pergunta 1",
+    "children": [
+      "rich-text#ajuda--question-1.5",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-1.5": {
+    "title": "Retirada - Resposta 1",
+    "children": ["rich-text#ajuda--answer-1.5"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 2
+  "disclosure-layout#ajuda--question-2.5": {
+    "title": "Retirada - Pergunta 2.5",
+    "children": [
+      "disclosure-trigger#ajuda--question-2.5",
+      "disclosure-content#ajuda--answer-2.5"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-2.5": {
+    "title": "Retirada - Pergunta 2.5",
+    "children": [
+      "rich-text#ajuda--question-2.5",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-2.5": {
+    "title": "Retirada - Resposta 2.5",
+    "children": ["rich-text#ajuda--answer-2.5"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 3
+  "disclosure-layout#ajuda--question-3.5": {
+    "title": "Retirada - Pergunta 3.5",
+    "children": [
+      "disclosure-trigger#ajuda--question-3.5",
+      "disclosure-content#ajuda--answer-3.5"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-3.5": {
+    "title": "Retirada - Pergunta 3.5",
+    "children": [
+      "rich-text#ajuda--question-3.5",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-3.5": {
+    "title": "Retirada - Resposta 3.5",
+    "children": ["rich-text#ajuda--answer-3.5"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 4
+  "disclosure-layout#ajuda--question-4.5": {
+    "title": "Retirada - Pergunta 4.5",
+    "children": [
+      "disclosure-trigger#ajuda--question-4.5",
+      "disclosure-content#ajuda--answer-4.5"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-4.5": {
+    "title": "Retirada - Pergunta 4.5",
+    "children": [
+      "rich-text#ajuda--question-4.5",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-4.5": {
+    "title": "Retirada - Resposta 4.5",
+    "children": ["rich-text#ajuda--answer-4.5"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 5
+  "disclosure-layout#ajuda--question-5.5": {
+    "title": "Retirada - Pergunta 5.5",
+    "children": [
+      "disclosure-trigger#ajuda--question-5.5",
+      "disclosure-content#ajuda--answer-5.5"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-5.5": {
+    "title": "Retirada - Pergunta 5.5",
+    "children": [
+      "rich-text#ajuda--question-5.5",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-5.5": {
+    "title": "Retirada - Resposta 5.5",
+    "children": ["rich-text#ajuda--answer-5.5"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  }
+}

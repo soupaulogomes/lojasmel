@@ -1,0 +1,111 @@
+{
+    "flex-layout.row#trabalhe-conosco--info": {
+        "title": "Trabalhe Conosco - Informações",
+        "children": [
+            "flex-layout.row#trabalhe-conosco--info-1",
+            "flex-layout.row#trabalhe-conosco--info-2"
+        ],
+        "props": {
+            "blockClass": "trabalheConoscoInfoMobile"
+        }
+    },
+    "flex-layout.row#trabalhe-conosco--info-1": {
+        "title": "Trabalhe Conosco - Informações 1",
+        "children": [
+            "rich-text#trabalhe-conosco--info-1-title",
+            "rich-text#trabalhe-conosco--info-1-text"
+        ],
+        "props": {
+            "blockClass": "trabalheConoscoInfoMobile"
+        }
+    },
+    "rich-text#trabalhe-conosco--info-1-title": {
+        "title": "Trabalhe Conosco - Informações 1 Título",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Trabalhe conosco",
+            "blockClass": "trabalheConoscoInfoTitle"
+          }
+    },
+    "rich-text#trabalhe-conosco--info-1-text": {
+        "title": "Trabalhe Conosco - Informações 1 Texto",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula dui, tempus ac lacinia vel, consectetur et dolor. Duis congue lacinia est ut venenatis.  LER MAIS",
+            "blockClass": "trabalheConoscoInfoText"
+          }
+    },
+    "flex-layout.row#trabalhe-conosco--info-2": {
+        "title": "Trabalhe Conosco - Informações 2",
+        "children": [
+            "rich-text#trabalhe-conosco--info-2-title",
+            "rich-text#trabalhe-conosco--info-2-text"
+        ],
+        "props": {
+            "blockClass": "trabalheConoscoInfo"
+        }
+    },
+    "rich-text#trabalhe-conosco--info-2-title": {
+        "title": "Trabalhe Conosco - Informações 2 Título",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "venha fazer parte da nossa equipe!",
+            "blockClass": "trabalheConoscoInfoTitle"
+          }
+    },
+    "rich-text#trabalhe-conosco--info-2-text": {
+        "title": "Trabalhe Conosco - Informações 2 Texto",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Envie seu currículo para **vagas@lojasmel.com**",
+            "blockClass": "trabalheConoscoInfoText2"
+          }
+    },
+    "flex-layout.col#trabalhe-conosco--info--desktop": {
+        "title": "Trabalhe Conosco - Informações",
+        "children": [
+            "flex-layout.col#trabalhe-conosco--info-1",
+            "flex-layout.col#trabalhe-conosco--info-2"
+        ],
+        "props": {
+            "preventVerticalStretch":true,
+            "preventHorizontalStretch": true,
+            "blockClass": "trabalheConoscoInfoDesktop"
+        }
+    },
+    "flex-layout.col#trabalhe-conosco--info-1": {
+        "title": "Trabalhe Conosco - Informações 1",
+        "children": [
+            "rich-text#trabalhe-conosco--info-1-title",
+            "rich-text#trabalhe-conosco--info-1-text--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch":true,
+            "blockClass": "trabalheConoscoInfoDesktop"
+        }
+    },
+    "rich-text#trabalhe-conosco--info-1-text--desktop": {
+        "title": "Trabalhe Conosco - Informações 2 Texto",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula dui, tempus ac lacinia vel, consectetur et dolor. Duis congue lacinia est ut venenatis. Vestibulum in purus tincidunt, tincidunt enim fermentum, convallis dui. Cras suscipit libero et fringilla vestibulum. Fusce pellentesque convallis erat, quis imperdiet ante placerat placerat. Quisque urna ligula, dapibus id fermentum condimentum, facilisis et lorem. Etiam vestibulum nisl non nisl tincidunt, eget lobortis massa varius.",
+            "blockClass": "trabalheConoscoInfoText2"
+          }
+    },
+    "flex-layout.col#trabalhe-conosco--info-2": {
+        "title": "Trabalhe Conosco - Informações 2",
+        "children": [
+            "rich-text#trabalhe-conosco--info-2-title",
+            "rich-text#trabalhe-conosco--info-2-text"
+        ],
+        "props": {
+            "preventVerticalStretch":true,
+            "blockClass": "trabalheConoscoInfoDesktop"
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+  "flex-layout.row#header-line-bottom--mobile": {
+    "title": "Linha - Header",
+    "children": ["flex-layout.col#header-line-bottom"],
+    "props": {
+      "blockClass": ["container", "mobileHeaderLineBottom"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#header-line-bottom": {
+    "title": "Coluna - Header",
+    "children": [
+      "flex-layout.row#header-line-1",
+      "search-bar#mobile"
+
+    ],
+    "props": {
+      "blockClass": ["mobileHeaderLine2"]
+    }
+  },
+  "flex-layout.row#header-line-1": {
+    "title": "Linha - Header Linha 1",
+    "children": [
+      "flex-layout.row#header-line-1--left",
+      "flex-layout.row#header-line-1--right"
+    ],
+    "props": {
+      "blockClass": ["mobileHeaderLine"],
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#header-line-1--left": {
+    "title": "Coluna - Header Coluna da Esquerda",
+    "children": ["drawer#menu", "logo#header--mobile"],
+    "props": {
+      "blockClass": ["mobileHeaderLineLeft"],
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#header-line-1--right": {
+    "title": "Coluna - Header Coluna da Direita",
+    "children": [
+      "link#header-localization--mobile",
+      "login#header",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": ["mobileHeaderLineRight"],
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "logo#header--mobile": {
+    "title": "Logo Lojas Mel",
+    "props": {
+      "title": "Lojas Mel",
+      "href": "/",
+      "url": "assets/images/svg/logo.svg"
+    }
+  },
+  "link#header-localization--mobile": {
+    "title": "Localização Lojas",
+    "props": {
+      "href": "/nossas-lojas",
+      "label": "",
+      "blockClass": "headerLocalizationMobile"
+    }
+  },
+  "login#header": {
+    "title": "Login",
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass": "headerLoginMobile"
+    }
+  },
+  "search-bar#mobile": {
+    "title": "Barra de Busca",
+    "props": {
+      "containerMode": "container",
+      "placeholder": "O que você procura?",
+      "blockClass": ["headerSearch", "headerSearchMobile"],
+      "displayMode": "search-button"
+    },
+    "blocks": ["autocomplete-result-list.v2"]
+  }
+}

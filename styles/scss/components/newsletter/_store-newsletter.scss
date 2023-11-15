@@ -1,0 +1,95 @@
+.newsletterForm {
+  width: 100%;
+  position: relative;
+
+  :global(.vtex-input__error) {
+    color: $cor-1;
+
+    position: absolute;
+    bottom: -15px;
+    font-size: $font-size-xs - 1;
+  }
+
+  .nameInputContainer,
+  .emailInputContainer,
+  .phoneInputContainer {
+    & :global(.vtex-input-prefix__group) {
+      border: none;
+      margin-bottom: 16px;
+
+      & :global(.vtex-styleguide-9-x-input) {
+        font-family: $main-font;
+        font-size: $font-size-xs;
+        font-weight: $regular;
+        color: $cinza;
+        border-radius: $border-radius;
+        padding: 12px 4px 12px 12px;
+
+        @media (min-width: $d) {
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+
+  .formSubmitContainer {
+    & :global(.vtex-button) {
+      background-color: $cor-1;
+      border: none;
+      width: 100%;
+    }
+
+    & :global(.vtex-button__label) {
+      padding: 11px 3px !important;
+      border-radius: 4px;
+      font-family: $main-font;
+      font-size: $font-size-sm;
+      font-weight: $bold;
+      color: $preto;
+
+      @media (min-width: $l) {
+        font-size: $font-size-md;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $d) {
+  .newsletterForm {
+    display: flex;
+    align-items: center;
+
+    .nameInputContainer,
+    .emailInputContainer,
+    .phoneInputContainer {
+      & :global(.vtex-input-prefix__group) {
+        margin-bottom: 0;
+        margin-right: 16px;
+
+        width: 238px;
+        height: 48px;
+      }
+    }
+
+    .phoneInputContainer {
+      & :global(.vtex-input-prefix__group) {
+        margin-right: 17px;
+        width: 265px;
+      }
+    }
+
+    .formSubmitContainer {
+      & :global(.vtex-button) {
+        width: 156px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+.defaultSuccessMessage {
+  color: $branco;
+  text-align: center;
+  font-size: $font-size-xxl;
+  text-transform: uppercase;
+}

@@ -1,0 +1,78 @@
+{
+  "product-summary.shelf#minisearch": {
+    "title": "SUMARY - Esqueleto Padrão",
+    "children": ["flex-layout.row#minisearch-search"],
+    "props": {
+      "blockClass": "search"
+    }
+  },
+
+  "flex-layout.row#minisearch-search": {
+    "children": [
+      "stack-layout#summary-image-search",
+      "flex-layout.col#minisearch-info",
+      "add-to-cart-button#add"
+    ],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "minisearch"
+    }
+  },
+
+  "flex-layout.col#minisearch-info": {
+    "children": [
+      "product-summary-name#search",
+      "vtex.product-price:product-list-price#summary",
+      "flex-layout.row#member-tag-search",
+      "vtex.product-price:product-selling-price#summary"
+    ]
+  },
+
+  // IMAGEM
+  "stack-layout#summary-image-search": {
+    "children": ["product-summary-image#summary-search"],
+    "props": {
+      "blockClass": "summary__price"
+    }
+  },
+  "product-summary-image#summary-search": {
+    "props": {
+      "showBadge": true,
+      "badgeText": "OFF",
+      "aspectRatio": "1:1",
+      "maxHeight": 78
+    }
+  },
+
+  // NOME
+  "product-summary-name#search": {
+    "props": {
+      "blockClass": "minibusca"
+    }
+  },
+
+  //preco membro
+  "flex-layout.row#member-tag-search": {
+    "title": "SUMMARY - Preço de sócio",
+    "children": ["flex-layout.row#image-member-tag-search"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "summary__member-price-wrapper"
+    }
+  },
+  "image#summary-member-image-search": {
+    "title": "SUMMARY - Logo do sócio",
+    "props": {
+      "src": "https://placehold.co/40x40/png"
+    }
+  },
+
+  "flex-layout.row#image-member-tag-search": {
+    "children": ["image#summary-member-image-search"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "member-image-tag"
+    }
+  }
+}

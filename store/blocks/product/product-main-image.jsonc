@@ -1,0 +1,25 @@
+{
+  "stack-layout#product-image": {
+    "children": [
+      "product-images",
+      "vtex.product-price:product-price-savings#product"
+    ]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": "1:1",
+      "contentOrder": "images-first",
+      "zoomMode": "in-place-click",
+      "position": "right",
+      "blockClass": "product-imge-pdp"
+    }
+  },
+  "vtex.product-price:product-price-savings#product": {
+    "title": "Preço descontado",
+    "props": {
+      "markers": ["discount"],
+      "message": "{savingsPercentage} OFF",
+      "blockClass": "product__savingPricePercentage"
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "list-context.image-list#tabloid-page-banner-collections": {
+    "title": "Coleção de banners",
+    "children": ["slider-layout#tabloid-page-banner-collections"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/images/tabloid-banner-1.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-2.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-3.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-2.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-3.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-1.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-2.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-1.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-3.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-3.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-2.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-1.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-3.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-2.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/tabloid-banner-3.png",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://via.placeholder.com/390x213?text=BANNER",
+          "description": "Banner de tabloide",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#tabloid-page-banner-collections": {
+    "title": "Slider ",
+    "props": {
+      "itemsPerPage": 15,
+      "infinite": false,
+      "fullWidth": true,
+      "usePagination": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass":[
+        "tabloid__banner-collections"
+      ]
+    }
+  },
+
+  "list-context.image-list#tabloid-page-top-banner": {
+    "title": "Banner do final da pagina",
+    "children": ["slider-layout#tabloid-page-full-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/tabloid-banner-full-top-mob.png",
+          "image": "assets/images/tabloid-banner-full-top-desk.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#tabloid-page-bottom-banner": {
+    "title": "Banner do final da pagina",
+    "children": ["slider-layout#tabloid-page-full-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/tabloid-banner-full-bottom-mob.png",
+          "image": "assets/images/tabloid-banner-full-bottom-desk.png",
+          "description": "Banner da página de cupons",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#tabloid-page-full-banner": {
+    "title": "Slider ",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": false,
+      "usePagination": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass":[
+        "tabloid__full-banner"
+      ]
+    }
+  }
+}

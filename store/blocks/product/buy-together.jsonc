@@ -1,0 +1,12 @@
+{
+  // BUY TOGETHER ---------------
+  "flex-layout.row#product-buy-together": {
+    "title": "COMPRE JUNTO",
+    "children": ["cross-selling-shelf"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__buy-together", "container"]
+    }
+  }
+  // BUY TOGETHER ---------------
+}

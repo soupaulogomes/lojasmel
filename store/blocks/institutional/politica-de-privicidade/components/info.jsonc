@@ -1,0 +1,453 @@
+{
+    "flex-layout.row#politica-de-privacidade--info": {
+        "title": "Política de Privacidade - Informações",
+        "children": [
+            "flex-layout.col#politica-de-privacidade--info"
+        ],
+        "props": {
+            "blockClass": "institucionalInfo"
+        }
+    },
+    "flex-layout.col#politica-de-privacidade--info": {
+        "title": "Política de Privacidade - Informações",
+        "children": [
+            "disclosure-layout#politica-de-privacidade--question-1",
+            "disclosure-layout#politica-de-privacidade--question-2",
+            "disclosure-layout#politica-de-privacidade--question-3",
+            "disclosure-layout#politica-de-privacidade--question-4",
+            "disclosure-layout#politica-de-privacidade--question-5",
+            "disclosure-layout#politica-de-privacidade--question-6",
+            "disclosure-layout#politica-de-privacidade--question-7",
+            "disclosure-layout#politica-de-privacidade--question-8",
+            "disclosure-layout#politica-de-privacidade--question-9",
+            "disclosure-layout#politica-de-privacidade--question-10",
+            "disclosure-layout#politica-de-privacidade--question-11",
+            "disclosure-layout#politica-de-privacidade--question-12",
+            "disclosure-layout#politica-de-privacidade--question-13",
+            "disclosure-layout#politica-de-privacidade--question-14"
+        ],
+        "props": {
+            "blockClass": "institucionalInfo"
+        }
+    },
+    // QUESTION 1
+    "disclosure-layout#politica-de-privacidade--question-1": {
+        "title": "Política de Privacidade - Pergunta 1",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-1",
+            "disclosure-content#politica-de-privacidade--answer-1"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-1": {
+        "title": "Política de Privacidade - Pergunta 1",
+        "children": [
+            "rich-text#politica-de-privacidade--question-1",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-1": {
+        "title": "Política de Privacidade - Resposta 1",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-1"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 2
+    "disclosure-layout#politica-de-privacidade--question-2": {
+        "title": "Política de Privacidade - Pergunta 2",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-2",
+            "disclosure-content#politica-de-privacidade--answer-2"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-2": {
+        "title": "Política de Privacidade - Pergunta 2",
+        "children": [
+            "rich-text#politica-de-privacidade--question-2",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-2": {
+        "title": "Política de Privacidade - Resposta 2",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-2"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 3
+    "disclosure-layout#politica-de-privacidade--question-3": {
+        "title": "Política de Privacidade - Pergunta 3",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-3",
+            "disclosure-content#politica-de-privacidade--answer-3"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-3": {
+        "title": "Política de Privacidade - Pergunta 3",
+        "children": [
+            "rich-text#politica-de-privacidade--question-3",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-3": {
+        "title": "Política de Privacidade - Resposta 3",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-3"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 4
+    "disclosure-layout#politica-de-privacidade--question-4": {
+        "title": "Política de Privacidade - Pergunta 4",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-4",
+            "disclosure-content#politica-de-privacidade--answer-4"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-4": {
+        "title": "Política de Privacidade - Pergunta 4",
+        "children": [
+            "rich-text#politica-de-privacidade--question-4",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-4": {
+        "title": "Política de Privacidade - Resposta 4",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-4"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 5
+    "disclosure-layout#politica-de-privacidade--question-5": {
+        "title": "Política de Privacidade - Pergunta 5",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-5",
+            "disclosure-content#politica-de-privacidade--answer-5"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-5": {
+        "title": "Política de Privacidade - Pergunta 5",
+        "children": [
+            "rich-text#politica-de-privacidade--question-5",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-5": {
+        "title": "Política de Privacidade - Resposta 5",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-5"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 6
+    "disclosure-layout#politica-de-privacidade--question-6": {
+        "title": "Política de Privacidade - Pergunta 6",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-6",
+            "disclosure-content#politica-de-privacidade--answer-6"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-6": {
+        "title": "Política de Privacidade - Pergunta 6",
+        "children": [
+            "rich-text#politica-de-privacidade--question-6",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-6": {
+        "title": "Política de Privacidade - Resposta 6",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-6"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 7
+    "disclosure-layout#politica-de-privacidade--question-7": {
+        "title": "Política de Privacidade - Pergunta 7",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-7",
+            "disclosure-content#politica-de-privacidade--answer-7"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-7": {
+        "title": "Política de Privacidade - Pergunta 7",
+        "children": [
+            "rich-text#politica-de-privacidade--question-7",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-7": {
+        "title": "Política de Privacidade - Resposta 7",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-7"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 8
+    "disclosure-layout#politica-de-privacidade--question-8": {
+        "title": "Política de Privacidade - Pergunta 8",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-8",
+            "disclosure-content#politica-de-privacidade--answer-8"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-8": {
+        "title": "Política de Privacidade - Pergunta 8",
+        "children": [
+            "rich-text#politica-de-privacidade--question-8",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-8": {
+        "title": "Política de Privacidade - Resposta 8",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-8"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 9
+    "disclosure-layout#politica-de-privacidade--question-9": {
+        "title": "Política de Privacidade - Pergunta 9",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-9",
+            "disclosure-content#politica-de-privacidade--answer-9"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-9": {
+        "title": "Política de Privacidade - Pergunta 9",
+        "children": [
+            "rich-text#politica-de-privacidade--question-9",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-9": {
+        "title": "Política de Privacidade - Resposta 9",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-9"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 10
+    "disclosure-layout#politica-de-privacidade--question-10": {
+        "title": "Política de Privacidade - Pergunta 10",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-10",
+            "disclosure-content#politica-de-privacidade--answer-10"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-10": {
+        "title": "Política de Privacidade - Pergunta 10",
+        "children": [
+            "rich-text#politica-de-privacidade--question-10",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-10": {
+        "title": "Política de Privacidade - Resposta 10",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-10"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 11
+    "disclosure-layout#politica-de-privacidade--question-11": {
+        "title": "Política de Privacidade - Pergunta 11",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-11",
+            "disclosure-content#politica-de-privacidade--answer-11"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-11": {
+        "title": "Política de Privacidade - Pergunta 11",
+        "children": [
+            "rich-text#politica-de-privacidade--question-11",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-11": {
+        "title": "Política de Privacidade - Resposta 11",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-11"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 12
+    "disclosure-layout#politica-de-privacidade--question-12": {
+        "title": "Política de Privacidade - Pergunta 12",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-12",
+            "disclosure-content#politica-de-privacidade--answer-12"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-12": {
+        "title": "Política de Privacidade - Pergunta 12",
+        "children": [
+            "rich-text#politica-de-privacidade--question-12",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-12": {
+        "title": "Política de Privacidade - Resposta 12",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-12"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 13
+    "disclosure-layout#politica-de-privacidade--question-13": {
+        "title": "Política de Privacidade - Pergunta 13",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-13",
+            "disclosure-content#politica-de-privacidade--answer-13"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-13": {
+        "title": "Política de Privacidade - Pergunta 13",
+        "children": [
+            "rich-text#politica-de-privacidade--question-13",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-13": {
+        "title": "Política de Privacidade - Resposta 13",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-13"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    },
+    // QUESTION 14
+    "disclosure-layout#politica-de-privacidade--question-14": {
+        "title": "Política de Privacidade - Pergunta 14",
+        "children": [
+            "disclosure-trigger#politica-de-privacidade--question-14",
+            "disclosure-content#politica-de-privacidade--answer-14"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoContainer"
+        }
+    },
+    "disclosure-trigger#politica-de-privacidade--question-14": {
+        "title": "Política de Privacidade - Pergunta 14",
+        "children": [
+            "rich-text#politica-de-privacidade--question-14",
+            "disclosure-state-indicator#institucional-menu-icon"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoQuestion"
+        }
+    },
+    "disclosure-content#politica-de-privacidade--answer-14": {
+        "title": "Política de Privacidade - Resposta 14",
+        "children": [
+            "rich-text#politica-de-privacidade--answer-14"
+        ],
+        "props": {
+            "blockClass": "institucionalInfoAnswer"
+        }
+    }
+}

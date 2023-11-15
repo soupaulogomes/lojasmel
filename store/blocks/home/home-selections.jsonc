@@ -1,0 +1,119 @@
+{
+  "info-card#home-selection-1": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "UTENSÍLIOS",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-2": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "DECORAÇÃO",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-3": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "FERRAMENTAS",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-4": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "BRINQUEDOS",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-5": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "CAMA, MESA E BANHO",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-6": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "ELETRÔNICOS",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-7": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "BELEZA",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-8": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "PAPELARIA",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  },
+  "info-card#home-selection-9": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.co/78x78/png",
+      "callToActionMode": "link",
+      "callToActionText": "PET SHOP",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "home__selection"
+    }
+  }
+}

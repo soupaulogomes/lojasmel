@@ -1,0 +1,31 @@
+{
+  "list-context.image-list#coupon-banner": {
+    "title": "Banner da pagina de cupons",
+    "children": ["slider-layout#coupon-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "https://via.placeholder.com/360x130?text=BANNER",
+          "image": "https://via.placeholder.com/1216x200?text=BANNER",
+          "description": "Banner da página de cupons",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#coupon-banner":{
+    "title": "Slider do Banners da pagina de cupons",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": false,
+      "usePagination": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "coupon__main-banner"
+    }
+  }
+}

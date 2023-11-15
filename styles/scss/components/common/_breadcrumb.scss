@@ -1,0 +1,54 @@
+.container {
+  padding-top: 5px;
+  text-transform: lowercase ;
+
+  @media (min-width: $d) {
+    display: block;
+  }
+}
+
+.homeLink {
+  &::before {
+    content: "Início";
+    font-family: $main-font;
+  }
+  .homeIcon {
+    display: none;
+  }
+}
+
+.arrow {
+  padding: 0;
+
+  &::before {
+    content: "●";
+    font-size: 8px;
+    color: $cinza;
+
+    display: inline-block;
+    transform: translateY(-2px);
+  }
+
+  .caretIcon {
+    display: none;
+  }
+}
+
+.arrow--1 {
+  padding-right: 3px;
+}
+
+.term {
+  font-size: $font-size-sm;
+  color: $cor-2;
+}
+
+.link {
+  font-size: $font-size-sm;
+  color: $cinza;
+  font-family: $main-font;
+
+  &:hover {
+    color: $cor-2;
+  }
+}

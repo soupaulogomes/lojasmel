@@ -1,0 +1,66 @@
+{
+    "link#quem-somos": {
+        "title": "Institutional - Quem Somos",
+        "props": {
+            "href": "/quem-somos",
+            "label": "Quem somos",
+            "blockClass":"footerSubmenuLink"
+        }
+    },
+    "link#nossas-lojas": {
+        "title": "Institutional - Nossas lojas",
+        "props": {
+            "href": "/nossas-lojas",
+            "label": "Nossas lojas",
+            "blockClass":"footerSubmenuLink"
+        }
+    },
+    "link#trabalhe-conosco": {
+        "title": "Institutional - Trabalhe conosco",
+        "props": {
+            "href": "/trabalhe-conosco",
+            "label": "Trabalhe conosco",
+            "blockClass":"footerSubmenuLink"
+        }
+    },
+    "link#politica-privacidade": {
+        "title": "Institutional - Política de Privacidade",
+        "props": {
+            "href": "/politica-de-privacidade",
+            "label": "Política de Privacidade",
+            "blockClass":"footerSubmenuLink"
+        }
+    },
+    "link#perguntas-frequentes": {
+        "title": "Dúvidas - Perguntas Frequentes",
+        "props": {
+            "href": "/ajuda",
+            "label": "Perguntas frequentes",
+            "blockClass":"footerSubmenuLink"
+        }
+    },
+    "link#retirada-e-troca": {
+        "title": "Dúvidas - Retirada e trocar na loja",
+        "props": {
+            "href": "/ajuda",
+            "label": "Retirada e trocar na loja",
+            "blockClass":"footerSubmenuLink"
+        }
+    },
+    "link#lista-de-presentes": {
+        "title": "Dúvidas - Lista de presentes",
+        "props": {
+            "href": "/ajuda",
+            "label": "Lista de presentes",
+            "blockClass":"footerSubmenuLink"
+        }
+    },
+    "link#garanta-seu-cupom": {
+        "title": "Dúvidas - Página de Cupons",
+        "props": {
+            "href": "/garanta-seu-cupom",
+            "label": "Garanta seu cupom",
+            "blockClass":"footerSubmenuLink"
+        }
+    }
+}

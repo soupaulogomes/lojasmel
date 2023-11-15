@@ -1,0 +1,102 @@
+{
+  // LINHAS -----------------------------------------------------
+
+  "flex-layout.row#home-shelf-1": {
+    "title": "HOME | Vitrine 1",
+    "children": ["flex-layout.col#home-shelf-1"],
+    "props": {
+      "blockClass": ["shelf", "container", "countdown-shelf"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home-shelf-2": {
+    "title": "HOME | Vitrine 2",
+    "children": ["flex-layout.col#home-shelf-2"],
+    "props": {
+      "blockClass": ["shelf", "container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home-shelf-3": {
+    "title": "HOME | Vitrine 3",
+    "children": ["flex-layout.col#home-shelf-3"],
+    "props": {
+      "blockClass": ["shelf", "container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home-shelf-4": {
+    "title": "HOME | Vitrine 4",
+    "children": ["flex-layout.col#home-shelf-4"],
+    "props": {
+      "blockClass": ["shelf", "container"],
+      "fullWidth": true
+    }
+  },
+
+  // COLUNAS -----------------------------------------------------
+  "flex-layout.col#home-shelf-1": {
+    "children": [
+
+      "countdown-timer-shelf"
+    ]
+  },
+  // COUNTDOWN SHELF
+  "countdown-timer-shelf": {
+    "blocks": ["list-context.product-list#home-shelf-1"]
+  },
+
+  "flex-layout.col#home-shelf-2": {
+    "children": [
+      "rich-text#home-shelf-2",
+      "list-context.product-list#home-shelf-2"
+    ]
+  },
+  "flex-layout.col#home-shelf-3": {
+    "children": [
+      "rich-text#home-shelf-3",
+      "list-context.product-list#home-shelf-3"
+    ]
+  },
+  "flex-layout.col#home-shelf-4": {
+    "children": [
+      "rich-text#home-shelf-4",
+      "list-context.product-list#home-shelf-4"
+    ]
+  },
+
+  // RESPOSIVES PRAS VITRINES DOS SITE ---------------------------
+
+
+
+  // TITULOS -----------------------------------------------------
+
+  "rich-text#home-shelf-1": {
+    "title": "HOME | Titulo Vitrine 1",
+    "props": {
+      "text": "## ![Icone de tag](assets/svg/icon-tag.svg) Ofertas imperdíveis",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  "rich-text#home-shelf-2": {
+    "title": "HOME | Titulo Vitrine 2",
+    "props": {
+      "text": "## mês de aniversário na mel",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  "rich-text#home-shelf-3": {
+    "title": "HOME | Titulo Vitrine 3",
+    "props": {
+      "text": "## ofertas para você economizar",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  "rich-text#home-shelf-4": {
+    "title": "HOME | Titulo Vitrine 4",
+    "props": {
+      "text": "Eles estão de volta!",
+      "blockClass": ["section-common-title"]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "flex-layout.row#quem-somos--manifesto": {
+        "title": "Quem Somos - Manifesto Mobile",
+        "children": [
+            "rich-text#quem-somos--manifesto-title",
+            "rich-text#quem-somos--manifesto-text"
+        ],
+        "props": {
+            "blockClass": "quemSomosManifesto"
+        }
+    },
+    "rich-text#quem-somos--manifesto-title": {
+        "title": "Quem Somos - Manifesto Título",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Manifesto lojasmel",
+            "blockClass": "institucionalIntroTitle"
+          }
+    },
+    "rich-text#quem-somos--manifesto-text": {
+        "title": "Quem Somos - Texto",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "A lojasmel começou como um sonho.\n E hoje se transformou em uma grande família \n que divide o mesmo propósito: \n trazer tudo para todos, com amor. \n Porque os tempos mudam, \n mas a essência da lojasmel continua a mesma: \n colocar carinho e cuidado em tudo o que faz.\n\n O segredo está em nunca perder a garra. Nem a \n inspiração. \n Compartilhar experiências para somar novas \n oportunidades \n e valorizar a importância de cada um para evoluir \n todos os dias. \n\n Afinal, muito mais importante do que vender,\n é ter clientes queridos. \n E muito melhor do que ser reconhecida pelos \n outros, \né ser recomendada por todos. \n\n Na lojasmel, todo mundo encontra sempre o que \n precisa: \n desde aquilo que todos mais procuram até o que\n nem sabiam que existia. \n Muito além de uma loja, aqui é um lugar para \n se sentir bem.\n \n**Bem-vindo!**",
+            "blockClass": "quemSomosManifestoText"
+          }
+    },
+    "flex-layout.col#quem-somos--manifesto": {
+        "title": "Quem Somos - Manifesto Mobile",
+        "children": [
+            "rich-text#quem-somos--manifesto-title",
+            "rich-text#quem-somos--manifesto-text"
+        ],
+        "props": {
+            "blockClass": "quemSomosManifesto"
+        }
+    }
+}

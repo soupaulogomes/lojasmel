@@ -1,0 +1,37 @@
+{
+    "flex-layout.row#quem-somos--menu": {
+        "title": "Trabalhe Conosco - Menu",
+        "children": [
+            "vtex.menu@2.x:menu#quem-somos--menu"
+        ],
+        "props": {
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "vtex.menu@2.x:menu#quem-somos--menu": {
+        "children": [
+            "menu-item#quem-somos--highlight",
+            "menu-item#nossas-lojas",
+            "menu-item#trabalhe-conosco",
+            "menu-item#politica-de-privacidade"
+        ],
+        "props": {
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "menu-item#quem-somos--highlight": {
+        "props": {
+            "id": "institutional-menu-item",
+            "type": "custom",
+            "highlight": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/quem-somos",
+                "noFollow": false,
+                "tagTitle": "Quem Somos",
+                "text": "Quem Somos"
+            },
+            "blockClass":"institucionalMenu"
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.container {
+  &--clubmel__form-title {
+    margin: 0 auto !important;
+
+    .heading {
+      margin-bottom: 8px;
+      @media (min-width: $d) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &--clubmel__form-text {
+    margin: 0 auto;
+    padding: 0 16px;
+
+    .paragraph {
+      margin: 0 auto;
+      text-align: center;
+      color: $cinza;
+      font-size: $font-size-sm;
+
+      @media (min-width: $d) {
+        font-size: $font-size-md;
+      }
+    }
+  }
+
+  &--clubmel__motivations-title {
+    max-width: 274px;
+    margin: 0 auto !important;
+    margin-bottom: 32px !important;
+
+    @media (min-width: $d) {
+      margin-bottom: 40px !important;
+    }
+
+    .heading {
+      text-align: center;
+    }
+  }
+
+  &--clubmel__bottom-info-text {
+    .paragraph {
+      margin: 0;
+      color: $cinza;
+      font-size: $font-size-sm;
+
+      @media (min-width: $d) {
+        font-size: $font-size-md;
+      }
+    }
+  }
+
+  &--clubmel__button {
+    .paragraph {
+      margin-top: 56px;
+      margin-bottom: 0;
+    }
+
+    .link {
+      @include primary-button;
+      text-decoration: none;
+      padding: 0 16px;
+      white-space: initial;
+      height: 48px;
+      margin: 0 auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: $m) {
+        max-width: 264px;
+      }
+    }
+  }
+}

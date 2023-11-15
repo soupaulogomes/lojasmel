@@ -1,0 +1,290 @@
+:global(.vtexbr-kitlook-5-x-kitlookContainer) {
+  // max-height: 600px;
+  overflow-y: auto;
+  position: initial;
+  max-height: 475px;
+  &::-webkit-scrollbar {
+    // opacity: 0;
+    // display: none;
+    width: 5px;
+  }
+}
+
+:global(.vtexbr-kitlook-5-x-kitlookBox) {
+  display: flex;
+  border: 1px solid $cinza-claro;
+  border-radius: $border-radius;
+  padding: 16px;
+  padding-bottom: 30px;
+  margin-bottom: 16px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 43px;
+  }
+}
+
+:global(.vtexbr-kitlook-5-x-kitlookCheckbox) {
+  width: 16px !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  :global(.vtex-checkbox__box):not(:empty) {
+    background-color: $cor-2;
+    outline: 2px solid $branco;
+    outline-offset: -3px;
+    border: 1px solid $cinza-claro;
+  }
+
+  :global(.vtex__icon-check) {
+    display: none;
+  }
+}
+
+:global(.vtexbr-kitlook-5-x-kitlookImage) {
+  width: 64px !important;
+  padding: 0 !important;
+
+  .productImagesContainer--carousel {
+    padding: 0 !important;
+  }
+
+  .carouselGaleryCursor {
+    pointer-events: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .swiperCaret,
+  .swiper-pagination,
+  .carouselGaleryThumbs {
+    display: none !important;
+  }
+
+  .productImagesGallerySlide,
+  .productImageTag {
+    width: 64px !important;
+    height: 64px !important;
+  }
+}
+
+:global(.vtexbr-kitlook-5-x-kitlookDetails) {
+  width: calc(100% - 80px) !important;
+  margin-left: 15px;
+
+  .productBrand {
+    font-size: $font-size-xxs;
+    font-weight: $regular;
+    line-height: 1.2;
+    font-family: $main-font;
+    color: $preto;
+    display: block !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  :global(.vtex-button) {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    background-color: $white;
+    border: 1px solid $cinza;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+      font-size: 0;
+      font-family: $main-font !important;
+
+      &::before {
+        content: "comprar separadamente";
+        text-transform: uppercase;
+        color: $cinza;
+        font-size: $font-size-xs;
+        font-weight: $bold;
+        font-family: $main-font !important;
+      }
+    }
+  }
+
+  .price_sellingPrice {
+    font-size: $font-size-sm !important;
+    color: $preto;
+    font-family: $main-font;
+  }
+
+  .listPriceLabel,
+  .sellingPriceLabel {
+    display: none !important;
+  }
+
+  .listPriceValue {
+    font-size: $font-size-xs;
+    color: $cinza;
+  }
+
+  :global(.vtex-product-details-1-x-quantitySelectorContainer) {
+    :first-child {
+      font-size: 0;
+    }
+  }
+
+  :global(.vtex-numeric-stepper-wrapper) {
+    :first-child {
+      font-size: $font-size-xs;
+    }
+  }
+
+  :global(.vtex-numeric-stepper-container) {
+    border: 1px solid $cinza-claro;
+    border-radius: $border-radius;
+    width: fit-content;
+  }
+
+  :global(.vtex-numeric-stepper__input) {
+    border: none;
+    width: 32px;
+    font-size: $font-size-xs;
+    color: $cinza;
+    font-family: $main-font;
+  }
+
+  :global(.vtex-numeric-stepper__minus-button),
+  :global(.vtex-numeric-stepper__plus-button) {
+    border: none;
+    width: 20px !important;
+  }
+
+  // SKUS
+  .valueWrapper,
+  .skuSelectorName {
+    font-size: $font-size-xxs !important;
+  }
+  .skuSelectorName {
+    &::after {
+      content: ":";
+    }
+  }
+
+  :global(.vtex-numeric-stepper__minus-button__text) {
+    font-size: 0 !important;
+
+    &::before {
+      content: url(assets/svg/icon-minus.svg);
+      transform: scale(0.5);
+      display: block;
+    }
+  }
+  :global(.vtex-numeric-stepper__plus-button__text) {
+    font-size: 0 !important;
+
+    &::before {
+      content: url(assets/svg/icon-plus.svg);
+      transform: scale(0.5);
+      display: block;
+    }
+  }
+}
+
+//botão comprar selecionados já vem por padrão no kitlook
+
+:global(.vtexbr-kitlook-5-x-kitlookTotalizer) {
+  // display: none;
+
+
+
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-size: 0;
+    font-family: $main-font;
+    font-weight: $bold;
+
+    &::before {
+      content: "Comprar selecionados";
+      text-transform: uppercase;
+      font-size: $font-size-sm;
+    }
+  }
+
+  :global(.vtex-table__container) {
+    // border-top: 1px solid $cinza-claro;
+    // padding: 24px 0 0;
+    :nth-child(n) {
+      margin: 0;
+      border: none;
+    }
+    @media (max-width: $d) {
+      max-height: 70px;
+    }
+  }
+
+  :global(.vtexbr-kitlook-5-x-kitlookTotalizerPriceLabel),
+  :global(.vtexbr-kitlook-5-x-currencyContainer) :nth-child(n) {
+    color: $preto !important;
+    font-weight: $bold;
+  }
+}
+:global(.vtex-add-to-cart-button-0-x-buttonText--kitlook-add-cart){
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+}
+:global(.vtexbr-kitlook-5-x-kitlookButton) {
+  @media (min-width: $d) {
+    margin-top: -35px;
+  }
+}
+
+
+:global(.vtex-flex-layout-0-x-flexCol--kitlook-block) {
+  padding: 17px;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  max-height: 670px;
+  overflow: hidden;
+  height: fit-content;
+  :global(.vtex-flex-layout-0-x-flexColChild--kitlook-block) {
+    padding-bottom: 0;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexColChild--kitlook-block):first-child {
+  height: fit-content !important;
+  :global(.vtex-rich-text-0-x-headingLevel2--kit__kitlook-title) {
+    margin-bottom: 34px;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexColChild--kitlook-block):last-child {
+  padding-bottom: 115px !important;
+  overflow: hidden;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--kitlook-block) {
+  position: relative;
+  overflow: hidden;
+}
+:global(.vtexbr-kitlook-5-x-kitlookTotalizer) {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0 20px 20px 20px;
+  z-index: 2;
+  background-color: #fff;
+  border: none;
+}

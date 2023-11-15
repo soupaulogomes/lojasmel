@@ -1,0 +1,25 @@
+{
+  "list-context.image-list#categoria": {
+    "title": "Banner departamento",
+    "children": ["slider-layout#categoria"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "https://via.placeholder.com/360x140",
+          "image": "https://via.placeholder.com/1280x200",
+          "description": "Banner do topo"
+        }
+      ]
+    }
+  },
+  "slider-layout#categoria": {
+    "title": "Banner categoria carrossel",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": false,
+      "usePagination": true,
+      "blockClass": ["departamento-banners", "home__hero-banners"]
+    }
+  }
+}

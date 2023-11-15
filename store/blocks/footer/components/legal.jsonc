@@ -1,0 +1,33 @@
+{
+    "flex-layout.row#legal":{
+        "title":"Linha - Legal",
+        "children":[
+            "flex-layout.col#infolegal"
+        ],
+        "props":{
+            "blockClass":["legal", "container"]
+        }
+    },
+    "flex-layout.col#infolegal":{
+        "title":"Coluna - CNPJ",
+        "children":[
+            "rich-text#infolegal"
+        ]
+    },
+    "rich-text#infolegal":{
+        "title":"Texto - CNPJ",
+        "props":{
+            "text":"@ 2022 Lojasmel – Todos os direitos reservados. Os estoques podem sofrer alterações sem aviso prévio. Os preços são válidos apenas para a loja virtual. Em caso de divergência, o preço válido é o do carrinho. As fotos aqui veiculadas, logotipo e marca são de propriedade do site www.lojasmel.com. O desconto de 5% será concedido nas compras acima de R$129,00 (excluindo o frete) na forma de pagamento de boleto. É vetada a sua reprodução, total ou parcial, sem a expressa autorização. BMP UTILIDADES DOMESTICAS / CNPJ: 12.356.100/0001-34 / Inscrição Estadual:635.831.580.110 / Endereço: RUA MAX MANGELS SENIOR 1420, SÃO BERNARDO DO CAMPO - SP - CEP: 09895-510",
+            "blockClass":"footerLegal"   
+        }
+    },
+    "flex-layout.row#legal--desktop":{
+        "title":"Linha - Legal",
+        "children":[
+            "flex-layout.col#infolegal"
+        ],
+        "props":{
+            "blockClass":["legal"]
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "store.custom#central-de-atendimento": {
+        "title": "Central Atendimento",
+        "blocks": [
+            "responsive-layout.desktop#central-de-atendimento",
+            "responsive-layout.mobile#central-de-atendimento"
+        ],
+        "props": {
+            "blockClass": "centralAtendimento"
+        }
+    },
+    "responsive-layout.desktop#central-de-atendimento": {
+        "title": "Central Atendimento",
+        "children": [
+            "flex-layout.row#central-de-atendimento--desktop"
+        ]
+    },
+    "flex-layout.row#central-de-atendimento--desktop": {
+        "title": "Central Atendimento",
+        "children": [
+            "flex-layout.col#central-de-atendimento--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "quemSomosDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.col#central-de-atendimento--desktop": {
+        "title": "Central Atendimento",
+        "children": [
+            "flex-layout.col#central-de-atendimento--breadcrumb",
+            "flex-layout.col#central-de-atendimento--intro--desktop",
+            "flex-layout.col#central-de-atendimento--info-content--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "centralAtendimentoDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.col#central-de-atendimento--breadcrumb": {
+        "title": "Central Atendimento - Breadcrumb Desktop",
+        "children": [
+            "breadcrumb#central-de-atendimento"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "fullWidth": true,
+            "blockClass": "institucionalBreadcrumb"
+        }
+    },
+    "breadcrumb#central-de-atendimento": {
+        "props": {
+            "breadcrumb": [
+                {
+                    "name": "Central de Atendimento",
+                    "href": "/central-de-atendimento"
+                }
+            ],
+            "blockClass": "institucionalBreadcrumb"
+        }
+    },
+    "flex-layout.col#central-de-atendimento--info-content--desktop": {
+        "title": "Central Atendimento - Conteúdo Desktop",
+        "children": [
+            "flex-layout.row#central-de-atendimento--info-content--desktop"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "centralAtendimentoInfoContentDesktop"
+            ]
+        }
+    },
+    "flex-layout.row#central-de-atendimento--info-content--desktop": {
+        "title": "Central Atendimento - Conteúdo Desktop",
+        "children": [
+            "flex-layout.row#central-de-atendimento--content-1--desktop",
+            "flex-layout.row#central-de-atendimento--content-2--desktop"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "centralAtendimentoInfoContentDesktop"
+            ]
+        }
+    },
+    "flex-layout.row#central-de-atendimento--content-1--desktop": {
+        "title": "Central Atendimento - Introdução Desktop",
+        "children": [
+            "custom-form"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "centralAtendimentoInfoContent1Desktop"
+            ]
+        }
+    },
+    "flex-layout.row#central-de-atendimento--content-2--desktop": {
+        "title": "Central Atendimento - Introdução Desktop",
+        "children": [
+            "flex-layout.col#central-de-atendimento--info--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "centralAtendimentoInfoContent2Desktop"
+            ]
+        }
+    },
+    "responsive-layout.mobile#central-de-atendimento": {
+        "title": "Central Atendimento - Mobile",
+        "children": [
+            "flex-layout.row#central-de-atendimento--mobile"
+        ],
+        "props": {
+            "blockClass": "centralAtendimentoMobile"
+        }
+    },
+    "flex-layout.row#central-de-atendimento--mobile": {
+        "title": "Central Atendimento - Mobile",
+        "children": [
+            "flex-layout.row#central-de-atendimento--intro--mobile",
+            "custom-form",
+            "flex-layout.row#central-de-atendimento--info--mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "centralAtendimentoMobile",
+                "container"
+            ]
+        }
+    }
+}

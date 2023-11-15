@@ -1,0 +1,37 @@
+{
+    "flex-layout.row#trabalhe-conosco--menu": {
+        "title": "Trabalhe Conosco - Menu",
+        "children": [
+            "vtex.menu@2.x:menu#trabalhe-conosco--menu"
+        ],
+        "props": {
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "vtex.menu@2.x:menu#trabalhe-conosco--menu": {
+        "children": [
+            "menu-item#quem-somos",
+            "menu-item#nossas-lojas",
+            "menu-item#trabalhe-conosco--highlight",
+            "menu-item#politica-de-privacidade"
+        ],
+        "props": {
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "menu-item#trabalhe-conosco--highlight": {
+        "props": {
+            "id": "institutional-menu-item",
+            "type": "custom",
+            "highlight": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/trabalhe-conosco",
+                "noFollow": false,
+                "tagTitle": "Trabalhe Conosco",
+                "text": "Trabalhe Conosco"
+            },
+            "blockClass":"institucionalMenu"
+        }
+    }
+}

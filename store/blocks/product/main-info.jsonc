@@ -1,0 +1,238 @@
+{
+  "flex-layout.row#product-main-info": {
+    "children": ["flex-layout.col#product-main-info"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "product__main-info"
+    }
+  },
+  "flex-layout.col#product-main-info": {
+    "children": [
+      "responsive-layout.desktop#product-offer-banner",
+      "flex-layout.row#product-name",
+      "vtex.store-components:product-brand",
+      "product-identifier.product",
+      "flex-layout.row#product-main-rating",
+      "condition-layout.product#availability",
+      "vtex.product-price:product-seller-name",
+      "shipping-list"
+    ]
+  },
+
+  //   OFFER BANNER -----------------
+  "responsive-layout.mobile#product-offer-banner": {
+    "children": ["image#product-offer-banner-mob"]
+  },
+  "responsive-layout.desktop#product-offer-banner": {
+    "children": ["image#product-offer-banner-desk"]
+  },
+  "image#product-offer-banner-mob": {
+    "title": "Banner de ofertas MOBILE",
+    "props": {
+      "src": "https://via.placeholder.com/328x48/dddddd/000000?text=BANNER OFERTA CARTAO LOJAS MEL",
+      "blockClass": "product__offer-banner"
+    }
+  },
+  "image#product-offer-banner-desk": {
+    "title": "Banner de ofertas DESKTOP",
+    "props": {
+      "src": "https://via.placeholder.com/664x56/dddddd/000000?text=BANNER OFERTA CARTAO LOJAS MEL",
+      "blockClass": "product__offer-banner"
+    }
+  },
+  //   OFFER BANNER -----------------
+
+  // PRODUCT NAME  AND IDENTIFIER----------------
+  "flex-layout.row#product-name": {
+    "title": "Nome do produto",
+    "children": ["vtex.store-components:product-name", "overlay-trigger#share"],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "product__name"
+    }
+  },
+  "vtex.store-components:product-name": {
+    "props": {
+      // "showBrandName": true,
+      //"showProductReference": true,
+      "showSku": true
+    }
+  },
+  "vtex.store-components:product-brand": {
+    "props": {
+      "displayMode": "text",
+      "withLink": "text",
+      "blockClass": ["product-brand"]
+    }
+  },
+  "product-identifier.product": {
+    "title": "Numero de Identificação do produto",
+    "props": {
+      "label": "default", //'default' | 'custom' | 'hide'
+      "customLabel": "teste", // text if label is custom
+      "idField": "skuReferenceId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+    }
+  },
+  // PRODUCT NAME  AND IDENTIFIER----------------
+
+  // RATING STARS ON TOP ------------------
+  "flex-layout.row#product-main-rating": {
+    "title": "Avaliação",
+    "children": [
+      // "product-rating-inline",
+      "trustvox-stars-pdp"
+      //"rich-text#ratings-anchor"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "product__rating-inline"
+    }
+  },
+  "rich-text#ratings-anchor": {
+    "title": "Ancora pra seção de trustvox",
+    "props": {
+      "text": "[Clique e veja!](#trustvox)",
+      "blockClass": "product__ratings-anchor"
+    }
+  },
+  // RATING STARS ON TOP ------------------
+
+  // PRICE AND INSTALLMENTS -------------------
+  "flex-layout.row#product-price": {
+    "title": "Preços",
+    "children": [
+      "flex-layout.col#product-price",
+      "lojasmel1.product-price:product-spot-price-savings"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "product__prices",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#product-price": {
+    "children": [
+      "vtex.product-price:product-list-price",
+      "lojasmel1.product-price:product-selling-price#pdp",
+      "rich-text#info-boleto-ou-pix"
+    ]
+  },
+  "lojasmel1.product-price:product-selling-price#pdp": {
+    "props": {
+      "blockClass": "product__selling-price"
+    }
+  },
+
+  "flex-layout.row#product-installments": {
+    "title": "Preços parcelados",
+    "children": [
+      "image#product-installments-card",
+      "vtex.product-price:product-installments#product-installments"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "product__installments"
+    }
+  },
+  "image#product-installments-card": {
+    "title": "Icone Cartão",
+    "props": {
+      "src": "assets/svg/icon-card.svg",
+      "maxHeight": 32
+    }
+  },
+  "image#product-installments-lojasmel": {
+    "title": "Icone Cartão",
+    "props": {
+      "src": "assets/svg/icon-card.svg",
+      "maxHeight": 32
+    }
+  },
+  "vtex.product-price:product-installments#product-installments": {
+    "props": {
+      "installmentOptionsFilter": { "paymentSystemName": "Mastercard" },
+      "message": "Ou   { installmentsTotalValue }  até {installmentsNumber}x {installmentValue} "
+    }
+  },
+  //Mel card
+
+  "flex-layout.row#product-installments-melcard": {
+    "title": "Preços parcelados",
+    "children": [
+      "image#product-installments-card-melcard",
+      "vtex.product-price:product-installments#product-installments-melcard"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "product__installments"
+    }
+  },
+
+  "image#product-installments-card-melcard": {
+    "title": "Icone Cartão",
+    "props": {
+      "src": "assets/svg/icon-card-mel.svg",
+      "maxHeight": 32
+    }
+  },
+
+  "vtex.product-price:product-installments#product-installments-melcard": {
+    "props": {
+      "installmentOptionsFilter": { "paymentSystemName": "cartão lojasmel" },
+      "message": "Ou   { installmentsTotalValue }  até {installmentsNumber}x {installmentValue} "
+    }
+    //! mel card
+  },
+
+  // PRICE AND INSTALLMENTS -------------------
+
+  //   SKU SELECTOR ----------------------
+  "sku-selector": {
+    "props": {
+      "initialSelection": "complete"
+    }
+  },
+  //   SKU SELECTOR ----------------------
+
+  // PRODUCT CTA ------------------------
+  "responsive-layout.desktop#product-cta": {
+    "children": ["flex-layout.row#product-cta"]
+  },
+  "flex-layout.row#product-cta": {
+    "title": "CALL TO ACTION",
+    "children": [
+      "product-quantity",
+      "add-to-cart-button",
+      "image#img-button-add-lista"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "product__cta"
+    }
+  },
+  "image#img-button-add-lista": {
+    "props": {
+      //"src": "assets/images/img-button-add-lista.png"
+    }
+  },
+  "add-to-cart-button": {
+    "title": "SUMMARY - Botao de ação",
+    "props": {
+      "customPixelEventId": "add-to-cart-button",
+      "text": "ADICIONAR AO CARRINHO",
+      "onClickBehavior": "add-to-cart",
+      "addToCartFeedback": "customEvent",
+      "blockClass": "summary"
+    }
+  }
+  // PRODUCT CTA ------------------------
+}

@@ -1,0 +1,88 @@
+.fretegratis-container {
+  border: 1px solid $cinza-claro;
+  border-radius: $border-radius;
+  padding: 16px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: auto;
+  position: relative;
+  right: 0;
+  max-width: 328px;
+  box-sizing: border-box;
+
+  .fretegratis-label {
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    line-height: $font-size-md;
+    font-weight: $regular;
+    color: $cinza;
+    text-align: center;
+    margin-bottom: 11px;
+
+    strong {
+      color: $cor-2;
+      font-weight: $bold;
+      line-height: $font-size-lg;
+    }
+
+    span {
+      font-weight: $bold;
+      color: $black;
+    }
+  }
+
+  .fretegratis-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    p {
+      font-size: $font-size-xs;
+      line-height: $font-size-sm;
+      font-weight: $bold;
+      color: $black;
+    }
+
+    .fretegratis-min-value {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      margin-bottom: 0;
+    }
+
+    .fretegratis-max-value {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      text-align: end;
+      margin-bottom: 0px;
+    }
+
+    .fretegratis-slider {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      width: 100%;
+      height: 8px;
+      border-radius: 44px;
+      background-color: $cinza-claro;
+
+      .percentual {
+        background-color: $cor-2;
+        height: 8px;
+        border-radius: 44px;
+        max-width: 100%;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $d) {
+  .fretegratis-container {
+    margin: 16px auto 0;
+    width: 328px;
+    max-width: 100%;
+    order: 2;
+  }
+}

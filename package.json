@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "link-qa": "set account=lojasmel1 && webpack --config=./webpack.config.js && vtex link",
+    "link-prod": "set account=lojasmel1 && webpack --config=./webpack.config.js && vtex link",
+    "release-major": "vtex release major stable",
+    "release-minor": "vtex release minor stable",
+    "release-patch": "vtex release patch stable",
+    "publish-qa": "set account=lojasmel1 && webpack --config=./webpack.config.js && vtex publish",
+    "publish-prod": "set account=lojasmel1 && webpack --config=./webpack.config.js && vtex publish",
+    "sass-complete": "node-sass styles/scss -o styles/css --output-style compressed --recursive false",
+    "sass": "yarn sass-complete && node-sass -w styles/scss -o styles/css --output-style compressed",
+    "prefix": "postcss styles/css -d styles/css --use autoprefixer -b 'last 1 versions' --no-map",
+    "checkout": "yarn sass-complete && node-sass -w styles/scss/checkout6-custom.scss -o checkout-ui-custom/checkout-ui-settings/checkout-ui-custom --output-style compressed "
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "vtex": "^3.0.0",
+    "yarn": "^1.22.18"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "copy-webpack-plugin": "^10.2.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.28.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "condition-layout.product#availability-summary": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#prices-and-button",
+      "Else": "flex-layout.row#product-unavailable"
+    }
+  },
+
+  "flex-layout.row#prices-and-button": {
+    "children": ["flex-layout.col#prices-and-button"],
+    "props": {
+      "blockClass": "summary__prices-and-button"
+    }
+  },
+  "flex-layout.row#product-unavailable": {
+    "children": ["flex-layout.col#product-unavailable"],
+    "props": {
+      "blockClass": ["product-unavailable"]
+    }
+  },
+  "flex-layout.col#prices-and-button": {
+    "children": [
+      "product-specification-group#summary",
+      "flex-layout.row#prices",
+      "flex-layout.row#highlights"
+    ]
+  },
+  "flex-layout.col#product-unavailable": {
+    "children": ["rich-text#unavailable"],
+    "props": {
+      "blockClass": ["product-unavailable"]
+    }
+  },
+
+  "flex-layout.row#highlights": {
+    "props": {
+      "blockClass": "product__highlight"
+    },
+    "children": ["vtex.product-highlights@2.x:product-highlights#collection"]
+  },
+
+  "rich-text#unavailable": {
+    "props": {
+      "text": "Produto esgotado",
+      "blockClass": "product__unavailable"
+    }
+  },
+  "rich-text#button-unavailable": {
+    "props": {
+      "text": "AVISE-ME QUANDO CHEGAR",
+      "blockClass": "product__unavailable-button"
+    }
+  },
+
+  //   CALL TO ACTION - SUMMARY
+  "product-summary-quantity#summary": {
+    "props": {
+      "showLabel": true,
+      "selectorType": "dropdown"
+    }
+  },
+  "add-to-cart-button#add": {
+    "title": "SUMMARY - Botao de ação",
+    "props": {
+      "customPixelEventId": "add-to-cart-button",
+      "text": "ADICIONAR AO CARRINHO",
+      "onClickBehavior": "add-to-cart",
+      "blockClass": "summary",
+      "addToCartFeedback": "customEvent"
+    }
+  }
+}

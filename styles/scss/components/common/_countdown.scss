@@ -1,0 +1,53 @@
+:global(.lojasmel1-countdown-timer-0-x-countdownContainer) {
+  :global(svg) {
+    :global(path) {
+      stroke-width: 3px;
+      &:first-child {
+        stroke: #f4f4f4 !important;
+      }
+    }
+  }
+
+  :global(.time-wrapper) {
+    text-align: center;
+
+    :global(.time) {
+      color: $preto;
+      font-family: $main-font;
+      font-size: $font-size-xl;
+      font-weight: $bold;
+    }
+
+    :last-child {
+      font-size: 0;
+      &::before {
+        font-size: $font-size-xxs;
+        font-family: $main-font;
+        color: $cinza;
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  :global(.lojasmel1-countdown-timer-0-x-countdownDays)
+    :global(.time-wrapper)
+    :last-child::before {
+    content: "Dias";
+  }
+  :global(.lojasmel1-countdown-timer-0-x-countdownHours)
+    :global(.time-wrapper)
+    :last-child::before {
+    content: "Horas";
+  }
+  :global(.lojasmel1-countdown-timer-0-x-countdownMinutes)
+    :global(.time-wrapper)
+    :last-child::before {
+    content: "Minutos";
+  }
+  :global(.lojasmel1-countdown-timer-0-x-countdownSeconds)
+    :global(.time-wrapper)
+    :last-child::before {
+    content: "Segundos";
+  }
+
+}

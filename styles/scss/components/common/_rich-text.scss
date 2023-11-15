@@ -1,0 +1,46 @@
+.container {
+  &--section-common-title {
+    @media (max-width: $m) {
+      margin: 0 !important;
+
+      .heading,
+      .paragraph {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &--home-depo {
+    margin: 0 auto;
+
+    .heading,
+    .paragraph {
+      @media (min-width: $d) {
+        justify-content: center;
+        max-width: 136px !important;
+        position: relative;
+
+        &::after {
+          content: url(assets/images/icon-depo.png);
+          position: absolute;
+          top: 40px;
+          right: -47px;
+        }
+      }
+    }
+  }
+}
+
+.paragraph,
+.wrapper {
+  &--section-common-title {
+    .paragraph,
+    .heading {
+      @extend %common-title;
+    }
+  }
+}
+
+.paragraph {
+  font-family: $main-font;
+}

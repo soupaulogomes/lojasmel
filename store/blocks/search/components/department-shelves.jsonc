@@ -1,0 +1,168 @@
+{
+    "flex-layout.row#-shelf-1": {
+        "title": "Vitrine 1",
+        "children": ["flex-layout.col#department-shelf-1"],
+        "props": {
+          "blockClass":[ "shelf", "container"],
+          "fullWidth": true
+        }
+    },
+    "flex-layout.col#department-shelf-1": {
+        "children": [
+          "rich-text#department-shelf-1",
+          "list-context.product-list#department-shelf-1"
+        ]
+    },
+    "rich-text#department-shelf-1": {
+        "title": "Titulo Vitrine 1",
+        "props": {
+          "text": "ofertas em destaque",
+          "blockClass": ["section-common-title"]
+        }
+    },
+    "list-context.product-list#department-shelf-1": {
+      "title": "Vitrine 1",
+      "blocks": ["product-summary.shelf"],
+      "children": ["slider-layout#home-shelves"],
+      "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "collection": "",
+          "category": "",
+          "hideUnavailableItems": false,
+          "maxItems": 10
+        }
+    },
+    "flex-layout.row#-shelf-2": {
+        "title": "Vitrine 2",
+        "children": ["flex-layout.col#department-shelf-2"],
+        "props": {
+          "blockClass":[ "shelf", "container"],
+          "fullWidth": true
+        }
+    },
+    "flex-layout.col#department-shelf-2": {
+        "children": [
+          "rich-text#department-shelf-2",
+          "list-context.product-list#department-shelf-2"
+        ]
+    },
+    "rich-text#department-shelf-2": {
+        "title": "Titulo Vitrine 2",
+        "props": {
+          "text": "lançamentos",
+          "blockClass": ["section-common-title"]
+        }
+    },
+    "list-context.product-list#department-shelf-2": {
+        "title": "Vitrine 2",
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#home-shelves"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC",
+            "collection": "",
+            "category": "",
+            "hideUnavailableItems": false,
+            "maxItems": 10
+          }
+    },
+    "flex-layout.row#-shelf-3": {
+        "title": "Vitrine 3",
+        "children": ["flex-layout.col#department-shelf-3"],
+        "props": {
+          "blockClass":[ "shelf", "container"],
+          "fullWidth": true
+        }
+    },
+    "flex-layout.col#department-shelf-3": {
+        "children": [
+          "rich-text#department-shelf-3",
+          "list-context.product-list#department-shelf-3"
+        ]
+    },
+    "rich-text#department-shelf-3": {
+        "title": "Titulo Vitrine 3",
+        "props": {
+          "text": "mais vendidos",
+          "blockClass": ["section-common-title"]
+        }
+    },
+    "list-context.product-list#department-shelf-3": {
+        "title": "Vitrine 3",
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#home-shelves"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC",
+            "collection": "",
+            "category": "",
+            "hideUnavailableItems": false,
+            "maxItems": 10
+          }
+    },
+    "flex-layout.row#-shelf-4": {
+        "title": "Vitrine 4",
+        "children": ["flex-layout.col#department-shelf-4"],
+        "props": {
+          "blockClass":[ "shelf", "container"],
+          "fullWidth": true
+        }
+    },
+    "flex-layout.col#department-shelf-4": {
+        "children": [
+          "rich-text#department-shelf-4",
+          "list-context.product-list#department-shelf-4"
+        ]
+    },
+    "rich-text#department-shelf-4": {
+        "title": "Titulo Vitrine 4",
+        "props": {
+          "text": "cafeteiras",
+          "blockClass": ["section-common-title"]
+        }
+    },
+    "list-context.product-list#department-shelf-4": {
+        "title": "Vitrine 4",
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#home-shelves"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC",
+            "collection": "",
+            "category": "",
+            "hideUnavailableItems": false,
+            "maxItems": 10
+          }
+    },
+    "flex-layout.row#-shelf-5": {
+        "title": "Vitrine 5",
+        "children": ["flex-layout.col#department-shelf-5"],
+        "props": {
+          "blockClass":[ "shelf", "container"],
+          "fullWidth": true
+        }
+    },
+    "flex-layout.col#department-shelf-5": {
+        "children": [
+          "rich-text#department-shelf-5",
+          "list-context.product-list#department-shelf-5"
+        ]
+    },
+    "rich-text#department-shelf-5": {
+        "title": "Titulo Vitrine 5",
+        "props": {
+          "text": "grill",
+          "blockClass": ["section-common-title"]
+        }
+    },
+    "list-context.product-list#department-shelf-5": {
+        "title": "Vitrine 5",
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#home-shelves"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC",
+            "collection": "",
+            "category": "",
+            "hideUnavailableItems": false,
+            "maxItems": 10
+          }
+    }
+  }
+  

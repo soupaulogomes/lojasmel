@@ -1,0 +1,232 @@
+{
+  "store.custom#pagina-de-cupons": {
+    "title": "PAGINA DE CUPONS",
+    "blocks": ["disposition-layout#couponpage"],
+    "props": {
+      "blockClass": ["coupon__page", "coupon__container"]
+    }
+  },
+
+  "disposition-layout#couponpage": {
+    "title": "PAGINA DE CUPONS | Disposição do Conteudo",
+    "children": [
+      "flex-layout.row#couponpage-breadcrumb",
+      "flex-layout.row#couponpage-title",
+      "flex-layout.row#couponpage-text",
+      "flex-layout.row#couponpage-banner",
+      "flex-layout.row#couponpage-steps",
+      "flex-layout.row#couponpage-disclaimer",
+      "flex-layout.row#couponpage-shelf-1",
+      "flex-layout.row#couponpage-shelf-2",
+      "flex-layout.row#couponpage-shelf-3"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#couponpage-breadcrumb": {
+    "title": "Breadcrumb",
+    "children": ["rich-text#breadcrumb-cupom"],
+    "props": {
+      "blockClass": ["coupon__breadcrumb", "coupon__container"],
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#couponpage-title": {
+    "title": "Titulo da página",
+    "children": ["rich-text#coupon-title"],
+    "props": {
+      "blockClass": ["coupon__title", "coupon__container"],
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#couponpage-text": {
+    "title": "Texto antes do banner",
+    "children": ["rich-text#couponpage-text"],
+    "props": {
+      "blockClass": ["coupon__text", "coupon__container"],
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#couponpage-banner": {
+    "title": "Banner full",
+    "children": ["list-context.image-list#coupon-banner"],
+    "props": {
+      "blockClass": ["coupon__banner", "coupon__container"],
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#couponpage-steps": {
+    "title": "Passos para ativar cupom",
+    "children": [
+      "rich-text#couponpage-step-1",
+      "rich-text#couponpage-step-2",
+      "rich-text#couponpage-step-3"
+    ],
+    "props": {
+      "blockClass": ["coupon__steps", "coupon__container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#couponpage-disclaimer": {
+    "title": "Observação importante",
+    "children": ["rich-text#couponpage-disclaimer"],
+    "props": {
+      "blockClass": ["coupon__disclaimer", "coupon__container"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#couponpage-shelf-1": {
+    "title": "Vitrine 1",
+    "children": ["flex-layout.col#couponpage-shelf-1"],
+    "props": {
+      "blockClass": ["coupon__shelf", "coupon__shelf-1", "coupon__container"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#couponpage-shelf-1": {
+    "children": [
+      "rich-text#couponpage-shelf-1-title",
+      "list-context.coupon-info-card-list"
+    ]
+  },
+  "flex-layout.row#couponpage-shelf-2": {
+    "title": "Vitrine 2",
+    "children": ["flex-layout.col#couponpage-shelf-2"],
+    "props": {
+      "blockClass": ["coupon__shelf", "coupon__shelf-2", "coupon__container"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#couponpage-shelf-2": {
+    "children": [
+      "rich-text#couponpage-shelf-2-title",
+      "list-context.coupon-info-card-list"
+    ]
+  },
+  "flex-layout.row#couponpage-shelf-3": {
+    "title": "Vitrine 3",
+    "children": ["flex-layout.col#couponpage-shelf-3"],
+    "props": {
+      "blockClass": ["coupon__shelf", "coupon__shelf-3", "coupon__container"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#couponpage-shelf-3": {
+    "children": [
+      "rich-text#couponpage-shelf-3-title",
+      "list-context.coupon-info-card-list"
+    ]
+  },
+
+  "rich-text#couponpage-step-1": {
+    "title": "Passo 1",
+    "props": {
+      "text": "clique em **ativar cupom**",
+      "blockClass": ["coupon__steps", "coupon__steps-1"]
+    }
+  },
+  "rich-text#couponpage-step-2": {
+    "title": "Passo 2",
+    "props": {
+      "text": "acesse a página do produto e adicione ao seu carrinho",
+      "blockClass": ["coupon__steps", "coupon__steps-2"]
+    }
+  },
+  "rich-text#couponpage-step-3": {
+    "title": "Passo 3",
+    "props": {
+      "text": "o produto selecionado terá seu desconto aplicado no carrinho",
+      "blockClass": ["coupon__steps", "coupon__steps-3"]
+    }
+  },
+
+  "rich-text#breadcrumb-cupom": {
+    "title": "Breadcrumb texto",
+    "props": {
+      "text": "[Home](/) [Cupons](#)",
+      "blockClass": "coupon__breadcrumb"
+    }
+  },
+  "rich-text#coupon-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## cupom lojasmel",
+      "blockClass": "coupon__title"
+    }
+  },
+  "rich-text#couponpage-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt rem sint, labore error modi veritatis eius nulla nam sequi eveniet laboriosam quis reprehenderit odit tempore ipsa doloremque eum. Quas et aperiam architecto quos quidem ad est voluptatem deleniti provident quod quis incidunt nobis autem, animi in doloribus dolore odio. Cum!",
+      "blockClass": "coupon__text"
+    }
+  },
+
+  "rich-text#couponpage-shelf-1-title": {
+    "title": "Titulo da vitrine 1",
+    "props": {
+      "text": "## eletroportáteis",
+      "blockClass": "section-common-title"
+    }
+  },
+  "rich-text#couponpage-shelf-2-title": {
+    "title": "Titulo da vitrine 2",
+    "props": {
+      "text": "## brinquedos",
+      "blockClass": "section-common-title"
+    }
+  },
+  "rich-text#couponpage-shelf-3-title": {
+    "title": "Titulo da vitrine 3",
+    "props": {
+      "text": "## petshop",
+      "blockClass": "section-common-title"
+    }
+  },
+
+  "rich-text#couponpage-disclaimer": {
+    "title": "Texto",
+    "props": {
+      "text": "![icone de atenção](assets/svg/icon-disclaimer.svg) Atenção: É permitido ativar somente um cupom por carrinho.",
+      "blockClass": "coupon__disclaimer"
+    }
+  }
+}

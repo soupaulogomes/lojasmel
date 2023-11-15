@@ -1,0 +1,53 @@
+.container--centralAtendimentoIntroTitle {
+  margin: 0;
+
+  .paragraph--centralAtendimentoIntroTitle {
+    margin: 0;
+    padding: 0 0 16px;
+    font-family: $main-font;
+    font-size: $font-size-xl;
+    font-weight: $bold;
+    color: $cor-2;
+    line-height: 22px;
+    text-transform: lowercase;
+    
+    @media (min-width: $d){
+      font-size: $font-size-xxl;
+    }
+  }
+}
+
+.container--centralAtendimentoIntroText {
+  margin: 0;
+
+  .paragraph--centralAtendimentoIntroText {
+    margin: 0;
+    padding: 0 0 16px;
+    font-family: $main-font;
+    font-weight: $regular;
+    color: $cinza;
+    line-height: $font-size-lg;
+    font-size: $font-size-md;
+  }
+}
+
+.container--centralAtendimentoInfo {
+  margin: 0;
+  .paragraph--centralAtendimentoInfo {
+    margin: 0;
+
+    font-family: $main-font;
+    font-weight: $regular;
+    color: $cinza;
+    line-height: $font-size-md;
+    font-size: $font-size-sm;
+
+    margin-bottom: 16px;
+
+    .strong--centralAtendimentoInfo {
+      color: $preto;
+      font-weight: $bold;
+      line-height: $font-size-lg;
+    }
+  }
+}

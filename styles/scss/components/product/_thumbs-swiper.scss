@@ -1,0 +1,58 @@
+:global(.vtex-flex-layout-0-x-flexColChild--product__main-image) {
+  :global(.vtex-store-components-3-x-carouselContainer) {
+    flex-direction: column-reverse !important;
+
+    :global(.vtex-store-components-3-x-carouselGaleryThumbs) {
+      position: relative !important;
+      width: 100% !important;
+      margin-top: 28px;
+
+      :global(.swiper-container) {
+        display: flex !important;
+
+        :global(.swiper-wrapper) {
+          display: flex !important;
+          flex-direction: row !important;
+          transform: none !important;
+          overflow-x: auto;
+          gap: 25px;
+        }
+      }
+
+      :global(.swiper-slide) {
+        max-width: 64px !important;
+        border: 1px solid $cinza-claro;
+        border-radius: $border-radius;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        aspect-ratio: 1/1 !important;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:global(.vtex-store-components-3-x-productImagesThumbActive) {
+          border-color: $cor-2;
+        }
+
+        :global(.vtex-store-components-3-x-figure--video) {
+          &::before {
+            content: url(assets/svg/icon-video.svg);
+          }
+
+          :global(.vtex-store-components-3-x-thumbImg--video) {
+            display: none;
+          }
+        }
+      }
+    }
+    :global(.vtex-store-components-3-x-swiperCaret) {
+      display: none !important;
+    }
+    :global(.vtex-store-components-3-x-swiper-pagination) {
+      @media (min-width: $d) {
+        display: none !important;
+      }
+    }
+  }
+}

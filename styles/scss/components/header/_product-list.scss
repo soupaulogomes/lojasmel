@@ -1,0 +1,75 @@
+.productImageContainer {
+    width: 48px!important;
+    
+    .productImage {
+        width: 48px !important;
+    }
+}
+
+
+.productVariationsContainer {
+    display: none;
+}
+
+.productName {
+    font-family: $main-font;
+    font-size:$font-size-xs;
+    line-height: $font-size-md;
+    color: $preto;
+    font-weight: $regular;
+}
+
+.productBrandName {
+    display: none;
+}
+
+.productPriceCurrency {
+    color: $cinza;
+    font-family: $main-font;
+    font-size:$font-size-xs;
+    line-height: $font-size-lg;
+    font-weight: $regular;
+}
+
+.productPrice {
+    color: $preto;
+    font-family: $main-font;
+    font-size:$font-size-md;
+    line-height: $font-size-xl;
+    font-weight: $bold;
+}
+
+.quantitySelector {
+    width: 74px;
+
+    .quantitySelectorWrapper--ProductListQuantitySelector {
+        padding: 8px;
+        width: 74px;
+        border: 1px solid $cinza-claro;
+        border-radius: $border-radius;
+    
+        .quantitySelectorDecrease--ProductListQuantitySelector, .quantitySelectorIncrease--ProductListQuantitySelector {
+            background: transparent;
+            color: $cor-2;
+            padding: 0;
+            border: none;
+        }
+        
+        .inputContainer {
+            border: none;
+            padding: 0;
+            width: 32px;
+            flex: inherit;
+        
+            font-family: $main-font;
+            color: $cinza;
+            font-size: $font-size-xs;
+            line-height: $font-size-md;
+            font-weight: $regular;
+    
+        }
+    }
+}
+
+
+

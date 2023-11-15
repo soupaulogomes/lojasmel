@@ -1,0 +1,120 @@
+{
+  "order-placed": {
+    "blocks": ["op-header", "op-order", "op-footer"]
+  },
+  "op-header": {
+    "children": ["op-section#confirmation"]
+  },
+  "op-section#confirmation": {
+    "props": {
+      "name": "confirmation",
+      "marginBottom": 9,
+      "borderless": true
+    },
+    "children": ["flex-layout.row#op-header"]
+  },
+  "flex-layout.row#op-header": {
+    "children": ["flex-layout.col#op-header"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "op__header"
+    }
+  },
+  "flex-layout.col#op-header": {
+    "children": [
+      "rich-text#confirmation-title",
+      "orderplaced-client-message",
+      "op-print-button"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "op__header"
+    }
+  },
+
+  "rich-text#confirmation-title": {
+    "props": {
+      "text": "## obrigado por sua compra!",
+      "blockClass": "confirmation__title"
+    }
+  },
+
+  // each order section
+  "op-order": {
+    "children": [
+      // "order-placed-handler",
+      "flex-layout.row#op-message",
+      "flex-layout.row#items-details",
+      "flex-layout.row#delivery-details",
+      "flex-layout.row#order-total"
+    ]
+  },
+  "flex-layout.row#op-message": {
+    "children": ["flex-layout.col#op-message"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "op__message"
+    }
+  },
+  "flex-layout.col#op-message": {
+    "children": ["rich-text#op-message"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "op__message"
+    }
+  },
+  "rich-text#op-message": {
+    "props": {
+      "text": "O prazo de entrega começa a contar só depois da confirmação do pagamento. Você vai receber o código de rastreio do pedido assim que o processo de envio começar. A aprovação do pagamento do Boleto Bancário pode demorar até 3 dias úteis. Caso não seja pago até o vencimento, o pedido será automaticamente cancelado. Efetue o pagamento do valor até a data de vencimento, utilizando os dados abaixo.",
+      "blockClass": "confirmation__message"
+    }
+  },
+
+  // each order header
+  "flex-layout.row#items-details": {
+    "children": [
+      "flex-layout.col#items-details",
+      "flex-layout.col#order-buttons"
+    ],
+    "props": {
+      "blockClass": "order__items",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#items-details": {
+    "children": [
+      "orderplaced-id",
+      "op-order-datetime",
+      "op-order-seller",
+      "op-order-customer",
+      "op-order-payment"
+    ]
+  },
+
+  "flex-layout.col#order-buttons": {
+    "children": ["op-order-options"]
+  },
+
+  "flex-layout.row#delivery-details": {
+    "children": ["flex-layout.col#delivery-details"],
+    "props": {
+      "blockClass": "delivery__items",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#delivery-details": {
+    "children": ["op-order-delivery-packages"]
+  },
+
+  "flex-layout.row#order-total": {
+    "children": ["flex-layout.col#order-details"],
+    "props": {
+      "blockClass": "order__total",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#order-details": {
+    "children": ["op-order-total"]
+  }
+
+}

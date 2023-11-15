@@ -1,0 +1,260 @@
+.slide {
+  &--coupon {
+    border: none !important;
+    padding: 0 !important;
+
+    &:hover {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.sliderArrows {
+  @media (max-width: 999px) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.sliderLayoutContainer {
+  &--home__brands-carousel,
+  &--home__hero-banners {
+    @extend %translatedArrows;
+
+    .paginationDotsContainer {
+      bottom: -15px;
+
+      @media (min-width: $d) {
+        bottom: -28px;
+      }
+    }
+  }
+  &--home__hero-banners {
+    .imageElementLink {
+      width: 100%;
+    }
+    .imageElement {
+      max-height: initial !important;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &--home__tipbars {
+    padding: 9px 37px;
+    border-radius: $border-radius;
+    border: 1px solid $cinza-claro;
+    margin: 16px auto 0;
+    background-color: inherit !important;
+
+    @media (min-width: $d) {
+      padding: 14px 37px;
+    }
+
+    .infoCardContainer {
+      display: flex;
+    }
+
+    .infoCardHeadline {
+      font-family: $main-font;
+      font-size: $font-size-xs;
+      font-weight: $regular;
+      margin: 0;
+      text-align: left;
+      color: $cinza;
+
+      @media (min-width: $d) {
+        font-size: $font-size-sm;
+      }
+    }
+
+    .infoCardSubhead {
+      font-family: $main-font;
+      font-size: $font-size-sm;
+      font-weight: $bold;
+      margin: 0;
+      text-align: left;
+      color: $preto;
+
+      @media (min-width: $d) {
+        font-size: $font-size-md;
+      }
+    }
+
+    .infoCardTextContainer {
+      padding: 0;
+      width: calc(100% - 30px) !important;
+      align-items: flex-start;
+      margin-left: 8px;
+    }
+
+    .infoCardImageContainer {
+      width: 30px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--home__category-banners {
+    .sliderTrack {
+      justify-content: flex-start;
+      border-radius: $border-radius;
+
+      &::-webkit-scrollbar {
+        opacity: 0;
+      }
+
+      @media (max-width: $d) {
+        overflow-x: auto;
+        margin-bottom: -10px;
+      }
+    }
+
+    .slide {
+      margin-right: 16px;
+      min-width: 220px;
+
+      @media (min-width: $d) {
+        margin-right: 32px;
+        min-width: initial;
+      }
+
+      &:last-child {
+        @media (min-width: $d) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &--home__highlight-banners {
+    .sliderTrack {
+      gap: 16px;
+      flex-direction: column;
+
+      @media (min-width: $t) {
+        gap: 21px;
+        flex-direction: row;
+      }
+    }
+
+    .slide {
+      @media (max-width: $t) {
+        width: 100% !important;
+      }
+    }
+  }
+  &--home__brands-carousel {
+    .slide {
+      min-width: 130px;
+    }
+
+    .sliderTrack {
+      justify-content: flex-start;
+      gap: 24px;
+
+      @media (max-width: $t) {
+        overflow-x: auto;
+        gap: 16px;
+
+        &::-webkit-scrollbar {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.sliderTrack {
+  &--shelf {
+    @media (max-width: $t) {
+      padding-bottom: 0 !important;
+    }
+  }
+  &--shelf,
+  &--shelf-countdown {
+    @media (min-width: 840px) and (max-width: 1200px) {
+      :global(.vtex-product-highlights-2-x-productHighlightText) {
+        font-size: $font-size-xs;
+      }
+    }
+  }
+  &--home__selection {
+    @media (max-width: 860px) {
+
+      max-height: 110px;
+      display: -webkit-inline-box;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.infoCardContainer {
+  &--home__selection {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: min-content;
+    background-color: transparent;
+
+    &:hover,
+    &:active,
+    &:focus {
+      .infoCardCallActionText {
+        color: $cor-2;
+      }
+    }
+
+    .infoCardTextContainer,
+    .infoCardImageContainer {
+      width: 100% !important;
+      transition: all 0.2s;
+    }
+
+    .infoCardCallActionContainer,
+    .infoCardCallActionText {
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      margin: 0;
+      margin-top: 3px;
+      font-size: $font-size-xs;
+      font-family: $main-font;
+      letter-spacing: 0.5px;
+      color: $preto;
+
+      @media (min-width: $d) {
+        font-size: $font-size-sm;
+      }
+    }
+
+    .infoCardImageContainer {
+      text-align: center;
+
+      .infoCardImage {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border-radius: 800px;
+        max-width: 78px;
+
+        @media (max-width: $m) {
+          max-width: 64px;
+          height: auto;
+        }
+      }
+    }
+
+    .infoCardCallActionContainer {
+      margin: 0;
+    }
+  }
+}
+
+.slide--home__selection {
+
+  min-width: 100px !important;
+  height: min-content;
+}

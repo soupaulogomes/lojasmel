@@ -1,0 +1,24 @@
+.flexRowContent--ajudaMobile {
+  margin-top: 40px;
+}
+
+.flexRow--ajudaInfoContentDesktop {
+  margin-top: 40px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 640px) and (max-width: $d) {
+  .flexRowContent--ajudaMobile {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+    }
+  }
+}

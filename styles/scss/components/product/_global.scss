@@ -1,0 +1,30 @@
+:global(.lojasmel1-product-payment-options-0-x-productPaymentOptionsContent3p)
+  > :global(.vtex-tabs)
+  > :global(.vtex-tabs__nav) {
+  padding: 0;
+  padding-left: 16px;
+
+  @media (min-width: $d) {
+    padding: 0 24px;
+  }
+}
+
+:global(.lojasmel1-product-payment-options-0-x-productPaymentOptionsContent3p)
+  > :global(.vtex-tabs)
+  > :global(.vtex-tabs__content) {
+  padding-top: 0 !important;
+}
+
+:global(.lojasmel1-shipping-list-0-x-shippingWrapper) * {
+  font-family: $main-font;
+}
+:global(.lojasmel1-shipping-list-0-x-shippingListTabEmpty) {
+  font-size: 0;
+  :after {
+    content: "ynhtbgrvfd";
+  }
+}
+:global(.lojasmel1-shipping-list-0-x-shippingListTabEmpty):after {
+  content: "Não existe uma loja disponível para o CEP selecionado.";
+  font-size: 14px;
+}

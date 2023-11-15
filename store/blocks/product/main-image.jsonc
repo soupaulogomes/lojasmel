@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#product-main-image": {
+    "title": "Imagens do produto",
+    "children": ["flex-layout.col#product-main-image"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "product__main-image"
+    }
+  },
+  "flex-layout.col#product-main-image": {
+    "children": [
+      "responsive-layout.mobile#product-offer-banner",
+      "stack-layout#product-image",
+      "rich-text#product-main-utility-link"
+    ],
+    "props": {
+      "blockClass": "product__main-image"
+    }
+  },
+  "rich-text#product-main-utility-link": {
+    "title": "Link de trocas e devoluções",
+    "props": {
+      "text": "[![Icone de trocas e devoluções](assets/svg/icon-change.svg) Política de trocas e devoluções](/trocas-e-devolucoes?target=_blank)",
+      "blockClass": "product__main-utility-link"
+    }
+  }
+}

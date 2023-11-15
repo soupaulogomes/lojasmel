@@ -1,0 +1,33 @@
+{
+    "flex-layout.row#trabalhe-conosco--banner--desktop": {
+        "title": "Trabalhe Conosco - Banner Desktop",
+        "children": [
+            "image#trabalhe-conosco--banner--desktop"
+        ],
+        "props": {
+            "blockClass": "trabalheConoscoBanner"
+        }
+    },
+    "image#trabalhe-conosco--banner--desktop": {
+        "title": "Trabalhe Conosco - Image Desktop",
+        "props": {
+            "src": "/arquivos/trabalhe-conosco-banner-desktop.png",
+            "blockClass": "trabalheConoscoBannerDesktop"
+        }
+    },
+    "flex-layout.row#trabalhe-conosco--banner--mobile": {
+        "title": "Trabalhe Conosco - Image Desktop",
+        "children": [
+            "image#trabalhe-conosco--banner--mobile"
+        ],
+        "props": {
+            "blockClass": "trabalheConoscoBanner"
+        }
+    },
+    "image#trabalhe-conosco--banner--mobile": {
+        "props": {
+            "src": "/arquivos/trabalhe-conosco-banner-mobile.png",
+            "blockClass": "trabalheConoscoBannerMobile"
+        }
+    }
+}

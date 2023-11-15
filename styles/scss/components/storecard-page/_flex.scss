@@ -1,0 +1,175 @@
+.flexRow {
+  &--storecard__wrapper {
+    :global(.vtex-slider-layout-0-x-imageElementLink),
+    :global(.vtex-store-components-3-x-imageElementLink) {
+      height: 100%;
+    }
+    :global(.vtex-slider-layout-0-x-imageElement),
+    :global(.vtex-store-components-3-x-imageElement) {
+      width: 100% !important;
+      height: auto !important;
+      max-height: initial !important;
+    }
+
+    :global(.vtex-rich-text-0-x-heading--section-common-title),
+    :global(.vtex-rich-text-0-x-heading--storecard__advantages-title),
+    :global(.vtex-rich-text-0-x-heading--storecard__advantages-subtitle) {
+      font-size: $font-size-xxl !important;
+    }
+  }
+
+  &--storecard__advantages {
+    padding: 32px 0 40px;
+
+    @media (min-width: $d) {
+      padding: 40px 0;
+    }
+  }
+
+  &--storecard__contact {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+
+    @media (min-width: $d) {
+      margin-top: 56px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &--storecard__doubts {
+    max-width: 640px;
+    margin: 0 auto 56px;
+
+    @media (min-width: $d) {
+      margin: 0 auto 64px;
+    }
+  }
+}
+.flexRowContent {
+  &--storecard__actions {
+    background-color: $cor-1;
+    background-image: url(assets/images/background-storecard-actions.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+
+    @media (min-width: $d) {
+      padding: 40px;
+    }
+  }
+
+  &--storecard__actions-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    @media (min-width: $m) {
+      flex-direction: row;
+    }
+
+    @media (min-width: $d) {
+      gap: 24px;
+    }
+
+    :global(.vtex-rich-text-0-x-container--storecard__button) {
+      @media (max-width: $m) {
+        width: 100%;
+      }
+    }
+  }
+
+  &--storecard__advantages {
+    @media (min-width: $d) {
+      gap: 75px;
+    }
+
+    .stretchChildrenWidth {
+      align-items: center;
+    }
+  }
+
+  &--storecard__advantages-buttons {
+    gap: 24px;
+
+    :global(
+        .vtex-store-components-3-x-imageElementLink--storecard__advantages-stores
+      ) {
+      transition: all 0.2s;
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &--storecard__contact {
+    :global(.vtex-store-components-3-x-imageElement) {
+      @media (max-width: $t) {
+        max-width: 204px;
+      }
+    }
+
+    .stretchChildrenWidth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--storecard__contact-phones {
+    column-gap: 40px;
+    row-gap: 24px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: $l) {
+      margin-top: 24px;
+    }
+
+    .stretchChildrenWidth {
+      align-items: flex-start;
+    }
+  }
+
+  &--storecard__doubts {
+    .flexColChild {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.flexCol {
+  &--storecard__advantages {
+    @media (max-width: $d) {
+      padding: 0 16px;
+    }
+  }
+
+  &--storecard__contact-info {
+    @media (min-width: 640px) {
+      padding-left: 60px;
+    }
+
+    @media (min-width: $l) {
+      padding-left: 112px;
+    }
+  }
+  &--condictions-col {
+    max-width: 666px;
+  }
+}

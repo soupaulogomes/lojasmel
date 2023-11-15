@@ -1,0 +1,1288 @@
+.orderform-template {
+  width: 1032px !important;
+  transition: all 0.9s ease-in-out !important;
+  background-color: #ffff;
+  margin-bottom: 50px !important;
+
+  .orderform-template-holder {
+    width: 100% !important;
+    padding: 0;
+    max-width: 680px;
+    margin-right: 24px;
+
+    &::before {
+      content: "finalizar compra";
+      display: inline-block;
+      color: $cor-2;
+      font-family: $main-font;
+      font-size: $font-size-xxl;
+      line-height: 22px;
+      font-weight: $bold;
+      width: 100%;
+      margin: 64px 0 62px;
+      transform: translateX(-70px);
+    }
+
+    & > .row-fluid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      gap: 24px;
+
+      #shipping-data,
+      #payment-data,
+      #client-profile-data {
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+        .step {
+          padding: 16px !important;
+          border: 1px solid $cinza-claro !important;
+          border-radius: $border-radius !important;
+
+          .accordion-toggle > span::before {
+            display: none;
+          }
+        }
+      }
+
+      #client-profile-data {
+        grid-area: 1 / 1 / 2 / 2;
+
+        .client-profile-data {
+          .accordion-toggle {
+            padding: 0 !important;
+
+            .icon-user {
+              display: none;
+            }
+
+            span {
+              color: $cor-2;
+              font-size: $font-size-md;
+              line-height: $font-size-xl;
+              font-weight: $bold;
+              text-transform: lowercase;
+              margin-left: 0;
+              margin-bottom: 8px;
+            }
+          }
+
+          .link-box-edit {
+            transform: translate(8px, -8px);
+            right: 0;
+            top: 0;
+            .icon-edit::before {
+              content: "";
+              background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13M18.5 2.49998C18.8978 2.10216 19.4374 1.87866 20 1.87866C20.5626 1.87866 21.1022 2.10216 21.5 2.49998C21.8978 2.89781 22.1213 3.43737 22.1213 3.99998C22.1213 4.56259 21.8978 5.10216 21.5 5.49998L12 15L8 16L9 12L18.5 2.49998Z' stroke='%23606060' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+              width: 24px;
+              height: 24px;
+              display: block;
+            }
+          }
+
+          .form-step {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
+
+            .box-client-info-pf {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 16px;
+              margin: 0 0 16px;
+
+              p {
+                margin: 0;
+
+                label {
+                  margin: 0 0 4px;
+                  font-size: $font-size-xs;
+                  line-height: $font-size-md;
+                  font-weight: $regular;
+                  color: $cinza;
+                }
+
+                .error {
+                  border-color: $cor-2 !important;
+                }
+              }
+
+              .client-notice {
+                grid-column: 1 / 3;
+
+                font-size: $font-size-sm;
+                line-height: $font-size-lg;
+                color: $cinza;
+                font-weight: $regular;
+
+                & .notice {
+                  margin: 0;
+                }
+              }
+
+              .client-email {
+                grid-column: 1 / 3;
+              }
+
+              .client-first-name,
+              .client-last-name,
+              .client-document,
+              .client-phone {
+                width: 100%;
+              }
+            }
+
+            .box-client-info-pj {
+              padding-top: 0;
+              .corporate-title {
+                display: none;
+              }
+              .links {
+                margin: 0 0 16px;
+
+                .link {
+                  line-height: $font-size-md;
+                  #is-corporate-client {
+                    color: $cinza;
+                    font-size: $font-size-xs;
+                    line-height: $font-size-md;
+                    font-weight: $regular;
+                    text-decoration: underline;
+                  }
+                }
+              }
+
+              .corporate-info-box {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 16px;
+
+                p {
+                  margin-bottom: 0;
+
+                  label {
+                    margin: 0 0 4px;
+                    font-size: $font-size-xs;
+                    line-height: $font-size-md;
+                    font-weight: $regular;
+                    color: $cinza;
+                  }
+                }
+
+                .client-company-name {
+                  grid-column: 1 / 3;
+                }
+
+                .client-company-nick {
+                  grid-column: 1 / 3;
+                }
+
+                .client-company-nickname {
+                  grid-column: 1 / 3;
+                }
+              }
+
+              .state-inscription-box {
+                display: none;
+              }
+            }
+
+            .newsletter {
+              margin: 0;
+
+              label {
+                font-size: inherit;
+                min-height: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0;
+
+                input {
+                  margin: 0;
+                  display: none;
+
+                  & + span::before {
+                    content: "";
+                    box-sizing: border-box;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid $cinza-claro;
+                    background-color: transparent;
+                    display: inline-block;
+                    margin-right: 8px;
+                  }
+
+                  &:checked + span:before {
+                    content: "";
+                    background-color: $cor-2;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid $cinza-claro;
+                    padding: 3px;
+                    display: inline-block;
+                    background-clip: content-box, padding-box;
+                  }
+                }
+
+                span {
+                  font-size: $font-size-xs;
+                  line-height: $font-size-md;
+                  font-weight: $regular;
+                  color: $cinza;
+                  margin-left: 0;
+                  display: flex;
+                }
+              }
+            }
+
+            .btn-submit-wrapper {
+              margin: 0;
+              .btn-success {
+                padding: 12px 0 11px;
+                width: 100%;
+                background-color: $cor-2;
+                border-color: $cor-2;
+                font-size: $font-size-sm;
+                line-height: $font-size-md;
+                font-weight: $bold;
+                text-transform: uppercase;
+                border-radius: $border-radius;
+              }
+            }
+
+            .client-profile-email,
+            .client-profile-summary {
+              margin: 0;
+              span {
+                display: inline-block;
+                color: $cinza;
+                font-size: $font-size-sm;
+                line-height: $font-size-lg;
+                font-weight: $regular;
+                margin-bottom: 8px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #shipping-data {
+      grid-area: 1 / 2 / 2 / 3;
+
+      .step {
+        .accordion-toggle {
+          padding: 0 0 12px !important;
+
+          color: $cor-2 !important;
+          font-size: $font-size-md !important;
+          line-height: $font-size-xl;
+          font-weight: $bold !important;
+          text-transform: lowercase;
+
+          &::before {
+            display: none;
+          }
+
+          .link-box-edit {
+            transform: translate(8px, -8px);
+            right: 0;
+            top: 0;
+            .icon-edit::before {
+              content: "";
+              background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13M18.5 2.49998C18.8978 2.10216 19.4374 1.87866 20 1.87866C20.5626 1.87866 21.1022 2.10216 21.5 2.49998C21.8978 2.89781 22.1213 3.43737 22.1213 3.99998C22.1213 4.56259 21.8978 5.10216 21.5 5.49998L12 15L8 16L9 12L18.5 2.49998Z' stroke='%23606060' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+              width: 24px;
+              height: 24px;
+              display: block;
+            }
+          }
+        }
+
+        .shipping-container {
+          padding-top: 0 !important;
+
+          .vtex-omnishipping-1-x-backToAddressList,
+          .vtex-omnishipping-1-x-buttonEditAddress,
+          .vtex-omnishipping-1-x-buttonCreateAddress {
+            border: 1px solid $cinza;
+            color: $cinza;
+
+            .icon-edit,
+            .icon-plus {
+              display: none;
+            }
+          }
+
+          .vtex-omnishipping-1-x-addressItemOption {
+            background-color: transparent;
+            border: 1px solid $cinza-claro;
+            border-radius: $border-radius;
+
+            .vtex-omnishipping-1-x-svg {
+              svg {
+                fill: $cor-2 !important;
+              }
+            }
+
+            .vtex-omnishipping-1-x-addressItemText {
+              span {
+                font-size: $font-size-sm;
+                line-height: $font-size-lg;
+                font-weight: $regular;
+                color: $cinza;
+              }
+            }
+          }
+
+          .vtex-omnishipping-1-x-deliveryChannelsWrapper {
+            display: flex;
+
+            margin: 0 0 16px;
+            border: 1px solid $cinza-claro;
+            border-radius: 56px;
+            height: 40px;
+
+            .shipping-method-toggle-delivery {
+              border-radius: 56px;
+              background-color: transparent !important;
+              border: transparent !important;
+            }
+
+            .vtex-omnishipping-1-x-deliveryOptionActive {
+              background-color: $cor-2;
+              border-color: $cor-2;
+              width: 148px;
+              border-radius: 56px;
+            }
+
+            .shp-method-option-text {
+              font-size: $font-size-sm;
+              font-weight: $bold;
+              line-height: 17px;
+              text-transform: uppercase;
+            }
+          }
+
+          .vtex-omnishipping-1-x-addressFormPart1 {
+            order: 2;
+            .ship-postalCode {
+              display: flex;
+              gap: 16px;
+              margin-bottom: 16px;
+              label {
+                display: none;
+              }
+
+              #ship-postalCode {
+                width: 50%;
+                font-size: $font-size-xs !important;
+              }
+
+              small {
+                width: 50%;
+                margin: auto 0;
+
+                a {
+                  font-size: $font-size-xs;
+                  line-height: $font-size-md;
+                  font-weight: $regular;
+                  color: $cinza;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          .vtex-omnishipping-1-x-deliveryGroup {
+            order: 2;
+            margin-top: 0;
+            margin-bottom: 12px;
+            .vtex-omnishipping-1-x-shippingSectionTitle {
+              display: none;
+            }
+
+            .vtex-omnishipping-1-x-leanShippingGroupList {
+              border: none;
+              padding: 0px;
+              margin-bottom: 8px;
+
+              .vtex-omnishipping-1-x-leanShippingOption {
+                border: 1px solid $cinza-claro;
+                border-radius: $border-radius;
+                padding: 14px 16px;
+                height: 64px;
+                box-sizing: border-box;
+              }
+
+              .vtex-omnishipping-1-x-leanShippingIcon {
+                margin-right: 16px;
+                height: 100%;
+                align-items: center;
+
+                .vtex-omnishipping-1-x-svg {
+                  path {
+                    fill: $cor-2;
+                  }
+                }
+              }
+
+              .vtex-omnishipping-1-x-leanShippingText {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .vtex-omnishipping-1-x-leanShippingTextLabelSingle {
+                  color: $cinza;
+                  font-size: $font-size-xs;
+                  line-height: $font-size-md;
+                  font-weight: $regular;
+                }
+              }
+
+              .vtex-omnishipping-1-x-optionPrice {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                color: $black;
+                font-size: $font-size-xs;
+                line-height: $font-size-md;
+                font-weight: $bold;
+              }
+            }
+          }
+
+          .vtex-omnishipping-1-x-addressForm {
+            .vtex-omnishipping-1-x-shippingSectionTitle {
+              color: $cinza !important;
+              font-size: $font-size-sm;
+              line-height: $font-size-md;
+              font-weight: $bold;
+              text-transform: lowercase;
+              margin-bottom: 4px !important;
+            }
+
+            .vtex-omnishipping-1-x-addressSummary {
+              .address-summary {
+                font-size: $font-size-xs;
+                line-height: $font-size-md;
+                font-weight: $regular;
+                color: $cinza;
+                background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 29.3333V16H20V29.3333M4 12L16 2.66663L28 12V26.6666C28 27.3739 27.719 28.0521 27.219 28.5522C26.7189 29.0523 26.0406 29.3333 25.3333 29.3333H6.66667C5.95942 29.3333 5.28115 29.0523 4.78105 28.5522C4.28095 28.0521 4 27.3739 4 26.6666V12Z' stroke='%23BD1D1D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
+                background-position: 16px !important;
+                background-repeat: no-repeat !important;
+                padding: 16px 16px 16px 64px;
+
+                span {
+                  display: inline-block;
+                }
+
+                .vtex-omnishipping-1-x-linkEdit {
+                  text-transform: capitalize;
+                  font-size: $font-size-xs;
+                  line-height: $font-size-md;
+                  color: $cinza;
+                }
+              }
+            }
+
+            .vtex-omnishipping-1-x-address {
+              margin-bottom: 24px;
+              div {
+                display: grid;
+                grid-template-areas:
+                  "ship-number ship-complement"
+                  "ship-receiverName ship-receiverName";
+                gap: 16px;
+
+                label {
+                  font-size: $font-size-xs;
+                  line-height: $font-size-md;
+                  font-weight: $regular;
+                  margin: 0 0 4px;
+                  color: $cinza;
+                }
+
+                .ship-number {
+                  max-width: 92px;
+                  grid-area: ship-number;
+                }
+
+                .ship-complement {
+                  grid-area: ship-complement;
+                }
+
+                .ship-receiverName {
+                  grid-area: ship-receiverName;
+                }
+              }
+            }
+          }
+
+          .vtex-omnishipping-1-x-submitPaymentButton {
+            .btn-go-to-payment {
+              width: 100%;
+              border: 1px solid $cor-2;
+              background: $cor-2;
+              border-radius: $border-radius;
+
+              color: $white;
+              font-size: $font-size-sm;
+              line-height: $font-size-md;
+              font-weight: $bold;
+              padding: 12px 0 11px;
+              text-transform: uppercase;
+            }
+          }
+
+          .vtex-omnishipping-1-x-SummaryItemGroup {
+            padding: 0;
+
+            .vtex-omnishipping-1-x-SummaryItemInfo {
+              border: none;
+
+              .vtex-omnishipping-1-x-SummaryItemAddress {
+                font-size: $font-size-sm;
+                line-height: $font-size-lg;
+                font-weight: $regular;
+                color: $cinza;
+              }
+
+              .vtex-omnishipping-1-x-summaryPackage {
+                font-size: $font-size-xs;
+                line-height: $font-size-md;
+                color: $cinza;
+              }
+            }
+
+            .vtex-omnishipping-1-x-SummaryItemPrice {
+              color: $black;
+              font-size: $font-size-sm;
+              font-weight: $bold;
+              line-height: 17px;
+              padding: 0;
+            }
+          }
+
+          .vtex-omnishipping-1-x-summaryChange {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #payment-data {
+      grid-area: 2 / 1 / 3 / 3;
+
+      &::before {
+        content: "";
+        background-image: url("https://lojasmel1.vteximg.com.br/arquivos/ambiente-seguro.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        display: block;
+        width: 107px;
+        height: 40px;
+        right: 0;
+      }
+
+      .step {
+        padding: 16px;
+        border: 1px solid $cinza-claro !important;
+        border-radius: $border-radius !important;
+
+        .accordion-toggle {
+          padding: 0 !important;
+          color: $cor-2;
+          font-size: $font-size-md;
+          line-height: $font-size-xl;
+          font-weight: $bold;
+          text-transform: lowercase;
+          position: relative;
+
+          span {
+            &::before {
+              display: none;
+            }
+          }
+        }
+
+        .box-step-content {
+          .form-step {
+            padding-top: 16px !important;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            .link-gift-card {
+              border: 0;
+              &:hover {
+                box-shadow: none;
+                position: relative;
+                top: -2px;
+                text-decoration: none;
+              }
+              .link-payment-discounts-cod {
+                background: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #606060;
+                border-radius: 4px;
+                width: 169px;
+                height: 40px;
+                margin: 0;
+                box-sizing: border-box;
+                color: #606060;
+                font-size: 14px !important;
+                font-weight: 700;
+                line-height: 17px;
+                text-transform: uppercase;
+                text-align: center;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+            .payment-group {
+              max-width: 169px;
+
+              .payment-group-item {
+                background: transparent;
+                border: 1px solid $cinza;
+                border-radius: $border-radius;
+                width: 169px;
+                margin: 0 0 8px;
+                padding: 0;
+                box-sizing: border-box;
+
+                &::after,
+                &::before {
+                  display: none;
+                }
+
+                .payment-group-item-text {
+                  color: $cinza !important;
+                  font-size: $font-size-sm !important;
+                  font-weight: $bold !important;
+                  line-height: 17px;
+                  text-transform: uppercase !important;
+                }
+
+                &.active {
+                  background: $cor-2;
+                  border-color: $cor-2;
+
+                  .payment-group-item-text {
+                    color: $white !important;
+                  }
+                }
+              }
+            }
+
+            .steps-view {
+              max-width: 348px;
+              padding: 0 16px;
+              .payment-method {
+                .box-payment-option {
+                  padding-top: 0px !important;
+
+                  .payment-group-item-cards {
+                    display: none !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mini-cart {
+    margin-top: 147px !important;
+    position: relative !important;
+    max-width: 328px;
+    top: 0 !important;
+
+    .custom-cart-template-wrap {
+      border: 1px solid $cinza-claro;
+      padding: 16px;
+
+      & > h2 {
+        font-size: $font-size-md !important;
+        font-weight: $bold !important;
+        line-height: $font-size-xl !important;
+        color: $cor-2 !important;
+        text-transform: lowercase !important;
+        padding: 0 !important;
+        margin-bottom: 13px !important;
+      }
+
+      .cart {
+        padding: 0;
+
+        .cart-items {
+          .hproduct {
+            border-bottom: 1px solid $cinza-claro;
+            padding: 8px 0;
+
+            .url {
+              margin-left: 24px;
+              margin-right: 9px;
+              img {
+                width: 48px;
+              }
+            }
+
+            .quantity {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: $cor-2;
+            }
+
+            .badge {
+              top: 8px !important;
+              left: 0 !important;
+              padding: 0 !important;
+              color: $white !important;
+              font-size: $font-size-xs !important;
+              line-height: $font-size-sm;
+              font-weight: $bold !important;
+              box-shadow: none;
+            }
+
+            .product-name {
+              width: auto;
+              max-width: 198px;
+              white-space: normal;
+              font-size: $font-size-xs;
+              line-height: $font-size-md;
+              font-weight: $regular;
+              color: $black;
+              margin-bottom: 7px;
+
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+
+            .description {
+              position: absolute;
+              top: 39px;
+              right: 16px;
+              margin-top: 0;
+              font-weight: $bold;
+              font-size: $font-size-xs;
+              line-height: $font-size-md;
+              width: calc(100% - 97px);
+              margin-top: 7px;
+
+              .shipping-date {
+                display: inline-block;
+                margin-right: 33px;
+                font-size: $font-size-xs;
+                line-height: $font-size-md;
+                font-weight: $regular;
+                color: $cinza;
+                text-transform: lowercase;
+              }
+
+              .price {
+                color: $preto;
+                margin-right: 0px;
+                margin-left: auto;
+                font-size: $font-size-sm;
+                font-weight: $bold;
+              }
+            }
+          }
+        }
+      }
+
+      .summary-template-holder {
+        pointer-events: none;
+
+        .summary {
+          > .summary-coupon-wrap {
+            display: none !important;
+          }
+
+          .totalizers-list {
+            border: none;
+            padding: 0;
+
+            td {
+              font-size: $font-size-sm;
+              line-height: $font-size-lg;
+              font-weight: $regular;
+              color: $cinza;
+              padding: 0;
+              margin-bottom: 16px;
+            }
+          }
+
+          tfoot {
+            display: block;
+            tr {
+              td {
+                padding: 0 !important;
+                color: $preto;
+                font-size: $font-size-md;
+                line-height: $font-size-xl;
+                font-weight: $bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
+
+      #go-to-cart-button {
+        position: relative !important;
+        right: 0 !important;
+        margin: 16px 0;
+        width: 100%;
+        border: 1px solid $cinza;
+        border-radius: $border-radius;
+        height: 40px;
+        box-sizing: border-box;
+        text-decoration: none !important;
+
+        small {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          #orderform-minicart-to-cart {
+            display: block;
+            font-size: $font-size-sm;
+            line-height: 17px;
+            font-weight: $bold;
+            color: $cinza;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .fretegratis-container {
+        display: none;
+      }
+
+      .payment-confirmation-wrap {
+        position: absolute;
+        bottom: -80px;
+        width: 328px;
+
+        .summary-note {
+          display: none !important;
+        }
+
+        .payment-submit-wrap {
+          margin: 0;
+
+          #payment-data-submit {
+            margin: 0;
+            background: $cor-2;
+            border-color: $cor-2;
+            border-radius: $border-radius;
+            padding: 0 !important;
+            box-sizing: border-box;
+            height: 48px;
+
+            .icon-lock {
+              display: none;
+            }
+
+            span {
+              margin: 0px;
+              font-size: $font-size-md;
+              line-height: $font-size-xl;
+              font-weight: $bold;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#app-container {
+  .FormFieldLabel {
+    font-size: $font-size-xs;
+    line-height: $font-size-md;
+    color: $cinza;
+    font-weight: $regular;
+    margin-bottom: 4px;
+    margin-right: 0 !important;
+  }
+
+  .PaymentCardNumber {
+    margin-bottom: 8px;
+  }
+
+  .PaymentCardFlags {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    .card-flags {
+      margin: 0 0 16px;
+
+      .card-flag-label {
+        input + span::before {
+          content: "";
+          box-sizing: border-box;
+          width: 16px;
+          height: 16px;
+          border: 1px solid $cinza-claro;
+          border-radius: 50%;
+          background-color: transparent;
+          display: inline-block;
+          margin-right: 8px;
+        }
+
+        input:checked + span:before {
+          content: "";
+          background-color: $cor-2;
+          width: 16px;
+          height: 16px;
+          border: 1px solid $cinza-claro;
+          border-radius: 50%;
+          padding: 3px;
+          display: inline-block;
+          background-clip: content-box, padding-box;
+        }
+      }
+    }
+  }
+
+  .PaymentInstallments {
+    p {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: none;
+    }
+    select {
+      max-width: 100%;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 5L8 11L2 5' stroke='%23bd1d1d' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+        no-repeat center right;
+      background-position: 98%;
+      font-size: $font-size-xs;
+      line-height: $font-size-md;
+      color: $cinza;
+
+      option {
+        font-size: $font-size-xs;
+        line-height: $font-size-md;
+        color: $cinza;
+      }
+    }
+  }
+
+  .PaymentCardHolderName {
+    margin-bottom: 16px;
+  }
+
+  .PaymentCardDueDate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    label {
+      padding: 0 !important;
+      margin-right: 12px !important;
+      margin-bottom: 0 !important;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .input-mini {
+      box-sizing: border-box;
+      width: 86px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 5L8 11L2 5' stroke='%23bd1d1d' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+        no-repeat center right;
+      background-position: 85%;
+      font-size: $font-size-xs;
+      line-height: $font-size-md;
+      color: $cinza;
+    }
+
+    .payment-card-lash {
+      color: $cinza;
+      font-weight: $bold;
+      font-size: $font-size-xl;
+      line-height: 22px;
+    }
+  }
+
+  .PaymentCardCVV {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    label {
+      padding: 0 !important;
+    }
+
+    #creditCardpayment-card-0Code {
+      width: 100% !important;
+    }
+  }
+
+  .AddressToggle {
+    label,
+    strong {
+      font-weight: $regular;
+      font-size: $font-size-xs;
+      line-height: $font-size-md;
+      color: $cinza;
+      display: flex;
+    }
+
+    strong {
+      margin-left: 3px;
+    }
+
+    input {
+      display: none;
+
+      & + label::before {
+        content: "";
+        box-sizing: border-box;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $cinza-claro;
+        background-color: transparent;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      &:checked + label:before {
+        content: "";
+        background-color: $cor-2;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $cinza-claro;
+        padding: 3px;
+        display: inline-block;
+        background-clip: content-box, padding-box;
+      }
+    }
+  }
+
+  .ChangeNumberOfPayments {
+    margin-top: 16px;
+
+    a {
+      color: $cinza;
+      text-decoration: underline;
+      font-size: $font-size-xs;
+      line-height: $font-size-md;
+    }
+  }
+
+  .PaymentCardValue {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 16px;
+
+    .FormFieldLabel {
+      padding: 0;
+      margin: 0;
+      display: flex !important;
+      display: flex !important;
+      margin-right: 6px !important;
+    }
+
+    .input-prepend {
+      margin-bottom: 0;
+      .add-on {
+        height: 40px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $d) {
+  .orderform-template {
+    width: 100% !important;
+    max-width: 100%;
+
+    .orderform-template-holder {
+      max-width: 100% !important;
+      margin-right: 0;
+      &::before {
+        transform: translateX(0);
+        margin: 24px 0;
+        font-size: $font-size-xl;
+        line-height: 22px;
+      }
+
+      > .row-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .step {
+          width: auto !important;
+        }
+
+        #client-profile-data {
+          margin-bottom: 16px;
+          .client-profile-data {
+            border: 1px solid $cinza-claro;
+            border-radius: $border-radius;
+            padding: 16px !important;
+            margin-bottom: 0 !important;
+          }
+        }
+
+        #shipping-data {
+          .shipping-data {
+            border: 1px solid $cinza-claro;
+            border-radius: $border-radius;
+            padding: 16px !important;
+
+            .vtex-omnishipping-1-x-addressSummaryActive {
+              .address-summary {
+                background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 29.3333V16H20V29.3333M4 12L16 2.66663L28 12V26.6666C28 27.3739 27.719 28.0521 27.219 28.5522C26.7189 29.0523 26.0406 29.3333 25.3333 29.3333H6.66667C5.95942 29.3333 5.28115 29.0523 4.78105 28.5522C4.28095 28.0521 4 27.3739 4 26.6666V12Z' stroke='%23BD1D1D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
+                background-position: 16px !important;
+                background-repeat: no-repeat !important;
+                padding: 16px 16px 16px 64px;
+              }
+            }
+          }
+
+          .vtex-omnishipping-1-x-deliveryGroup {
+            order: 3;
+            margin-top: 0;
+            margin-bottom: 12px;
+          }
+
+          .vtex-omnishipping-1-x-submitPaymentButton {
+            margin-top: 24px;
+          }
+        }
+        .link-payment-discounts-cod {
+          width: 100% !important;
+        }
+        #payment-data {
+          border-radius: $border-radius;
+          padding: 16px;
+
+          .payment-group {
+            max-width: 100% !important;
+
+            .payment-group-item {
+              width: 100% !important;
+            }
+          }
+
+          .steps-view {
+            margin: 0 auto;
+            padding: 0 !important;
+            max-width: 100% !important;
+          }
+
+          .form-step {
+            height: auto !important;
+          }
+        }
+      }
+    }
+
+    .mini-cart {
+      margin-top: 0 !important;
+      max-width: 100%;
+      margin-bottom: 56px !important;
+
+      .custom-cart-template-wrap {
+        margin: 0 auto;
+      }
+
+      #go-to-cart-button {
+        display: block !important;
+      }
+
+      .payment-confirmation-wrap {
+        display: block;
+        bottom: -65px !important;
+        width: 100% !important;
+
+        .payment-submit-wrap {
+          position: relative;
+          #payment-data-submit {
+            border-radius: $border-radius !important;
+          }
+        }
+      }
+    }
+  }
+
+  #app-container {
+    .BillingAddress {
+      .AddressToggle {
+        margin-bottom: 0;
+
+        label {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: $d) {
+  .orderform-template {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    .mini-cart {
+      width: 100% !important;
+    }
+  }
+}
+
+.accordion-toggle {
+  & > span {
+    &::before {
+      display: none;
+    }
+  }
+}
+#btn-add-gift-card {
+  background-color: $cor-2 !important;
+  border-color: $cor-2 !important;
+  color: white !important;
+  font-weight: 700;
+}

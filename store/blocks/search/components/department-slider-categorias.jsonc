@@ -1,0 +1,44 @@
+{
+  "flex-layout.row#department-selections": {
+    "title": "Departamento - Seleções",
+    "children": ["flex-layout.col#department-selections"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__selections", "container"]
+    }
+  },
+  "flex-layout.col#department-selections": {
+    "children": [
+      "rich-text#department-selections",
+      "list-context.info-card-list#home-selections-images"
+    ]
+  },
+  "rich-text#department-selections": {
+    "title": "Titulo da Seção de Seleções da Mel",
+    "props": {
+      "text": "## navegue por categoria",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["section-common-title", "department-title"]
+    }
+  },
+  "flex-layout.row#department-selections-images": {
+    "children": [
+      "info-card#home-selection-1",
+      "info-card#home-selection-2",
+      "info-card#home-selection-3",
+      "info-card#home-selection-4",
+      "info-card#home-selection-5",
+      "info-card#home-selection-6",
+      "info-card#home-selection-7",
+      "info-card#home-selection-8",
+      "info-card#home-selection-9"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home__selections-images"
+    }
+  }
+}

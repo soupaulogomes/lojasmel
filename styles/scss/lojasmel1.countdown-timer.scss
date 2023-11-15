@@ -1,0 +1,49 @@
+@import "components/variables/all";
+
+.timerShelfTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  column-gap: 20px;
+
+  @media (min-width: $t) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+}
+.countdownContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.countdownShelfTitle {
+  font-size: $font-size-xl;
+  font-family: $main-font;
+  font-weight: $bold;
+  color: $cor-2;
+  text-transform: lowercase;
+  max-width: 287px;
+
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: $d) {
+    font-size: $font-size-xxl;
+    max-width: initial;
+  }
+
+  &::before {
+    content: url(assets/svg/icon-tag.svg);
+
+    @media (max-width: $d) {
+      transform: scale(0.75);
+    }
+  }
+}

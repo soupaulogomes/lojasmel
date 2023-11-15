@@ -1,0 +1,25 @@
+{
+  "store.custom#template-department": {
+    "blocks": ["search-result-layout.customQuery#department"]
+  },
+  "search-result-layout.customQuery#department": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+
+        "queryField": "142",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "title": "Departamento | Disposição do Conteudo",
+    "blocks": [
+      "search-result-layout.desktop#departamento",
+      "search-result-layout.mobile#departamento",
+      "search-not-found-layout"
+    ]
+  }
+
+}

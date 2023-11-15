@@ -1,0 +1,139 @@
+.sliderLayoutContainer--coupon {
+  margin-bottom: 40px;
+
+  .sliderLeftArrow {
+    transform: translateX(-47px);
+  }
+  .sliderRightArrow {
+    transform: translateX(47px);
+  }
+
+  .infoCardContainer {
+    background-image: url(assets/svg/dashed-line.svg),
+      url(assets/svg/dashed-line.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: contain;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 262px;
+    margin: 0 auto;
+    position: relative;
+    padding: 8px;
+    transition: all 0.2s;
+
+    @media (min-width: $d) {
+      padding: 16px;
+    }
+
+    &::before,
+    &::after {
+      content: url(assets/svg/dashed-line-vertical.svg);
+      height: 100%;
+      top: 0;
+      position: absolute;
+    }
+
+    &::before {
+      left: 0;
+      height: 100%;
+    }
+    &::after {
+      right: 0;
+      height: 100%;
+    }
+
+    &:hover {
+      .infoCardImage {
+        transform: scale(1.05);
+      }
+    }
+
+    .infoCardImage {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      transition: all 0.2s;
+    }
+  }
+
+  .infoCardCallActionContainer {
+    width: 100%;
+    padding: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+
+    .infoCardCallActionText {
+      font-size: 0 !important;
+    }
+  }
+
+  .infoCardTextContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .infoCardImageContainer {
+    width: 100%;
+    text-align: center;
+
+    .infoCardImage {
+      max-width: 200px;
+      max-height: 200px;
+      aspect-ratio: 1;
+      object-fit: contain !important;
+    }
+  }
+
+  .infoCardSubhead,
+  .paragraph {
+    font-family: $main-font;
+    font-size: $font-size-md;
+    font-weight: $bold;
+    color: $cor-3;
+    border: 1px solid $cor-3;
+    border-radius: $border-radius;
+    text-align: center;
+    height: 32px;
+    margin: 16px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container,
+  .wrapper {
+    width: 100%;
+  }
+
+  .infoCardHeadline,
+  .heading {
+    font-size: $font-size-sm !important;
+    color: $preto;
+    font-family: $main-font;
+    font-weight: $regular;
+    margin: 0;
+    margin-top: 16px;
+    height: 38px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    @media (min-width: $d) {
+      font-size: $font-size-md !important;
+    }
+  }
+
+  .paginationDotsContainer {
+    bottom: -24px;
+  }
+}
+
+.imageElementLink--coupon__main-banner {
+  transition: all 0.2s;
+}

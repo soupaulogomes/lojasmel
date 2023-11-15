@@ -1,0 +1,25 @@
+.buttonShowMore {
+  :global(.vtex-button) {
+    @include primary-button;
+    width: 156px;
+
+    @media (min-width: $t) {
+      height: 48px;
+    }
+  }
+
+  :global(.vtex-button__label) {
+    font-size: 0;
+    &::after {
+      content: "VER MAIS";
+      font-size: $font-size-xs - 1;
+
+      @media (min-width: $t) {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+  &--layout{
+   display: none;
+  }
+}

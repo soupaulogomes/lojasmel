@@ -1,0 +1,44 @@
+.flexRow--quemSomosBanner {
+  margin-bottom: 24px;
+}
+
+.flexCol--quemSomosDesktop {
+  .flexRowContent--quemSomosBanner {
+    margin-top: 32px;
+  }
+
+  .flexRow--quemSomosInfoContentDesktop {
+    margin-top: 8px;
+
+    .flexColChild--quemSomosMenuDesktop {
+      width: 232px;
+      margin-right: 88px;
+    }
+
+    .flexCol--quemSomosInfoDesktop {
+      margin-bottom: 24px;
+      max-width: 640px;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: $d) {
+  .flexRowContent--quemSomosMobile {
+    display: flex;
+    flex-direction: column;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+
+      .flexRowContent--institucionalIntro {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flexRowContent--quemSomosManifesto {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

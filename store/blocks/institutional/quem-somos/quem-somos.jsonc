@@ -1,0 +1,113 @@
+{
+    "store.custom#quem-somos": {
+        "title": "Quem somos",
+        "blocks": [
+            "responsive-layout.desktop#quem-somos",
+            "responsive-layout.mobile#quem-somos"
+        ],
+        "props": {
+            "blockClass": "quemSomos"
+        }
+    },
+    "responsive-layout.desktop#quem-somos": {
+        "title": "Quem somos - Desktop",
+        "children": [
+            "flex-layout.row#quem-somos--desktop"
+        ],
+        "props": {
+            "blockClass": [
+                "quemSomosDesktop"
+            ]
+        }
+    },
+    "flex-layout.row#quem-somos--desktop": {
+        "title": "Quem Somos - Desktop",
+        "children": [
+            "flex-layout.col#quem-somos--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "quemSomosDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.col#quem-somos--desktop": {
+        "title": "Quem somos - Desktop",
+        "children": [
+            "flex-layout.col#institucional--breadcrumb",
+            "flex-layout.row#quem-somos--content"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "quemSomosDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.row#quem-somos--content": {
+        "title": "Quem somos - Conteúdo Desktop",
+        "children": [
+            "flex-layout.col#quem-somos--menu-desktop",
+            "flex-layout.col#quem-somos--info-content--desktop"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "quemSomosInfoContentDesktop"
+            ]
+        }
+    },
+    "flex-layout.col#quem-somos--menu-desktop": {
+        "title": "Quem somos - Menu Desktop",
+        "children": [
+            "flex-layout.row#quem-somos--menu"
+        ],
+        "props": {
+            "blockClass": [
+                "quemSomosMenuDesktop"
+            ]
+        }
+    },
+    "flex-layout.col#quem-somos--info-content--desktop": {
+        "title": "Quem somos - Introdução Desktop",
+        "children": [
+            "flex-layout.row#quem-somos--banner--desktop",
+            "flex-layout.col#quem-somos--intro--desktop",
+            "flex-layout.col#quem-somos--manifesto"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "quemSomosInfoDesktop"
+            ]
+        }
+    },
+    "responsive-layout.mobile#quem-somos": {
+        "title": "Quem somos - Mobile",
+        "children": [
+            "flex-layout.row#quem-somos--mobile"
+        ],
+        "props": {
+            "blockClass": "quemSomosMobile"
+        }
+    },
+    "flex-layout.row#quem-somos--mobile": {
+        "title": "Quem somos - Mobile",
+        "children": [
+            "flex-layout.row#quem-somos--menu",
+            "flex-layout.row#quem-somos--banner--mobile",
+            "flex-layout.row#quem-somos--intro",
+            "flex-layout.row#quem-somos--manifesto"
+        ],
+        "props": {
+            "blockClass": [
+                "quemSomosMobile",
+                "container"
+            ]
+        }
+    }
+}

@@ -1,0 +1,105 @@
+{
+  "slider-layout#uni-banners": {
+    "title": "HOME - Slider Banners Unicos",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": false,
+      "usePagination": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": ["home__uni-banners"]
+    }
+  },
+  "slider-layout#home-hero-banners": {
+    "title": "HOME - Slider Banners Hero",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": true,
+      "usePagination": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["home__hero-banners"],
+      "autoplay": {
+        "autoplay": true,
+        "timeout": 2500
+      }
+    }
+  },
+  "slider-layout#home-tipbar": {
+    "title": "HOME - Slider Tipbar",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "autoPlay": {
+        "timeout": 2500
+      },
+      "blockClass": ["home__tipbars"]
+    }
+  },
+
+  "slider-layout#home-category-banners": {
+    "title": "HOME - Slider Banners de Categorias",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 5
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "centerMode": "disabled",
+      "blockClass": ["home__category-banners"]
+    }
+  },
+  "slider-layout#home-highlight-banners": {
+    "title": "HOME - Slider Banners de Destaque",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": ["home__highlight-banners"]
+    }
+  },
+  "slider-layout#home-brands-carousel": {
+    "title": "HOME - Slider de Marcas",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 8,
+        "phone": 8
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["home__brands-carousel"]
+    }
+  },
+
+  "slider-layout#selections-images": {
+    "title": "CONFIG - Slider Seleções",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 10,
+        "tablet": 5,
+        "phone": 3
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+
+      "fullWidth": true,
+      "blockClass": ["home__selection"]
+    }
+  }
+}

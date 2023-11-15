@@ -1,0 +1,37 @@
+.notiferContainer {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  border-top: 1px solid $cinza-claro;
+  border-bottom: 1px solid $cinza-claro;
+  font-family: $main-font;
+
+  .title {
+    font-weight: $bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .notifyLabel {
+    color: $cinza;
+  }
+
+  :global(.vtex-input) {
+    position: relative;
+  }
+  :global(.vtex-input__error) {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+  :global(.vtex-input-prefix__group) {
+    border: 1px solid $cinza-claro;
+    border-radius: $border-radius;
+  }
+
+  :global(.vtex-button) {
+    @include primary-button;
+    margin: 0 auto;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+@import "politica-privacidade/flex";
+@import "trabalhe-conosco/flex";
+@import "quem-somos/flex";
+@import "ajuda/flex";
+@import "nossas-lojas/flex";
+
+.flexRow--politicaPrivacidadeMobile,
+.flexRow--politicaPrivacidadeDesktop,
+.flexRow--trabalheConoscoDesktop,
+.flexRow--trabalheConoscoMobile,
+.flexRow--quemSomosDesktop,
+.flexRow--quemSomosMobile,
+.flexRow--ajudaMobile,
+.flexRow--ajudaDesktop,
+.flexRow--nossasLojasMobile,
+.flexRow--nossasLojasDesktop {
+  & :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+}
+
+.flexRowContent--institucionalMenu {
+  margin: 32px 0 24px;
+  padding-top: 16px;
+  border-bottom: 1px solid $cinza-claro;
+  border-top: 1px solid $cinza-claro;
+}
+
+.flexRow--institucionalInfo {
+  padding-bottom: 47px;
+  border-bottom: 1px solid $cinza-claro;
+}
+
+@media screen and (min-width: $d) {
+  .flexRow--institucionalInfo {
+    padding-bottom: 0 !important;
+    margin-bottom: 64px;
+    border-bottom: none !important;
+  }
+}

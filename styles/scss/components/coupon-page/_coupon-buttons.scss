@@ -1,0 +1,25 @@
+.expiredCoupon,
+.buttonActivateCoupon {
+  @include primary-button;
+  width: 100%;
+  font-size: $font-size-sm;
+}
+
+.buttonActivateCoupon:disabled {
+  background-color: transparent;
+  color: $cor-2;
+  border-color: transparent;
+}
+
+.expiredCoupon {
+  background-color: #f3f3f3;
+  border-color: transparent;
+  color: $cinza;
+  pointer-events: none;
+  cursor: none;
+  border: 1px dashed $cinza;
+}
+
+.coupon{
+  width: 100%;
+}

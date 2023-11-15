@@ -1,0 +1,170 @@
+:global(.ts-shelf-container) {
+  height: 20px;
+
+  :global(.ts-sprite) {
+    background-image: url("assets/images/sprite-trustvox-stars.png") !important;
+  }
+
+  :global .ts-shelf-rate-enabled {
+    color: $cinza !important;
+  }
+}
+
+:global .trustvox-widget-rating .ts-shelf-container,
+:global .trustvox-widget-rating .trustvox-shelf-container {
+  display: inline-block;
+}
+:global .trustvox-widget-rating span.rating-click-here {
+  top: 0;
+  position: relative;
+  color: $cinza;
+  font-size: $font-size-xs;
+  text-decoration: underline;
+  display: inline-block !important;
+  margin-left: 16px;
+}
+:global .trustvox-widget-rating:hover span.rating-click-here {
+  text-decoration: underline;
+}
+
+:global .trustvox-shelf-container:empty ~ span.rating-click-here {
+  display: none;
+}
+
+// DEPOIMENTOS TRUSTVOX -----------------------------------------------------------
+:global(.ts-questions-private-answer) {
+  & ~ :global(.ts-customer-questions-list) {
+    margin-top: 34px;
+  }
+}
+
+:global(.trustvox-widget) {
+  h2 {
+    margin: 0 0 16px !important;
+  }
+}
+
+:global .vtex-flex-layout-0-x-flexRowContent--home__depo-trustvox {
+  :global(.carousel__item) {
+    width: 100%;
+  }
+  :global(.review-card) {
+    width: 100% !important;
+    background-color: $branco !important;
+    border: 1px solid $cinza-claro;
+    border-radius: $border-radius;
+    padding: 16px;
+  }
+  :global(.review-card-title) {
+    color: $cinza;
+    font-family: $main-font;
+    font-size: $font-size-sm;
+  }
+  :global(.review-card-date) {
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    color: $preto;
+  }
+  :global(.review-card-author) {
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    color: $cinza;
+  }
+
+  :global(.carousel__icon) {
+    display: none;
+  }
+  :global(.carousel__next),
+  :global(.carousel__prev_trustvox) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: $branco !important;
+    border: 1px solid $cinza-claro;
+    transition: all 0.2s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: $d) {
+      translate: -22px;
+    }
+
+    &::before {
+      content: url(assets/svg/icon-angle-left.svg);
+      transform: translateY(2px);
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  :global(.carousel__prev_trustvox) {
+    @media (min-width: $d) {
+      left: 60px;
+    }
+  }
+  :global(.carousel__next) {
+    @media (max-width: $d) {
+      translate: 22px;
+    }
+
+    @media (min-width: $d) {
+      right: 60px;
+    }
+
+    &::before {
+      transform: rotate(180deg) translateY(1px);
+    }
+  }
+
+  :global .carousel_trustvox {
+    @media (min-width: $d) {
+      width: 100% !important;
+      max-width: 944px;
+    }
+  }
+
+  :global .carousel__track {
+    :global .carousel__slide {
+      @media (min-width: $d) {
+        padding: 0 8px;
+      }
+
+      :global .review-card {
+        padding: 10px 30px;
+      }
+
+      :global .quote-top {
+        left: 10px;
+      }
+    }
+  }
+
+  :global .ts-audited {
+    margin-right: 0 !important;
+    font-size: $font-size-sm !important;
+    color: $cinza !important;
+    font-family: $main-font !important;
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important ;
+  }
+}
+
+:global .vtex-flex-layout-0-x-flexRowContent--product__rating-inline {
+  .ts-shelf-rate-count {
+    display: none !important;
+  }
+}
+
+:global #_trustvox_colt {
+  margin-top: 0 !important;
+}

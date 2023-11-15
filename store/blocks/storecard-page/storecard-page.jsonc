@@ -1,0 +1,327 @@
+{
+  "store.custom#storecard-page": {
+    "title": "Pagina de cartão da loja",
+    "blocks": ["flex-layout.row#storecard"]
+  },
+
+  "flex-layout.row#storecard": {
+    "title": "Seções",
+    "children": ["flex-layout.col#storecard"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["storecard__wrapper"],
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.col#storecard": {
+    "children": [
+      "flex-layout.row#storecard-top-banner",
+      "flex-layout.row#storecard-actions",
+      "flex-layout.row#storecard-advantages",
+      "flex-layout.row#storecard-middle-banner",
+      "flex-layout.row#storecard-contact",
+      "flex-layout.row#storecard-doubts"
+    ]
+  },
+
+  "flex-layout.row#storecard-top-banner": {
+    "title": "Banner do topo",
+    "children": ["list-context.image-list#storecard-top-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "storecard__top-banner"
+    }
+  },
+  "flex-layout.row#storecard-actions": {
+    "title": "Botoes de ação",
+    "children": ["flex-layout.col#storecard-actions"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "storecard__actions"
+    }
+  },
+  "flex-layout.col#storecard-actions": {
+    "children": [
+      "rich-text#storecard-actions-title",
+      "flex-layout.row#storecard-actions-buttons"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "storecard__actions"
+    }
+  },
+  "rich-text#storecard-actions-title": {
+    "title": "Titulo da seção dos botoes de ação",
+    "props": {
+      "text": "## cartão lojasmel",
+      "blockClass": ["section-common-title", "storecard__actions-title"]
+    }
+  },
+  "flex-layout.row#storecard-actions-buttons": {
+    "children": [
+      "modal-trigger#condictions",
+      "rich-text#storecard-actions-second-button"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "storecard__actions-buttons"
+    }
+  },
+  "rich-text#storecard-actions-first-button": {
+    "title": "Botao 1",
+    "props": {
+      "blockClass": ["storecard__button"],
+      "text": "[Condições gerais](/*)"
+    }
+  },
+  "modal-trigger#condictions": {
+    "children": [
+      "rich-text#storecard-actions-first-button",
+      "modal-layout#condictions"
+    ]
+  },
+  "modal-layout#condictions": {
+    "children": ["flex-layout.col#condictions"]
+  },
+  "flex-layout.col#condictions": {
+    "children": [
+      "rich-text#general-condictions-title",
+      "rich-text#condictions-content",
+      "rich-text#condictions-button"
+    ],
+    "props": {
+      "blockClass": ["condictions-col"]
+    }
+  },
+  "rich-text#general-condictions-title": {
+    "title": "Condições Gerais Titulo",
+    "props": {
+      "text": "Condições gerais",
+      "blockClass": ["general-condictions-title"]
+    }
+  },
+  "rich-text#condictions-content": {
+    "title": "Condições Gerais Conteudo",
+    "props": {
+      "text": "*O Cartão Lojas Mel é administrado pela Cred-System Administradora de Cartões de Crédito Ltda. Os planos de pagamento são de 1 a 10 vezes sem juros e de 12 a 15 vezes fixas com juros. Os planos com juros terão incidência de IOF. A oferta de até o dobro do limite está sujeita a análise para aprovação e é válida apenas nas compras parceladas de 12 a 15 vezes com juros, não implicando no aumento do limite do cartão. Condições exclusivas para clientes que possuem o Cartão Lojas Mel. Será cobrada Anuidade Diferenciada (AD) mensalmente, sempre que houver movimentação na conta do cliente, pela disponibilização e utilização do cartão na rede de estabelecimentos afiliados. Todas as condições do Cartão Lojas Mel estão sujeitas a análise de crédito. O prazo de 40 dias para começar a pagar varia de acordo com a data de compra e vencimento do cartão. Consulte a Tabela de Informações em uma das Lojas Mel. Condições sujeitas a alteração sem aviso prévio. A solicitação de até 2 cartões adicionais só é válida para maiores de 16 anos, portadores de CPF. Verifique seu limite de compras e condições gerais em uma de nossas lojas ou consulte a Central de Relacionamento Cred-System.",
+      "blockClass": ["condictions-content"]
+    }
+  },
+  "rich-text#condictions-button": {
+    "title": "Condições Gerais CTA",
+    "props": {
+      "text": "[Consulte aqui nossa **tabela de parcelamento**](/)",
+      "blockClass": ["condictions-button"]
+    }
+  },
+
+  "rich-text#storecard-actions-second-button": {
+    "title": "Botao 2",
+    "props": {
+      "blockClass": ["storecard__button"],
+      "text": "[2ª Via do boleto](/segundaviaboleto){target='_blank'}"
+    }
+  },
+
+  "flex-layout.row#storecard-advantages": {
+    "title": "Vantagens",
+    "children": [
+      "image#storecard-advantages",
+      "flex-layout.col#storecard-advantages"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "storecard__advantages"
+    }
+  },
+  "image#storecard-advantages": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/images/storecard-advantages.png",
+      "blockClass": "storecard__advantages"
+    }
+  },
+  "flex-layout.col#storecard-advantages": {
+    "children": [
+      "rich-text#storecard-advantages-title",
+      "rich-text#storecard-advantages-text-list",
+      "rich-text#storecard-advantages-subtitle",
+      "flex-layout.row#storecard-advantages-buttons"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "storecard__advantages"
+    }
+  },
+  "rich-text#storecard-advantages-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## conheça as vantagens",
+      "blockClass": ["storecard__advantages-title"]
+    }
+  },
+  "rich-text#storecard-advantages-text-list": {
+    "title": "Lista",
+    "props": {
+      "text": "- Compre com **10% de desconto** no mesmo dia e hora da emissão do cartão \n- Pague em até **10x sem juros**\n- **5% de desconto** em produtos das marcas **honeyhome** e **bee**\n- **40 dias** para pagar \n-**Libere o limite na hora** pagando em uma de nossas lojas",
+      "blockClass": "storecard__advantages-text-list"
+    }
+  },
+  "rich-text#storecard-advantages-subtitle": {
+    "title": "Subtítulo",
+    "props": {
+      "text": "## aplicativo cartão lojas mel disponível em:",
+      "blockClass": "storecard__advantages-subtitle"
+    }
+  },
+  "flex-layout.row#storecard-advantages-buttons": {
+    "children": [
+      "image#storecard-advantages-googleplay",
+      "image#storecard-advantages-appstore"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "storecard__advantages-buttons"
+    }
+  },
+  "image#storecard-advantages-googleplay": {
+    "title": "Botao google play",
+    "props": {
+      "src": "assets/images/storecard-google-play.png",
+      "blockClass": "storecard__advantages-stores",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#storecard-advantages-appstore": {
+    "title": "Botao da appstore",
+    "props": {
+      "src": "assets/images/storecard-app-store.png",
+      "blockClass": "storecard__advantages-stores",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+
+  "flex-layout.row#storecard-middle-banner": {
+    "title": "Banner central",
+    "children": ["list-context.image-list#storecard-middle-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "storecard__middle-banner"
+    }
+  },
+  "flex-layout.row#storecard-contact": {
+    "title": "Contato",
+    "children": [
+      "image#storecard-contact",
+      "flex-layout.col#storecard-contact"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["storecard__contact", "container"]
+    }
+  },
+  "image#storecard-contact": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/images/storecard-contact.png",
+      "blockClass": "storecard__contact"
+    }
+  },
+  "flex-layout.col#storecard-contact": {
+    "children": [
+      "rich-text#storecard-contact-title",
+      "rich-text#storecard-contact-text",
+      "rich-text#storecard-contact-attendance",
+      "flex-layout.row#storecard-contact-phones"
+    ],
+    "props": {
+      "width": "75%",
+      "preventVerticalStretch": true,
+      "blockClass": "storecard__contact-info"
+    }
+  },
+  "rich-text#storecard-contact-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## fale com a Cleo",
+      "blockClass": ["section-common-title", "storecard__contact-title"]
+    }
+  },
+  "rich-text#storecard-contact-text": {
+    "title": "Texto",
+    "props": {
+      "text": "A inteligência artiﬁcial da Credsystem que realiza todo o atendimento digital.\n\nA Cleo vai esclarecer suas dúvidas, acompanhar o status do cartão e até mesmo o pedido de entrega do seu novo cartão.\n\nVocê também poderá consultar o seu limite , solicitar a segunda via da fatura , e ainda, confirmar o melhor dia de compra e o dia de vencimento da próxima fatura.",
+      "blockClass": "storecard__contact-text"
+    }
+  },
+  "rich-text#storecard-contact-attendance": {
+    "title": "Horario de atendimento",
+    "props": {
+      "text": "Atendimento de segunda à sábado das 8h às 22h. Domingos e feriados das 9h às 20h",
+      "blockClass": ["storecard__contact-text", "storecard__contact-attendance"]
+    }
+  },
+  "flex-layout.row#storecard-contact-phones": {
+    "children": [
+      "rich-text#storecard-contact-phone-1",
+      "rich-text#storecard-contact-phone-2"
+    ],
+    "props": {
+      "blockClass": "storecard__contact-phones"
+    }
+  },
+  "rich-text#storecard-contact-phone-1": {
+    "title": "Telefone 1",
+    "props": {
+      "text": "**11 4003.3900**\nCapitais e regiões metropolitanas adiciona agora no WhatsApp",
+
+      "blockClass": "storecard__contact-phone"
+    }
+  },
+  "rich-text#storecard-contact-phone-2": {
+    "title": "Telefone 2",
+    "props": {
+      "text": "**[11 0800 729 3900](tel:08007293900)**\nDemais localidades somente pelo telefone",
+      "blockClass": "storecard__contact-phone"
+    }
+  },
+
+  "flex-layout.row#storecard-doubts": {
+    "title": "Dúvidas",
+    "children": ["flex-layout.col#storecard-doubts"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["storecard__doubts", "container"]
+    }
+  },
+  "flex-layout.col#storecard-doubts": {
+    "children": [
+      "rich-text#storecard-doubts-title",
+      "disclosure-layout-group#storecard-doubts",
+      "link#storecard-doubts-button"
+    ]
+  },
+  "rich-text#storecard-doubts-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## dúvidas frequentes",
+      "blockClass": ["section-common-title", "storecard__doubts-title"]
+    }
+  },
+
+  "link#storecard-doubts-button": {
+    "props": {
+      "href": "https://lojasmel1.vteximg.com.br/arquivos/faq_cartao_lojasmel___versao_clientes.pdf",
+      "label": "Outras dúvidas",
+      "target": "_blank",
+      "blockClass": ["storecard__button", "storecard__doubts-button"]
+    }
+  }
+}

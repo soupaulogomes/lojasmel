@@ -1,0 +1,124 @@
+{
+  // DISCLOSURE MOBILE -------------------------------
+  "disclosure-layout#description-mobile": {
+    "children": [
+      "disclosure-trigger#description-mobile",
+      "disclosure-content#description-mobile"
+    ]
+  },
+  "disclosure-trigger#description-mobile": {
+    "children": ["rich-text#description-mobile"],
+    "props": {
+      "blockClass": "description-and-specification"
+    }
+  },
+  "disclosure-content#description-mobile": {
+    "children": ["product-description"],
+    "props": {
+      "blockClass": "description-and-specification"
+    }
+  },
+  "rich-text#description-mobile": {
+    "title": "DESCRIÇÃO DO PRODUTO",
+    "props": {
+      "text": "## descrição do produto",
+      "blockClass": ["section-common-title"]
+    }
+  },
+
+  "disclosure-layout#specification-mobile": {
+    "children": [
+      "disclosure-trigger#specification-mobile",
+      "disclosure-content#specification-mobile"
+    ]
+  },
+  "disclosure-trigger#specification-mobile": {
+    "children": ["rich-text#specification-mobile"],
+    "props": {
+      "blockClass": "description-and-specification"
+    }
+  },
+  "disclosure-content#specification-mobile": {
+    "children": ["flex-layout.row#product-specification"],
+    "props": {
+      "blockClass": "description-and-specification"
+    }
+  },
+  "rich-text#specification-mobile": {
+    "title": "Especificações técnica título",
+    "props": {
+      "text": "## especificações técnicas",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  //DISCLOSURE MOBILE -------------------------------
+
+  // DESCRIPTION -------------------------------------------------------------
+  "flex-layout.row#product-description-and-specification": {
+    "children": [
+      "product-description",
+      "flex-layout.row#product-specification"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__info", "container"]
+    }
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false,
+      "showTitle": true
+    }
+  },
+  // DESCRIPTION -------------------------------------------------------------
+
+  // SPECIFICATION --------------------------------------------------
+  "flex-layout.row#product-specification": {
+    "children": ["product-specification-group"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__specification"]
+    }
+  },
+  "product-specification-group": {
+    "children": [
+      "product-specification-text#group",
+      "flex-layout.row#product-specification-row"
+    ]
+  },
+
+  "flex-layout.row#product-specification-row": {
+    "children": ["product-specification"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["product__specification-row"]
+    }
+  },
+  "product-specification": {
+    "children": [
+      "product-specification-text#specification",
+      "product-specification-values"
+    ]
+  },
+
+  "product-specification-text#specification": {
+    "props": {
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-values": {
+    "children": ["product-specification-text#value"]
+  },
+  "product-specification-text#group": {
+    "props": {
+      "message": "{groupName}"
+    }
+  },
+  "product-specification-text#value": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+
+  // SPECIFICATION --------------------------------------------------
+}

@@ -1,0 +1,24 @@
+.sliderTrack {
+  &--shelf {
+    padding-bottom: 15px;
+  }
+}
+
+.slide {
+  &--shelf,
+  &--shelf-countdown {
+    margin: 0 8px;
+
+
+    :global(.vtex-product-summary-2-x-image) {
+      transition: all 0.3s;
+    }
+
+
+  }
+
+  &--shelf--lastVisible,
+  &--shelf-countdown {
+    margin-right: 0 !important;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "list-context.image-list#landingpage-highlight-banners": {
+    "title": "Lista de Banners de Destaque",
+    "children": ["slider-layout#landingpage-highlight-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/lp-highlight-banner-mob.png",
+          "image": "assets/images/lp-highlight-banner-desk.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#landingpage-highlight-banners": {
+    "title": "Slider de Banners de Destaque",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": ["landingpage__highlight-banners"]
+    }
+  }
+}

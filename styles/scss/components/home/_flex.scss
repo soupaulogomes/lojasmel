@@ -1,0 +1,215 @@
+.flexRow {
+  &--home__hero-banners {
+    margin-bottom: 20px;
+    padding: 0;
+
+    @media (min-width: $d) {
+      margin-bottom: 32px;
+      padding: 24px 16px 0;
+    }
+
+    :global(.vtex-slider-layout-0-x-imageElementLink) {
+      @extend %hoverOpacity;
+    }
+  }
+
+  &--home__category-banners {
+    margin-top: 24px;
+    padding-right: 0;
+
+    @media (min-width: $d) {
+      margin-top: 32px;
+      padding-right: 16px;
+    }
+
+    :global(.vtex-slider-layout-0-x-imageElementLink) {
+      @extend %hoverOpacity;
+    }
+  }
+
+  &--home__brands-carousel {
+    margin-bottom: 64px;
+    margin-top: 32px;
+
+    @media (max-width: $d) {
+
+      margin-bottom: 40px;
+    }
+  }
+
+  &--home__selections {
+    @media (max-width: $d) {
+      padding-right: 0;
+    }
+  }
+
+  &--countdown-shelf {
+    @media (min-width: $m) {
+      margin-top: 16px;
+    }
+
+    :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
+      transform: translateX(-35px);
+
+      @media (min-width: $m) {
+        transform: translateX(-20px);
+      }
+    }
+    :global(.vtex-slider-layout-0-x-sliderRightArrow) {
+      transform: translateX(35px);
+
+      @media (min-width: $m) {
+        transform: translateX(20px);
+      }
+    }
+    :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+      bottom: -17px;
+
+      @media (min-width: $d) {
+        bottom: -25px;
+      }
+    }
+  }
+
+  &--home__highlight-banners-1 {
+    margin-top: 10px;
+
+    @media (max-width: $d) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $m) {
+      margin-top: 32px;
+    }
+  }
+  &--home__depo-trustvox {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @media (min-width: $d) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+
+    :global(.vtex-rich-text-0-x-wrapper--section-common-title) {
+      @media (max-width: $d) {
+        justify-content: center;
+      }
+    }
+    :global(.vtex-rich-text-0-x-heading--section-common-title) {
+      @media (max-width: $d) {
+        margin-top: 0px !important;
+      }
+    }
+  }
+}
+
+.flexRowContent {
+  &--shelf {
+    &:not(.flexRowContent--countdown-shelf) {
+      @extend %translatedArrows;
+    }
+  }
+  &--countdown-shelf {
+    border: 1px solid $cinza-claro;
+    border-radius: $border-radius;
+    padding: 10px 25px 32px;
+    margin: 0 auto;
+
+    @media (min-width: $d) {
+      padding: 10px 25px 40px;
+    }
+
+    :global(.vtex-rich-text-0-x-heading--section-common-title) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1200px) {
+      width: 100%;
+      margin-top: 16px;
+      padding-top: 16px;
+    }
+  }
+  &--home__hero-banners {
+    padding: 0px;
+  }
+
+  &--home__selections {
+    @media (max-width: $t) {
+      padding-right: 0px;
+    }
+  }
+
+  &--home__selections-images {
+    overflow-x: auto;
+    padding: 0;
+
+    @media (max-width: $d) {
+      gap: 16px;
+      max-height: 110px;
+    }
+
+    &::-webkit-scrollbar {
+      opacity: 0;
+    }
+
+    .stretchChildrenWidth {
+      flex: 1;
+      min-width: 80px;
+      height: min-content;
+
+      @media (min-width: $d) {
+        min-width: initial;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-imageElementLink) {
+      @extend %hoverOpacity;
+    }
+  }
+
+  &--home__category-banners {
+    padding-right: 0px;
+  }
+
+  &--home__highlight-banners {
+    :global(.vtex-slider-layout-0-x-imageElementLink) {
+      @extend %hoverOpacity;
+      width: 100%;
+    }
+  }
+
+  &--home__brands-carousel {
+    @media (max-width: $d) {
+      padding-right: 0;
+    }
+
+    :global(.vtex-slider-layout-0-x-imageElementLink) {
+      @extend %hoverOpacity;
+    }
+  }
+
+  &--home__depo-trustvox {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $d) {
+      flex-direction: row;
+    }
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+
+      @media (min-width: $d) {
+        &:first-child {
+          width: 25% !important;
+        }
+        &:last-child {
+          width: 75% !important;
+        }
+      }
+    }
+  }
+}
+.flexCol {
+}

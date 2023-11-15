@@ -1,0 +1,199 @@
+{
+  "store.home": {
+    "blocks": ["disposition-layout#home"]
+  },
+
+  "disposition-layout#home": {
+    "title": "HOME | Disposição do Conteudo",
+    "children": [
+      "flex-layout.row#home-hero-banner",
+      "flex-layout.row#home-tipbar",
+      "flex-layout.row#home-selections",
+      "flex-layout.row#home-shelf-1",
+      "flex-layout.row#home-category-banners",
+      "flex-layout.row#home-shelf-2",
+      "flex-layout.row#home-highlight-banners",
+      "flex-layout.row#home-shelf-3",
+      "flex-layout.row#home-highlight-banners-2",
+      "flex-layout.row#home-shelf-4",
+      "flex-layout.row#home-depo",
+      "flex-layout.row#home-brands-carousel"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        },
+        {
+          "order": 12
+        },
+        {
+          "order": 13
+        }
+      ]
+    }
+  },
+  "flex-layout.row#home-hero-banner": {
+    "title": "HOME - Linha Banners Hero",
+    "children": ["list-context.image-list#home-hero-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__hero-banners", "container"]
+    }
+  },
+
+  "flex-layout.row#home-tipbar": {
+    "title": "HOME - Tipbar",
+    "children": ["list-context.info-card-list#home-tipbar"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__tipbars", "container"]
+    }
+  },
+
+  //seleção
+  "flex-layout.row#home-selections": {
+    "title": "HOME - Seleções",
+    "children": ["flex-layout.col#home-selections"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__selections", "container"]
+    }
+  },
+  "flex-layout.col#home-selections": {
+    "children": [
+      "rich-text#home-selections",
+      "list-context.info-card-list#home-selections-images"
+    ]
+  },
+  "rich-text#home-selections": {
+    "title": "HOME | Titulo da Seção de Seleções da Mel",
+    "props": {
+      "text": "## seleções da mel",
+      "blockClass": ["section-common-title"]
+    }
+  },
+
+  "flex-layout.row#home-selections-images": {
+    "children": [
+      "info-card#home-selection-1",
+      "info-card#home-selection-2",
+      "info-card#home-selection-3",
+      "info-card#home-selection-4",
+      "info-card#home-selection-5",
+      "info-card#home-selection-6",
+      "info-card#home-selection-7",
+      "info-card#home-selection-8",
+      "info-card#home-selection-9"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home__selections-images"
+    }
+  },
+
+  "flex-layout.row#home-category-banners": {
+    "title": "HOME | Banners de categoria",
+    "children": ["list-context.image-list#home-category-banners"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__category-banners", "container"]
+    }
+  },
+
+  "flex-layout.row#home-highlight-banners": {
+    "title": "Seção 1 de Banners de Destaque",
+    "children": ["list-context.image-list#home-highlight-banners"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "home__highlight-banners",
+        "home__highlight-banners-1",
+        "container"
+      ]
+    }
+  },
+
+  "flex-layout.row#home-highlight-banners-2": {
+    "title": "Seção 2 de Banners de Destaque",
+    "children": ["flex-layout.col#home-highlight-banners-2"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__highlight-banners", "container"]
+    }
+  },
+  "flex-layout.col#home-highlight-banners-2": {
+    "children": [
+      "rich-text#home-highlight-banners-2",
+      "list-context.image-list#home-highlight-banners-2"
+    ]
+  },
+  "rich-text#home-highlight-banners-2": {
+    "title": "HOME | Titulo da Seção 2 de Banners de Destaque",
+    "props": {
+      "text": "## mais opções para você comprar na mel",
+      "blockClass": ["section-common-title"]
+    }
+  },
+  "flex-layout.row#home-brands-carousel": {
+    "title": "",
+    "children": ["list-context.image-list#home-brands-carousel"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__brands-carousel", "container"]
+    }
+  },
+  "flex-layout.row#home-depo": {
+    "title": "Depoimentos",
+    "children": [
+      "rich-text#home-depo",
+      "trustvox-opinions-carousel"
+    ],
+    "props": {
+      "blockClass": ["home__depo-trustvox", "container"]
+    }
+  },
+  "flex-layout.col#home-depo": {
+    "children": ["rich-text#home-depo", "trustvox-opinions-carousel"]
+  },
+  "rich-text#home-depo": {
+    "title": "Titulo",
+    "props": {
+      "text": "## o que dizem sobre nós?",
+      "blockClass": ["section-common-title", "home-depo"],
+      "htmlId": "trustvox-reviews"
+    }
+  }
+}

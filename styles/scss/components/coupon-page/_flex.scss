@@ -1,0 +1,68 @@
+.flexRow {
+  &--coupon__container {
+    @extend %container;
+    max-width: 1080px;
+
+    @media (min-width: $l) {
+      max-width: 1180px;
+      padding: 0px;
+    }
+  }
+
+  &--coupon__shelf {
+    @media (max-width: $d) {
+      padding-right: 0px;
+      @include shelf-overflowX-on-mobile($size: 262px);
+    }
+
+    :global(.vtex-button) {
+      display: none !important;
+    }
+  }
+
+  &--coupon__banner {
+    @media (max-width: $m) {
+      padding: 0 !important;
+    }
+
+    :global(.vtex-slider-layout-0-x-imageElementLink) {
+      width: 100%;
+    }
+  }
+
+  &--coupon__steps {
+    margin-top: 24px;
+
+    @media (min-width: $d) {
+      margin-top: 32px;
+    }
+  }
+
+  &--coupon__disclaimer {
+    margin: 32px auto 40px;
+  }
+
+  &--coupon__shelf-3 {
+    @media (min-width: $d) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.flexRowContent {
+  &--coupon__steps {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: $m) {
+      flex-direction: row;
+    }
+  }
+}
+.flexCol {
+}

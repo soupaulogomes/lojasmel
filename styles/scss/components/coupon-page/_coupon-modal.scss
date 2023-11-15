@@ -1,0 +1,17 @@
+.couponModalWrapper {
+  .couponModalTitle {
+    font-size: $font-size-xl;
+    color: $cor-2;
+    margin: 0;
+  }
+  .couponModalMessage {
+    font-size: $font-size-sm;
+    color: $cinza;
+    text-align: center;
+  }
+  .couponModalCloseButton {
+    @include primary-button;
+    font-size: $font-size-sm;
+    width: 140px;
+  }
+}

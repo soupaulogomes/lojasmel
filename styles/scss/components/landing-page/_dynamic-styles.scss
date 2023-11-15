@@ -1,0 +1,10 @@
+:root {
+  :global(.vtex-flex-layout-0-x-flexRow--landingpage__wrapper) {
+    --main-bg: #fff;
+    --main-color: #1d1d1b;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--landingpage__wrapper--black) {
+    --main-bg: rgb(34, 34, 34);
+    --main-color: #fff;
+  }
+}

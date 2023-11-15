@@ -1,0 +1,41 @@
+.container--trabalheConoscoInfoTitle {
+    margin: 0;
+    .paragraph--trabalheConoscoInfoTitle {
+        margin: 0;
+    
+        font-family: $main-font;
+        font-size: $font-size-xl;
+        line-height: 22px;
+        color: $cor-2;
+        font-weight: bold;
+        text-transform: lowercase;
+    }
+}
+
+.paragraph--trabalheConoscoInfoText {
+    margin: 16px 0 0;
+
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    line-height: $font-size-lg;
+    color: $cinza;
+    font-weight: $regular;
+}
+
+.container--trabalheConoscoInfoText2 {
+    margin: 0;
+    .paragraph--trabalheConoscoInfoText2 {
+        margin: 16px 0 0;
+    
+        font-family: $main-font;
+        font-size: $font-size-md;
+        line-height: $font-size-xl;
+        color: $cinza;
+        font-weight: $regular;
+    
+        .link--trabalheConoscoInfoText2 {
+            color: $cinza;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.stackItem--product__savingPricePercentage {
+  left: initial;
+  right: 25px;
+  top: 0;
+
+  @media (min-width: $l){
+    right: 103px;
+  }
+}

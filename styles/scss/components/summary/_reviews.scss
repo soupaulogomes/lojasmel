@@ -1,0 +1,12 @@
+.summaryContainer {
+  height: 16px;
+  margin: 0px 6px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.star {
+  color: $cor-1;
+}

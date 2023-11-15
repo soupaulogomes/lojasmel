@@ -1,0 +1,87 @@
+@import "components/variables/all";
+@import "mixins/buttons";
+
+@import "components/common/login";
+
+@import "components/header/login";
+@import "components/product/thumbs-swiper";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $main-font;
+  scroll-behavior: smooth;
+}
+
+@import "components/common/countdown";
+@import "components/product/global";
+
+@import "components/landing-page/dynamic-styles";
+@import "components/club-mel/datepicker";
+@import "components/common/trustvox";
+
+// ESTILIZAÇÃO INUSITADA DE KITLOOK
+// ------ NAO REPITA ESSE CONCEITO -------
+:global .vtexbr-kitlook-5-x-kitlookTotalizer {
+  .vtex-table__container * {
+    .mb5,
+    .mb5 + div :first-child {
+      display: none !important;
+    }
+
+    .ReactVirtualized__Grid {
+      height: 65px !important;
+    }
+
+    .ReactVirtualized__Grid__innerScrollContainer {
+      height: 65px !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      flex-wrap: wrap;
+
+      * {
+        font-size: $font-size-md;
+        color: $cinza;
+      }
+
+      .flex {
+        height: min-content !important;
+        position: relative !important;
+        top: initial !important;
+        left: initial !important;
+        right: initial !important;
+        bottom: initial !important;
+        flex-basis: 50% !important;
+        padding: 0 !important;
+
+        &:nth-child(2n) {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+:global .vtex-mega-menu-2-x-menuContainer h3 {
+  display: none !important;
+}
+:global .vtex-mega-menu-2-x-styledLinkIcon svg {
+  transform: scale(1.25);
+}
+
+//cookie script
+
+:global(#cookiescript_injected) {
+  padding: 150px;
+  background-color: $cor-2 !important;
+}
+
+:global(#cookiescript_accept) {
+  padding: 150px;
+  background-color: #fdc300 !important;
+}
+:global(#cookiescript_badge) {
+  opacity: 0.4 !important;
+  z-index: 2 !important;
+}

@@ -1,0 +1,46 @@
+.trigger {
+  &--storecard__doubts {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $cinza-claro;
+    cursor: pointer;
+    padding: 16px 0 8px;
+
+    &::after {
+      content: url(assets/svg/icon-angle-up.svg);
+      transition: all 0.3s;
+    }
+
+    &--hidden {
+      &::after {
+        content: url(assets/svg/icon-angle-down.svg);
+      }
+    }
+
+    :global(.vtex-rich-text-0-x-container) {
+      margin-left: 0;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph) {
+      margin: 0;
+      font-weight: $bold;
+      font-size: $font-size-md;
+      color: $cinza;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.content {
+  &--storecard__doubts {
+    :global(.vtex-rich-text-0-x-container) {
+      margin-left: 0;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph) {
+      margin: 8px 0;
+      font-size: $font-size-sm;
+      color: $cinza;
+    }
+  }
+}

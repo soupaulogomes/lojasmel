@@ -1,0 +1,133 @@
+.flexRow {
+  &--landingpage__banner {
+    max-width: 100%;
+    padding: 0px;
+
+    :global(.vtex-store-components-3-x-infoCardContainer--landingpage__banner) {
+      border: none;
+      height: 279px;
+      @media (min-width: $d) {
+        height: 440px;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-infoCardTextContainer) {
+      position: relative;
+      width: 100%;
+      margin-left: 40px;
+      transform: translateY(60px);
+
+      @media (min-width: $d) {
+        margin-left: 109px;
+        transform: none;
+      }
+
+      &::before {
+        content: "";
+        height: 100%;
+        width: 4px;
+        background-color: $cor-2;
+
+        position: absolute;
+        top: 0;
+        left: -13px;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-infoCardHeadline) {
+      font-size: 49px;
+      color: $cor-2;
+      margin: 0;
+      font-family: $main-font;
+
+      @media (min-width: $l) {
+        font-size: 94px;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-infoCardSubhead) {
+      font-size: $font-size-sm;
+      font-family: $main-font;
+      color: $white;
+      margin: 0;
+
+      @media (min-width: $l) {
+        font-size: $font-size-xl;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-infoCardCallActionContainer--landingpage__banner) {
+      display: none !important;
+    }
+  }
+
+  &--landingpage__wrapper {
+    background-color: var(--main-bg);
+
+    :global(.vtex-slider-layout-0-x-infoCardContainer) {
+      background-color: transparent !important;
+    }
+    :global(.vtex-slider-layout-0-x-slide--shelf) {
+      background-color: $white;
+    }
+
+    :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+      bottom: -12px;
+    }
+
+    .flexRow--home__category-banners {
+      margin-top: 0px;
+    }
+  }
+
+  &--landingpage__highlight-banner {
+    @media (max-width: $d) {
+      padding: 0;
+    }
+
+    :global(.vtex-store-components-3-x-imageElementLink--landingpage__highlight-banners) {
+      width: 100%;
+    }
+  }
+
+  &--landingpage__paragraphs--bottom {
+    margin-bottom: 56px;
+
+    @media (min-width: $d) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &--landingpage__categories {
+    @include shelf-overflowX-on-mobile($size: 80px)
+  }
+  &--landingpage__brands-carousel {
+    @include shelf-overflowX-on-mobile($size: 130px)
+    }
+
+}
+
+.flexRowContent {
+  &--landingpage__categories {
+    :global(.vtex-slider-layout-0-x-infoCardCallActionContainer),
+    :global(.vtex-slider-layout-0-x-infoCardCallActionText) {
+      color: var(--main-color);
+    }
+  }
+
+  &--landingpage__shelf {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+      @extend %translatedArrows;
+    }
+  }
+}
+
+.flexCol {
+  &--landingpage__wrapper {
+    gap: 24px;
+
+    @media (min-width: $d) {
+      gap: 40px;
+    }
+  }
+}

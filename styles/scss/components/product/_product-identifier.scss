@@ -1,0 +1,20 @@
+.product-identifier__value,
+.product-identifier__label {
+  font-size: $font-size-xs;
+  font-family: $main-font;
+  color: $cinza;
+}
+
+.product-identifier__label {
+  font-size: 0;
+
+  &::before {
+    content: "Ref:";
+    font-size: $font-size-xs;
+    margin-right: 3px;
+  }
+}
+
+.product-identifier__separator {
+  display: none;
+}

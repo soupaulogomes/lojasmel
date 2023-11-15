@@ -1,0 +1,122 @@
+.logoLink--headerLogoMobile {
+  margin-left: 16px;
+  .logoContainer--headerLogoMobile {
+    padding: 0;
+  }
+
+  .sizeMobile {
+    padding: 0;
+    max-width: auto;
+    max-height: auto;
+  }
+}
+
+.logoLink--headerLogo {
+  margin-right: 28px;
+
+  @media (min-width: $l) {
+    margin-right: 48px;
+  }
+
+  .logoContainer--headerLogo {
+    padding: 0;
+  }
+}
+
+.searchBarContainer {
+  padding: 0 0 12px;
+  max-width: 100%;
+
+  .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    border-radius: 72px;
+    height: 40px;
+    background-color: $white;
+
+    & :global(.vtex-styleguide-9-x-input) {
+      padding-left: 12px;
+      color: $cinza;
+      font-size: $font-size-xs;
+      font-weight: $regular;
+      line-height: $font-size-md;
+
+      @media screen and (-webkit-min-device-pixel-ratio:0) and ( max-device-width: $l) {
+        font-size: 16px;
+      }
+    }
+
+    & :global(.vtex-input__suffix) {
+      padding: 0;
+    }
+
+    .searchBarIcon--search {
+      padding-right: 11px;
+      padding-bottom: 4px;
+
+      .searchIcon {
+        width: 18px;
+        overflow: visible;
+      }
+    }
+  }
+}
+
+.searchBarInnerContainer--headerSearch {
+  margin-right: 44px;
+  position: static !important;
+
+  @media (min-width: $d) {
+    max-width: 620px;
+  }
+
+  .autoCompleteOuterContainer--headerSearch {
+    @media (min-width: $d) {
+      max-width: 620px;
+      width: 50vw;
+    }
+  }
+
+  .autoCompleteOuterContainer--headerSearch :global(.vtex-input-prefix__group) {
+    height: 48px;
+
+    .searchBarIcon--search {
+      padding-right: 15px;
+      padding-bottom: 6px;
+
+      .searchIcon {
+        width: 24px;
+        height: 20px;
+        overflow: visible;
+      }
+    }
+  }
+
+  ::root {
+    --offsetTop: 180px;
+  }
+
+  &--opened {
+    &::before {
+      content: "";
+      width: 100%;
+      height: calc( 100vh - 180px );
+      position: absolute;
+      top: var(--offsetTop);
+      left: 0;
+      background-color: #1d1d1b;
+      opacity: 0.5;
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+}
+
+@media screen and (min-width: $d) {
+  .searchBarContainer {
+    padding: 0;
+  }
+}
+
+.logoImage--headerLogo {
+  min-width: 124px;
+}

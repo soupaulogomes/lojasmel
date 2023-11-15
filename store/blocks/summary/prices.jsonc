@@ -1,0 +1,84 @@
+{
+  "flex-layout.row#prices": {
+    "title": "SUMMARY - Bloco de preços",
+    "props": {
+      "blockClass": "summary__price",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#prices"]
+  },
+  "flex-layout.col#prices": {
+    "children": [
+      "vtex.product-price:product-list-price#summary",
+      "flex-layout.row#member-tag",
+      //"vtex.product-price:product-selling-price#summary",
+      "lojasmel1.product-price:product-selling-price#pdp",
+      "rich-text#info-boleto-ou-pix",
+      "vtex.product-price:product-installments#summary"
+    ],
+    "props": {
+      "blockClass": "summary__prices"
+    }
+  },
+  "vtex.product-price:product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "vtex.product-price:product-selling-price#summary": {
+    "title": "SUMMARY - Preço de venda",
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+
+  "rich-text#info-boleto-ou-pix": {
+    "props": {
+      "text": "no PIX ou boleto",
+      "blockClass": "summary__payment-info"
+    }
+  },
+
+  "vtex.product-price:product-price-savings#summary": {
+    "title": "SUMMARY - Preço descontado",
+    "props": {
+      "markers": ["discount"],
+      "message": "-{savingsPercentage}",
+      "blockClass": "summary"
+    }
+  },
+  "vtex.product-price:product-installments#summary": {
+    "title": "SUMMARY - Parcelas",
+    "props": {
+      "message": "{installmentsTotalValue} ou em {installmentsNumber}x de {installmentValue}",
+
+      "blockClass": "summary",
+      "installmentsCriteria": "max-quantity-without-interest"
+    }
+  },
+
+  // SELO DE PREÇO DE SÓCIO
+  "flex-layout.row#member-tag": {
+    "title": "SUMMARY - Preço de sócio",
+    "children": ["flex-layout.row#image-member-tag"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "summary__member-price-wrapper"
+    }
+  },
+  "image#summary-member-image": {
+    "title": "SUMMARY - Logo do sócio",
+    "props": {
+      // "src": "assets/svg/social-club.svg"
+    }
+  },
+
+  "flex-layout.row#image-member-tag": {
+    "children": ["image#summary-member-image"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "member-image-tag"
+    }
+  }
+}

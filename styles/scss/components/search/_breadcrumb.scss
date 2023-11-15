@@ -1,0 +1,53 @@
+.container {
+  &--search {
+    padding-left: 10px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+
+    .homeLink {
+      display: block;
+
+      .homeIcon {
+        display: none;
+      }
+    }
+
+    .link {
+      color: $cinza;
+      font-size: $font-size-sm;
+      font-weight: $regular;
+      text-transform: lowercase;
+    }
+
+    .arrow {
+
+      .caretIcon {
+        display: none;
+      }
+
+      &:last-child {
+        .link {
+          color: $cor-2;
+        }
+      }
+    }
+  }
+
+  &--not-found {
+    @extend %container;
+
+    .arrow {
+      &:last-child {
+
+        .link {
+          color: $cor-2;
+
+          &::before {
+            content: "Resultado de busca: ";
+          }
+        }
+      }
+    }
+  }
+}

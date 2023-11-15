@@ -1,0 +1,49 @@
+.container{
+  &--summary__payment-info {
+    margin: 0 !important;
+    height: 18px;
+
+    .paragraph {
+      font-family: $main-font;
+      color: $cinza;
+      font-size: $font-size-xs;
+      padding: 0;
+      margin: 0;
+
+      @media (min-width: $d) {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}
+
+.container {
+  &--product__unavailable {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    .paragraph {
+      font-size: 0;
+      margin: 0;
+
+      &::before {
+        content: "Produto Indisponível";
+        font-family: $main-font;
+        font-size: $font-size-sm;
+        color: $cinza;
+        margin-left:5px;
+        
+        @media (min-width: $d) {
+          font-size: $font-size-md;
+        }
+      }
+    }
+  }
+}
+
+.paragraph {
+  &--product__unavaible-button {
+    display: none !important;
+  }
+}

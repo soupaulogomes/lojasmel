@@ -1,0 +1,85 @@
+.container--newsletterTitle {
+  margin: 0 !important;
+
+  .headingLevel6--newsletterTitle {
+    color: $branco;
+    font-family: $main-font;
+    font-weight: $bold;
+    font-size: $font-size-xl;
+    line-height: 22px;
+
+    margin: 0 0 5px;
+
+    .strong--newsletterTitle {
+      color: $cor-1;
+    }
+
+    @media screen and (min-width: $d) {
+      margin: 0 0 6px;
+    }
+  }
+}
+
+.container--newsletterText {
+  margin: 0 !important;
+
+  .paragraph--newsletterText {
+    color: $branco;
+    font-family: $main-font;
+    font-weight: $regular;
+    font-size: $font-size-md;
+    line-height: $font-size-xl;
+
+    margin: 0 0 17px;
+
+    .strong--newsletterText {
+      color: $cor-1;
+    }
+
+    @media screen and (min-width: $d) {
+      margin: 0;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.container--newsletterFormText {
+  margin: 0 !important;
+
+  .wrapper--newsletterFormText {
+    margin-top: 4px;
+    margin-left: auto;
+    margin-bottom: 4px;
+
+    .paragraph--newsletterFormText {
+      color: $branco;
+      margin: 0;
+      font-family: $main-font;
+      color: $branco;
+      font-size: $font-size-xs;
+      line-height: $font-size-md;
+      font-weight: $regular;
+
+      .link--newsletterFormText {
+        text-decoration: underline;
+        color: $branco;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $d) {
+  .container--newsletterText {
+    width: 327px !important;
+
+    .paragraph--newsletterText {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $l) {
+  .container--newsletterFormText {
+    text-align: left;
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "store.custom#kit-page-list": {
+    "blocks": ["disposition-layout#kit-page-list"]
+  },
+
+  "disposition-layout#kit-page-list": {
+    "title": "KIT | Disposição do Conteudo",
+    "children": [
+      "flex-layout.row#kit-page-breadcrumb",
+      "flex-layout.row#kit-page-list-top-info",
+      "flex-layout.row#kit-page-list-cards",
+      "flex-layout.row#kit-page-list-bottom-info"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        }
+      ]
+    }
+  },
+  "flex-layout.row#kit-page-breadcrumb": {
+    "title": "BreadCrumb",
+    "children": [
+      "rich-text#kit-page-breadcrumb"
+    ],
+    "props": {
+      "blockClass": ["kit__breadcrumb", "container"],
+      "fullWidth": true
+    }
+  },
+  "rich-text#kit-page-breadcrumb":{
+    "title": "Links da breadcrumb",
+    "props": {
+      "text": "[Home](/)[Ambientes](/ambientes)",
+      "blockClass": "kit__breadcrumb"
+    }
+  },
+
+  "flex-layout.row#kit-page-list-top-info": {
+    "title": "Informação do topo",
+    "children": ["flex-layout.col#kit-page-list-top-info"],
+    "props": {
+      "blockClass": ["kit__top-info", "container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#kit-page-list-top-info": {
+    "children": [
+      "rich-text#kit-page-list-top-info-title",
+      "rich-text#kit-page-list-top-info-text"
+    ]
+  },
+  "rich-text#kit-page-list-top-info-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## ambientes lojasmel",
+      "blockClass": ["section-common-title", "kit__info-title"]
+    }
+  },
+  "rich-text#kit-page-list-top-info-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat porro perferendis rem dolorem nam cupiditate, ut, adipisci vel praesentium consectetur harum nisi earum nulla quod!",
+      "blockClass": "kit__info-text"
+    }
+  },
+
+  "flex-layout.row#kit-page-list-cards": {
+    "title": "Cards",
+    "children": ["list-context.info-card-list#kit-page-list"],
+    "props": {
+      "blockClass": ["kit__cards", "container"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#kit-page-list-bottom-info": {
+    "title": "Informação do final da pagina",
+    "children": ["flex-layout.col#kit-page-list-bottom-info"],
+    "props": {
+      "blockClass": ["kit__bottom-info", "container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#kit-page-list-bottom-info": {
+    "children": [
+      "rich-text#kit-page-list-bottom-info-title",
+      "rich-text#kit-page-list-bottom-info-text"
+    ]
+  },
+  "rich-text#kit-page-list-bottom-info-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## lorem ipsum",
+      "blockClass": ["section-common-title", "kit__info-title"]
+    }
+  },
+  "rich-text#kit-page-list-bottom-info-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt error repudiandae inventore hic dignissimos eos explicabo sed quo! Debitis a vitae deserunt magni animi illum eaque recusandae, voluptates veritatis doloremque illo. Cumque quidem ut atque accusamus saepe quod error facilis vitae, officia optio ipsa voluptas fugiat natus perferendis vero.",
+      "blockClass": "kit__info-text"
+    }
+  }
+}

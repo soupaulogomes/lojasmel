@@ -1,0 +1,92 @@
+{
+  "flex-layout.row#desktop-line-1": {
+    "title": "Header Desktop Linha 1",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": ["headerLine1"]
+    },
+    "children": [
+      "logo#header",
+      "flex-layout.row#search-bar-desktop",
+      "link#header-localization",
+      "login#header-desktop",
+      "minicart.v2"
+    ]
+  },
+  "logo#header": {
+    "title": "Logo Lojas Mel",
+    "props": {
+      "title": "Lojas Mel",
+      "href": "/",
+      "url": "assets/images/svg/logo-desktop.svg",
+      "blockClass": "headerLogo"
+    }
+  },
+
+  "flex-layout.row#search-bar-desktop": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "search-bar-row"
+    },
+    "children": ["search-bar#header"]
+  },
+  "search-bar#header": {
+    "title": "Barra de Busca",
+    "props": {
+      "containerMode": "container",
+      "placeholder": "O que você procura?",
+      "blockClass": "headerSearch",
+      "displayMode": "search-button",
+      "maxWidth": "100%"
+    },
+    "blocks": ["autocomplete-result-list.v2"]
+  },
+  "link#header-localization": {
+    "title": "Localização Lojas",
+    "props": {
+      "href": "/nossas-lojas",
+      "label": "Nossas lojas",
+      "blockClass": "headerLocalization"
+    }
+  },
+  "login#header-desktop": {
+    "props": {
+      "emailAndPasswordTitle": "Entrar com e-mail e senha",
+      "accessCodeTitle": "Receber código por e-mail",
+      "emailPlaceholder": "Seu e-mail",
+      "passwordPlaceholder": "Sua senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "iconLabel": "Minha conta",
+      "dontHaveAccount": "Não tem uma conta? Entre\n Cadastre-se",
+      "showIconProfile": false,
+      "accountOptionsButtonBehavior": "popover",
+      "logInButtonBehavior": "popover",
+      "accountOptionLinks": [
+        {
+          "label": "Minha Conta",
+          "path": "/account",
+          "cssClass": "accountMenu"
+        },
+        {
+          "label": "Meus Pedidos",
+          "path": "/account#/orders",
+          "cssClass": "accountMenu"
+        }
+      ]
+    }
+  },
+  "minicart.v2": {
+    "props": {
+      "customPixelEventId": "add-to-cart-button",
+      "variation": "drawer",
+      "quantityDisplay": "always",
+      "itemCountMode": "total",
+      "backdropMode": "visible",
+      "blockClass": "headerMinicart",
+      "maxDrawerWidth": 328
+    },
+    "children": ["minicart-base-content"]
+  }
+}

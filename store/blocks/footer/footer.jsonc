@@ -1,0 +1,34 @@
+{
+  "footer": {
+    "title": "Rodapé",
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"],
+    "props": {
+      "blockClass": "footer"
+    }
+  },
+  "footer-layout.desktop": {
+    "title": "Rodapé - Desktop",
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer-menu--desktop",
+      "flex-layout.row#footer-bottom--desktop"
+      //"trustvox-ratings-imports"
+    ],
+    "props": {
+      "blockClass": ["footerDesktop", "container"]
+    }
+  },
+  "footer-layout.mobile": {
+    "title": "Rodapé - Mobile",
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#legal",
+      "flex-layout.row#powered-by"
+      //"trustvox-ratings-imports"
+    ],
+    "props": {
+      "blockClass": ["footerMobile", "container"]
+    }
+  }
+}

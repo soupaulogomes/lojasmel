@@ -1,0 +1,31 @@
+{
+  // LINHA DE ESPECIFICAÇÕES DE PRODUTO
+  "product-specification-group#summary": {
+    "children": [
+      "product-specification-text#summary",
+      "product-specification#summary"
+    ],
+    "props": {
+      "filter": {
+        "specificationGroups": ["DETALHES PARA VITRINE"],
+        "type": "show"
+      }
+    }
+  },
+  "product-specification-text#summary": {
+    "props": {
+      "message": "{groupName}"
+    }
+  },
+  "product-specification#summary": {
+    "children": ["product-specification-values#summary"]
+  },
+  "product-specification-values#summary": {
+    "children": ["product-specification-text"]
+  },
+  "product-specification-text": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+}

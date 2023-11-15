@@ -1,0 +1,86 @@
+.flexRow {
+  &--summary__prices-and-button {
+    padding: 0 6px;
+  }
+
+  &--seo-text-bottom {
+    padding-left: 4rem;
+    @media (max-width: 999px) {
+      padding-left: 10px;
+    }
+  }
+
+  &--product__highlight {
+    margin-top: 16px;
+  }
+
+  &--summary__member-price-wrapper {
+    height: 0;
+    display: none;
+  }
+}
+
+.flexRowContent {
+  &--summary__price {
+    height: 99px;
+    .flexColChild {
+      display: flex;
+    }
+  }
+
+  &--product__highlight {
+    :global(.vtex-product-highlights-2-x-productHighlightWrapper),
+    :global(.vtex-product-highlights-2-x-productHighlightText) {
+      display: none;
+
+      &[data-highlight-name="Frete Grátis"] {
+        display: flex !important;
+        width: 100%;
+      }
+      &[data-highlight-name="Sortido"] {
+        display: flex !important;
+        width: 100%;
+      }
+
+      &[data-highlight-name="Frete Grátis SP Capital"] {
+        display: flex !important;
+        width: 100%;
+      }
+    }
+
+    :global(.vtex-product-highlights-2-x-productHighlightText) {
+      font-size: $font-size-sm;
+      font-weight: $bold;
+      font-family: $main-font;
+
+      &[data-highlight-name="Frete Grátis SP Capital"] {
+        align-items: center;
+        justify-content: center;
+        color: $branco;
+        text-transform: uppercase;
+        font-size: $font-size-sm;
+
+        background-color: $cor-2;
+        height: 20px;
+        border-radius: 7px;
+        padding-top: 2px;
+        @media (max-width: $t) {
+          margin-top: 10px;
+          font-size: 13px;
+          height: auto;
+          padding: 5px;
+        }
+      }
+      &[data-highlight-name="Sortido"] {
+        font-size: 0;
+
+        &::after {
+          content: url(assets/images/flag-sortidos.png);
+          position: absolute;
+          top: 20px;
+          right: 15px;
+        }
+      }
+    }
+  }
+}

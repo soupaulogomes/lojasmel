@@ -1,0 +1,71 @@
+.flexRow--centralAtendimentoMobile {
+  margin-top: 32px;
+
+  & :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+}
+
+.flexRow--centralAtendimentoInfo {
+  padding: 24px 17px 6px;
+  border: 1px solid $cinza-claro;
+  border-radius: $border-radius;
+
+  margin-bottom: 56px;
+}
+
+.flexCol--centralAtendimentoIntroDesktop {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 64px;
+}
+
+.flexRowContent--centralAtendimentoInfoContentDesktop {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexRowContent--centralAtendimentoInfoContent1Desktop {
+  display: flex;
+  flex-direction: column;
+  width: 627px;
+  margin-right: 40px;
+
+  .stretchChildrenWidth {
+    width: 100% !important;
+  }
+}
+
+.flexRowContent--centralAtendimentoInfoContent2Desktop {
+  padding: 24px 17px 6px;
+  border: 1px solid $cinza-claro;
+  border-radius: $border-radius;
+}
+
+@media screen and (min-width: 640px) and (max-width: $d) {
+  .flexRowContent--centralAtendimentoMobile {
+    display: flex;
+    flex-direction: column;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+
+      .flexRowContent--centralAtendimentoIntro {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flexRow--centralAtendimentoInfo {
+        max-width: 328px;
+
+        .flexRowContent--centralAtendimentoInfo {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "info-card#clubemel-motivations-1":{
+    "title": "Card 1",
+    "props":{
+
+      "headline": "lorem ipsum",
+      "subhead": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam eveniet ea iure minus illo commodi.",
+      "blockClass": "clubmel__motivations"
+    }
+  },
+  "info-card#clubemel-motivations-2":{
+    "title": "Card 2",
+    "props":{
+
+      "headline": "lorem ipsum",
+      "subhead": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam eveniet ea iure minus illo commodi.",
+      "blockClass": "clubmel__motivations"
+    }
+  },
+  "info-card#clubemel-motivations-3":{
+    "title": "Card 3",
+    "props":{
+
+      "headline": "lorem ipsum",
+      "subhead": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam eveniet ea iure minus illo commodi.",
+      "blockClass": "clubmel__motivations"
+    }
+  },
+  "info-card#clubemel-motivations-4":{
+    "title": "Card 4",
+    "props":{
+
+      "headline": "lorem ipsum",
+      "subhead": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam eveniet ea iure minus illo commodi.",
+      "blockClass": "clubmel__motivations"
+    }
+  }
+}

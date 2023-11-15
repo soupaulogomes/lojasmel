@@ -1,0 +1,34 @@
+.heading {
+  &--landingpage__title {
+    margin-top: 0 !important;
+  }
+}
+.paragraph {
+  &--landingpage__text {
+    color: var(--main-color);
+    margin: 0;
+
+    .link {
+      font-weight: $bold;
+      text-transform: uppercase;
+      color: $white;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $cor-2;
+      }
+    }
+  }
+}
+.container {
+  &--landingpage__text {
+    width: 100%;
+
+    .heading {
+      max-width: initial !important;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "flex-layout.row#ajuda--info": {
+    "title": "Ajuda - Informações",
+    "children": ["flex-layout.col#ajuda--info.2"],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  "flex-layout.col#ajuda--info.2": {
+    "title": "Ajuda - Informações",
+    "children": [
+      "disclosure-layout#ajuda--question-1.2",
+      "disclosure-layout#ajuda--question-2.2",
+      "disclosure-layout#ajuda--question-3.2",
+      "disclosure-layout#ajuda--question-4.2"
+    ],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  // QUESTION 1
+  "disclosure-layout#ajuda--question-1.2": {
+    "title": "Ajuda - Pergunta 1",
+    "children": [
+      "disclosure-trigger#ajuda--question-1.2",
+      "disclosure-content#ajuda--answer-1.2"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-1.2": {
+    "title": "Ajuda - Pergunta 1",
+    "children": [
+      "rich-text#ajuda--question-1.2",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-1.2": {
+    "title": "Ajuda - Resposta 1",
+    "children": ["rich-text#ajuda--answer-1.2"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 2
+  "disclosure-layout#ajuda--question-2.2": {
+    "title": "Ajuda - Pergunta 2.2",
+    "children": [
+      "disclosure-trigger#ajuda--question-2.2",
+      "disclosure-content#ajuda--answer-2.2"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-2.2": {
+    "title": "Ajuda - Pergunta 2.2",
+    "children": [
+      "rich-text#ajuda--question-2.2",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-2.2": {
+    "title": "Ajuda - Resposta 2.2",
+    "children": ["rich-text#ajuda--answer-2.2"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 3
+  "disclosure-layout#ajuda--question-3.2": {
+    "title": "Ajuda - Pergunta 3.2",
+    "children": [
+      "disclosure-trigger#ajuda--question-3.2",
+      "disclosure-content#ajuda--answer-3.2"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-3.2": {
+    "title": "Ajuda - Pergunta 3.2",
+    "children": [
+      "rich-text#ajuda--question-3.2",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-3.2": {
+    "title": "Ajuda - Resposta 3.2",
+    "children": ["rich-text#ajuda--answer-3.2"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 4
+  "disclosure-layout#ajuda--question-4.2": {
+    "title": "Ajuda - Pergunta 4.2",
+    "children": [
+      "disclosure-trigger#ajuda--question-4.2",
+      "disclosure-content#ajuda--answer-4.2"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-4.2": {
+    "title": "Ajuda - Pergunta 4.2",
+    "children": [
+      "rich-text#ajuda--question-4.2",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-4.2": {
+    "title": "Ajuda - Resposta 4.2",
+    "children": ["rich-text#ajuda--answer-4.2"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  }
+}

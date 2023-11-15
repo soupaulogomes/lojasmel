@@ -1,0 +1,65 @@
+%primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  font-family: $main-font;
+  font-weight: $bold !important;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $cor-2;
+  border: 1px solid $cor-2;
+  border-radius: $border-radius;
+  transition: all 0.2s;
+  color: $branco;
+  white-space: nowrap;
+  
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.85;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.35);
+  }
+
+  :global(.vtex-button__label) {
+    padding: 0 !important;
+  }
+}
+
+%secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  
+  font-family: $main-font;
+  font-weight: $bold !important;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $branco;
+  border: 1px solid $cinza;
+  border-radius: $border-radius;
+  color: $cinza;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  :global(.vtex-button__label) {
+    padding: 0 !important;
+  }
+}

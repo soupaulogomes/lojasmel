@@ -1,0 +1,39 @@
+.clientMessage {
+  margin: 0 auto;
+  max-width: 585px;
+  text-align: center;
+  margin-bottom: 24px;
+
+  .clientMessageText {
+    font-family: $main-font;
+    font-size: $font-size-md;
+    line-height: $font-size-xl;
+    color: $cinza;
+    margin: 0;
+  }
+}
+
+.orderplacedIdWrapper {
+  font-family: $main-font;
+  font-size: $font-size-xxl;
+  font-weight: $bold;
+  line-height: 22px;
+  color: $cor-2;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: $d) {
+  .clientMessage {
+    margin: 0 16px 24px;
+
+    .clientMessageText {
+      font-size: $font-size-sm;
+      line-height: $font-size-lg;
+    }
+  }
+
+  .orderplacedIdWrapper {
+    font-size: $font-size-xl;
+    margin-bottom: 16px;
+  }
+}

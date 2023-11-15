@@ -1,0 +1,369 @@
+.cart-more-options {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  max-width: 328px;
+
+  .cart-select-gift-placeholder {
+    display: none !important;
+  }
+
+  #shipping-preview-container {
+    margin: 118px 0 0px 0 !important;
+    border: 1px solid $cinza-claro;
+    border-radius: $border-radius;
+    padding: 16px;
+    box-sizing: border-box;
+
+    .srp-main-title {
+      color: $cor-2;
+      font-size: $font-size-md;
+      line-height: $font-size-xl;
+      font-weight: $bold;
+      text-transform: lowercase;
+      padding: 0 0 16px !important;
+
+      .srp-button-container {
+        border: 1px solid #dbdbdb;
+        border-radius: 56px;
+        display: flex;
+        justify-content: space-between;
+        width: 296px;
+        height: 40px;
+        margin-top: 12px;
+
+        .srp-button-receive,
+        .srp-button-withdraw {
+          width: 148px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #606060;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          background: transparent;
+          border: none;
+        }
+
+        .active {
+          background-color: #bd1d1d;
+          border: 1px solid #bd1d1d;
+          color: #ffffff;
+          border-radius: 56px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .srp-description {
+      display: none;
+    }
+    .srp-data {
+      margin-top: 0;
+
+      #shipping-calculate-link {
+        display: flex;
+        background: transparent;
+        justify-content: center;
+        color: #606060;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        border: 1px solid #606060;
+        width: 228px;
+        border-radius: 4px;
+        height: 40px;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .srp-postal-code__form {
+        display: block;
+
+        .vtex-shipping-preview-0-x-postalCodeForgotten {
+          display: block;
+          margin-top: 0;
+          display: flex;
+          align-items: flex-start;
+          gap: 16px;
+
+          .ship-postalCode {
+            width: 50% !important;
+            margin: 0;
+            vertical-align: top;
+            display: inline-block;
+
+            label {
+              display: none;
+            }
+
+            input {
+              width: 100%;
+              height: 40px;
+              padding: 12px;
+              box-sizing: border-box;
+            }
+
+            small {
+              display: block;
+              margin-top: 3px;
+
+              a {
+                font-size: $font-size-xs;
+                line-height: $font-size-md;
+                color: $cinza;
+                text-decoration: underline;
+              }
+            }
+
+            .help.error {
+              display: none !important;
+            }
+          }
+
+          #cart-shipping-calculate {
+            color: $cinza;
+            font-family: $main-font;
+            font-size: $font-size-sm;
+            line-height: $font-size-md;
+            font-weight: $bold;
+            text-transform: uppercase;
+            width: 50%;
+            border-radius: $border-radius;
+            border: 1px solid $cinza;
+            background: transparent;
+            height: 40px;
+            padding: 0;
+            margin-left: 15px;
+            vertical-align: top;
+            display: inline-block;
+          }
+        }
+      }
+
+      .srp-search-address {
+        display: none;
+        justify-content: center;
+        color: #606060;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        border: 1px solid #606060;
+        width: 228px;
+        border-radius: 4px;
+        height: 40px;
+        align-items: center;
+        margin: 0 auto;
+
+        &:active {
+          text-decoration: none;
+        }
+      }
+
+      .srp-delivery-header {
+        line-height: $font-size-lg;
+        position: relative;
+
+        span,
+        strong,
+        a {
+          font-size: $font-size-sm;
+          color: $cinza;
+          font-weight: $regular;
+        }
+
+        .srp-address-title {
+          display: inline-block;
+
+          &::before {
+            content: "";
+            display: block;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 3L3 13M3 3L13 13' stroke='%23606060' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 5px;
+            bottom: 50%;
+            transform: translateY(50%);
+          }
+        }
+      }
+
+      .srp-delivery-info {
+        label {
+          height: 64px;
+          padding: 16px;
+          box-sizing: border-box;
+        }
+
+        .srp-shipping-current-single__wrapper {
+          margin: 0;
+          height: 100%;
+
+          .srp-shipping-current-single__bullet,
+          .srp-shipping-current-single__description {
+            height: 100%;
+
+            .srp-icon-radio-selected {
+              margin: auto 0;
+            }
+          }
+
+          .srp-shipping-current-single__bullet {
+            display: flex;
+            margin-right: 16px;
+
+            svg {
+              path {
+                fill: $cor-2;
+              }
+            }
+          }
+          .srp-shipping-current-single__description {
+            .srp-shipping-current-single__text {
+              border: none;
+
+              .srp-shipping-current-single__sla {
+                font-size: $font-size-xs;
+                color: $cinza;
+                line-height: $font-size-xl;
+              }
+            }
+
+            .srp-shipping-current-single__price {
+              font-weight: bold;
+              color: #000;
+              font-size: 14px;
+              width: 66px;
+              padding-left: 3px;
+              border-left: 1px solid $cinza-claro;
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
+
+    .srp-delivery-current-many__price {
+      font-weight: $bold;
+      font-size: $font-size-xs;
+    }
+  }
+  .srp-toggle__wrapper .srp-toggle__delivery.blue,
+  .srp-toggle__wrapper .srp-toggle__pickup.blue {
+    background-color: #bd1d1d;
+    border: 1px solid #bd1d1d;
+    color: #ffffff;
+    border-radius: 56px;
+  }
+  .srp-toggle__wrapper,
+  .srp-toggle__wrapper .srp-toggle__delivery.gray,
+  .srp-toggle__wrapper .srp-toggle__pickup.gray {
+    border-radius: 56px;
+  }
+}
+.cart-more-options .srp-container .onda-v1 .b--blue {
+  border: 0;
+  border-radius: 56px;
+}
+
+@media screen and (max-width: $d) {
+  .cart-more-options {
+    max-width: 100%;
+    #shipping-preview-container {
+      display: block !important;
+      max-width: 328px !important;
+      margin: 16px auto 0 !important;
+
+      .srp-button-container {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.vtex-omnishipping-1-x-leanShippingTextLabel {
+  font-weight: 400 !important;
+}
+.vtex-omnishipping-1-x-deliveryChannelsToggle {
+  border: none !important;
+  outline: none !important;
+  background-color: $branco !important;
+}
+
+.modal-body {
+  .icon-lock {
+    &::before {
+      content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHsSURBVFiFxdc9a1RBFAbgx5goyWJnxA+ICH6lUSxURLBQC7UR1EZ/gb2NBETBn6GtYi0oVmIlWigmIFooouD6ESEYUYzKxmLOkrDsrteZzeaFw7l3Zs4579yZOXMuZRgM6SuO4ybqaITUcQPHljLwJjzAfMhPvAmZW9R+Hxt7HXybNMt5TOI0Rhb1j+AMpmLMe2ztVfAaXoTjaxjqMnYI12Ps8xaS2bgUDm9joML4AdwJm4nS4CsxLa3x5v+w2xI2n8JHNg5KM7mbYXsvbA90G/SvT7o99OMMAo9C7yghsDb0lwwC06FHSwg016+RQaBp03UPVNnVS4plJ7CiQ/s6XMEJ6fi9s7CmVTGKMbyVTtHlqj4G8dRCbu+VPNHm5mx3le7GHjzEKfyqwroL1uCWlA92xeS6ElgfelLKZKWYwbMgsKG1s3QTDodkI5fAsFSUfMOsVIxkEcklMIGz+BwEzuFiPwkcDn0Ie+P5SI6j3IKyHvoC/rS09YXAVRzF+Xifiba+EZjCOF7H+7jMI1tS03/E73jOzhelPxUzWFXioJTASSnPLxuBqUL7tnlgNvRYqfNFaN4vX1s72tUDNbwKo5f4Xhi8hp34IP1hVfK3X7oNG8rrgIZ0G+5rF6hTRdTECFZXYdwFc/jRqfMvZJuENwffT08AAAAASUVORK5CYII=");
+      filter: invert(1);
+      -webkit-filter: invert(1);
+      transform: scale(1.25);
+    }
+  }
+}
+.icon-spin {
+  &::before {
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAy1JREFUWIXtV01PE1EUPfdN2xGDFTCiuACEmirP4AeJGFFTjDG6ckXcu/VX+APcGU38CyRGNy6I0foVo4aI6KgoIjFG0GoVJUCnnXdcyNTSUmUG2BjP7t377jnnzbz35o4gBFKpVGTym9lHqjYAEDFjm+vUw3Q6XQjKFQljYCJrDouShAjnI7Jz4ittADeDcqmgBYnECVuUJMrjItimdV9s1Q0AWbtaplD4UDW3YgZGRx98FyPfy+NCmRoZufdj1Q0AQBSxG6TM+GNSZly6gd8/AEjpoL3zQKOloi2WZbwc7Ddjg9enqhVq3RfDmq+bAQBzE5OO47jV5iY7e5NimVMgbANceTV061GFgY5dPdpIpMcfK7LgUg2MDqffh1lZUXxv6rgYXgZQUyJ65sXQrQvA/CvQWsdIa39poRGJRIGDyxEHIMrwfKk4AJA4l+jujhcNABsbqMQqr6ZiXGsd+Gj5aOs6GifQXmkLayI5e2eJAUwDYPk8I5h1HCcf1sBYW/00gI+LpLyCUe+KBhwnPU2o5xUGYAYXM7Zk9Pd7FJytiAsv+ntrwSlI7DnUEYNqMUYZCEdeDqXHQ4uXILm796TAnBYgSvLqyye3L2E5C/uP//inUHEMo5RWKsuDWbljuH13qhVKkmI8Ky8cH318p3jnFK9fvSt1UCBdgMRB1gFor2tqns1OvsssRzyx51CHgvT+4pS4gjQ3bNpa8+Xj+O+bUOtUrSfcUV6soLpQ9pQCQuY5FvIKd2idqi0aAFC7mJAiarTW0bDqWvdFFRd+CX1j85q+gUxWDL2KWZSpPzUaf4Pj9LuLtm+GHpDJFg04juMqi/dLJ5Es5Il7YcV95IG7JBf8L+Qt3vcXVn4KNiqq1qW2ZCb2pUkpRczVTzpOf9Un1dZ1dL2NXLvnKQuWvH01mP7s50JtsM7OY405cY+JcC3wqym1GRsYHh74FJQrVFect9wjvjgAiHBtHu6RMFwh/oy64yTj5XEqxpPJnnWrbsC2m+eq5SKRLbmgfBWN6N+QyTz3NjS2rBeRhtI4idcvnl57E5Qv1B5oalC3AT4jZYaUGQieNtXLnTBcPwE2WDzvqBu1oAAAAABJRU5ErkJggg==");
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    transform: scale(1.25);
+  }
+}
+.vendor-code {
+  margin-bottom: 15px;
+}
+.vendorCode__row {
+  position: relative;
+  margin-bottom: 10px;
+  .srp-main-title {
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+  #vendorCode {
+    max-width: 182px;
+    height: 40px;
+    padding: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+  }
+
+  #applyBtn {
+    background: transparent;
+    border: 1px solid #606060;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    padding: 0;
+    margin-left: 6px;
+    max-width: 106px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+}
+
+#deleteCode {
+  font-family: "Figtree", sans-serif !important;
+  font-weight: 700;
+  position: absolute;
+  visibility: hidden;
+  top: 47px;
+  right: 125px;
+  color: #bd1d1d;
+  cursor: pointer;
+  &.show {
+    visibility: visible;
+  }
+}

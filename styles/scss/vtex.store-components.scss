@@ -1,0 +1,27 @@
+@import "components/variables/all";
+@import "mixins/text";
+
+@import "components/home/infocard";
+@import "components/footer/infocard";
+@import "components/footer/images";
+@import "components/footer/store-components";
+@import "components/header/store-components";
+
+@import "components/product/store-components";
+@import "components/institutional/trabalhe-conosco/store-components";
+@import "components/institutional/quem-somos/store-components";
+
+@import "components/search/store-components";
+
+@import "components/club-mel/infocards";
+
+@import "components/kit/kitlook";
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar-thumb {
+  background-color: #bd1d1d; /* Background color of the thumb (scrollbar handle) */
+}

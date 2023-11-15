@@ -1,0 +1,25 @@
+@mixin shelf-overflowX-on-mobile($size: 80px) {
+  @media (max-width: $d) {
+    padding-right: 0px;
+
+    :global(.vtex-slider-layout-0-x-sliderTrack) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      justify-content: flex-start;
+      padding-right: 16px;
+
+      &::-webkit-scrollbar {
+        opacity: 0 !important;
+      }
+
+      :global(.vtex-slider-layout-0-x-slide) {
+        min-width: $size;
+        margin: 0 8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

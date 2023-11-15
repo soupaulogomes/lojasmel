@@ -1,0 +1,198 @@
+{
+  "disclosure-layout-group#storecard-doubts": {
+    "children": [
+      "disclosure-layout#storecard-doubts-1",
+      "disclosure-layout#storecard-doubts-2",
+      "disclosure-layout#storecard-doubts-3",
+      "disclosure-layout#storecard-doubts-4",
+      "disclosure-layout#storecard-doubts-5",
+      "disclosure-layout#storecard-doubts-6"
+    ]
+  },
+  ///////////////////////////////////////////////////////////
+  "disclosure-layout#storecard-doubts-1": {
+    "children": [
+      "disclosure-trigger#storecard-doubts-1",
+      "disclosure-content#storecard-doubts-1"
+    ]
+  },
+  "disclosure-trigger#storecard-doubts-1": {
+    "children": ["rich-text#storecard-doubts-1-question"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "disclosure-content#storecard-doubts-1": {
+    "children": ["rich-text#storecard-doubts-1-answer"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "rich-text#storecard-doubts-1-question": {
+    "title": "Questão 1",
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#storecard-doubts-1-answer": {
+    "title": "Resposta 1",
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+  ///////////////////////////////////////////////////////////
+  "disclosure-layout#storecard-doubts-2": {
+    "children": [
+      "disclosure-trigger#storecard-doubts-2",
+      "disclosure-content#storecard-doubts-2"
+    ]
+  },
+  "disclosure-trigger#storecard-doubts-2": {
+    "children": ["rich-text#storecard-doubts-2-question"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "disclosure-content#storecard-doubts-2": {
+    "children": ["rich-text#storecard-doubts-2-answer"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "rich-text#storecard-doubts-2-question": {
+    "title": "Questão 2",
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#storecard-doubts-2-answer": {
+    "title": "Resposta 2",
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+  ///////////////////////////////////////////////////////////
+  "disclosure-layout#storecard-doubts-3": {
+    "children": [
+      "disclosure-trigger#storecard-doubts-3",
+      "disclosure-content#storecard-doubts-3"
+    ]
+  },
+  "disclosure-trigger#storecard-doubts-3": {
+    "children": ["rich-text#storecard-doubts-3-question"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "disclosure-content#storecard-doubts-3": {
+    "children": ["rich-text#storecard-doubts-3-answer"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "rich-text#storecard-doubts-3-question": {
+    "title": "Questão 3",
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#storecard-doubts-3-answer": {
+    "title": "Resposta 3",
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+  ///////////////////////////////////////////////////////////
+  "disclosure-layout#storecard-doubts-4": {
+    "children": [
+      "disclosure-trigger#storecard-doubts-4",
+      "disclosure-content#storecard-doubts-4"
+    ]
+  },
+  "disclosure-trigger#storecard-doubts-4": {
+    "children": ["rich-text#storecard-doubts-4-question"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "disclosure-content#storecard-doubts-4": {
+    "children": ["rich-text#storecard-doubts-4-answer"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "rich-text#storecard-doubts-4-question": {
+    "title": "Questão 4",
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#storecard-doubts-4-answer": {
+    "title": "Resposta 4",
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+  ///////////////////////////////////////////////////////////
+  "disclosure-layout#storecard-doubts-5": {
+    "children": [
+      "disclosure-trigger#storecard-doubts-5",
+      "disclosure-content#storecard-doubts-5"
+    ]
+  },
+  "disclosure-trigger#storecard-doubts-5": {
+    "children": ["rich-text#storecard-doubts-5-question"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "disclosure-content#storecard-doubts-5": {
+    "children": ["rich-text#storecard-doubts-5-answer"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "rich-text#storecard-doubts-5-question": {
+    "title": "Questão 5",
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#storecard-doubts-5-answer": {
+    "title": "Resposta 5",
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+  ///////////////////////////////////////////////////////////
+  "disclosure-layout#storecard-doubts-6": {
+    "children": [
+      "disclosure-trigger#storecard-doubts-6",
+      "disclosure-content#storecard-doubts-6"
+    ]
+  },
+  "disclosure-trigger#storecard-doubts-6": {
+    "children": ["rich-text#storecard-doubts-6-question"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "disclosure-content#storecard-doubts-6": {
+    "children": ["rich-text#storecard-doubts-6-answer"],
+    "props": {
+      "blockClass": "storecard__doubts"
+    }
+  },
+  "rich-text#storecard-doubts-6-question": {
+    "title": "Questão 6",
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#storecard-doubts-6-answer": {
+    "title": "Resposta 6",
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  }
+}

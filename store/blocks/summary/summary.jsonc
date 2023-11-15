@@ -1,0 +1,78 @@
+{
+  "product-summary.shelf": {
+    "title": "SUMARY - Esqueleto Padrão",
+    "children": [
+      "stack-layout#summary-image",
+      "product-summary-name",
+      "flex-layout.row#sumamry-trustvox-stars",
+      "condition-layout.product#availability-summary"
+    ]
+  },
+
+  "flex-layout.row#sumamry-trustvox-stars": {
+    "children": ["trustvox-stars-shelf"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "summary__stars"
+    }
+  },
+
+  // IMAGEM
+  "stack-layout#summary-image": {
+    "children": ["product-summary-image#summary"],
+    "props": {
+      "blockClass": "summary__price"
+    }
+  },
+  "product-summary-image#summary": {
+    "props": {
+      "showBadge": true,
+      "badgeText": "OFF",
+      "aspectRatio": "1:1",
+      "maxHeight": 200
+    }
+  },
+
+  // HIGHLIGHT COLLECTION --------------------------------------
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      //"type": "promotion"
+      "type": "teaser"
+      //"type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "promotion"
+    },
+    "children": [
+      "flex-layout.row#product-highlight-wrapper"
+    ]
+  },
+
+  "flex-layout.row#product-highlight-wrapper": {
+    "children": [
+      "product-highlight-text",
+      "rich-text#highlight-tip"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "product-highlight-wrapper"
+    }
+  },
+
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+  "rich-text#highlight-tip": {
+    "props": {
+      "text": "Válido para produtos de até 30kg",
+      "blockClass": "highlight-tip"
+    }
+  }
+}

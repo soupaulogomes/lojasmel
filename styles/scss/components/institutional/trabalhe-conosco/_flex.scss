@@ -1,0 +1,54 @@
+.flexRowContent--trabalheConoscoMobile {
+  margin-bottom: 24px;
+}
+
+.flexRow--trabalheConoscoBanner {
+  margin-bottom: 24px;
+}
+
+.flexRow--trabalheConoscoInfoMobile {
+  .flexRowContent--trabalheConoscoInfoMobile {
+    padding-bottom: 32px;
+  }
+}
+
+.flexRow--trabalheConoscoDesktop {
+  .flexRowContent--trabalheConoscoBanner {
+    margin-top: 32px;
+  }
+
+  .flexRow--trabalheConoscoInfoContentDesktop {
+    margin-top: 8px;
+
+    .flexColChild--trabalheConoscoMenuDesktop {
+      width: 232px;
+      margin-right: 88px;
+    }
+
+    .flexCol--trabalheConoscoInfoDesktop {
+      margin-bottom: 32px;
+      max-width: 640px;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: $d) {
+  .flexRowContent--trabalheConoscoMobile {
+    display: flex;
+    flex-direction: column;
+
+    .stretchChildrenWidth {
+      width: 100% !important;
+
+      .flexRowContent--trabalheConoscoInfoMobile {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flexRowContent--trabalheConoscoInfo {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

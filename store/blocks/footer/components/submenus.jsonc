@@ -1,0 +1,144 @@
+{
+    "disclosure-trigger#footer-atendimento": {
+        "children": ["rich-text#atendimento-title", "disclosure-state-indicator#footer-menu-icon"],
+        "props": {
+            "blockClass": "footerMenuTitle"
+        }
+    },
+    "rich-text#atendimento-title":{
+        "title":"Atendimento - Titulo",
+        "props":{
+            "text":"Atendimento",
+            "blockClass":"footerMenuTitle"
+        }
+    },
+    "disclosure-state-indicator#footer-menu-icon": {
+        "props": {
+          "Show": "icon-caret#nav-caret--down",
+          "Hide": "icon-caret#nav-caret--up"
+        }
+      },
+      "icon-caret#nav-caret--down": {
+        "props": {
+          "orientation": "down"
+        }
+      },
+      "icon-caret#nav-caret--up": {
+        "props": {
+          "orientation": "up"
+        }
+      },
+
+    "disclosure-content#footer-atendimento": {
+        "children": ["info-card#atendimento-text"]
+    },
+    "info-card#atendimento-text":{
+        "title":"Atendimento - Texto",
+        "props":{
+            "id": "info-card-atendimento",
+            "textAlignment": "left",
+            "headline":"11 5060-5060",
+            "subhead": "de segunda à sextas-feiras: das 8h às 19h e aos sábados: das 8h às 16h",
+            "callToActionText": "CENTRAL DE ATENDIMENTO",
+            "callToActionUrl": "/central-de-atendimento",
+            "blockClass":"footerMenuText"
+        }
+    },
+    "disclosure-trigger#institucional-title": {
+        "children": ["rich-text#institucional-title", "disclosure-state-indicator#footer-menu-icon"],
+        "props": {
+            "blockClass": "footerMenuTitle"
+        }
+    },
+    "rich-text#institucional-title":{
+        "title":"Institucional - Titulo",
+        "props":{
+            "text":"Institucional",
+            "blockClass":"footerMenuTitle"
+        }
+    },
+    "disclosure-content#institutional-list": {
+        "title":"Coluna - Institutional",
+        "children":[
+            "link#quem-somos","link#nossas-lojas", "link#trabalhe-conosco", "link#politica-privacidade"
+        ],
+        "props": {
+            "blockClass":"footerSubmenu"
+        }
+    },
+    "disclosure-trigger#duvidas-title":{
+        "children":[
+            "rich-text#duvidas-title", "disclosure-state-indicator#footer-menu-icon"
+        ],
+        "props": {
+            "blockClass": "footerMenuTitle"
+        }
+    },
+    "rich-text#duvidas-title":{
+        "title":"Dúvidas - Título",
+        "props":{
+            "text":"Dúvidas",
+            "blockClass":"footerMenuTitle"
+        }
+    },
+    "disclosure-content#duvidas-list": {
+        "title":"Coluna - Dúvidas",
+        "children":[
+            "link#perguntas-frequentes",
+            "link#retirada-e-troca",
+            "link#lista-de-presentes",
+            "link#garanta-seu-cupom"
+        ],
+        "props": {
+            "blockClass":"footerSubmenu"
+        }
+    },
+    "disclosure-trigger#footer-siga-nos": {
+        "children": ["rich-text#siga-nos-title", "disclosure-state-indicator#footer-menu-icon"],
+        "props": {
+            "blockClass": "footerMenuTitle"
+        }
+    },
+    "rich-text#siga-nos-title":{
+        "title":"Siga-nos - Titulo",
+        "props":{
+            "text":"Siga-nos",
+            "blockClass":"footerMenuTitle"
+        }
+    },
+    "disclosure-trigger#pagamentos-title":{
+        "children":["rich-text#pagamentos-title", "disclosure-state-indicator#footer-menu-icon"],
+        "props": {
+            "blockClass": "footerMenuTitle"
+        }
+    },
+    "rich-text#pagamentos-title":{
+        "title":"Pagamentos - Titulo",
+        "props":{
+            "text":"FORMAS DE PAGAMENTO",
+            "blockClass":"footerMenuTitle"
+        }
+    },
+    "disclosure-content#footer-pagamentos":{
+       "children":[
+        "flex-layout.row#payment-line"
+       ] 
+    },
+    "disclosure-trigger#seguranca-title":{
+        "children":[
+            "rich-text#seguranca-title", "disclosure-state-indicator#footer-menu-icon"
+        ],
+        "props": {
+            "blockClass": "footerMenuTitle"
+        }
+    },
+    "rich-text#seguranca-title":{
+        "title":"Segurança - Titulo",
+        "props":{
+            "text":"Segurança",
+            "blockClass":"footerMenuTitle"
+        }
+    }
+
+
+}

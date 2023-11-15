@@ -1,0 +1,138 @@
+{
+  "list-context.info-card-list#landing-page-infocard-categories": {
+    "title": "Lista do carrossel de categorias",
+    "children": ["slider-layout#landing-page-infocard-categories"],
+    "props": {
+      "infoCards": [
+        {
+          "imageUrl": "assets/images/lp-infocard.png",          
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        },
+        {
+          "imageUrl": "assets/images/lp-infocard.png",
+          "callToActionText": "utensílios de cozinha",
+          "callToActionMode": "link",
+          "callToActionUrl": "/categoria",
+          "imageActionUrl":"/categoria",
+          "blockClass": "coupon"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#landing-page-infocard-categories": {
+    "title": "Slider do Carrossel de categorias",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 9,
+        "tablet": 32,
+        "phone": 32
+      },
+      "usePagination": true,
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["landingpage__infocard-categories"]
+    }
+  }
+}

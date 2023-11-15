@@ -1,0 +1,18 @@
+.wishlistIconContainer {
+  :global(.vtex-button__label) {
+    padding: 0;
+
+    @media (min-width: $d){
+      padding: 0 10px;
+    }
+  }
+}
+.wishlistIcon.outline {
+  background: url(https://placehold.co/40x40/png);
+  background-repeat: no-repeat;
+}
+
+.wishlistIcon.fill {
+  background: url(https://placehold.co/40x40/png);
+  background-repeat: no-repeat;
+}

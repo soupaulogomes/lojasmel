@@ -1,0 +1,92 @@
+{
+    "menu-item#quem-somos": {
+        "props": {
+            "id": "institutional-menu-item",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/quem-somos",
+                "noFollow": false,
+                "tagTitle": "Quem Somos",
+                "text": "Quem Somos"
+            },
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "menu-item#nossas-lojas": {
+        "props": {
+            "id": "institutional-menu-item",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/nossas-lojas",
+                "noFollow": false,
+                "tagTitle": "Nossas Lojas",
+                "text": "Nossas Lojas"
+            },
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "menu-item#trabalhe-conosco": {
+        "props": {
+            "id": "institutional-menu-item",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/trabalhe-conosco",
+                "noFollow": false,
+                "tagTitle": "Trabalhe Conosco",
+                "text": "Trabalhe Conosco"
+            },
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "menu-item#politica-de-privacidade": {
+        "props": {
+            "id": "institutional-menu-item",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/politica-de-privacidade",
+                "noFollow": false,
+                "tagTitle": "Política de Privacidade",
+                "text": "Política de Privacidade"
+            },
+            "blockClass": "institucionalMenu"
+        }
+    },
+    "disclosure-state-indicator#institucional-menu-icon": {
+        "props": {
+            "Show": "icon-caret#nav-caret--down",
+            "Hide": "icon-caret#nav-caret--up",
+            "blockClass":"institucionalMenuIcon"
+        }
+    },
+    "flex-layout.col#institucional--breadcrumb": {
+        "title": "Política de Privacidade - Breadcrumb Desktop",
+        "children": [
+            "breadcrumb#institucional"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "fullWidth": true,
+            "blockClass": "institucionalBreadcrumb"
+        }
+    },
+    "breadcrumb#institucional": {
+        "props": {
+            "breadcrumb": [
+                {
+                    "name": "Página Institucional",
+                    "href": "/institucional"
+                }
+            ],
+            "blockClass": "institucionalBreadcrumb"
+        }
+    }
+}

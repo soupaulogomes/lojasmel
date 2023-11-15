@@ -1,0 +1,13 @@
+.flexRow {
+  &--not-found-page {
+    padding: 76px 0 56px;
+
+    @media (min-width: $d) {
+      padding-bottom: 80px;
+    }
+  }
+}
+.flexRowContent {
+}
+.flexCol {
+}

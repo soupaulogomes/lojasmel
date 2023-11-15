@@ -1,0 +1,58 @@
+.infoCardContainer--footerMenuText {
+  padding: 0;
+  margin-right: 100px;
+
+  .infoCardTextContainer--footerMenuText {
+    padding: 0;
+    padding-bottom: 8px;
+    width: 100%;
+
+    .infoCardHeadline--footerMenuText {
+      color: $preto;
+      font-family: $main-font;
+      font-size: $font-size-md;
+      font-weight: $bold;
+      line-height: $font-size-xl;
+
+      margin-top: 16px;
+    }
+
+    .infoCardSubhead--footerMenuText {
+      color: $cinza;
+      font-family: $main-font;
+      font-size: $font-size-sm;
+      font-weight: $regular;
+      line-height: $font-size-lg;
+
+      margin: 2px 0 16px;
+
+      max-width: 266px;
+    }
+
+    .infoCardCallActionContainer--footerMenuText {
+      margin: 0;
+    }
+
+    .infoCardCallActionContainer--footerMenuText :global(.vtex-button) {
+      background-color: transparent;
+      border: 1px solid $cinza;
+      border-radius: $border-radius;
+
+      font-family: $main-font;
+      font-size: $font-size-sm;
+      font-weight: $bold;
+      line-height: $font-size-md;
+      color: $cinza;
+
+      width: 212px;
+
+      & :global(.vtex-button__label) {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .infoCardImageContainer--footerMenuText {
+    display: none;
+  }
+}

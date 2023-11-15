@@ -1,0 +1,108 @@
+{
+    "store.custom#politica-de-privacidade": {
+        "title": "Política de privacidade",
+        "blocks": [
+            "responsive-layout.desktop#politica-de-privacidade",
+            "responsive-layout.mobile#politica-de-privacidade"
+        ],
+        "props": {
+            "blockClass": "politicaPrivacidade"
+        }
+    },
+    "responsive-layout.desktop#politica-de-privacidade": {
+        "title": "Política de Privacidade - Desktop",
+        "children": [
+            "flex-layout.row#politica-de-privacidade--desktop"
+        ],
+        "props": {
+            "blockClass": [
+                "politicaPrivacidadeDesktop"
+            ]
+        }
+    },
+    "flex-layout.row#politica-de-privacidade--desktop": {
+        "title": "Política de Privacidade - Desktop",
+        "children": [
+            "flex-layout.col#politica-de-privacidade--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": ["politicaPrivacidadeDesktop", "container"]
+        }
+    },
+    "flex-layout.col#politica-de-privacidade--desktop": {
+        "title": "Política de Privacidade - Desktop",
+        "children": [
+            "flex-layout.col#institucional--breadcrumb",
+            "flex-layout.row#politica-de-privacidade--content"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "politicaPrivacidadeDesktop",
+                "container"
+            ]
+        }
+    },
+    "flex-layout.row#politica-de-privacidade--content": {
+        "title": "Política de Privacidade - Conteúdo Desktop",
+        "children": [
+            "flex-layout.col#politica-de-privacidade--menu-desktop",
+            "flex-layout.col#politica-de-privacidade--info-content--desktop"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "politicaPrivacidadeInfoContentDesktop"
+            ]
+        }
+    },
+    "flex-layout.col#politica-de-privacidade--menu-desktop": {
+        "title": "Política de Privacidade - Menu Desktop",
+        "children": [
+            "flex-layout.row#politica-de-privacidade--menu"
+        ],
+        "props": {
+            "blockClass": [
+                "politicaPrivacidadeMenuDesktop"
+            ]
+        }
+    },
+    "flex-layout.col#politica-de-privacidade--info-content--desktop": {
+        "title": "Política de Privacidade - Introdução Desktop",
+        "children": [
+            "flex-layout.col#politica-de-privacidade--intro--desktop",
+            "flex-layout.row#politica-de-privacidade--info"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "politicaPrivacidadeInfoDesktop"
+            ]
+        }
+    },
+    "responsive-layout.mobile#politica-de-privacidade": {
+        "title": "Política de Privacidade - Mobile",
+        "children": [
+            "flex-layout.row#politica-de-privacidade--mobile"
+        ],
+        "props": {
+            "blockClass": "politicaPrivacidadeMobile"
+        }
+    },
+    "flex-layout.row#politica-de-privacidade--mobile": {
+        "title": "Política de Privacidade - Mobile",
+        "children": [
+            "flex-layout.row#politica-de-privacidade--menu",
+            "flex-layout.row#politica-de-privacidade--intro",
+            "flex-layout.row#politica-de-privacidade--info"
+        ],
+        "props": {
+            "blockClass": [
+                "politicaPrivacidadeMobile",
+                "container"
+            ]
+        }
+    }
+}

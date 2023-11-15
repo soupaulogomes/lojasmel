@@ -1,0 +1,60 @@
+{
+  "flex-layout.row#nossas-lojas--intro": {
+    "title": "Nossas Lojas - Introdução Mobile",
+    "children": [
+      "rich-text#nossas-lojas--title",
+      "rich-text#nossas-lojas--text"
+    ],
+    "props": {
+      "blockClass": "institucionalIntro"
+    }
+  },
+  "rich-text#nossas-lojas--title": {
+    "title": "Nossas Lojas - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Nossas Lojas",
+      "blockClass": "institucionalIntroTitle"
+    }
+  },
+  "rich-text#nossas-lojas--text": {
+    "title": "Nossas Lojas - Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a lectus molestie, rutrum felis sit amet, accumsan quam. Morbi eu quam tortor.  accumsan quam. Morbi eu quam tortor.",
+      "blockClass": "institucionalIntroText"
+    }
+  },
+  "flex-layout.col#nossas-lojas--intro--desktop": {
+    "title": "Nossas Lojas - Introdução Desktop",
+    "children": [
+      "rich-text#nossas-lojas--title--desktop",
+      "rich-text#nossas-lojas--text--desktop"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "institucionalIntroDesktop"
+    }
+  },
+  "rich-text#nossas-lojas--title--desktop": {
+    "title": "Nossas Lojas - Título",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Nossas Lojas",
+      "blockClass": "nossasLojasIntroTitle"
+    }
+  },
+  "rich-text#nossas-lojas--text--desktop": {
+    "title": "Nossas Lojas - Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a lectus molestie, rutrum felis sit amet, accumsan quam. Morbi eu quam tortor.  accumsan quam. Morbi eu quam tortor.",
+      "blockClass": "nossasLojasIntroText"
+    }
+  }
+}

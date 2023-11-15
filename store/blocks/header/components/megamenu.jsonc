@@ -1,0 +1,13 @@
+{
+  "mega-menu#todos-os-departamentos": {
+    "props": {
+      "openOnly": "horizontal"
+    }
+  },
+  "mega-menu-trigger-btn": {
+    "props": {
+      "Drawer": "drawer", 
+      "blockClass": "header__megamenu-btn"
+    }
+  }
+}

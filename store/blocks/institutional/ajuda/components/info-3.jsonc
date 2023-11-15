@@ -1,0 +1,75 @@
+{
+  "flex-layout.row#ajuda--info": {
+    "title": "Ajuda - Informações",
+    "children": ["flex-layout.col#ajuda--info.3"],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  "flex-layout.col#ajuda--info.3": {
+    "title": "Ajuda - Informações",
+    "children": [
+      "disclosure-layout#ajuda--question-1.2",
+      "disclosure-layout#ajuda--question-1.3"
+    ],
+    "props": {
+      "blockClass": "institucionalInfo"
+    }
+  },
+  // QUESTION 1
+  "disclosure-layout#ajuda--question-1.3": {
+    "title": "Ajuda - Pergunta 1",
+    "children": [
+      "disclosure-trigger#ajuda--question-1.3",
+      "disclosure-content#ajuda--answer-1.3"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-1.3": {
+    "title": "Ajuda - Pergunta 1",
+    "children": [
+      "rich-text#ajuda--question-1.3",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-1.3": {
+    "title": "Ajuda - Resposta 1",
+    "children": ["rich-text#ajuda--answer-1.3"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  },
+  // QUESTION 2
+  "disclosure-layout#ajuda--question-2.3": {
+    "title": "Ajuda - Pergunta 2.3",
+    "children": [
+      "disclosure-trigger#ajuda--question-2.3",
+      "disclosure-content#ajuda--answer-2.3"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoContainer"
+    }
+  },
+  "disclosure-trigger#ajuda--question-2.3": {
+    "title": "Ajuda - Pergunta 2.3",
+    "children": [
+      "rich-text#ajuda--question-2.3",
+      "disclosure-state-indicator#institucional-menu-icon"
+    ],
+    "props": {
+      "blockClass": "institucionalInfoQuestion"
+    }
+  },
+  "disclosure-content#ajuda--answer-2.3": {
+    "title": "Ajuda - Resposta 2.3",
+    "children": ["rich-text#ajuda--answer-2.3"],
+    "props": {
+      "blockClass": "institucionalInfoAnswer"
+    }
+  }
+}

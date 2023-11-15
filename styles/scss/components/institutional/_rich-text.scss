@@ -1,0 +1,48 @@
+@import "politica-privacidade/rich-text";
+@import "trabalhe-conosco/rich-text";
+@import "quem-somos/rich-text";
+@import "ajuda/rich-text";
+@import "nossas-lojas/rich-text";
+
+.container--institucionalIntroTitle {
+  margin: 0;
+
+  .paragraph--institucionalIntroTitle {
+    margin: 0 0 24px;
+    font-family: $main-font;
+    font-size: $font-size-xl;
+    font-weight: $bold;
+    line-height: 22px;
+    color: $cor-2;
+    text-transform: lowercase;
+  }
+}
+
+.container--institucionalIntroTitleDesktop {
+  margin: 0 auto;
+  .paragraph--institucionalIntroTitleDesktop {
+    margin: 0 0 24px;
+    font-family: $main-font;
+    font-size: $font-size-xl;
+    font-weight: $bold;
+    line-height: 22px;
+    color: $cor-2;
+    text-transform: lowercase;
+
+    @media (min-width: $d) {
+      font-size: $font-size-xxl;
+    }
+  }
+}
+
+.paragraph--institucionalIntroText {
+  margin: 0 0 16px;
+  color: $cinza;
+  font-family: $main-font;
+  font-size: $font-size-sm;
+  line-height: $font-size-lg;
+
+  .strong--institucionalIntroText {
+    text-transform: uppercase;
+  }
+}

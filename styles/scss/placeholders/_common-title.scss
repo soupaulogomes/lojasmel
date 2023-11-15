@@ -1,0 +1,20 @@
+%common-title {
+    font-size: $font-size-xl;
+    font-family: $main-font;
+    font-weight: $bold;
+    color: $cor-2;
+    text-transform: lowercase;
+    max-width: 287px;
+    margin-top: 16px;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+    @media (min-width: $d) {
+      margin-top: 32px;
+      font-size: $font-size-xxl;
+      max-width: initial;
+    }
+  }

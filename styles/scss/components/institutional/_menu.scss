@@ -1,0 +1,28 @@
+.menuContainer--institucionalMenu {
+  display: flex;
+  flex-direction: column;
+
+  .styledLinkContainer--institucionalMenu {
+    margin: 0 0 16px;
+    padding: 0;
+
+    .styledLink--institucionalMenu {
+      color: $cinza;
+      font-family: $main-font;
+      font-size: $font-size-md;
+      line-height: $font-size-xl;
+      font-weight: $regular;
+      text-transform: lowercase;
+
+      &:hover {
+        color: $cor-2;
+        font-weight: $bold;
+      }
+    }
+
+    .styledLink--institucionalMenu--highlight {
+        color: $cor-2;
+        font-weight: $bold;
+    }
+  }
+}

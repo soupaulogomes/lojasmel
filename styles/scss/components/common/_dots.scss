@@ -1,0 +1,13 @@
+.paginationDot {
+  @extend %dots;
+
+  &--isActive {
+    background-color: $cinza-medio;
+  }
+}
+
+.paginationDotsContainer {
+  &--shelf {
+    bottom: -8px;
+  }
+}

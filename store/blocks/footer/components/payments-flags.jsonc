@@ -1,0 +1,145 @@
+{
+    "flex-layout.row#payment-line": {
+        "title": "Linha - Formas de Pagamento",
+        "props": {
+            "blockClass": [
+                "payment-flags"
+            ]
+        },
+        "children":[
+            "disposition-layout#payment-line"
+        ]
+    },
+    "disposition-layout#payment-line":{
+        "title": 
+        "Controle Bandeiras",
+        "props":{
+            "disposition":[
+                {
+                    "order":1
+                },
+                {
+                    "order":2
+                },
+                {
+                    "order":3
+                },
+                {
+                    "order":4
+                },
+                {
+                    "order":5
+                },
+                {
+                    "order":6
+                },
+                {
+                    "order":7
+                },
+                {
+                    "order":8
+                },
+                {
+                    "order":9
+                },
+                {
+                    "order":10
+                },
+                {
+                    "order":11
+                }
+            ],
+            "blockClass":"paymentFlags"
+        },
+        "children":[
+            "image#payment1",
+            "image#payment2",
+            "image#payment3",
+            "image#payment4",
+            "image#payment5",
+            "image#payment6",
+            "image#payment7",
+            "image#payment8",
+            "image#payment9",
+            "image#payment10",
+            "image#payment11"
+        ]
+    },
+    "image#payment1":{
+        "title":"Payment flag 1",
+        "props":{
+            "src":"/arquivos/meio-pgto.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment2":{
+        "title":"Payment flag 2",
+        "props":{
+            "src":"/arquivos/meio-pgto-1.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment3":{
+        "title":"Payment flag 3",
+        "props":{
+            "src":"/arquivos/meio-pgto-2.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment4":{
+        "title":"Payment flag 4",
+        "props":{
+            "src":"/arquivos/meio-pgto-3.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment5":{
+        "title":"Payment flag 5",
+        "props":{
+            "src":"/arquivos/meio-pgto-4.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment6":{
+        "title":"Payment flag 6",
+        "props":{
+            "src":"/arquivos/meio-pgto-5.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment7":{
+        "title":"Payment flag 7",
+        "props":{
+            "src":"/arquivos/meio-pgto-6.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment8":{
+        "title":"Payment flag 8",
+        "props":{
+            "src":"/arquivos/meio-pgto-7.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment9":{
+        "title":"Payment flag 9",
+        "props":{
+            "src":"/arquivos/meio-pgto-8.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment10":{
+        "title":"Payment flag 10",
+        "props":{
+            "src":"/arquivos/meio-pgto-9.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    },
+    "image#payment11":{
+        "title":"Payment flag 11",
+        "props":{
+            "src":"assets/images/meio-pgto-10.png",
+            "blockClass":"paymentFlagsImage"
+        }
+    }
+}

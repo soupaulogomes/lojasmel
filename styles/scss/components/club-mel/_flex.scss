@@ -1,0 +1,121 @@
+.flexRow {
+  &--clubmel__hero-banner {
+    padding-top: 0;
+    @media (min-width: $d) {
+      margin-top: 40px;
+    }
+  }
+
+  &--clubmel__form {
+    margin-top: 40px;
+    @media (min-width: $d) {
+      margin-top: 56px;
+    }
+  }
+
+  &--clubmel__form-row {
+    margin-top: 24px;
+
+    @media (min-width: $d) {
+      margin-top: 64px;
+    }
+
+    @media (max-width: $d) {
+      .stretchChildrenWidth {
+        &:first-child {
+          height: 130px;
+          overflow-x: hidden;
+          overflow-y: hidden;
+        }
+
+        &:last-child {
+          padding: 0 16px;
+        }
+      }
+
+      :global(.vtex-store-components-3-x-imageElement--clubmel__form-image) {
+        object-fit: cover;
+        max-width: initial;
+        width: 100%;
+      }
+    }
+  }
+
+  &--clubmel__motivations {
+    background-color: $cor-1;
+    padding: 40px 0;
+    margin: 40px auto 56px;
+
+    @media (min-width: $d) {
+      margin-top: 64px;
+    }
+  }
+
+  &--clubmel__bottom-info {
+    margin-top: 56px;
+    margin-bottom: 105px;
+
+    @media (min-width: $d) {
+      margin-top: 40px;
+      margin-bottom: 112px;
+    }
+  }
+
+  &--clubmel__bottom-banner {
+    @media (max-width: $d) {
+      padding: 0;
+    }
+  }
+}
+
+.flexRowContent {
+  &--clubmel__form {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &--clubmel__form-row {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+
+    .stretchChildrenWidth {
+      @media (max-width: $d) {
+        width: 100% !important;
+      }
+    }
+
+    @media (min-width: $d) {
+      flex-direction: row;
+      gap: 56px;
+    }
+  }
+
+  &--clubmel__motivations {
+    @extend %container;
+    gap: 16px;
+    padding: 0 30px;
+
+    @media (min-width: $d) {
+      padding: 0;
+    }
+  }
+
+  &--clubmel__motivations-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (min-width: $m) {
+      flex-direction: row;
+    }
+
+    @media (min-width: $m) and (max-width: $t) {
+      flex-wrap: wrap;
+      .stretchChildrenWidth {
+        flex-basis: calc(50% - 8px);
+        width: initial !important;
+      }
+    }
+  }
+}

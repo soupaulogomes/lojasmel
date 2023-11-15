@@ -1,0 +1,59 @@
+{
+    "flex-layout.row#politica-de-privacidade--intro": {
+        "title": "Política de Privacidade - Introdução Mobile",
+        "children": [
+            "rich-text#politica-de-privacidade--title",
+            "rich-text#politica-de-privacidade--text"
+        ],
+        "props": {
+            "blockClass": "institucionalIntro"
+        }
+    },
+    "rich-text#politica-de-privacidade--title": {
+        "title": "Política de Privacidade - Título",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Política de Privacidade",
+            "blockClass": "institucionalIntroTitle"
+          }
+    },
+    "rich-text#politica-de-privacidade--text": {
+        "title": "Política de Privacidade - Texto",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "A lojasmel tem como propósito “trazer tudo para todos, com amor” e pautado neste lema, tem também o **LER MAIS**",
+            "blockClass": "institucionalIntroText"
+          }
+    },
+    "flex-layout.col#politica-de-privacidade--intro--desktop": {
+        "title": "Política de Privacidade - Introdução Desktop",
+        "children": [
+            "rich-text#politica-de-privacidade--title--desktop",
+            "rich-text#politica-de-privacidade--text--desktop"
+        ],
+        "props": {
+            "preventVerticalStretch":true,
+            "blockClass": "institucionalIntroDesktop"
+        }
+    },
+    "rich-text#politica-de-privacidade--title--desktop": {
+        "title": "Política de Privacidade - Título",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Política de Privacidade",
+            "blockClass": "institucionalIntroTitleDesktop"
+          }
+    },
+    "rich-text#politica-de-privacidade--text--desktop": {
+        "title": "Política de Privacidade - Texto Desktop",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "A lojasmel tem como propósito trazer tudo para todos, com amor e pautado neste lema, tem também o compromisso com a transparência e a segurança dos dados de todos as pessoas que se relacionam com a gente, sejam eles clientes, funcionários, fornecedores e parceiros.E justamente atento a era tecnológica, à toda a sua facilidade, conveniência e utilidade, ainda mais nestes dias atuais, passamos a desenvolver uma “Política de Privacidade.Esta que conterá todo o processo de interação com o nosso site, aplicativos e lojas físicas, com o único intuito de proporcionar a vocês conhecimento e entendimento sobre quais informações coletamos e como as utilizamos, armazenamos ou excluímos.Desta forma, o presente instrumento, denominado Política de Privacidade, detalha a forma com que a BMP UTILIDADES DOMÉSTICAS S.A. – pessoa jurídica de direito privado, devidamente inscrito no CNPJ/MF sob o nº.12.356.100/0001-34 - lojasmel, coleta, armazena e utiliza os dados pessoais de usuários dos seus produtos e serviços, bem como de seus parceiros comerciais, em atendimento a Lei Geral de Proteção de Dados “LGPD” (Lei Federal nº 13.709/2018).",
+            "blockClass": "institucionalIntroText"
+          }
+    }
+}

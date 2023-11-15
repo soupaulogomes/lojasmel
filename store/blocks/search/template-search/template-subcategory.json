@@ -1,0 +1,25 @@
+{
+  "store.custom#template-subcategory": {
+    "blocks": ["search-result-layout.customQuery#subcategory"]
+  },
+  "search-result-layout.customQuery#subcategory": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+
+        "queryField": "142",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "title": "Sub Categoria | Disposição do Conteudo",
+    "blocks": [
+      "search-result-layout.desktop#categoria",
+      "search-result-layout.mobile#categoria",
+      "search-not-found-layout"
+    ]
+  }
+
+}

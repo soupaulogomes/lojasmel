@@ -1,0 +1,62 @@
+.listPriceValue {
+  font-size: $font-size-xs;
+  font-family: $main-font;
+  color: $cinza;
+
+  @media (min-width: $d) {
+    font-size: $font-size-sm;
+  }
+}
+
+.sellingPriceValue {
+  font-family: $main-font;
+
+  .currencyContainer {
+    font-size: $font-size-xl;
+    color: $preto;
+    font-weight: $bold;
+
+    @media (min-width: $d) {
+      font-size: $font-size-xxl;
+    }
+  }
+}
+
+.installments--summary {
+  height: 14px;
+  font-size: 14px;
+  color: $cinza;
+  margin: 8px 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+
+  &:not(:empty) {
+    &::before {
+      content: "";
+      height: 18px;
+      width: 22px;
+      background: url(assets/svg/icon-card-mel.svg) no-repeat center;
+      background-size: cover;
+      margin-right: 3px;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.installmentsTotalValue {
+  margin: 0 3px;
+  font-weight: 700;
+}
+
+.savings--product__savingPricePercentage {
+  @extend %flag-discount;
+}
+
+.listPrice {
+  &--summary {
+    height: 18px;
+  }
+}

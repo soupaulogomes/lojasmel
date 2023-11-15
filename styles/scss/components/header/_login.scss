@@ -1,0 +1,100 @@
+.container :global(.vtex-button) {
+  border: none;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent !important;
+  }
+}
+
+.container :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.label {
+  color: $branco;
+  font-family: $main-font;
+  font-size: $font-size-md;
+  line-height: $font-size-xl;
+  font-weight: $bold;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.vtex-login--header-desktop {
+  padding: 0;
+}
+
+.container {
+  margin-left: 16px;
+  .buttonLink :global(.vtex-button) {
+    border: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    min-height: 24px;
+  }
+
+  .buttonLink :global(.vtex-button__label) {
+    padding: 0 !important;
+  }
+}
+.accountOptionsSectionTitle {
+  display: none;
+}
+.accountMenu,
+.logoutButton {
+  font-size: 16px;
+  font-family: Figtree, sans-serif;
+  color: #bd1d1d;
+}
+
+@media screen and (min-width: 640px) and (max-width: $d) {
+  .container :global(.vtex-button) {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 24px;
+    height: 24px;
+
+    .label {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $d) {
+  .container {
+    margin-left: 0;
+
+    .label {
+      display: block;
+    }
+  }
+
+  .container :global(.vtex-button)::before {
+    content: "";
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+
+  .container :global(.vtex-button)::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 5L8 11L2 5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-left: 4px;
+  }
+}

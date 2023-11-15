@@ -1,0 +1,20 @@
+{
+    "flex-layout.row#ajuda--title": {
+        "title": "Ajuda - Introdução",
+        "children": [
+            "rich-text#ajuda--title"
+        ],
+        "props": {
+            "blockClass": "institucionalIntro"
+        }
+    },
+    "rich-text#ajuda--title": {
+        "title": "Ajuda - Título",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Página de ajuda",
+            "blockClass": "ajudaIntroTitle"
+        }
+    }
+}

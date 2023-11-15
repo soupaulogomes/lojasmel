@@ -1,0 +1,197 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formSelect {
+  .formSelectLabel {
+    color: $cinza;
+    font-family: $main-font;
+    font-size: $font-size-xs;
+    line-height: $font-size-md;
+    font-weight: $regular;
+
+    margin-bottom: 4px;
+  }
+
+  .formSelectAndError {
+    .formSelectInput {
+      width: 100%;
+      height: 40px;
+
+      padding-left: 12px;
+
+      color: $cinza;
+      font-family: $main-font;
+      font-size: $font-size-xs;
+      line-height: $font-size-md;
+      font-weight: $regular;
+
+      border: 1px solid $cinza-claro;
+      border-radius: $border-radius;
+
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      padding-right: 40px;
+      background: url(assets/svg/icon-angle-down-red.svg) 97% no-repeat;
+    }
+  }
+}
+
+.formInputLabel {
+  color: $cinza;
+  font-family: $main-font;
+  font-size: $font-size-xs;
+  line-height: $font-size-md;
+  font-weight: $regular;
+
+  margin-bottom: 4px;
+}
+
+.formDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.formInput {
+  border: 1px solid $cinza-claro;
+  border-radius: $border-radius;
+  font-size: $font-size-xs;
+  color: $cinza;
+  padding-left: 12px;
+
+  height: 40px;
+  width: 100%;
+}
+
+.formTextareaWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .formTextareaLabel {
+    color: $cinza;
+    font-family: $main-font;
+    font-size: $font-size-xs;
+    line-height: $font-size-md;
+    font-weight: $regular;
+
+    margin-bottom: 4px;
+  }
+
+  .formTextarea {
+    border: 1px solid $cinza-claro;
+    border-radius: $border-radius;
+    font-size: $font-size-xs;
+    color: $cinza;
+    padding: 12px;
+    resize: none;
+    max-height: 300px;
+    height: 136px;
+  }
+
+  .formTextareaLength {
+    font-size: $font-size-xs;
+    color: $cinza;
+    margin-top: 5px;
+    margin-left: auto;
+  }
+}
+
+.formButton {
+  @include primary-button;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 32px;
+
+  @media (max-width: $d) {
+    font-size: $font-size-sm;
+  }
+}
+
+.modal {
+  width: 100%;
+  max-width: 328px;
+  padding: 20px;
+
+  .modalCloseFloat {
+    display: none;
+  }
+
+  .modalMessage {
+    font-family: $main-font;
+    font-weight: $bold;
+    font-size: $font-size-xl;
+    line-height: 22px;
+    color: $cor-2;
+    text-transform: lowercase;
+    text-align: center;
+  }
+
+  .modalCloseButton {
+    @include primary-button;
+    font-size: $font-size-sm;
+
+    width: 140px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: $d) {
+  .formContainer1 {
+    display: flex;
+
+    .formSelect {
+      width: 67%;
+      margin-right: 16px;
+    }
+  }
+
+  .formContainer2,
+  .formContainer3 {
+    display: flex;
+
+    .formLine {
+      width: 50%;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .formTextarea {
+    height: 232px;
+  }
+
+  .formFooter {
+    display: flex;
+    justify-content: center;
+
+    .formButton {
+      width: 236px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.loading {
+  transform: scale(0.6px);
+}
+
+.formInputAndError,
+.formSelectAndError {
+  position: relative;
+
+  .formInputError,
+  .formSelectError {
+    position: absolute;
+    bottom: -15px;
+    color: $cor-2;
+    font-size: $font-size-xs;
+    white-space: nowrap;
+  }
+}

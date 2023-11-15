@@ -1,0 +1,221 @@
+{
+  "store.custom#landing-page": {
+    "title": "Landing Page",
+    "blocks": ["flex-layout.row#landing-page-wrapper"]
+  },
+  "store.custom#landing-page-black": {
+    "title": "Landing Page Black",
+    "blocks": ["flex-layout.row#landing-page-wrapper-black"]
+  },
+
+  "flex-layout.row#landing-page-wrapper": {
+    "title": "Landing Page",
+    "children": ["flex-layout.col#landing-page-wrapper"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["landingpage__wrapper"],
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#landing-page-wrapper-black": {
+    "children": ["flex-layout.col#landing-page-wrapper"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["landingpage__wrapper", "landingpage__wrapper--black"],
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#landing-page-wrapper": {
+    "children": [
+      "flex-layout.row#landing-page-banner-full",
+      "flex-layout.row#landing-page-top-paragraphs",
+      "flex-layout.row#landing-page-infocard-categories",
+      "flex-layout.row#landing-page-shelf-1",
+      "flex-layout.row#landing-page-highlight-banner",
+      "flex-layout.row#landing-page-shelf-2",
+      "flex-layout.row#landing-page-category-banners",
+      "flex-layout.row#landing-page-brands-carousel",
+      "flex-layout.row#landing-page-bottom-paragraphs"
+    ],
+    "props": {
+      "blockClass": ["landingpage__wrapper"]
+    }
+  },
+
+  "flex-layout.row#landing-page-banner-full": {
+    "title": "Banner principal",
+    "children": ["info-card#landing-page-banner-full"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "landingpage__banner"]
+    }
+  },
+  "info-card#landing-page-banner-full": {
+    "title": "Banner Full",
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/images/landing-page-banner-full-desk.png",
+      "mobileImage": "assets/images/landing-page-banner-full-mob.png",
+      "headline": "All Black",
+      "subhead": "Sua cozinha com muito mais estilo!",
+      "blockClass": "landingpage__banner",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.row#landing-page-top-paragraphs": {
+    "title": "Textos do topo",
+    "children": ["flex-layout.col#landing-page-top-paragraphs"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "landingpage__paragraphs"]
+    }
+  },
+  "flex-layout.col#landing-page-top-paragraphs": {
+    "children": [
+      "rich-text#landing-page-top-paragraphs-title",
+      "rich-text#landing-page-top-paragraphs-text"
+    ]
+  },
+  "rich-text#landing-page-top-paragraphs-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## Lorem ipsum",
+      "blockClass": ["landingpage__title", "section-common-title"]
+    }
+  },
+  "rich-text#landing-page-top-paragraphs-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, placeat dolorum alias maiores odio explicabo ad non nobis animi, facilis, sequi quaerat quidem consequuntur ab. ",
+      "blockClass": "landingpage__text"
+    }
+  },
+
+  "flex-layout.row#landing-page-bottom-paragraphs": {
+    "title": "Textos do final da pagina ",
+    "children": ["flex-layout.col#landing-page-bottom-paragraphs"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "container",
+        "landingpage__paragraphs",
+        "landingpage__paragraphs--bottom"
+      ]
+    }
+  },
+  "flex-layout.col#landing-page-bottom-paragraphs": {
+    "children": [
+      "rich-text#landing-page-bottom-paragraphs-title",
+      "rich-text#landing-page-bottom-paragraphs-text"
+    ]
+  },
+  "rich-text#landing-page-bottom-paragraphs-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## Lorem ipsum",
+      "blockClass": ["section-common-title", "landingpage__title"]
+    }
+  },
+  "rich-text#landing-page-bottom-paragraphs-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga neque, sint omnis asperiores atque accusamus dolore blanditiis soluta molestias, assumenda qui deserunt totam aspernatur autem perferendis laboriosam? Quia est repellendus voluptate excepturi ipsa dolorum corporis, porro nemo cumque nam consectetur quibusdam laudantium, nihil architecto. Voluptates est nemo asperiores! Obcaecati, facilis! ",
+      "blockClass": "landingpage__text"
+    }
+  },
+
+  "flex-layout.row#landing-page-infocard-categories": {
+    "title": "Carrossel de categorias ",
+    "children": ["flex-layout.col#landing-page-infocard-categories"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "landingpage__categories"]
+    }
+  },
+  "flex-layout.col#landing-page-infocard-categories": {
+    "children": [
+      "rich-text#landing-page-infocard-categories",
+      "list-context.info-card-list#landing-page-infocard-categories"
+    ]
+  },
+  "rich-text#landing-page-infocard-categories": {
+    "title": "Titulo",
+    "props": {
+      "text": "## navegue por categorias",
+      "blockClass": ["landingpage__title", "section-common-title"]
+    }
+  },
+
+  "flex-layout.row#landing-page-shelf-1": {
+    "title": "Vitrine 1",
+    "children": ["flex-layout.col#landing-page-shelf-1"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "product__shelf", "landingpage__shelf"]
+    }
+  },
+  "flex-layout.col#landing-page-shelf-1": {
+    "children": [
+      "rich-text#landing-page-shelf-1",
+      "list-context.product-list#landing-page-shelf-2"
+    ]
+  },
+  "rich-text#landing-page-shelf-1": {
+    "title": "Titulo",
+    "props": {
+      "text": "## ofertas em destaque",
+      "blockClass": ["landingpage__title", "section-common-title"]
+    }
+  },
+
+  "flex-layout.row#landing-page-shelf-2": {
+    "title": "Vitrine 2",
+    "children": ["flex-layout.col#landing-page-shelf-2"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["container", "product__shelf", "landingpage__shelf"]
+    }
+  },
+  "flex-layout.col#landing-page-shelf-2": {
+    "children": [
+      "rich-text#landing-page-shelf-2",
+      "list-context.product-list#landing-page-shelf-2"
+    ]
+  },
+  "rich-text#landing-page-shelf-2": {
+    "title": "Titulo",
+    "props": {
+      "text": "## lançamentos",
+      "blockClass": ["landingpage__title", "section-common-title"]
+    }
+  },
+
+  "flex-layout.row#landing-page-category-banners": {
+    "title": "Banners de categoria",
+    "children": ["list-context.image-list#landing-page-category-banners"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__category-banners", "container"]
+    }
+  },
+
+  "flex-layout.row#landing-page-highlight-banner": {
+    "title": "Banner de Destaque full",
+    "children": ["list-context.image-list#landingpage-highlight-banners"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["landingpage__highlight-banner", "container"]
+    }
+  },
+
+  "flex-layout.row#landing-page-brands-carousel": {
+    "title": "Carrossel de marcas",
+    "children": ["list-context.image-list#landing-page-brands-carousel"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["landingpage__brands-carousel", "container"]
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "store.custom#clubemel-page": {
+    "title": "Pagina do Clube Mel",
+    "blocks": ["flex-layout.row#clubemel"]
+  },
+
+  "flex-layout.row#clubemel": {
+    "title": "Seções",
+    "children": ["flex-layout.col#clubemel"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubemel__wrapper"],
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.col#clubemel": {
+    "children": [
+      "flex-layout.row#clubemel-top-banner",
+      "flex-layout.row#clubemel-form",
+      "flex-layout.row#clubemel-motivations",
+      "flex-layout.row#clubemel-bottom-banner",
+      "flex-layout.row#clubemel-bottom-info"
+    ]
+  },
+
+  "flex-layout.row#clubemel-top-banner": {
+    "title": "Banner do topo",
+    "children": ["list-context.image-list#clubmel-top-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__hero-banners", "container", "clubmel__hero-banner"]
+    }
+  },
+
+  "flex-layout.row#clubemel-form": {
+    "title": "Seçao do formulario de cadastro",
+    "children": ["flex-layout.col#clubemel-form"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubmel__form"]
+    }
+  },
+  "flex-layout.col#clubemel-form": {
+    "children": [
+      "rich-text#clubemel-form-title",
+      "rich-text#clubemel-form-text",
+      "flex-layout.row#clubemel-form-row"
+    ]
+  },
+  "rich-text#clubemel-form-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## Faça parte do nosso clube",
+      "blockClass": ["section-common-title", "clubmel__form-title"]
+    }
+  },
+  "rich-text#clubemel-form-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Cadastre-se e comece a aproveitar todos os benefícios do programa.",
+      "blockClass": ["clubmel__form-text"]
+    }
+  },
+  "flex-layout.row#clubemel-form-row": {
+    "title": "Form",
+    "children": [
+      "image#clubemel-form-image"
+      , "clubemel-form"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubmel__form-row"]
+    }
+  },
+  "image#clubemel-form-image": {
+    "title": "Imagem do form",
+    "props": {
+      "src": "assets/images/clubmel-banner-form.png",
+      "blockClass": "clubmel__form-image"
+    }
+  },
+
+  "flex-layout.row#clubemel-motivations": {
+    "title": "Seçao de motivações",
+    "children": ["flex-layout.col#clubemel-motivations"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubmel__motivations"]
+    }
+  },
+  "flex-layout.col#clubemel-motivations": {
+    "children": [
+      "rich-text#clubemel-motivations-title",
+      "flex-layout.row#clubemel-motivations-cards"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubmel__motivations"]
+    }
+  },
+  "rich-text#clubemel-motivations-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## motivos para voce fazer parte do nosso clube",
+      "blockClass": ["section-common-title", "clubmel__motivations-title"]
+    }
+  },
+  "flex-layout.row#clubemel-motivations-cards": {
+    "title": "Cards",
+    "children": [
+      "info-card#clubemel-motivations-1",
+      "info-card#clubemel-motivations-2",
+      "info-card#clubemel-motivations-3",
+      "info-card#clubemel-motivations-4"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubmel__motivations-cards"]
+    }
+  },
+
+  "flex-layout.row#clubemel-bottom-banner": {
+    "title": "Banner do final da pagina",
+    "children": ["list-context.image-list#clubmel-bottom-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubmel__bottom-banner", "container"]
+    }
+  },
+
+  "flex-layout.row#clubemel-bottom-info": {
+    "title": "Informação do final da pagina",
+    "children": ["flex-layout.col#clubemel-bottom-info"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["clubmel__bottom-info", "container"]
+    }
+  },
+  "flex-layout.col#clubemel-bottom-info": {
+    "children": [
+      "rich-text#clubemel-bottom-info-title",
+      "rich-text#clubemel-bottom-info-text",
+      "rich-text#clubemel-bottom-info-button"
+    ]
+  },
+  "rich-text#clubemel-bottom-info-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## lorem ipsum",
+      "blockClass": ["section-common-title", "clubmel__bottom-info-title"]
+    }
+  },
+  "rich-text#clubemel-bottom-info-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptate laudantium culpa tenetur maiores distinctio iste error necessitatibus pariatur animi quaerat, eum nobis quibusdam harum! Cumque corporis praesentium adipisci rerum ducimus ea assumenda itaque consectetur!",
+      "blockClass": ["clubmel__bottom-info-text"]
+    }
+  },
+  "rich-text#clubemel-bottom-info-button": {
+    "title": "Botão",
+    "props": {
+      "text": "[Confira aqui nossa política completa](/politicas)",
+      "blockClass": ["clubmel__button"]
+    }
+  }
+}

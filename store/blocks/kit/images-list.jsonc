@@ -1,0 +1,85 @@
+{
+  "list-context.info-card-list#kit-page-list": {
+    "title": "Lista de cards",
+    "children": ["slider-layout#kit-page-list-info-cards"],
+    "props": {
+      "infoCards": [
+        {
+          "imageUrl": "assets/images/ambientes-quarto.png",
+          "headline": "### quarto",
+          "imageActionUrl": "/ambiente-quarto",
+          "blockClass": "kit__card",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "isFullModeStyle": true
+        },
+        {
+          "imageUrl": "assets/images/ambientes-sala.png",
+          "headline": "### sala",
+          "imageActionUrl": "/",
+          "blockClass": "kit__card",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "isFullModeStyle": true
+        },
+        {
+          "imageUrl": "assets/images/ambientes-cozinha.png",
+          "headline": "### cozinha",
+          "imageActionUrl": "/",
+          "blockClass": "kit__card",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "isFullModeStyle": true
+        },
+        {
+          "imageUrl": "assets/images/ambientes-quarto.png",
+          "headline": "### quarto",
+          "imageActionUrl": "/ambiente-quarto",
+          "blockClass": "kit__card",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "isFullModeStyle": true
+        },
+        {
+          "imageUrl": "assets/images/ambientes-sala.png",
+          "headline": "### sala",
+          "imageActionUrl": "/",
+          "blockClass": "kit__card",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "isFullModeStyle": true
+        },
+        {
+          "imageUrl": "assets/images/ambientes-cozinha.png",
+          "headline": "### cozinha",
+          "imageActionUrl": "/",
+          "blockClass": "kit__card",
+          "textAlignment": "center",
+          "textPosition": "center",
+          "textMode": "rich-text",
+          "isFullModeStyle": true
+        }
+      ]
+    }
+  },
+  "slider-layout#kit-page-list-info-cards": {
+    "title": "Slider => (NÃO MEXER NAS PROPRIEDADES DO SLIDER PARA NAO COMPROMETER SEU FUNCIONAMENTO)",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 32,
+        "tablet": 32,
+        "phone": 32
+      },
+      "usePagination": true,
+      "infinite": false,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": ["kit__slider"]
+    }
+  }
+}

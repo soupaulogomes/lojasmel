@@ -1,0 +1,20 @@
+{
+    "overlay-trigger#share": {
+        "children": ["image#product-share", "overlay-layout#share"]
+      },
+      "image#product-share": {
+        "title": "Botão de Compartilhar",
+        "props": {
+          "src": "assets/svg/icon-share.svg",
+          "blockClass": "icon-share",
+          "maxHeight": 20
+        }
+      },
+      "overlay-layout#share": {
+        "props": {
+          "placement": "bottom",
+          "scrollBehavior": "close-on-scroll"
+        },
+        "children": ["share"]
+      }
+}

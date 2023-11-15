@@ -1,0 +1,44 @@
+@import "components/variables/all";
+
+@import "components/common/dots";
+
+.title--who-see-who-buy {
+  font-family: "Figtree", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $cor-2;
+  text-transform: lowercase;
+  margin-top: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media screen and ( max-width: $l ) {
+    margin-top: 0;
+  }
+}
+
+.sliderContainer--who-see-who-buy {
+  @extend %translatedArrows
+}
+
+.slide--who-see-who-buy {
+  margin: 0 8px;
+}
+
+.arrow {
+  @extend %arrows;
+
+  @media screen and ( max-width: $t ) {
+    display: none;
+  }
+}
+
+.dot {
+  @extend %dots;
+
+  &--isActive {
+    background-color: $cinza-medio;
+  }
+}
